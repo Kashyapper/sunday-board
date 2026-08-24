@@ -1,0 +1,2505 @@
+<title>Sunday Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+/* ── tokens ─────────────────────────────────────────────────────────── */
+:root{
+  --paper:#eef2f0; --card:#ffffff; --sunk:#f5f8f6;
+  --ink:#0f1a18; --ink-2:#42544f; --ink-3:#7f918c;
+  --rule:#d9e2de; --rule-soft:#e9efec;
+  --time:#0f6b64;   /* events */
+  --duty:#a24a1c;   /* tasks  */
+  --food:#5b7320;   /* meals  */
+  --warn:#a3341f;
+  --shadow:0 1px 1px rgba(15,26,24,.04), 0 10px 26px rgba(15,26,24,.06);
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0c1211; --card:#141d1b; --sunk:#101817;
+    --ink:#e7edea; --ink-2:#a2b2ad; --ink-3:#6d807b;
+    --rule:#233130; --rule-soft:#1a2423;
+    --time:#4fb5ac; --duty:#e0895a; --food:#a6bf58; --warn:#ec8577;
+    --shadow:0 1px 1px rgba(0,0,0,.4), 0 10px 26px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0c1211; --card:#141d1b; --sunk:#101817;
+  --ink:#e7edea; --ink-2:#a2b2ad; --ink-3:#6d807b;
+  --rule:#233130; --rule-soft:#1a2423;
+  --time:#4fb5ac; --duty:#e0895a; --food:#a6bf58; --warn:#ec8577;
+  --shadow:0 1px 1px rgba(0,0,0,.4), 0 10px 26px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Karla,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{margin:0;font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:24px} h2{font-size:20px} h3{font-size:15.5px;font-family:Karla,sans-serif;font-weight:700}
+p{margin:0}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-3)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+:focus-visible{outline:2px solid var(--time);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+
+/* ── shell ──────────────────────────────────────────────────────────── */
+.shell{display:grid;grid-template-columns:214px minmax(0,1fr);min-height:100vh}
+.rail{
+  border-right:1px solid var(--rule);background:var(--card);padding:22px 16px;
+  display:flex;flex-direction:column;gap:22px;position:sticky;top:0;height:100vh
+}
+.wordmark{display:flex;align-items:baseline;gap:7px}
+.wordmark b{font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:700;letter-spacing:-.02em}
+.wordmark span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.railnav{display:flex;flex-direction:column;gap:2px}
+.railnav button{
+  display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:0;background:none;
+  font:inherit;font-weight:600;font-size:14px;color:var(--ink-2);padding:8px 10px;border-radius:8px;cursor:pointer
+}
+.railnav button:hover{background:var(--sunk);color:var(--ink)}
+.railnav button.on{background:var(--sunk);color:var(--ink)}
+.railnav button.on .tick{background:var(--time)}
+.tick{width:3px;height:15px;border-radius:2px;background:transparent;flex:0 0 auto}
+.rail-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+.syncline{font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:6px}
+.syncdot{width:6px;height:6px;border-radius:50%;background:var(--ink-3);flex:0 0 auto}
+.syncdot.ok{background:var(--food)}
+.syncdot.busy{background:var(--duty)}
+
+main{padding:26px 30px 70px;max-width:1180px}
+.pagehead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.pagehead .sub{color:var(--ink-3);font-size:13.5px;margin-top:3px}
+.navgroup{display:flex;align-items:center;gap:8px}
+
+@media (max-width:880px){
+  /* a bare 1fr track never shrinks below its content — this is what stops sideways scroll */
+  .shell{grid-template-columns:minmax(0,1fr)}
+  .rail,main{min-width:0}
+  /* wordmark and controls on one line, the tabs on their own scrollable line */
+  .rail{position:sticky;top:0;z-index:30;height:auto;flex-direction:row;flex-wrap:wrap;
+        align-items:center;gap:10px;border-right:0;border-bottom:1px solid var(--rule);
+        padding:10px 12px;overflow:visible}
+  .wordmark{flex:0 0 auto}
+  .rail-foot{order:2;margin:0 0 0 auto;flex:0 0 auto;flex-direction:row;align-items:center;gap:7px}
+  .rail-foot .bell{width:auto;padding:6px 9px}
+  .rail-foot .bell .lbl{display:none}
+  #lockBtn{padding:6px 10px;font-size:12px;white-space:nowrap}
+  .syncline{white-space:nowrap}
+  .syncline span{display:none}
+  .railnav{order:3;flex:1 1 100%;flex-direction:row;gap:2px;overflow-x:auto;padding-bottom:2px;
+           scrollbar-width:none}
+  .railnav::-webkit-scrollbar{display:none}
+  .railnav button{padding:7px 11px;white-space:nowrap;flex:0 0 auto}
+  .navcount{margin-left:6px}
+  .tick{display:none}
+  main{padding:18px 14px 70px}
+  /* a month cell is about 47px across here — no text fits, so mark the days
+     with dots and let a tap open the day's list in full */
+  .day{min-height:62px;padding:5px 4px;gap:4px}
+  .entwrap{flex-direction:row;flex-wrap:wrap;gap:3px}
+  .ent{display:block;width:7px;height:7px;padding:0;border-left:0;border-radius:50%;overflow:hidden}
+  .ent .tname,.ent .ttime{display:none}
+  .ent.ev{background:var(--time)} .ent.tk{background:var(--duty)} .ent.ml{background:var(--food)}
+  .ent.off{opacity:.4}
+  .more{display:none}
+  .dow div{padding-left:0;text-align:center;font-size:10px}
+  .daynum{font-size:11px}
+}
+
+/* ── controls ───────────────────────────────────────────────────────── */
+.btn{
+  border:1px solid var(--rule);background:var(--card);color:var(--ink);font:inherit;font-size:13.5px;
+  font-weight:600;padding:8px 13px;border-radius:8px;cursor:pointer;transition:background .13s,border-color .13s
+}
+.btn:hover{background:var(--sunk)}
+.btn.solid{background:var(--time);border-color:var(--time);color:#fff}
+.btn.solid:hover{filter:brightness(1.08)}
+.btn.warn{color:var(--warn)}
+.btn.sm{padding:5px 9px;font-size:12.5px}
+.btn.sq{padding:5px 10px;font-size:16px;line-height:1.1}
+.btn.wide{width:100%}
+label.f{display:block;margin-bottom:13px}
+label.f>span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+input,select,textarea{
+  width:100%;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--card);
+  color:var(--ink);font:inherit;font-size:14px
+}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--time);box-shadow:0 0 0 3px color-mix(in srgb,var(--time) 16%,transparent)}
+textarea{resize:vertical}
+.pair{display:flex;gap:9px}.pair>*{flex:1}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:17px;box-shadow:var(--shadow)}
+.card>h3{margin-bottom:12px}
+.cardhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.two{display:grid;grid-template-columns:minmax(280px,340px) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:880px){.two{grid-template-columns:1fr}}
+.seg{display:flex;border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:none;font:inherit;font-size:12.5px;font-weight:600;color:var(--ink-2);padding:5px 11px;cursor:pointer}
+.seg button.on{background:var(--time);color:#fff}
+.empty{border:1px dashed var(--rule);border-radius:var(--r);padding:26px 18px;text-align:center;color:var(--ink-3);font-size:14px}
+
+/* ── month grid ─────────────────────────────────────────────────────── */
+.dow{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-bottom:1px solid var(--rule)}
+.dow div{font-size:10.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);padding:0 0 7px 8px}
+.month{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));background:var(--rule);gap:1px;border:1px solid var(--rule);border-top:0;
+       border-radius:0 0 var(--r) var(--r);overflow:hidden}
+.day{background:var(--card);min-height:118px;padding:6px 7px;display:flex;flex-direction:column;gap:3px;
+     cursor:pointer;min-width:0;overflow:hidden}
+.day:hover{background:var(--sunk)}
+.day.out{background:var(--sunk);opacity:.6}
+.daynum{font-size:12px;font-weight:600;color:var(--ink-3);font-family:"JetBrains Mono",monospace}
+.day.now .daynum{color:var(--card);background:var(--time);border-radius:5px;padding:1px 5px;align-self:flex-start}
+.entwrap{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ent{
+  /* the name is what you scan for, so let it wrap onto a second line
+     rather than cutting it off after a dozen characters */
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  min-width:0;font-size:11.5px;line-height:1.3;padding:3px 5px 3px 6px;
+  border-left:2.5px solid;border-radius:3px;cursor:pointer;overflow-wrap:anywhere
+}
+.ent .tname{font-weight:600}
+.ent .ttime{font-size:10.5px;opacity:.7;margin-left:4px;white-space:nowrap;
+  font-family:"JetBrains Mono",ui-monospace,monospace}
+.ent.ev{border-color:var(--time);color:var(--time);background:color-mix(in srgb,var(--time) 10%,transparent)}
+.ent.tk{border-color:var(--duty);color:var(--duty);background:color-mix(in srgb,var(--duty) 12%,transparent)}
+.ent.ml{border-color:var(--food);color:var(--food);background:color-mix(in srgb,var(--food) 12%,transparent)}
+.ent.off{opacity:.45;text-decoration:line-through}
+.plus{font-size:10.5px;color:var(--ink-3);padding-left:4px}
+.key{display:flex;gap:15px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--ink-2);margin-bottom:11px}
+.key i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+
+/* between the sidebar and a phone the cells get narrow — give names a third line */
+@media (max-width:1200px) and (min-width:881px){
+  /* narrow cells: the name gets the whole chip, the time stays in the
+     day's list, the tooltip and Coming up */
+  .ent{-webkit-line-clamp:3}
+  .ent .ttime{display:none}
+  .day{min-height:126px}
+}
+
+/* ── lists ──────────────────────────────────────────────────────────── */
+.rows{display:flex;flex-direction:column}
+.row{display:flex;gap:11px;align-items:flex-start;padding:12px 2px;border-bottom:1px solid var(--rule-soft)}
+.row:last-child{border-bottom:0}
+.row .fill{flex:1;min-width:0}
+.row .name{font-weight:600;word-break:break-word}
+.row .name.off{text-decoration:line-through;color:var(--ink-3)}
+.row .note{font-size:13px;color:var(--ink-3);margin-top:3px;white-space:pre-wrap;word-break:break-word}
+.row input[type=checkbox]{width:16px;height:16px;margin-top:3px;flex:0 0 auto;accent-color:var(--time)}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:20px;
+      background:var(--sunk);color:var(--ink-2);font-variant-numeric:tabular-nums}
+.pill.late{background:color-mix(in srgb,var(--warn) 15%,transparent);color:var(--warn)}
+.pill.near{background:color-mix(in srgb,var(--duty) 15%,transparent);color:var(--duty)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.chips span{font-size:11.5px;background:var(--sunk);border:1px solid var(--rule-soft);color:var(--ink-2);padding:2px 8px;border-radius:20px}
+.ingline{display:flex;gap:6px;margin-bottom:7px}
+.ingline input:nth-child(1){flex:3}.ingline input:nth-child(2){flex:1}.ingline input:nth-child(3){flex:1.2}
+.ingline button{flex:0 0 auto;border:1px solid var(--rule);background:none;color:var(--ink-3);border-radius:8px;padding:0 9px;cursor:pointer;font-size:15px}
+.ingline button:hover{color:var(--warn)}
+
+/* ── week board ─────────────────────────────────────────────────────── */
+.board{display:grid;grid-template-columns:200px minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:1000px){.board{grid-template-columns:1fr}}
+.pantry{position:sticky;top:20px}
+.pantrylist{display:flex;flex-direction:column;gap:6px;margin-top:10px;max-height:58vh;overflow:auto}
+.dish{border:1px solid var(--rule);border-radius:8px;padding:7px 10px;cursor:grab;background:var(--card);user-select:none}
+.dish:hover{border-color:var(--food);background:color-mix(in srgb,var(--food) 7%,transparent)}
+.dish.held{border-color:var(--food);background:color-mix(in srgb,var(--food) 15%,transparent)}
+.dish b{display:block;font-size:13.5px;font-weight:600}
+.dish em{font-style:normal;font-size:11px;color:var(--ink-3)}
+.weekwrap{overflow-x:auto;min-width:0}
+.week{display:grid;grid-template-columns:86px repeat(7,minmax(102px,1fr));gap:5px;min-width:716px}
+.wd{text-align:center;padding:6px 3px;border:1px solid var(--rule);border-radius:8px;background:var(--card)}
+.wd b{display:block;font-size:12.5px}
+.wd em{font-style:normal;font-size:11px;color:var(--ink-3);font-family:"JetBrains Mono",monospace}
+.wd.now{border-color:var(--time);color:var(--time)}.wd.now em{color:var(--time)}
+.sl{display:flex;flex-direction:column;justify-content:center;padding-right:5px}
+.sl b{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2);white-space:nowrap}
+.sl em{font-style:normal;font-size:10.5px;color:var(--ink-3);font-family:"JetBrains Mono",monospace}
+.slot{min-height:60px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:4px;
+      display:flex;flex-direction:column;gap:3px}
+.slot.over{border-color:var(--food);background:color-mix(in srgb,var(--food) 11%,transparent)}
+.slot.armed{border-style:dashed;border-color:var(--food)}
+.served{display:flex;align-items:center;gap:4px;font-size:11.5px;padding:3px 5px;border-radius:6px;cursor:pointer;
+        background:color-mix(in srgb,var(--food) 13%,transparent);color:var(--food);border-left:2.5px solid var(--food)}
+.served span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.served button{border:0;background:none;color:inherit;opacity:.55;cursor:pointer;font-size:13px;line-height:1;padding:0 1px}
+.served button:hover{opacity:1}
+
+/* ── upcoming ───────────────────────────────────────────────────────── */
+.up{display:flex;gap:11px;padding:10px 0;border-bottom:1px solid var(--rule-soft);align-items:baseline}
+.up:last-child{border-bottom:0}
+.up .when{flex:0 0 96px;font-size:11.5px;color:var(--ink-3);font-family:"JetBrains Mono",monospace}
+.up .what{flex:1;font-size:13.5px;min-width:0}
+.up .kind{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.up .kind.ev{color:var(--time)}.up .kind.tk{color:var(--duty)}.up .kind.ml{color:var(--food)}
+
+/* ── shopping ───────────────────────────────────────────────────────── */
+.navcount{margin-left:auto;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--food);
+  color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.weeklabel{font-family:Fraunces,Georgia,serif;font-size:17px;font-weight:600;min-width:150px;text-align:center}
+.shoplayout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:880px){.shoplayout{grid-template-columns:1fr}}
+.cartcard{position:sticky;top:20px}
+.dropzone{display:flex;flex-direction:column;gap:5px;min-height:120px;border-radius:9px;
+  padding:3px;transition:background .13s,box-shadow .13s}
+.dropzone.over{background:color-mix(in srgb,var(--food) 11%,transparent);box-shadow:0 0 0 2px var(--food) inset}
+.gitem{display:flex;align-items:center;gap:9px;padding:8px 10px;border:1px solid var(--rule);
+  border-radius:8px;background:var(--card);cursor:grab;font-size:13.5px}
+.gitem:hover{border-color:var(--food);background:color-mix(in srgb,var(--food) 6%,transparent)}
+.gitem .gname{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gitem .gamt{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.gitem .gbtn{flex:0 0 auto;border:1px solid var(--rule);background:var(--card);color:var(--ink-3);
+  border-radius:6px;width:22px;height:22px;font-size:13px;line-height:1;cursor:pointer;padding:0}
+.gitem .gbtn:hover{border-color:var(--food);color:var(--food)}
+.gitem .gbtn.rm:hover{border-color:var(--warn);color:var(--warn)}
+.gitem input[type=checkbox]{width:15px;height:15px;flex:0 0 auto;accent-color:var(--food);margin:0}
+.gitem.got .gname,.gitem.got .gamt{text-decoration:line-through;color:var(--ink-3)}
+.gitem.own .gname::after{content:" · yours";font-size:10.5px;color:var(--ink-3);letter-spacing:.03em}
+.cartfoot{display:flex;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--rule-soft)}
+.addown{display:flex;gap:6px;margin-top:12px;padding-top:12px;border-top:1px solid var(--rule-soft)}
+.addown input{font-size:13px;padding:7px 9px}
+.addown .amtbox{flex:0 0 78px}
+.shopempty{border:1px dashed var(--rule);border-radius:9px;padding:22px 16px;text-align:center;
+  color:var(--ink-3);font-size:13px}
+
+/* ── ingredient picker & nutrition ──────────────────────────────────── */
+.foodlayout{display:grid;grid-template-columns:minmax(340px,1.15fr) minmax(250px,.85fr);gap:16px;align-items:start}
+.foods-saved{grid-column:1/-1}
+.library{position:sticky;top:20px}
+@media (max-width:880px){.foodlayout{grid-template-columns:1fr}.foods-saved{grid-column:auto}.library{position:static}}
+.filters{display:flex;gap:6px;margin-top:8px}
+.filters select{flex:1;padding:6px 7px;font-size:12.5px}
+.libtoggle{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-3);margin-top:8px}
+.libtoggle input{width:auto;flex:0 0 auto;accent-color:var(--time)}
+.libtoggle span{flex:1;min-width:0;line-height:1.35}
+.picker-list{display:flex;flex-direction:column;gap:4px;margin-top:9px;max-height:42vh;overflow:auto}
+.pick .plus{flex:0 0 auto;border:1px solid var(--rule);background:var(--card);color:var(--ink-2);
+  border-radius:6px;width:22px;height:22px;font-size:14px;line-height:1;cursor:pointer;padding:0}
+.pick .plus:hover{border-color:var(--time);color:var(--time)}
+.pick.cooked b{font-weight:500;color:var(--ink-2)}
+.pick .prep{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--duty)}
+.factsheet{display:flex;flex-direction:column;gap:0}
+.factsheet .fr{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  padding:7px 0;border-bottom:1px solid var(--rule-soft);font-size:13.5px}
+.factsheet .fr:last-child{border-bottom:0}
+.factsheet .fr.head{border-bottom:1px solid var(--rule);font-weight:700;font-size:12px;
+  text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3)}
+.factsheet .v{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.factsheet .v b{color:var(--ink);font-weight:600}
+.factsheet .pctbar{width:54px;height:5px;border-radius:3px;background:var(--rule-soft);overflow:hidden;flex:0 0 auto}
+.factsheet .pctbar i{display:block;height:100%;background:var(--time)}
+.tagline{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 14px}
+.tagline span{font-size:11px;background:var(--sunk);border:1px solid var(--rule-soft);color:var(--ink-2);
+  padding:2px 8px;border-radius:20px}
+.derivednote{background:var(--sunk);border:1px solid var(--rule);border-radius:9px;padding:10px 12px;
+  font-size:12px;color:var(--ink-2);margin-bottom:14px;line-height:1.5}
+.ingline .i-name[readonly]{background:var(--sunk);color:var(--ink-2);cursor:default}
+.pick{display:flex;align-items:baseline;gap:8px;padding:6px 8px;border:1px solid var(--rule);border-radius:7px;
+      background:var(--card);cursor:grab;font-size:13px}
+.pick:hover{border-color:var(--time);background:color-mix(in srgb,var(--time) 7%,transparent)}
+.pick b{font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pick em{font-style:normal;font-size:11px;color:var(--ink-3);white-space:nowrap;font-family:"JetBrains Mono",monospace}
+.flag{font-size:9.5px;font-weight:700;letter-spacing:.06em;color:var(--food);
+            border:1px solid color-mix(in srgb,var(--food) 45%,transparent);border-radius:4px;padding:0 3px}
+.picker-list .none{font-size:12.5px;color:var(--ink-3);padding:8px 4px}
+#ingBox{min-height:44px;border-radius:9px;transition:background .13s,box-shadow .13s}
+#ingBox:empty{border:1px dashed var(--rule);display:grid;place-items:center;min-height:76px;
+  color:var(--ink-3);font-size:12.5px}
+#ingBox:empty::before{content:"Drop ingredients here"}
+#ingBox.over{background:color-mix(in srgb,var(--time) 10%,transparent);box-shadow:0 0 0 2px var(--time) inset}
+.ingitem{margin-bottom:8px}
+.ingnote{font-size:11px;color:var(--ink-3);margin:3px 0 0 2px;font-family:"JetBrains Mono",monospace;cursor:pointer}
+.ingnote:hover{color:var(--time)}
+.ingnote.unknown{color:var(--duty)}
+.ingline select{flex:1.2;padding:8px 6px}
+.nutstrip{display:flex;gap:10px;flex-wrap:wrap;font-size:11.5px;color:var(--ink-2);
+          font-family:"JetBrains Mono",monospace;margin-top:7px}
+.nutstrip b{font-weight:600;color:var(--ink)}
+.daytot{width:100%;border:1px solid var(--rule);border-radius:8px;background:var(--card);cursor:pointer;
+        padding:6px 3px;font:inherit;color:var(--ink);display:flex;flex-direction:column;align-items:center;gap:1px}
+.daytot:hover{border-color:var(--time)}
+.daytot b{font-size:13.5px;font-family:"JetBrains Mono",monospace}
+.daytot em{font-style:normal;font-size:10px;color:var(--ink-3)}
+.daytot.good{border-color:var(--food);color:var(--food)}
+.daytot.ok{border-color:var(--duty)}
+.daytot.bad{border-color:var(--warn);color:var(--warn)}
+.daytot.none{opacity:.5}
+.verdict{border-radius:10px;padding:13px 14px;margin-bottom:16px;border:1px solid var(--rule)}
+.verdict.good{background:color-mix(in srgb,var(--food) 11%,transparent);border-color:color-mix(in srgb,var(--food) 40%,transparent)}
+.verdict.ok{background:color-mix(in srgb,var(--duty) 10%,transparent);border-color:color-mix(in srgb,var(--duty) 38%,transparent)}
+.verdict.bad{background:color-mix(in srgb,var(--warn) 10%,transparent);border-color:color-mix(in srgb,var(--warn) 38%,transparent)}
+.verdict h4{margin:0 0 3px;font-size:16px;font-family:Fraunces,Georgia,serif;font-weight:600}
+.verdict p{font-size:12.5px;color:var(--ink-2)}
+.advice{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.advice .a{border-left:2.5px solid var(--duty);padding-left:10px}
+.advice .a.over{border-left-color:var(--warn)}
+.advice .a .what{font-size:13.5px;font-weight:600}
+.advice .a .fix{font-size:12.5px;color:var(--ink-2);margin-top:2px}
+.bars{display:flex;flex-direction:column;gap:9px}
+.bar .top{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:3px}
+.bar .top em{font-style:normal;color:var(--ink-3);font-family:"JetBrains Mono",monospace;font-size:11.5px}
+.bar .track{height:6px;border-radius:4px;background:var(--rule-soft);overflow:hidden}
+.bar .fill{height:100%;border-radius:4px;background:var(--ink-3)}
+.bar.good .fill{background:var(--food)}
+.bar.low .fill,.bar.high .fill{background:var(--duty)}
+.bar.short .fill,.bar.over .fill{background:var(--warn)}
+.disclaimer{font-size:11px;color:var(--ink-3);line-height:1.5;margin-top:14px}
+
+/* ── gate ───────────────────────────────────────────────────────────── */
+.gate{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--paper)}
+.gatecard{width:100%;max-width:392px;background:var(--card);border:1px solid var(--rule);
+          border-radius:14px;padding:30px;box-shadow:var(--shadow)}
+.gatecard .wordmark{margin-bottom:20px}
+.gatecard h2{font-size:21px;margin-bottom:5px}
+.gatecard .blurb{font-size:13.5px;color:var(--ink-3);margin-bottom:20px}
+.gatecard .btn{margin-top:4px}
+.gate .err{color:var(--warn);font-size:13px;margin-top:10px}
+.gate .fine{font-size:11.5px;color:var(--ink-3);margin-top:16px;line-height:1.55}
+.gate .fine b{color:var(--ink-2);font-weight:650}
+.gate .fine a{color:var(--time);font-weight:650;text-decoration:underline;text-underline-offset:2px}
+.lockbox{border:1px solid var(--rule);border-radius:9px;background:var(--sunk);padding:12px;margin-bottom:14px}
+.lockbox summary{cursor:pointer;font-size:13px;font-weight:650;color:var(--ink-2);list-style:none}
+.lockbox summary::-webkit-details-marker{display:none}
+.lockbox summary::before{content:"+ ";color:var(--ink-3)}
+.lockbox[open] summary::before{content:"− "}
+.lockbox .inner{margin-top:12px}
+.lockbox .warnline{font-size:11.5px;color:var(--ink-3);margin-top:-4px}
+.who{display:flex;flex-direction:column;gap:1px;padding:0 2px}
+.who b{font-size:12.5px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.who span{font-size:11px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:880px){.who{display:none}}
+
+/* ── notifications ──────────────────────────────────────────────────── */
+.bell{position:relative;display:flex;align-items:center;gap:8px;width:100%;border:1px solid var(--rule);
+      background:var(--card);color:var(--ink-2);font:inherit;font-size:13px;font-weight:600;
+      padding:7px 10px;border-radius:8px;cursor:pointer}
+.bell:hover{background:var(--sunk);color:var(--ink)}
+.bell .ico{flex:0 0 auto;opacity:.8}
+.badge{margin-left:auto;min-width:19px;height:19px;padding:0 5px;border-radius:10px;background:var(--duty);
+       color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.badge.zero{display:none}
+
+.alertstack{position:fixed;top:16px;right:16px;z-index:70;display:flex;flex-direction:column;gap:9px;
+            width:320px;max-width:calc(100vw - 32px)}
+.alertcard{
+  background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--time);border-radius:10px;
+  padding:11px 12px;box-shadow:0 8px 26px rgba(15,26,24,.16);cursor:pointer;
+  animation:slidein .22s cubic-bezier(.2,.8,.3,1)
+}
+.alertcard.tk{border-left-color:var(--duty)}
+.alertcard.ml{border-left-color:var(--food)}
+.alertcard.wk{border-left-color:var(--duty)}
+.alertcard .top{display:flex;align-items:baseline;gap:8px;margin-bottom:3px}
+.alertcard .lead{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.alertcard .x{margin-left:auto;border:0;background:none;color:var(--ink-3);cursor:pointer;font-size:15px;line-height:1;padding:0 2px}
+.alertcard .x:hover{color:var(--ink)}
+.alertcard .head{font-size:14px;font-weight:700;word-break:break-word}
+.alertcard .sub{font-size:12.5px;color:var(--ink-2);margin-top:2px;white-space:pre-wrap}
+@keyframes slidein{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.alertcard{animation:none}}
+@media (max-width:880px){.alertstack{top:auto;bottom:14px;right:14px;left:14px;width:auto}}
+
+.feed{display:flex;flex-direction:column}
+.feed .item{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid var(--rule-soft);cursor:pointer}
+.feed .item:last-child{border-bottom:0}
+.feed .item:hover .head{color:var(--time)}
+.feed .mark{width:7px;height:7px;border-radius:50%;background:var(--duty);margin-top:6px;flex:0 0 auto}
+.feed .mark.read{background:var(--rule)}
+.feed .head{font-size:13.5px;font-weight:650;word-break:break-word}
+.feed .meta{font-size:11.5px;color:var(--ink-3);margin-top:2px;font-family:"JetBrains Mono",monospace}
+.feed .sub{font-size:12.5px;color:var(--ink-2);margin-top:3px;white-space:pre-wrap}
+.switchrow{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--ink-2);
+           background:var(--sunk);border:1px solid var(--rule);border-radius:9px;padding:11px 12px;margin-bottom:14px}
+.switchrow input{width:auto;margin-top:2px;accent-color:var(--time)}
+
+/* ── modal / toast ──────────────────────────────────────────────────── */
+.scrim{position:fixed;inset:0;background:color-mix(in srgb,var(--ink) 55%,transparent);display:grid;place-items:center;padding:18px;z-index:60}
+.sheet{background:var(--card);border:1px solid var(--rule);border-radius:12px;width:100%;max-width:430px;
+       max-height:88vh;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.sheet header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 17px;border-bottom:1px solid var(--rule)}
+.sheet .body{padding:17px;overflow:auto}
+.sheet footer{padding:13px 17px;border-top:1px solid var(--rule);display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.sheet footer .gap{flex:1}
+.tally{display:flex;flex-direction:column}
+.tally div{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid var(--rule-soft);font-size:14px}
+.tally div:last-child{border-bottom:0}
+.tally .amt{color:var(--ink-2);white-space:nowrap;font-family:"JetBrains Mono",monospace;font-size:13px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--paper);
+       padding:10px 17px;border-radius:9px;font-size:13.5px;z-index:80;box-shadow:var(--shadow);max-width:90vw}
+.note{background:var(--sunk);border:1px solid var(--rule);border-radius:9px;padding:11px 13px;font-size:13px;color:var(--ink-2)}
+</style>
+
+<div class="gate" id="gate">
+  <form class="gatecard" id="gateForm" novalidate>
+    <div class="wordmark"><b>Sunday</b><span>Board</span></div>
+    <h2 id="gateTitle">Set up your board</h2>
+    <p class="blurb" id="gateBlurb">Your calendar, tasks and meal plan — all in one place.</p>
+
+    <div id="gateNew">
+      <label class="f"><span>Your name</span><input id="gName" placeholder="Shiv" autocomplete="name"></label>
+      <label class="f"><span>Email address</span>
+        <input id="gEmail" type="email" placeholder="you@example.com" autocomplete="email"></label>
+      <details class="lockbox" id="lockBox">
+        <summary>Protect it with a passcode</summary>
+        <div class="inner">
+          <label class="f"><span>Passcode</span>
+            <input id="gPass" type="password" autocomplete="new-password" placeholder="At least 4 characters"></label>
+          <label class="f" style="margin-bottom:6px"><span>Type it again</span>
+            <input id="gPass2" type="password" autocomplete="new-password"></label>
+          <p class="warnline">Your board gets scrambled on disk and only your passcode unscrambles it.
+            There is no reset — if you forget it, the board is gone.</p>
+        </div>
+      </details>
+    </div>
+
+    <div id="gateBack" hidden>
+      <label class="f"><span>Passcode</span>
+        <input id="gUnlock" type="password" autocomplete="current-password" placeholder="Your passcode"></label>
+    </div>
+
+    <p class="err" id="gateErr" hidden></p>
+    <button class="btn solid wide" type="submit" id="gateGo">Open my board</button>
+    <p class="fine" id="gateFine"><b>This page is already private to your Claude account</b> — nobody else can
+      open the link unless you share it. A passcode adds a second lock on the saved data itself.</p>
+    <p class="fine" id="gateReset" hidden></p>
+  </form>
+</div>
+
+<div class="shell" id="shell" hidden>
+  <aside class="rail">
+    <div class="wordmark"><b>Sunday</b><span>Board</span></div>
+    <nav class="railnav" id="nav">
+      <button class="on" data-v="month"><i class="tick"></i>Calendar</button>
+      <button data-v="tasks"><i class="tick"></i>Tasks</button>
+      <button data-v="pantry"><i class="tick"></i>Foods</button>
+      <button data-v="week"><i class="tick"></i>Meal plan</button>
+      <button data-v="shop"><i class="tick"></i>Shopping<span class="navcount" id="cartCount" hidden>0</span></button>
+    </nav>
+    <div class="rail-foot">
+      <div class="who" id="whoBox"><b id="whoName"></b><span id="whoMail"></span></div>
+      <button class="bell" id="bellBtn">
+        <svg class="ico" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 1.6a4 4 0 0 0-4 4c0 3.2-1.2 4.3-1.2 4.3h10.4S12 8.8 12 5.6a4 4 0 0 0-4-4Z"/>
+          <path d="M6.7 12.4a1.5 1.5 0 0 0 2.6 0"/>
+        </svg><span class="lbl">Reminders</span>
+        <span class="badge zero" id="bellCount">0</span>
+      </button>
+      <div class="syncline"><i class="syncdot" id="syncDot"></i><span id="syncText">Loading…</span></div>
+      <button class="bell" id="lockBtn" style="justify-content:center">Sign out</button>
+    </div>
+  </aside>
+
+  <main>
+    <!-- CALENDAR ------------------------------------------------------ -->
+    <section id="v-month">
+      <div class="pagehead">
+        <div>
+          <h1 id="monthName">—</h1>
+          <p class="sub">Events, task deadlines and planned meals, all on one page.</p>
+        </div>
+        <div class="navgroup">
+          <button class="btn sq" id="mPrev" aria-label="Previous month">‹</button>
+          <button class="btn sm" id="mNow">Today</button>
+          <button class="btn sq" id="mNext" aria-label="Next month">›</button>
+          <button class="btn solid" id="mAdd">New event</button>
+        </div>
+      </div>
+      <div class="key">
+        <span><i style="background:var(--time)"></i>Events</span>
+        <span><i style="background:var(--duty)"></i>Task due</span>
+        <span><i style="background:var(--food)"></i>Meals</span>
+        <span class="muted">Click a day to see what&rsquo;s on it, or to add something.</span>
+      </div>
+      <div class="dow" id="dow"></div>
+      <div class="month" id="month"></div>
+
+      <div class="card" style="margin-top:18px">
+        <div class="cardhead"><h3>Coming up</h3><span class="eyebrow">next 7 days</span></div>
+        <div id="upcoming"></div>
+      </div>
+    </section>
+
+    <!-- TASKS --------------------------------------------------------- -->
+    <section id="v-tasks" hidden>
+      <div class="pagehead"><div><h1>Tasks</h1><p class="sub">Anything with a due date also lands on the calendar.</p></div></div>
+      <div class="two">
+        <form class="card" id="taskForm">
+          <h3>Add a task</h3>
+          <label class="f"><span>Task</span><input id="tTitle" placeholder="Finish history essay" required></label>
+          <div class="pair">
+            <label class="f"><span>Due</span><input id="tDate" type="date"></label>
+            <label class="f"><span>Time</span><input id="tTime" type="time" value="17:00"></label>
+          </div>
+          <label class="f"><span>Notes</span><textarea id="tNotes" rows="3" placeholder="Three pages, cite two sources"></textarea></label>
+          <button class="btn solid wide" type="submit">Add task</button>
+        </form>
+        <div class="card">
+          <div class="cardhead"><h3>Your list</h3>
+            <div class="seg" id="tFilter">
+              <button class="on" data-f="open">Open</button><button data-f="done">Done</button><button data-f="all">All</button>
+            </div>
+          </div>
+          <div id="taskRows"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOODS --------------------------------------------------------- -->
+    <section id="v-pantry" hidden>
+      <div class="pagehead"><div><h1>Foods</h1><p class="sub">List what goes into a dish once, and the grocery list and the nutrition build themselves.</p></div></div>
+      <div class="foodlayout">
+        <form class="card" id="foodForm">
+          <h3 id="foodFormHead">Create a food</h3>
+          <label class="f"><span>Name</span><input id="fName" placeholder="Chicken tacos" required></label>
+          <label class="f"><span>Notes</span><textarea id="fNotes" rows="2" placeholder="About 20 minutes"></textarea></label>
+          <label class="f" style="margin-bottom:7px"><span>Ingredients</span></label>
+          <div id="ingBox"></div>
+          <p class="hint">Drag ingredients in from the library, or add your own.</p>
+          <button class="btn sm" type="button" id="ingAdd">+ Add my own</button>
+          <div class="nutstrip" id="foodNut"></div>
+          <div class="pair" style="margin-top:14px">
+            <button class="btn solid" type="submit" id="fSave">Save food</button>
+            <button class="btn" type="button" id="fCancel" hidden>Cancel</button>
+          </div>
+        </form>
+
+        <aside class="card library">
+          <div class="cardhead"><h3>Ingredient library</h3><span class="eyebrow" id="libCount"></span></div>
+          <input id="ingSearch" placeholder="Search 5,000+ &mdash; &ldquo;toor dal&rdquo;, &ldquo;miso&rdquo;, &ldquo;chorizo&rdquo;" autocomplete="off">
+          <div class="filters">
+            <select id="fCuisine" aria-label="Filter by cuisine"></select>
+            <select id="fGroup" aria-label="Filter by category"></select>
+          </div>
+          <label class="libtoggle"><input type="checkbox" id="fCooked" checked>
+            <span>Include cooked forms</span></label>
+          <div class="picker-list" id="ingResults"></div>
+          <p class="hint">Click one for its full nutrition. Drag it onto the recipe, or press <b>+</b> to add.</p>
+        </aside>
+
+        <div class="card foods-saved">
+          <div class="cardhead"><h3>Your foods</h3><span class="eyebrow" id="foodTally"></span></div>
+          <div id="foodRows"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEK ---------------------------------------------------------- -->
+    <section id="v-week" hidden>
+      <div class="pagehead">
+        <div><h1 id="weekName">—</h1><p class="sub" id="weekHint">Drag a food onto a slot. On a phone, tap the food then tap the slot.</p></div>
+        <div class="navgroup">
+          <button class="btn sq" id="wPrev" aria-label="Previous week">‹</button>
+          <button class="btn sm" id="wNow">This week</button>
+          <button class="btn sq" id="wNext" aria-label="Next week">›</button>
+          <button class="btn solid" id="wShop">Shopping list</button>
+        </div>
+      </div>
+      <div class="board">
+        <aside class="card pantry">
+          <h3>Foods</h3>
+          <div class="pantrylist" id="pantryList"></div>
+        </aside>
+        <div class="weekwrap"><div class="week" id="week"></div></div>
+      </div>
+    </section>
+
+    <!-- SHOPPING ------------------------------------------------------ -->
+    <section id="v-shop" hidden>
+      <div class="pagehead">
+        <div><h1>Shopping</h1><p class="sub" id="shopHint">Everything this week&rsquo;s meals need. Drag what you&rsquo;re buying into the cart &mdash; or just tap it.</p></div>
+        <div class="navgroup">
+          <button class="btn sq" id="sPrev" aria-label="Previous week">&lsaquo;</button>
+          <span class="weeklabel" id="shopWeek">&mdash;</span>
+          <button class="btn sq" id="sNext" aria-label="Next week">&rsaquo;</button>
+          <button class="btn sm" id="sNow">This week</button>
+        </div>
+      </div>
+      <div class="shoplayout">
+        <div class="card">
+          <div class="cardhead"><h3>To buy</h3><span class="eyebrow" id="buyCount"></span></div>
+          <div class="dropzone" id="buyList"></div>
+          <form class="addown" id="ownForm">
+            <input id="ownName" placeholder="Something else &mdash; milk, coffee&hellip;" autocomplete="off">
+            <input id="ownAmt" placeholder="Qty" class="amtbox">
+            <button class="btn sm" type="submit">Add</button>
+          </form>
+        </div>
+        <div class="card cartcard">
+          <div class="cardhead"><h3>Cart</h3><span class="eyebrow" id="cartTally"></span></div>
+          <div class="dropzone cartzone" id="cartList"></div>
+          <div class="cartfoot">
+            <button class="btn sm" id="cartAll">Add everything</button>
+            <button class="btn sm warn" id="cartClear">Empty cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="scrim" id="scrim" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <header><h2 id="sheetTitle">—</h2><button class="btn sq" id="sheetX" aria-label="Close">×</button></header>
+    <div class="body" id="sheetBody"></div>
+    <footer id="sheetFoot"></footer>
+  </div>
+</div>
+<div class="alertstack" id="alertStack"></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(() => {
+'use strict';
+
+/* ── slots ──────────────────────────────────────────────────────────── */
+const SLOTS = [
+  { key:'breakfast', label:'Breakfast', time:'08:00' },
+  { key:'lunch',     label:'Lunch',     time:'12:00' },
+  { key:'dinner',    label:'Dinner',    time:'18:00' },
+  { key:'snack',     label:'Snack',     time:'15:30' }
+];
+const SLOT_MARK = { breakfast:'B', lunch:'L', dinner:'D', snack:'S' };
+const slotOf = k => SLOTS.find(s => s.key === k) || SLOTS[1];
+
+/* ── tiny helpers ───────────────────────────────────────────────────── */
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pad = n => String(n).padStart(2,'0');
+const dISO = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const today = () => dISO(new Date());
+const fromISO = s => { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); };
+const shift = (s,n) => { const d = fromISO(s); d.setDate(d.getDate()+n); return dISO(d); };
+const sunday = s => { const d = fromISO(s); d.setDate(d.getDate()-d.getDay()); return dISO(d); };
+const at = (date,time) => new Date(`${date}T${time||'00:00'}`).getTime();
+const parts = ms => { const d = new Date(ms); return { date:dISO(d), time:`${pad(d.getHours())}:${pad(d.getMinutes())}` }; };
+const clock = ms => new Date(ms).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
+const stamp = ms => new Date(ms).toLocaleString([], {weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+const dayName = s => fromISO(s).toLocaleDateString([], {weekday:'short'});
+const dayShort = s => fromISO(s).toLocaleDateString([], {month:'short',day:'numeric'});
+const dayLong = s => fromISO(s).toLocaleDateString([], {weekday:'long',month:'long',day:'numeric'});
+const round2 = n => Math.round((Number(n)||0)*100)/100;
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2,7);
+
+let toastT;
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.hidden = false;
+  clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 3000);
+}
+
+/* ── state + persistence ────────────────────────────────────────────── */
+const KEY = 'sundayboard.v1';
+let state = { v:1, updatedAt:0, profile:{name:'',email:''}, targets:{}, cart:[], events:[], tasks:[], foods:[], meals:[], alerts:[], fired:{}, desktop:false };
+let ns = null, nsAsked = false, saveT = null;
+
+function normalise(raw){
+  const s = raw && typeof raw === 'object' ? raw : {};
+  return {
+    v:1, updatedAt: Number(s.updatedAt) || 0,
+    events: Array.isArray(s.events) ? s.events : [],
+    tasks:  Array.isArray(s.tasks)  ? s.tasks  : [],
+    foods:  Array.isArray(s.foods)  ? s.foods  : [],
+    meals:  Array.isArray(s.meals)  ? s.meals  : [],
+    profile: (s.profile && typeof s.profile === 'object') ? s.profile : { name:'', email:'' },
+    targets: (s.targets && typeof s.targets === 'object') ? s.targets : {},
+    cart:   Array.isArray(s.cart)   ? s.cart   : [],
+    alerts: Array.isArray(s.alerts) ? s.alerts : [],
+    fired:  (s.fired && typeof s.fired === 'object') ? s.fired : {},
+    desktop: !!s.desktop
+  };
+}
+
+async function getNs(){
+  if (nsAsked) return ns;
+  nsAsked = true;
+  try { ns = (window.claude && claude.use) ? await claude.use('artifact') : null; }
+  catch { ns = null; }
+  return ns;
+}
+
+function setSync(kind, text){
+  const dot = $('#syncDot'), label = $('#syncText');
+  dot.className = 'syncdot' + (kind === 'ok' ? ' ok' : kind === 'busy' ? ' busy' : '');
+  label.textContent = text;
+}
+
+/* ── locking ────────────────────────────────────────────────────────── */
+const TE = new TextEncoder(), TD = new TextDecoder();
+let lockKey = null, lockSalt = null;          // set only when a passcode is in use
+
+const canLock = () => { try { return !!(window.crypto && crypto.subtle && crypto.subtle.deriveKey); } catch { return false; } };
+const toB64 = buf => btoa(String.fromCharCode(...new Uint8Array(buf)));
+const fromB64 = str => Uint8Array.from(atob(str), c => c.charCodeAt(0));
+
+async function deriveKey(pass, salt){
+  const base = await crypto.subtle.importKey('raw', TE.encode(pass), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey(
+    { name:'PBKDF2', salt, iterations:150000, hash:'SHA-256' },
+    base, { name:'AES-GCM', length:256 }, false, ['encrypt','decrypt']);
+}
+
+/** The exact text written to disk and to the cloud copy. */
+async function envelope(){
+  const json = JSON.stringify(state);
+  if (!lockKey) return json;
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const ct = await crypto.subtle.encrypt({ name:'AES-GCM', iv }, lockKey, TE.encode(json));
+  return JSON.stringify({
+    enc:1, updatedAt: state.updatedAt, who: state.profile.name || '',
+    salt: toB64(lockSalt), iv: toB64(iv), ct: toB64(ct)
+  });
+}
+
+async function unwrap(env, pass){
+  const salt = fromB64(env.salt);
+  const key = await deriveKey(pass, salt);
+  const plain = await crypto.subtle.decrypt(          // throws on a wrong passcode
+    { name:'AES-GCM', iv: fromB64(env.iv) }, key, fromB64(env.ct));
+  lockKey = key; lockSalt = salt;
+  return normalise(JSON.parse(TD.decode(plain)));
+}
+
+/* ── persistence ────────────────────────────────────────────────────── */
+let chain = Promise.resolve();
+function saveLocal(){
+  chain = chain.then(async () => {
+    try { localStorage.setItem(KEY, await envelope()); } catch {}
+  }).catch(() => {});
+  return chain;
+}
+
+function readLocal(){
+  try { const raw = localStorage.getItem(KEY); return raw ? JSON.parse(raw) : null; } catch { return null; }
+}
+async function readCloud(){
+  try { const r = await fetch('data/store.json', { cache:'no-store' }); if (r.ok) return await r.json(); } catch {}
+  return null;
+}
+const newest = (a, b) => {
+  if (!a) return b; if (!b) return a;
+  return (Number(b.updatedAt) || 0) > (Number(a.updatedAt) || 0) ? b : a;
+};
+
+function touch(){
+  state.updatedAt = Date.now();
+  saveLocal();
+  setSync('busy', 'Saving…');
+  clearTimeout(saveT);
+  saveT = setTimeout(pushUp, 1800);
+}
+
+async function pushUp(){
+  const api = await getNs();
+  const body = await envelope();
+  if (!api || !api.publish){ setSync('ok', lockKey ? 'Saved, locked' : 'Saved on this device'); return; }
+  try {
+    await api.publish({ 'data/store.json': body });
+    setSync('ok', lockKey ? 'Saved to your account, locked' : 'Saved to your account');
+  } catch (err) {
+    if (err && err.code === 'conflict') setSync('busy', 'Reloading newer copy…');
+    else setSync('ok', lockKey ? 'Saved, locked' : 'Saved on this device');
+  }
+}
+
+
+/* ── ingredient library ─────────────────────────────────────────────── */
+const ING_RAW = `__INGREDIENT_TABLE__`;
+
+const NUT_KEYS = ['kcal','prot','carb','fib','sug','fat','sat','na','k','ca','fe','vc'];
+
+const CUISINES = [
+  ['in','Indian'], ['cn','Chinese'], ['jp','Japanese'], ['kr','Korean'], ['th','Thai'],
+  ['vn','Vietnamese'], ['id','Indonesian'], ['ph','Filipino'], ['me','Middle Eastern'],
+  ['tr','Turkish'], ['gr','Greek'], ['it','Italian'], ['fr','French'], ['es','Spanish'],
+  ['de','German'], ['uk','British'], ['sc','Nordic'], ['ru','Russian'], ['be','Belgian'],
+  ['mx','Mexican'], ['br','Brazilian'], ['pe','Peruvian'], ['ca','Caribbean'],
+  ['af','African'], ['et','Ethiopian'], ['us','American'], ['au','Australian'], ['w','Everyday']
+];
+const CUISINE_NAME = Object.fromEntries(CUISINES);
+
+const BASE = ING_RAW.trim().split('\n')
+  .filter(l => l && !l.startsWith('#'))
+  .map(line => {
+    const p = line.split('|');
+    const units = { g:1, kg:1000, oz:28.35, lb:453.6 };
+    if (p[14]) for (const bit of p[14].split(',')){
+      const [u, v] = bit.split('=');
+      if (u && +v) units[u] = +v;
+    }
+    const n = {};
+    NUT_KEYS.forEach((k, i) => { n[k] = +p[i + 2] || 0; });
+    const tags = (p[15] || '').trim().split(/\s+/).filter(Boolean);
+    return { name:p[0], group:p[1], n, units, tags, raw:true };
+  });
+
+/* ── cooked forms ───────────────────────────────────────────────────────
+   Dry toor dal is 343 kcal per 100 g; boiled it is about 127, because it
+   nearly triples in weight. These are derived from the raw figures using
+   standard yield and nutrient-retention factors — the same approach food
+   composition tables use. Each one says so on its detail card.            */
+const OIL_PER_G = { kcal:8.84, fat:1, sat:0.14 };
+
+const PREPS = {
+  boiled:    { label:'boiled',      yield:0.92, ret:{ vc:0.50, k:0.75, ca:0.90, fe:0.90 } },
+  steamed:   { label:'steamed',     yield:0.94, ret:{ vc:0.75, k:0.90, ca:0.95, fe:0.95 } },
+  roasted:   { label:'roasted',     yield:0.72, ret:{ vc:0.55 }, oil:3 },
+  sauteed:   { label:'sautéed',     yield:0.78, ret:{ vc:0.70 }, oil:5 },
+  fried:     { label:'deep-fried',  yield:0.70, ret:{ vc:0.45 }, oil:12 },
+  grilledV:  { label:'grilled',     yield:0.75, ret:{ vc:0.60 }, oil:2 },
+  grilledM:  { label:'grilled',     yield:0.70, ret:{ fat:0.85, sat:0.85 } },
+  roastedM:  { label:'roasted',     yield:0.72, ret:{ fat:0.88, sat:0.88 } },
+  panM:      { label:'pan-fried',   yield:0.75, oil:3 },
+  braised:   { label:'braised',     yield:0.68, ret:{ fat:0.90, sat:0.90, k:0.85, vc:0.50 } },
+  grilledF:  { label:'grilled',     yield:0.78, ret:{ fat:0.92, sat:0.92 } },
+  panF:      { label:'pan-fried',   yield:0.80, oil:4 },
+  steamedF:  { label:'steamed',     yield:0.82, ret:{ k:0.90 } },
+  friedF:    { label:'deep-fried',  yield:0.76, oil:9 },
+  boiledDry: { label:'boiled',      yield:2.70, ret:{ vc:0.40, k:0.80, ca:0.95, fe:0.95 } },
+  roastedDry:{ label:'dry-roasted', yield:0.95, ret:{ vc:0.60 } },
+  cookedGrain:{label:'cooked',      yield:2.60, ret:{ vc:0.40, k:0.80, ca:0.95, fe:0.95 } },
+  cookedPasta:{label:'cooked',      yield:2.50, ret:{ vc:0.40, k:0.75, ca:0.90, fe:0.90 } },
+  roastedNut:{ label:'roasted',     yield:0.96, ret:{ vc:0.70 } },
+  saltedNut: { label:'roasted & salted', yield:0.96, ret:{ vc:0.70 }, salt:400 },
+  sauteedFungi:{label:'sautéed',    yield:0.60, ret:{ vc:0.70 }, oil:4 },
+  grilledFungi:{label:'grilled',    yield:0.65, ret:{ vc:0.60 }, oil:1 },
+  boiledFungi:{ label:'boiled',     yield:0.80, ret:{ vc:0.50, k:0.75 } }
+};
+
+const CUP_G = {
+  'Dals & pulses':190, 'Grains & flours':190, 'Bread & noodles':160, 'Vegetables':150,
+  'Meat & poultry':140, 'Fish & seafood':140, 'Nuts & seeds':140, 'Fungi & sea greens':140
+};
+
+const tidy = v => v >= 10 ? Math.round(v * 10) / 10 : Math.round(v * 100) / 100;
+
+function derive(base, prep){
+  const mass = 100 * prep.yield + (prep.oil || 0);
+  const n = {};
+  for (const k of NUT_KEYS){
+    let amount = base.n[k] * (prep.ret && prep.ret[k] !== undefined ? prep.ret[k] : 1);
+    if (prep.oil && OIL_PER_G[k]) amount += prep.oil * OIL_PER_G[k];
+    if (prep.salt && k === 'na') amount += prep.salt;
+    n[k] = tidy(amount / mass * 100);
+  }
+  const units = { g:1, kg:1000, oz:28.35, lb:453.6, cup: CUP_G[base.group] || 150 };
+  if (base.units.pc) units.pc = Math.round(base.units.pc * prep.yield * 10) / 10;
+  return {
+    name: `${base.name}, ${prep.label}`, group: base.group, n, units,
+    tags: base.tags, raw:false, from: base.name, prep: prep.label
+  };
+}
+
+const NO_COOK = /dried|powder|paste|sauce|pickle|preserved|canned|juice|flour|starch|husk|seed|sprout|chutney|masala|extract|syrup|salted|smoked|cured|jerky|biltong|floss|stick|ball|cake|roe|caviar|bottarga|flake|\(cooked\)|brined|fermented|sun-dried|instant|mix\b|bran|germ|puffed|poha|makhana|malt|gluten|batter|chips|crisp/i;
+
+const MUSHROOM = /mushroom|shiitake|oyster|enoki|shimeji|maitake|nameko|eryngii|porcini|chanterelle|morel|guchhi|truffle|straw|lion's|button|cremini|portobello|wood ear|snow fungus|milky/i;
+const GRAIN_COOKABLE = /rice|quinoa|barley|bulgur|freekeh|farro|millet|sorghum|teff|fonio|oats|couscous|amaranth|buckwheat|dalia|wild rice|job's|triticale|rye berries|hominy|polenta|grits|sabudana/i;
+const PASTA = /pasta|spaghetti|penne|fusilli|lasagne|noodle|udon|soba|somen|vermicelli|orzo|macaroni|ramen|gnocchi|couscous/i;
+
+function preparationsFor(item){
+  const n = item.name;
+  if (NO_COOK.test(n)) return [];
+  switch (item.group){
+    case 'Vegetables':
+      return [PREPS.boiled, PREPS.steamed, PREPS.roasted, PREPS.sauteed, PREPS.fried, PREPS.grilledV];
+    case 'Meat & poultry':
+      return [PREPS.grilledM, PREPS.roastedM, PREPS.panM, PREPS.braised];
+    case 'Fish & seafood':
+      return [PREPS.grilledF, PREPS.panF, PREPS.steamedF, PREPS.friedF];
+    case 'Dals & pulses':
+      return /flour|starch/i.test(n) ? [] : [PREPS.boiledDry, PREPS.roastedDry];
+    case 'Grains & flours':
+      return GRAIN_COOKABLE.test(n) && !/flour|atta|maida|besan|rava|sooji|semolina/i.test(n)
+        ? [PREPS.cookedGrain] : [];
+    case 'Bread & noodles':
+      return PASTA.test(n) ? [PREPS.cookedPasta] : [];
+    case 'Nuts & seeds':
+      return /butter|milk|oil|desiccated|trail/i.test(n) ? [] : [PREPS.roastedNut, PREPS.saltedNut];
+    case 'Fungi & sea greens':
+      return MUSHROOM.test(n) ? [PREPS.sauteedFungi, PREPS.grilledFungi, PREPS.boiledFungi] : [];
+    default:
+      return [];
+  }
+}
+
+const ING = [];
+for (const base of BASE){
+  ING.push(base);
+  for (const prep of preparationsFor(base)) ING.push(derive(base, prep));
+}
+ING.forEach((it, ix) => {
+  it.ix = ix;
+  it.indian = it.tags.includes('in');
+  it.hay = (it.name + ' ' + it.group + ' ' + it.tags.map(t => CUISINE_NAME[t] || '').join(' ')).toLowerCase();
+});
+
+const ING_BY_NAME = new Map(ING.map(i => [i.name.toLowerCase(), i]));
+
+/** A believable one-serving weight, so "good sources" suggests food, not spice dust. */
+const SERVING = {
+  'Spices & herbs':4, 'Nuts & seeds':20, 'Oils & fats':10, 'Sweeteners':12, 'Condiments':12,
+  'Dals & pulses':55, 'Grains & flours':60, 'Dairy & eggs':100, 'Meat & fish':100,
+  'Vegetables':100, 'Fruits':120, 'Plant protein':60, 'Beverages':5
+};
+const SERVING_FIX = {
+  'Green chilli':8, 'Garlic':6, 'Ginger (fresh)':8, 'Lemon (nimbu)':15, 'Lime':15,
+  'Curry leaves (kadi patta)':2, 'Coriander leaves (dhania)':10, 'Mint leaves (pudina)':8,
+  'Dry red chilli (whole)':2, 'Amla (Indian gooseberry)':40, 'Dates (khajur)':30,
+  'Raisin (kishmish)':30, 'Prune':30, 'Dry coconut (copra)':15, 'Desiccated coconut':15
+};
+const servingOf = it => SERVING_FIX[it.name] || SERVING[it.group] || 60;
+
+/** Categories that are seasoning, not nourishment — never offered as a fix. */
+const NOT_A_SOURCE = new Set(['Condiments','Sweeteners','Oils & fats','Beverages']);
+
+function searchIng(q, limit = 60, filter = {}){
+  const terms = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const pool = ING.filter(i =>
+    (!filter.cuisine || i.tags.includes(filter.cuisine)) &&
+    (!filter.group || i.group === filter.group) &&
+    (filter.cooked || i.raw));
+
+  // Browsing with no query: lead with the raw ingredients, cooked forms after.
+  if (!terms.length){
+    const raw = pool.filter(i => i.raw).sort((a, b) => a.name.localeCompare(b.name));
+    if (raw.length >= limit) return raw.slice(0, limit);
+    const cooked = pool.filter(i => !i.raw).sort((a, b) => a.name.localeCompare(b.name));
+    return raw.concat(cooked).slice(0, limit);
+  }
+
+  // Every word must match somewhere, so "grilled chicken" finds it whatever the order.
+  const tiers = [[], [], [], []];
+  for (const i of pool){
+    if (!terms.every(t => i.hay.includes(t))) continue;
+    const leads = i.hay.startsWith(terms[0]);
+    tiers[(leads ? 0 : 2) + (i.raw ? 0 : 1)].push(i);
+  }
+  return [].concat(...tiers).slice(0, limit);
+}
+
+/* ── nutrition ──────────────────────────────────────────────────────── */
+const NUTS = [
+  { k:'kcal', label:'Energy',        low:'energy',        u:'kcal', target:2000, type:'band' },
+  { k:'prot', label:'Protein',       low:'protein',       u:'g',    target:55,   type:'min'  },
+  { k:'fib',  label:'Fibre',         low:'fibre',         u:'g',    target:30,   type:'min'  },
+  { k:'carb', label:'Carbs',         low:'carbs',         u:'g',    target:275,  type:'info' },
+  { k:'fat',  label:'Fat',           low:'fat',           u:'g',    target:65,   type:'info' },
+  { k:'sat',  label:'Saturated fat', low:'saturated fat', u:'g',    target:20,   type:'max'  },
+  { k:'sug',  label:'Sugars',        low:'sugars',        u:'g',    target:50,   type:'max'  },
+  { k:'na',   label:'Sodium',        low:'sodium',        u:'mg',   target:2000, type:'max'  },
+  { k:'k',    label:'Potassium',     low:'potassium',     u:'mg',   target:3500, type:'min'  },
+  { k:'ca',   label:'Calcium',       low:'calcium',       u:'mg',   target:1000, type:'min'  },
+  { k:'fe',   label:'Iron',          low:'iron',          u:'mg',   target:18,   type:'min'  },
+  { k:'vc',   label:'Vitamin C',     low:'vitamin C',     u:'mg',   target:80,   type:'min'  }
+];
+const NUT_BY_KEY = Object.fromEntries(NUTS.map(n => [n.k, n]));
+
+const zeroNut = () => Object.fromEntries(NUT_KEYS.map(k => [k, 0]));
+const addNut = (into, from) => { for (const k of NUT_KEYS) into[k] += from[k] || 0; return into; };
+
+function targetFor(k){
+  const over = state.targets && state.targets[k];
+  return over ? over : NUT_BY_KEY[k].target;
+}
+
+/** Grams for one ingredient line, or null when we cannot know (custom units). */
+function gramsOf(ing){
+  const it = ing.ref != null ? ING[ing.ref] : null;
+  if (!it) return null;
+  const factor = it.units[ing.unit || 'g'];
+  return factor ? (Number(ing.qty) || 0) * factor : null;
+}
+
+function nutriOf(ing){
+  const g = gramsOf(ing);
+  if (g == null) return null;
+  const it = ING[ing.ref];
+  const out = {};
+  for (const k of NUT_KEYS) out[k] = it.n[k] * g / 100;
+  return out;
+}
+
+function foodNutrition(food){
+  const sum = zeroNut();
+  let known = 0, total = 0;
+  for (const ing of food.ingredients || []){
+    total++;
+    const n = nutriOf(ing);
+    if (n){ known++; addNut(sum, n); }
+  }
+  return { sum, known, total };
+}
+
+function dayNutrition(date){
+  const sum = zeroNut();
+  let known = 0, total = 0, meals = 0;
+  for (const m of state.meals.filter(x => x.date === date)){
+    const food = state.foods.find(f => f.id === m.foodId);
+    if (!food) continue;
+    meals++;
+    const r = foodNutrition(food);
+    addNut(sum, r.sum); known += r.known; total += r.total;
+  }
+  return { sum, known, total, meals };
+}
+
+/** Turn totals into per-nutrient verdicts. */
+function assess(sum){
+  return NUTS.map(n => {
+    const val = sum[n.k] || 0, t = targetFor(n.k);
+    const pct = t ? val / t : 0;
+    let status = 'info';
+    if (n.type === 'min')       status = pct >= 0.9 ? 'good' : pct >= 0.55 ? 'low' : 'short';
+    else if (n.type === 'max')  status = pct <= 1 ? 'good' : pct <= 1.35 ? 'high' : 'over';
+    else if (n.type === 'band') status = (pct >= 0.85 && pct <= 1.15) ? 'good' : pct < 0.85 ? 'low' : 'high';
+    return { ...n, val, t, pct, status };
+  });
+}
+
+/** The three most realistic ingredients to fix a shortfall. */
+function goodSources(key, count = 3){
+  return ING
+    .filter(i => !NOT_A_SOURCE.has(i.group))
+    .map(i => ({ i, amount: i.n[key] * servingOf(i) / 100 }))
+    .filter(x => x.amount > 0)
+    .sort((a, b) => (b.amount - a.amount) || (b.i.indian - a.i.indian))
+    .slice(0, 18)
+    .sort((a, b) => (b.i.indian - a.i.indian) || (b.amount - a.amount))
+    .slice(0, count)
+    .map(x => x.i.name);
+}
+
+/** Headline + the specific things to do about it. */
+function verdict(date){
+  const day = dayNutrition(date);
+  if (!day.meals) return { tone:'none', headline:'Nothing planned', lines:[], day };
+
+  const rows = assess(day.sum);
+  const kcal = rows.find(r => r.k === 'kcal');
+  const shortfalls = rows.filter(r => r.type === 'min' && r.status !== 'good')
+                         .sort((a, b) => a.pct - b.pct);
+  const excesses = rows.filter(r => r.type === 'max' && r.status !== 'good')
+                       .sort((a, b) => b.pct - a.pct);
+
+  const lines = [];
+  for (const r of shortfalls.slice(0, 3)){
+    lines.push({
+      tone:'short',
+      text:`${r.label} is ${r.status === 'short' ? 'well short' : 'a bit low'} — ` +
+           `${fmtNut(r.val, r.k)} of ${fmtNut(r.t, r.k)} ${r.u}.`,
+      fix:`Try ${goodSources(r.k).join(', ')}.`
+    });
+  }
+  for (const r of excesses.slice(0, 2)){
+    const advice = {
+      na:'Cut back on salt, papad, pickles and packaged sauces.',
+      sat:'Ease off the ghee, butter, coconut and cream.',
+      sug:'Most of this is sugar and jaggery — trim the sweets.'
+    }[r.k] || 'Worth trimming a little.';
+    lines.push({
+      tone:'over',
+      text:`${r.label} is ${r.status === 'over' ? 'well over' : 'over'} — ` +
+           `${fmtNut(r.val, r.k)} against a ${fmtNut(r.t, r.k)} ${r.u} ceiling.`,
+      fix:advice
+    });
+  }
+  if (kcal.status === 'low')
+    lines.push({ tone:'short', text:`Only ${Math.round(kcal.val)} kcal planned against ${kcal.t}.`,
+                 fix:'Add a substantial dish, or a snack like nuts, curd or a banana.' });
+  if (kcal.status === 'high')
+    lines.push({ tone:'over', text:`${Math.round(kcal.val)} kcal planned against ${kcal.t}.`,
+                 fix:'Lighten one meal, or make the snack fruit.' });
+
+  const wins = rows.filter(r => r.status === 'good' && r.type === 'min').map(r => r.label);
+
+  let tone, headline;
+  if (!lines.length){ tone = 'good'; headline = 'A well balanced day'; }
+  else if (excesses.some(r => r.status === 'over') || shortfalls.some(r => r.status === 'short')){
+    tone = 'bad';
+    headline = shortfalls.length && shortfalls[0].status === 'short'
+      ? `Short on ${shortfalls.slice(0,2).map(r => r.low).join(' and ')}`
+      : `Heavy on ${excesses[0].low}`;
+  } else { tone = 'ok'; headline = 'Close, with a few gaps'; }
+
+  return { tone, headline, lines, wins, rows, day };
+}
+
+function fmtNut(v, k){
+  if (k === 'kcal' || k === 'na' || k === 'k' || k === 'ca') return Math.round(v);
+  return Math.round(v * 10) / 10;
+}
+
+/* ── grocery maths ──────────────────────────────────────────────────── */
+function combine(foodIds){
+  const times = new Map();
+  for (const id of foodIds) times.set(id, (times.get(id)||0) + 1);
+  const byName = new Map();
+  for (const [fid, n] of times){
+    const food = state.foods.find(f => f.id === fid);
+    if (!food) continue;
+    for (const ing of food.ingredients || []){
+      const key = String(ing.name||'').trim().toLowerCase();
+      if (!key) continue;
+      if (!byName.has(key)) byName.set(key, { name:String(ing.name).trim(), units:new Map() });
+      const row = byName.get(key);
+      const uk = String(ing.unit||'').trim().toLowerCase();
+      const cur = row.units.get(uk) || { unit:String(ing.unit||'').trim(), qty:0 };
+      cur.qty += (Number(ing.qty)||0) * n;
+      row.units.set(uk, cur);
+    }
+  }
+  return [...byName.values()]
+    .map(r => ({ name:r.name, amount:[...r.units.values()].map(u => `${round2(u.qty)}${u.unit ? ' '+u.unit : ''}`).join(' + ') }))
+    .sort((a,b) => a.name.localeCompare(b.name));
+}
+
+/* ── modal ──────────────────────────────────────────────────────────── */
+function sheet(title, html, buttons){
+  $('#sheetTitle').textContent = title;
+  $('#sheetBody').innerHTML = html;
+  const foot = $('#sheetFoot'); foot.innerHTML = '';
+  for (const b of buttons || []){
+    if (b.gap){ const g = document.createElement('div'); g.className = 'gap'; foot.appendChild(g); continue; }
+    const el = document.createElement('button');
+    el.className = 'btn' + (b.solid ? ' solid' : '') + (b.warn ? ' warn' : '');
+    el.textContent = b.label;
+    el.onclick = b.go;
+    foot.appendChild(el);
+  }
+  $('#scrim').hidden = false;
+}
+const shut = () => { $('#scrim').hidden = true; };
+$('#sheetX').onclick = shut;
+$('#scrim').addEventListener('click', e => { if (e.target.id === 'scrim') shut(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') shut(); });
+
+/* ── navigation ─────────────────────────────────────────────────────── */
+let view = 'month';
+$('#nav').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return; go(b.dataset.v);
+});
+function go(v){
+  view = v;
+  $$('#nav button').forEach(b => b.classList.toggle('on', b.dataset.v === v));
+  ['month','tasks','pantry','week','shop'].forEach(k => { $('#v-'+k).hidden = k !== v; });
+  if (v === 'month')  drawMonth();
+  if (v === 'tasks')  drawTasks();
+  if (v === 'pantry') drawFoods();
+  if (v === 'week')   drawWeek();
+  if (v === 'shop')   drawShop();
+}
+
+/* ── calendar ───────────────────────────────────────────────────────── */
+let cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+$('#mPrev').onclick = () => { cursor.setMonth(cursor.getMonth()-1); drawMonth(); };
+$('#mNext').onclick = () => { cursor.setMonth(cursor.getMonth()+1); drawMonth(); };
+$('#mNow').onclick  = () => { const n = new Date(); cursor = new Date(n.getFullYear(), n.getMonth(), 1); drawMonth(); };
+$('#mAdd').onclick  = () => eventSheet(null, today());
+
+function entriesByDate(){
+  const map = {};
+  const add = (d, o) => { (map[d] ||= []).push(o); };
+  for (const ev of state.events)
+    add(parts(ev.startAt).date,
+        { k:'ev', at:ev.startAt, name:ev.title, meta:clock(ev.startAt), ev });
+  for (const t of state.tasks)
+    if (t.dueAt) add(parts(t.dueAt).date,
+        { k:'tk', at:t.dueAt, name:t.title, meta:clock(t.dueAt), task:t, off:t.done });
+  for (const m of state.meals){
+    const food = state.foods.find(f => f.id === m.foodId); if (!food) continue;
+    add(m.date, { k:'ml', at:at(m.date, slotOf(m.slot).time),
+                  name:food.name, meta:SLOT_MARK[m.slot] || '·', meal:m });
+  }
+  return map;
+}
+
+function drawMonth(){
+  $('#monthName').textContent = cursor.toLocaleDateString([], { month:'long', year:'numeric' });
+  const dow = $('#dow');
+  if (!dow.childElementCount)
+    dow.innerHTML = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(d => `<div>${d}</div>`).join('');
+
+  const map = entriesByDate();
+  const start = new Date(cursor.getFullYear(), cursor.getMonth(), 1);
+  start.setDate(start.getDate() - start.getDay());
+  const now = today(), grid = $('#month');
+  grid.innerHTML = '';
+
+  for (let i = 0; i < 42; i++){
+    const d = new Date(start); d.setDate(start.getDate() + i);
+    const key = dISO(d);
+    const cell = document.createElement('div');
+    cell.className = 'day' + (d.getMonth() !== cursor.getMonth() ? ' out' : '') + (key === now ? ' now' : '');
+    const items = (map[key] || []).sort((a,b) => a.at - b.at);
+    const seen = items.slice(0,3);
+    cell.innerHTML = `<div class="daynum">${d.getDate()}</div>` +
+      `<div class="entwrap">` + seen.map((it, ix) =>
+        `<div class="ent ${it.k}${it.off ? ' off' : ''}" data-ix="${ix}" title="${esc(it.name)} · ${esc(it.meta)}">
+           <span class="tname">${esc(it.name)}</span><span class="ttime">${esc(it.meta)}</span>
+         </div>`).join('') + `</div>` +
+      (items.length > 3 ? `<div class="plus">+${items.length - 3} more</div>` : '');
+
+    cell.onclick = e => {
+      const hit = e.target.closest('.ent');
+      if (hit){
+        e.stopPropagation();
+        const it = seen[+hit.dataset.ix];
+        if (it.k === 'ev') eventSheet(it.ev);
+        else if (it.k === 'tk') go('tasks');
+        else mealSheet(it.meal);
+        return;
+      }
+      if (e.target.closest('.plus')) return daySheet(key, items);
+      if (items.length) return daySheet(key, items);   // show what's on before offering to add
+      eventSheet(null, key);
+    };
+    grid.appendChild(cell);
+  }
+  drawUpcoming();
+}
+
+function daySheet(date, items){
+  const label = { ev:'Event', tk:'Task due', ml:'Meal' };
+  const body = items.length
+    ? `<div class="rows">${items.map((it, ix) => `
+        <div class="row" data-ix="${ix}">
+          <div class="fill">
+            <div class="title">${esc(it.name)}</div>
+            <div class="sub">${esc(label[it.k] || '')} &middot; ${esc(it.k === 'ml' ? slotOf(it.meal.slot).label : it.meta)}</div>
+          </div>
+          <button class="btn sm" data-a="open">Open</button>
+        </div>`).join('')}</div>`
+    : '<div class="empty">Nothing on this day yet.</div>';
+
+  sheet(dayLong(date), body, [
+    { label:'Add event', go:() => { shut(); eventSheet(null, date); } },
+    { gap:true },
+    { label:'Close', solid:true, go:shut }
+  ]);
+
+  $('#sheetBody').querySelectorAll('.row').forEach(row => {
+    const it = items[+row.dataset.ix];
+    row.querySelector('[data-a=open]').onclick = () => {
+      shut();
+      if (it.k === 'ev') eventSheet(it.ev);
+      else if (it.k === 'tk') { go('tasks'); }
+      else mealSheet(it.meal);
+    };
+  });
+}
+
+function eventSheet(ev, date){
+  const p = ev ? parts(ev.startAt) : { date: date || today(), time:'09:00' };
+  sheet(ev ? 'Edit event' : 'New event', `
+    <label class="f"><span>What is it</span><input id="sTitle" value="${esc(ev?.title||'')}" placeholder="Dentist appointment"></label>
+    <div class="pair">
+      <label class="f"><span>Date</span><input id="sDate" type="date" value="${p.date}"></label>
+      <label class="f"><span>Time</span><input id="sTime" type="time" value="${p.time}"></label>
+    </div>
+    <label class="f"><span>Notes</span><textarea id="sNotes" rows="3" placeholder="Bring the insurance card">${esc(ev?.notes||'')}</textarea></label>`,
+    [
+      ...(ev ? [{ label:'Delete', warn:true, go:() => {
+        state.events = state.events.filter(x => String(x.id) !== String(ev.id));
+        dropAlertsFor('event', ev.id);
+        touch(); shut(); drawMonth(); toast('Event deleted');
+      }}] : []),
+      { gap:true },
+      { label:'Cancel', go:shut },
+      { label:'Save', solid:true, go:() => {
+        const title = $('#sTitle').value.trim();
+        if (!title) return toast('Give the event a name');
+        const startAt = at($('#sDate').value, $('#sTime').value);
+        if (!Number.isFinite(startAt)) return toast('Pick a date and time');
+        const notes = $('#sNotes').value.trim();
+        if (ev){ if (ev.startAt !== startAt) clearFired('event', ev.id); Object.assign(ev, { title, notes, startAt }); }
+        else state.events.push({ id:uid(), title, notes, startAt });
+        touch(); shut(); drawMonth(); sweep(); toast(ev ? 'Event updated' : 'Event added');
+      }}
+    ]);
+  setTimeout(() => $('#sTitle')?.focus(), 30);
+}
+
+/* ── coming up ──────────────────────────────────────────────────────── */
+function drawUpcoming(){
+  const now = Date.now(), horizon = now + 7*864e5, out = [];
+  for (const ev of state.events)
+    if (ev.startAt > now && ev.startAt < horizon) out.push({ at:ev.startAt, k:'ev', kind:'Event', text:ev.title });
+  for (const t of state.tasks)
+    if (!t.done && t.dueAt && t.dueAt > now && t.dueAt < horizon) out.push({ at:t.dueAt, k:'tk', kind:'Task due', text:t.title });
+  for (const m of state.meals){
+    const food = state.foods.find(f => f.id === m.foodId); if (!food) continue;
+    const when = at(m.date, slotOf(m.slot).time);
+    if (when > now && when < horizon) out.push({ at:when, k:'ml', kind:slotOf(m.slot).label, text:food.name });
+  }
+  out.sort((a,b) => a.at - b.at);
+  $('#upcoming').innerHTML = out.length
+    ? out.slice(0,10).map(o => `<div class="up">
+        <div class="when">${esc(stamp(o.at))}</div>
+        <div class="what"><span class="kind ${o.k}">${esc(o.kind)}</span> &nbsp;${esc(o.text)}</div></div>`).join('')
+    : '<div class="empty">Nothing in the next seven days.</div>';
+}
+
+/* ── tasks ──────────────────────────────────────────────────────────── */
+let taskFilter = 'open';
+$('#tFilter').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  taskFilter = b.dataset.f;
+  $$('#tFilter button').forEach(x => x.classList.toggle('on', x === b));
+  drawTasks();
+});
+$('#taskForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const title = $('#tTitle').value.trim(); if (!title) return;
+  const date = $('#tDate').value;
+  state.tasks.push({ id:uid(), title, notes:$('#tNotes').value.trim(),
+                     dueAt: date ? at(date, $('#tTime').value || '17:00') : null, done:false });
+  $('#tTitle').value = ''; $('#tNotes').value = '';
+  touch(); drawTasks(); sweep(); toast('Task added');
+});
+
+function duePill(t){
+  if (!t.dueAt) return '<span class="pill">No due date</span>';
+  const gap = t.dueAt - Date.now();
+  const cls = t.done ? '' : gap < 0 ? ' late' : gap < 864e5 ? ' near' : '';
+  return `<span class="pill${cls}">${!t.done && gap < 0 ? 'Overdue · ' : ''}${esc(stamp(t.dueAt))}</span>`;
+}
+
+function drawTasks(){
+  const rows = state.tasks
+    .filter(t => taskFilter === 'all' ? true : taskFilter === 'done' ? t.done : !t.done)
+    .sort((a,b) => (a.done - b.done) || ((a.dueAt||Infinity) - (b.dueAt||Infinity)));
+  const box = $('#taskRows');
+  if (!rows.length){
+    box.innerHTML = `<div class="empty">${taskFilter === 'done' ? 'Nothing finished yet.' : 'No tasks yet — add one on the left.'}</div>`;
+    return;
+  }
+  box.innerHTML = `<div class="rows">${rows.map(t => `
+    <div class="row" data-id="${t.id}">
+      <input type="checkbox" ${t.done ? 'checked' : ''} data-a="tog" aria-label="Mark done">
+      <div class="fill">
+        <div class="name ${t.done ? 'off' : ''}">${esc(t.title)}</div>
+        <div style="margin-top:5px">${duePill(t)}</div>
+        ${t.notes ? `<div class="note">${esc(t.notes)}</div>` : ''}
+      </div>
+      <button class="btn sm" data-a="edit">Edit</button>
+      <button class="btn sm" data-a="del" aria-label="Delete">✕</button>
+    </div>`).join('')}</div>`;
+
+  box.querySelectorAll('.row').forEach(row => {
+    const t = state.tasks.find(x => String(x.id) === row.dataset.id);
+    if (!t) return;
+    row.querySelector('[data-a=tog]').onchange = e => { t.done = e.target.checked; touch(); drawTasks(); };
+    row.querySelector('[data-a=del]').onclick = () => {
+      state.tasks = state.tasks.filter(x => String(x.id) !== String(t.id));
+      dropAlertsFor('task', t.id);
+      touch(); drawTasks(); toast('Task deleted');
+    };
+    row.querySelector('[data-a=edit]').onclick = () => taskSheet(t);
+  });
+}
+
+function taskSheet(t){
+  const p = t.dueAt ? parts(t.dueAt) : { date:'', time:'17:00' };
+  sheet('Edit task', `
+    <label class="f"><span>Task</span><input id="sTitle" value="${esc(t.title)}"></label>
+    <div class="pair">
+      <label class="f"><span>Due</span><input id="sDate" type="date" value="${p.date}"></label>
+      <label class="f"><span>Time</span><input id="sTime" type="time" value="${p.time}"></label>
+    </div>
+    <label class="f"><span>Notes</span><textarea id="sNotes" rows="3">${esc(t.notes||'')}</textarea></label>`,
+    [
+      { label:'Delete', warn:true, go:() => {
+        state.tasks = state.tasks.filter(x => String(x.id) !== String(t.id));
+        dropAlertsFor('task', t.id);
+        touch(); shut(); drawTasks(); toast('Task deleted');
+      }},
+      { gap:true },
+      { label:'Cancel', go:shut },
+      { label:'Save', solid:true, go:() => {
+        const d = $('#sDate').value;
+        t.title = $('#sTitle').value.trim() || t.title;
+        t.notes = $('#sNotes').value.trim();
+        const nextDue = d ? at(d, $('#sTime').value || '17:00') : null;
+        if (nextDue !== t.dueAt) clearFired('task', t.id);
+        t.dueAt = nextDue;
+        touch(); shut(); drawTasks(); toast('Task updated');
+      }}
+    ]);
+}
+
+/* ── foods ──────────────────────────────────────────────────────────── */
+let editingFood = null;
+
+function unitOptions(it, chosen){
+  const keys = Object.keys(it.units);
+  return keys.map(u => `<option value="${esc(u)}"${u === chosen ? ' selected' : ''}>${esc(u)}</option>`).join('');
+}
+
+function ingLine(ing){
+  ing = ing || { name:'', qty:'', unit:'', ref:null };
+  const it = ing.ref != null ? ING[ing.ref] : null;
+  const wrap = document.createElement('div');
+  wrap.className = 'ingitem';
+  wrap.dataset.ref = it ? String(ing.ref) : '';
+
+  wrap.innerHTML = `
+    <div class="ingline">
+      <input class="i-name" placeholder="Ingredient" value="${esc(ing.name)}"${it ? ' readonly' : ''}>
+      <input class="i-qty" placeholder="Qty" type="number" min="0" step="any" value="${ing.qty ?? ''}">
+      ${it ? `<select class="i-unit">${unitOptions(it, ing.unit || 'g')}</select>`
+           : `<input class="i-unit" placeholder="Unit" value="${esc(ing.unit || '')}">`}
+      <button type="button" aria-label="Remove ingredient">×</button>
+    </div>
+    <div class="ingnote"></div>`;
+
+  wrap.querySelector('button').onclick = () => { wrap.remove(); refreshFoodNut(); };
+  if (it) wrap.querySelector('.ingnote').onclick = () => factSheet(ing.ref);
+  wrap.querySelectorAll('input,select').forEach(el => {
+    el.addEventListener('input', refreshFoodNut);
+    el.addEventListener('change', refreshFoodNut);
+  });
+  setTimeout(() => noteFor(wrap), 0);
+  return wrap;
+}
+
+/** The little "· 320 kcal · 12 g protein" line under one ingredient row. */
+function noteFor(wrap){
+  const note = wrap.querySelector('.ingnote');
+  const ref = wrap.dataset.ref === '' ? null : +wrap.dataset.ref;
+  if (ref == null){ note.textContent = ''; note.classList.remove('unknown'); return; }
+  const row = readRow(wrap);
+  const n = nutriOf(row);
+  if (!n){ note.textContent = 'no nutrition for that unit'; note.classList.add('unknown'); return; }
+  note.classList.remove('unknown');
+  note.textContent = `${Math.round(n.kcal)} kcal · ${fmtNut(n.prot,'prot')} g protein · ` +
+                     `${fmtNut(n.carb,'carb')} g carbs · ${fmtNut(n.fat,'fat')} g fat`;
+}
+
+function readRow(wrap){
+  const name = wrap.querySelector('.i-name').value.trim();
+  const qty = parseFloat(wrap.querySelector('.i-qty').value);
+  const unit = wrap.querySelector('.i-unit').value.trim();
+  const ref = wrap.dataset.ref === '' ? null : +wrap.dataset.ref;
+  return { name, qty: qty > 0 ? qty : 1, unit, ref };
+}
+
+function readIngs(){
+  return [...$('#ingBox').children].map(readRow).filter(i => i.name);
+}
+
+function refreshFoodNut(){
+  [...$('#ingBox').children].forEach(noteFor);
+  const rows = readIngs();
+  const { sum, known, total } = foodNutrition({ ingredients: rows });
+  const strip = $('#foodNut');
+  if (!total){ strip.innerHTML = ''; return; }
+  if (!known){
+    strip.innerHTML = '<span>No nutrition yet — pick ingredients from the library above to see it.</span>';
+    return;
+  }
+  strip.innerHTML =
+    `<span>Whole recipe: <b>${Math.round(sum.kcal)}</b> kcal</span>` +
+    `<span><b>${fmtNut(sum.prot,'prot')}</b> g protein</span>` +
+    `<span><b>${fmtNut(sum.carb,'carb')}</b> g carbs</span>` +
+    `<span><b>${fmtNut(sum.fat,'fat')}</b> g fat</span>` +
+    `<span><b>${fmtNut(sum.fib,'fib')}</b> g fibre</span>` +
+    (known < total ? `<span class="muted">(${total - known} of ${total} not counted)</span>` : '');
+}
+
+function addFromLibrary(ix){
+  const it = ING[ix];
+  if (!it) return;
+  const start = it.units.cup ? 'cup' : it.units.pc ? 'pc' : it.units.tbsp ? 'tbsp' : 'g';
+  const qty = start === 'g' ? 100 : 1;
+  $('#ingBox').appendChild(ingLine({ name:it.name, qty, unit:start, ref:ix }));
+  refreshFoodNut();
+}
+
+$('#ingAdd').onclick = () => { $('#ingBox').appendChild(ingLine()); refreshFoodNut(); };
+
+/* the searchable library */
+const FILTER = { cuisine:'', group:'', cooked:true };
+
+function fillFilters(){
+  const cui = $('#fCuisine');
+  const counts = {};
+  for (const it of BASE) for (const t of it.tags) counts[t] = (counts[t] || 0) + 1;
+  cui.innerHTML = '<option value="">Every cuisine</option>' +
+    CUISINES.filter(([k]) => counts[k])
+      .sort((a, b) => (b[0] === 'in') - (a[0] === 'in') || a[1].localeCompare(b[1]))
+      .map(([k, label]) => `<option value="${k}">${esc(label)} (${counts[k]})</option>`).join('');
+
+  const groups = [...new Set(BASE.map(i => i.group))].sort();
+  $('#fGroup').innerHTML = '<option value="">Every category</option>' +
+    groups.map(g => `<option value="${esc(g)}">${esc(g)}</option>`).join('');
+}
+
+function drawPicker(){
+  $('#libCount').textContent = `${ING.length.toLocaleString()} ingredients`;
+  const hits = searchIng($('#ingSearch').value, 60, FILTER);
+  const box = $('#ingResults');
+  if (!hits.length){
+    box.innerHTML = '<div class="none">Nothing matched. Widen the filters, or use “+ Add my own”.</div>';
+    return;
+  }
+  box.innerHTML = hits.map(i => `
+    <div class="pick${i.raw ? '' : ' cooked'}" draggable="true" data-ix="${i.ix}" title="${esc(i.group)}">
+      <b>${esc(i.name)}</b>
+      ${i.raw && i.indian ? '<span class="flag">IN</span>' : ''}
+      ${i.raw ? '' : `<span class="prep">${esc(i.prep)}</span>`}
+      <em>${Math.round(i.n.kcal)} kcal</em>
+      <button class="plus" type="button" aria-label="Add ${esc(i.name)} to the recipe">+</button>
+    </div>`).join('');
+
+  box.querySelectorAll('.pick').forEach(el => {
+    const ix = +el.dataset.ix;
+    el.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', JSON.stringify({ t:'ing', ix }));
+      e.dataTransfer.effectAllowed = 'copy';
+    });
+    el.querySelector('.plus').onclick = e => { e.stopPropagation(); addFromLibrary(ix); };
+    el.onclick = () => factSheet(ix);
+  });
+}
+
+/* the full nutrition card for one ingredient */
+function factSheet(ix, back){
+  const it = ING[ix];
+  if (!it) return;
+  const unit = it.units.cup ? 'cup' : it.units.pc ? 'pc' : it.units.tbsp ? 'tbsp' : null;
+  const grams = unit ? it.units[unit] : null;
+
+  const row = n => {
+    const per100 = it.n[n.k] || 0;
+    const perServe = grams ? per100 * grams / 100 : null;
+    const pct = Math.min(100, Math.round((per100 / targetFor(n.k)) * 100));
+    return `<div class="fr">
+      <span>${esc(n.label)}</span>
+      <span class="pctbar" title="${pct}% of a day's ${esc(n.low)} in 100 g"><i style="width:${pct}%"></i></span>
+      <span class="v"><b>${fmtNut(per100, n.k)}</b> ${esc(n.u)}${
+        perServe !== null ? ` &nbsp;·&nbsp; ${fmtNut(perServe, n.k)}` : ''}</span>
+    </div>`;
+  };
+
+  const cuisines = it.tags.map(t => CUISINE_NAME[t]).filter(Boolean);
+
+  sheet(it.name, `
+    <div class="tagline">
+      <span>${esc(it.group)}</span>
+      ${cuisines.map(c => `<span>${esc(c)}</span>`).join('')}
+    </div>
+    ${it.raw ? '' : `<div class="derivednote"><b>Cooked form.</b> Worked out from
+      “${esc(it.from)}” using standard yield and nutrient-retention factors — weight changes as it cooks,
+      water-soluble vitamins drop, and any cooking fat is counted in. An estimate, not a measurement.</div>`}
+    <div class="factsheet">
+      <div class="fr head"><span>Per 100 g</span><span></span>
+        <span class="v">100 g${grams ? ` &nbsp;·&nbsp; 1 ${esc(unit)} (${grams} g)` : ''}</span></div>
+      ${NUTS.map(row).join('')}
+    </div>
+    <p class="disclaimer">The bar shows how much of a day's worth 100 g provides.
+      Figures are reference values — dependable for common foods, approximate for uncommon ones.</p>`,
+    [
+      { label:'Add to recipe', solid:true, go:() => {
+        addFromLibrary(ix); shut();
+        if (view !== 'pantry') go('pantry');
+        toast(`${it.name} added`);
+      }},
+      { gap:true },
+      { label:'Close', go: back ? back : shut }
+    ]);
+}
+
+let pickT;
+$('#ingSearch').addEventListener('input', () => { clearTimeout(pickT); pickT = setTimeout(drawPicker, 120); });
+$('#fCuisine').addEventListener('change', e => { FILTER.cuisine = e.target.value; drawPicker(); });
+$('#fGroup').addEventListener('change', e => { FILTER.group = e.target.value; drawPicker(); });
+$('#fCooked').addEventListener('change', e => { FILTER.cooked = e.target.checked; drawPicker(); });
+
+/* drop an ingredient straight into the recipe */
+const dropZone = $('#ingBox');
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('over'));
+dropZone.addEventListener('drop', e => {
+  e.preventDefault(); dropZone.classList.remove('over');
+  let d; try { d = JSON.parse(e.dataTransfer.getData('text/plain')); } catch { return; }
+  if (d && d.t === 'ing') addFromLibrary(d.ix);
+});
+
+function resetFoodForm(){
+  editingFood = null;
+  $('#foodFormHead').textContent = 'Create a food';
+  $('#fSave').textContent = 'Save food';
+  $('#fCancel').hidden = true;
+  $('#fName').value = ''; $('#fNotes').value = '';
+  $('#ingBox').innerHTML = '';
+  $('#ingSearch').value = '';
+  drawPicker();
+  refreshFoodNut();
+}
+$('#fCancel').onclick = resetFoodForm;
+
+$('#foodForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#fName').value.trim(); if (!name) return toast('Give the food a name');
+  const payload = { name, notes:$('#fNotes').value.trim(), ingredients:readIngs() };
+  if (editingFood){
+    const f = state.foods.find(x => x.id === editingFood);
+    if (f) Object.assign(f, payload);
+  } else {
+    state.foods.push({ id:uid(), ...payload });
+  }
+  touch(); resetFoodForm(); drawFoods(); toast('Food saved');
+});
+
+function foodFactSheet(food, back){
+  const { sum, known, total } = foodNutrition(food);
+  const rows = assess(sum);
+  const body = `
+    <p class="muted" style="margin:0 0 14px">Whole recipe as written${
+      known < total ? ` — ${total - known} hand-typed ingredient${total - known === 1 ? '' : 's'} not counted` : ''}.</p>
+    <div class="factsheet">
+      <div class="fr head"><span>Nutrient</span><span></span><span class="v">amount · share of a day</span></div>
+      ${rows.map(r => `<div class="fr">
+        <span>${esc(r.label)}</span>
+        <span class="pctbar"><i style="width:${Math.min(100, Math.round(r.pct * 100))}%"></i></span>
+        <span class="v"><b>${fmtNut(r.val, r.k)}</b> ${esc(r.u)} &nbsp;·&nbsp; ${Math.round(r.pct * 100)}%</span>
+      </div>`).join('')}
+    </div>
+    <div class="eyebrow" style="margin:18px 0 7px">Made from</div>
+    <div class="tally">${(food.ingredients || []).map(i =>
+      `<div><span>${esc(i.name)}</span><span class="amt">${esc(round2(i.qty))}${i.unit ? ' ' + esc(i.unit) : ''}</span></div>`
+    ).join('') || '<div class="empty">No ingredients yet.</div>'}</div>
+    <p class="disclaimer">Reference values; portions are estimates. Not medical advice.</p>`;
+  sheet(food.name, body, [{ gap:true }, { label:'Close', solid:true, go: back || shut }]);
+}
+
+function drawFoods(){
+  const list = [...state.foods].sort((a,b) => a.name.localeCompare(b.name, undefined, {sensitivity:'base'}));
+  $('#foodTally').textContent = list.length ? `${list.length} saved` : '';
+  const box = $('#foodRows');
+  if (!list.length){
+    box.innerHTML = '<div class="empty">No foods yet. Add one, then drag it onto the meal plan.</div>';
+    return;
+  }
+  box.innerHTML = `<div class="rows">${list.map(f => {
+    const nut = foodNutrition(f);
+    return `
+    <div class="row" data-id="${f.id}">
+      <div class="fill">
+        <div class="name">${esc(f.name)}</div>
+        ${f.notes ? `<div class="note">${esc(f.notes)}</div>` : ''}
+        <div class="chips">${(f.ingredients||[]).length
+          ? f.ingredients.map(i => `<span>${esc(i.name)} · ${esc(round2(i.qty))}${i.unit ? ' '+esc(i.unit) : ''}</span>`).join('')
+          : '<span>No ingredients yet</span>'}</div>
+        ${nut.known ? `<div class="nutstrip">
+            <span><b>${Math.round(nut.sum.kcal)}</b> kcal</span>
+            <span><b>${fmtNut(nut.sum.prot,'prot')}</b> g protein</span>
+            <span><b>${fmtNut(nut.sum.fib,'fib')}</b> g fibre</span>
+            ${nut.known < nut.total ? `<span class="muted">${nut.total-nut.known} not counted</span>` : ''}
+          </div>` : ''}
+      </div>
+      <button class="btn sm" data-a="edit">Edit</button>
+      <button class="btn sm" data-a="del" aria-label="Delete">✕</button>
+    </div>`; }).join('')}</div>`;
+
+  box.querySelectorAll('.row').forEach(row => {
+    const f = state.foods.find(x => String(x.id) === row.dataset.id);
+    if (!f) return;
+    row.querySelector('.name').style.cursor = 'pointer';
+    row.querySelector('.name').onclick = () => foodFactSheet(f);
+    row.querySelector('[data-a=edit]').onclick = () => {
+      editingFood = f.id;
+      $('#foodFormHead').textContent = 'Edit food';
+      $('#fSave').textContent = 'Update food';
+      $('#fCancel').hidden = false;
+      $('#fName').value = f.name; $('#fNotes').value = f.notes || '';
+      const b = $('#ingBox'); b.innerHTML = '';
+      (f.ingredients || []).forEach(i => b.appendChild(ingLine(i)));
+      setTimeout(refreshFoodNut, 10);
+      $('#fName').scrollIntoView({ behavior:'smooth', block:'center' });
+    };
+    row.querySelector('[data-a=del]').onclick = () => sheet('Delete this food?',
+      `<p>“${esc(f.name)}” goes away, along with any meals planned with it.</p>`, [
+        { label:'Cancel', go:shut },
+        { label:'Delete', warn:true, go:() => {
+          state.meals.filter(m => String(m.foodId) === String(f.id))
+                     .forEach(m => dropAlertsFor('meal', m.id));
+          state.foods = state.foods.filter(x => String(x.id) !== String(f.id));
+          state.meals = state.meals.filter(m => String(m.foodId) !== String(f.id));
+          touch(); shut(); drawFoods(); toast('Food deleted');
+        }}
+      ]);
+  });
+}
+
+/* ── meal plan ──────────────────────────────────────────────────────── */
+let weekStart = sunday(today());
+let held = null;
+$('#wPrev').onclick = () => { weekStart = shift(weekStart,-7); drawWeek(); };
+$('#wNext').onclick = () => { weekStart = shift(weekStart, 7); drawWeek(); };
+$('#wNow').onclick  = () => { weekStart = sunday(today()); drawWeek(); };
+$('#wShop').onclick = () => go('shop');
+
+function drawWeek(){ drawPantry(); drawBoard(); }
+
+function drawPantry(){
+  const list = [...state.foods].sort((a,b) => a.name.localeCompare(b.name, undefined, {sensitivity:'base'}));
+  const box = $('#pantryList');
+  if (!list.length){ box.innerHTML = '<div class="empty">Add foods first.</div>'; return; }
+  box.innerHTML = list.map(f => {
+    const n = (f.ingredients||[]).length;
+    return `<div class="dish" draggable="true" data-id="${f.id}">
+      <b>${esc(f.name)}</b><em>${n} ingredient${n===1?'':'s'}</em></div>`;
+  }).join('');
+
+  box.querySelectorAll('.dish').forEach(el => {
+    el.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', JSON.stringify({ t:'food', id:el.dataset.id }));
+      e.dataTransfer.effectAllowed = 'copy';
+    });
+    el.addEventListener('click', () => {
+      held = held === el.dataset.id ? null : el.dataset.id;
+      box.querySelectorAll('.dish').forEach(d => d.classList.toggle('held', d.dataset.id === held));
+      $$('.slot').forEach(s => s.classList.toggle('armed', !!held));
+      $('#weekHint').textContent = held
+        ? 'Now tap the slot where it goes.'
+        : 'Drag a food onto a slot. On a phone, tap the food then tap the slot.';
+    });
+  });
+}
+
+function drawBoard(){
+  const days = Array.from({length:7}, (_,i) => shift(weekStart,i));
+  $('#weekName').textContent = `${dayShort(days[0])} – ${dayShort(days[6])}`;
+  const now = today(), grid = $('#week');
+  grid.innerHTML = '<div></div>' + days.map(d =>
+    `<div class="wd${d===now?' now':''}"><b>${dayName(d)}</b><em>${dayShort(d)}</em></div>`).join('');
+
+  for (const slot of SLOTS){
+    const label = document.createElement('div');
+    label.className = 'sl';
+    label.innerHTML = `<b>${slot.label}</b><em>${slot.time}</em>`;
+    grid.appendChild(label);
+
+    for (const date of days){
+      const cell = document.createElement('div');
+      cell.className = 'slot' + (held ? ' armed' : '');
+      for (const meal of state.meals.filter(m => m.date === date && m.slot === slot.key)){
+        const food = state.foods.find(f => f.id === meal.foodId); if (!food) continue;
+        const chip = document.createElement('div');
+        chip.className = 'served'; chip.draggable = true;
+        chip.innerHTML = `<span>${esc(food.name)}</span><button aria-label="Remove">×</button>`;
+        chip.querySelector('span').onclick = () => mealSheet(meal);
+        chip.querySelector('button').onclick = e => {
+          e.stopPropagation();
+          state.meals = state.meals.filter(m => String(m.id) !== String(meal.id));
+          dropAlertsFor('meal', meal.id);
+          touch(); drawBoard(); toast('Taken off the plan');
+        };
+        chip.addEventListener('dragstart', e => {
+          e.dataTransfer.setData('text/plain', JSON.stringify({ t:'meal', id:meal.id }));
+          e.dataTransfer.effectAllowed = 'move';
+        });
+        cell.appendChild(chip);
+      }
+      cell.addEventListener('dragover', e => { e.preventDefault(); cell.classList.add('over'); });
+      cell.addEventListener('dragleave', () => cell.classList.remove('over'));
+      cell.addEventListener('drop', e => {
+        e.preventDefault(); cell.classList.remove('over');
+        let d; try { d = JSON.parse(e.dataTransfer.getData('text/plain')); } catch { return; }
+        place(d, date, slot.key);
+      });
+      cell.addEventListener('click', e => {
+        if (e.target.closest('.served')) return;
+        if (held) place({ t:'food', id:held }, date, slot.key);
+      });
+      grid.appendChild(cell);
+    }
+  }
+
+  const totalLabel = document.createElement('div');
+  totalLabel.className = 'sl';
+  totalLabel.innerHTML = '<b>Day total</b><em>nutrition</em>';
+  grid.appendChild(totalLabel);
+
+  for (const date of days){
+    const v = verdict(date);
+    const cell = document.createElement('div');
+    const btn = document.createElement('button');
+    btn.className = 'daytot ' + (v.tone === 'none' ? 'none' : v.tone);
+    btn.innerHTML = v.tone === 'none'
+      ? '<b>—</b><em>nothing</em>'
+      : `<b>${Math.round(v.day.sum.kcal)}</b><em>${fmtNut(v.day.sum.prot,'prot')} g protein</em>`;
+    btn.onclick = () => nutritionSheet(date);
+    cell.appendChild(btn);
+    grid.appendChild(cell);
+  }
+}
+
+
+/* ── shopping cart ──────────────────────────────────────────────────── */
+const cartKey = name => String(name).trim().toLowerCase();
+const inCart = key => state.cart.some(c => c.key === key);
+
+$('#sPrev').onclick = () => { weekStart = shift(weekStart, -7); drawShop(); };
+$('#sNext').onclick = () => { weekStart = shift(weekStart, 7);  drawShop(); };
+$('#sNow').onclick  = () => { weekStart = sunday(today()); drawShop(); };
+
+function weekGroceries(){
+  const days = Array.from({ length:7 }, (_, i) => shift(weekStart, i));
+  const ids = state.meals.filter(m => days.includes(m.date)).map(m => m.foodId);
+  return combine(ids);
+}
+
+function addToCart(key, name, amount, own){
+  if (inCart(key)) return;
+  state.cart.push({ key, name, amount: amount || '', own: !!own, bought:false });
+  touch(); drawShop();
+}
+
+function removeFromCart(key){
+  state.cart = state.cart.filter(c => c.key !== key);
+  touch(); drawShop();
+}
+
+function itemRow(o){
+  const el = document.createElement('div');
+  el.className = 'gitem' + (o.own ? ' own' : '') + (o.bought ? ' got' : '');
+  el.draggable = true;
+  el.dataset.key = o.key;
+  el.innerHTML =
+    (o.inCart ? `<input type="checkbox" ${o.bought ? 'checked' : ''} aria-label="Got it">` : '') +
+    `<span class="gname">${esc(o.name)}</span>` +
+    `<span class="gamt">${esc(o.amount || '')}</span>` +
+    `<button class="gbtn${o.inCart ? ' rm' : ''}" type="button" aria-label="${
+      o.inCart ? 'Take out of the cart' : 'Put in the cart'}">${o.inCart ? '×' : '+'}</button>`;
+
+  el.addEventListener('dragstart', e => {
+    e.dataTransfer.setData('text/plain', JSON.stringify({
+      t: o.inCart ? 'cart' : 'buy', key:o.key, name:o.name, amount:o.amount, own:o.own
+    }));
+    e.dataTransfer.effectAllowed = 'move';
+  });
+
+  el.querySelector('.gbtn').onclick = e => {
+    e.stopPropagation();
+    if (o.inCart) removeFromCart(o.key);
+    else addToCart(o.key, o.name, o.amount, o.own);
+  };
+
+  if (o.inCart){
+    el.querySelector('input').onchange = e => {
+      const row = state.cart.find(c => c.key === o.key);
+      if (row) row.bought = e.target.checked;
+      touch(); drawShop();
+    };
+  } else {
+    el.onclick = () => addToCart(o.key, o.name, o.amount, o.own);
+  }
+  return el;
+}
+
+function wireZone(zone, accepts, onDrop){
+  zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+  zone.addEventListener('drop', e => {
+    e.preventDefault(); zone.classList.remove('over');
+    let d; try { d = JSON.parse(e.dataTransfer.getData('text/plain')); } catch { return; }
+    if (!d || d.t !== accepts) return;
+    onDrop(d);
+  });
+}
+
+function drawShop(){
+  const days = Array.from({ length:7 }, (_, i) => shift(weekStart, i));
+  $('#shopWeek').textContent = `${dayShort(days[0])} – ${dayShort(days[6])}`;
+
+  const groceries = weekGroceries();
+  const byKey = new Map(groceries.map(g => [cartKey(g.name), g]));
+
+  // keep cart amounts in step with the week's plan, without losing the cart
+  for (const c of state.cart){
+    const fresh = byKey.get(c.key);
+    if (fresh && !c.own) c.amount = fresh.amount;
+  }
+
+  const toBuy = groceries.filter(g => !inCart(cartKey(g.name)));
+  const buyBox = $('#buyList');
+  buyBox.innerHTML = '';
+  if (!toBuy.length){
+    buyBox.innerHTML = `<div class="shopempty">${
+      groceries.length ? 'Everything on the list is in the cart.'
+                       : 'Nothing planned for this week — fill in the meal plan first.'}</div>`;
+  } else {
+    for (const g of toBuy) buyBox.appendChild(itemRow({ key:cartKey(g.name), name:g.name, amount:g.amount, inCart:false }));
+  }
+  $('#buyCount').textContent = toBuy.length ? `${toBuy.length} item${toBuy.length === 1 ? '' : 's'}` : '';
+
+  const cartBox = $('#cartList');
+  cartBox.innerHTML = '';
+  if (!state.cart.length){
+    cartBox.innerHTML = '<div class="shopempty">Drag items across as you decide to buy them.</div>';
+  } else {
+    for (const c of state.cart) cartBox.appendChild(itemRow({ ...c, inCart:true }));
+  }
+  const got = state.cart.filter(c => c.bought).length;
+  $('#cartTally').textContent = state.cart.length
+    ? `${got} of ${state.cart.length} picked up` : '';
+
+  drawCartBadge();
+}
+
+function drawCartBadge(){
+  const left = state.cart.filter(c => !c.bought).length;
+  const b = $('#cartCount');
+  b.textContent = left;
+  b.hidden = left === 0;
+}
+
+wireZone($('#cartList'), 'buy', d => addToCart(d.key, d.name, d.amount, d.own));
+wireZone($('#buyList'), 'cart', d => removeFromCart(d.key));
+
+$('#cartAll').onclick = () => {
+  const fresh = weekGroceries().filter(g => !inCart(cartKey(g.name)));
+  if (!fresh.length) return toast('Everything is already in the cart');
+  for (const g of fresh) state.cart.push({ key:cartKey(g.name), name:g.name, amount:g.amount, own:false, bought:false });
+  touch(); drawShop(); toast(`${fresh.length} item${fresh.length === 1 ? '' : 's'} added`);
+};
+
+$('#cartClear').onclick = () => {
+  if (!state.cart.length) return;
+  sheet('Empty the cart?', `<p>All ${state.cart.length} item${state.cart.length === 1 ? '' : 's'} come out.
+    Anything from the meal plan goes back to the “To buy” list; things you added yourself are gone.</p>`, [
+    { label:'Cancel', go:shut },
+    { label:'Empty it', warn:true, go:() => { state.cart = []; touch(); shut(); drawShop(); toast('Cart emptied'); } }
+  ]);
+};
+
+$('#ownForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#ownName').value.trim();
+  if (!name) return;
+  const key = cartKey(name);
+  if (inCart(key)) return toast('That is already in the cart');
+  addToCart(key, name, $('#ownAmt').value.trim(), true);
+  $('#ownName').value = ''; $('#ownAmt').value = '';
+  $('#ownName').focus();
+});
+
+/* ── the daily nutrition read-out ───────────────────────────────────── */
+function nutritionSheet(date){
+  const v = verdict(date);
+  const meals = state.meals.filter(m => m.date === date)
+    .sort((a,b) => SLOTS.findIndex(s => s.key === a.slot) - SLOTS.findIndex(s => s.key === b.slot))
+    .map(m => { const f = state.foods.find(x => x.id === m.foodId); return f ? `${slotOf(m.slot).label}: ${f.name}` : null; })
+    .filter(Boolean);
+
+  if (v.tone === 'none'){
+    sheet(dayLong(date), '<div class="empty">Nothing planned for this day yet — drop some food onto it first.</div>',
+      [{ gap:true }, { label:'Close', solid:true, go:shut }]);
+    return;
+  }
+
+  const bars = v.rows.map(r => `
+    <div class="bar ${r.status}">
+      <div class="top"><span>${esc(r.label)}</span>
+        <em>${fmtNut(r.val, r.k)} / ${fmtNut(r.t, r.k)} ${esc(r.u)}</em></div>
+      <div class="track"><div class="fill" style="width:${Math.min(100, Math.round(r.pct*100))}%"></div></div>
+    </div>`).join('');
+
+  const advice = v.lines.length ? `<div class="advice">${v.lines.map(l => `
+    <div class="a ${l.tone === 'over' ? 'over' : ''}">
+      <div class="what">${esc(l.text)}</div>
+      <div class="fix">${esc(l.fix)}</div>
+    </div>`).join('')}</div>` : '';
+
+  const winLine = v.wins && v.wins.length
+    ? `<p style="font-size:12.5px;color:var(--ink-2);margin-bottom:16px">On target: ${esc(v.wins.join(', '))}.</p>` : '';
+
+  const uncounted = v.day.total - v.day.known;
+
+  sheet(dayLong(date), `
+    <div class="verdict ${v.tone}">
+      <h4>${esc(v.headline)}</h4>
+      <p>${esc(meals.join(' · '))}</p>
+    </div>
+    ${advice}${winLine}
+    <div class="eyebrow" style="margin-bottom:9px">Against a day's target</div>
+    <div class="bars">${bars}</div>
+    ${uncounted ? `<p class="disclaimer">${uncounted} ingredient${uncounted===1?'':'s'} you typed yourself
+       ${uncounted===1?'is':'are'} not in these totals — only library ingredients carry nutrition.</p>` : ''}
+    <p class="disclaimer">Figures are per-100 g reference values and portions are estimates, so treat this as a
+      guide to the shape of your day rather than a measurement. It is not medical advice.</p>`,
+    [
+      { label:'Adjust targets', go:() => targetsSheet(date) },
+      { gap:true },
+      { label:'Close', solid:true, go:shut }
+    ]);
+}
+
+function targetsSheet(back){
+  sheet('Daily targets', `
+    <p style="font-size:13px;color:var(--ink-2);margin-bottom:14px">
+      Defaults are general adult reference values. Set your own if you know them.</p>
+    <div class="pair">
+      <label class="f"><span>Energy (kcal)</span>
+        <input id="tg-kcal" type="number" min="800" step="50" value="${targetFor('kcal')}"></label>
+      <label class="f"><span>Protein (g)</span>
+        <input id="tg-prot" type="number" min="20" step="1" value="${targetFor('prot')}"></label>
+    </div>
+    <div class="pair">
+      <label class="f"><span>Fibre (g)</span>
+        <input id="tg-fib" type="number" min="5" step="1" value="${targetFor('fib')}"></label>
+      <label class="f"><span>Sodium ceiling (mg)</span>
+        <input id="tg-na" type="number" min="500" step="100" value="${targetFor('na')}"></label>
+    </div>`,
+    [
+      { label:'Reset to defaults', go:() => { state.targets = {}; touch(); drawBoard(); nutritionSheet(back); } },
+      { gap:true },
+      { label:'Save', solid:true, go:() => {
+        const next = {};
+        for (const k of ['kcal','prot','fib','na']){
+          const val = Number($('#tg-' + k).value);
+          if (val > 0 && val !== NUT_BY_KEY[k].target) next[k] = val;
+        }
+        state.targets = next; touch(); drawBoard(); nutritionSheet(back); toast('Targets saved');
+      }}
+    ]);
+}
+
+function place(d, date, slot){
+  if (d.t === 'food'){
+    if (state.meals.some(m => m.date === date && m.slot === slot && m.foodId === d.id)) return;
+    state.meals.push({ id:uid(), foodId:d.id, date, slot });
+  } else {
+    const meal = state.meals.find(m => m.id === d.id); if (!meal) return;
+    if (state.meals.some(m => m.id !== meal.id && m.date === date && m.slot === slot && m.foodId === meal.foodId))
+      state.meals = state.meals.filter(m => m.id !== meal.id);
+    else { clearFired('meal', meal.id); Object.assign(meal, { date, slot }); }
+  }
+  touch(); drawBoard(); sweep(); toast('Added to the plan');
+}
+
+function mealSheet(meal){
+  const food = state.foods.find(f => f.id === meal.foodId);
+  if (!food) return;
+  const ings = food.ingredients || [];
+  const nut = foodNutrition(food);
+  sheet(food.name, `
+    <p class="muted" style="margin-bottom:12px">${esc(slotOf(meal.slot).label)} · ${esc(dayLong(meal.date))}</p>
+    ${food.notes ? `<p class="note" style="margin-bottom:14px">${esc(food.notes)}</p>` : ''}
+    ${nut.known ? `<div class="nutstrip" style="margin:0 0 14px">
+        <span><b>${Math.round(nut.sum.kcal)}</b> kcal</span>
+        <span><b>${fmtNut(nut.sum.prot,'prot')}</b> g protein</span>
+        <span><b>${fmtNut(nut.sum.carb,'carb')}</b> g carbs</span>
+        <span><b>${fmtNut(nut.sum.fat,'fat')}</b> g fat</span>
+        <span><b>${fmtNut(nut.sum.fib,'fib')}</b> g fibre</span>
+      </div>` : ''}
+    <div class="eyebrow" style="margin-bottom:7px">What to buy</div>
+    ${ings.length
+      ? `<div class="tally">${ings.map(i => `<div><span>${esc(i.name)}</span><span class="amt">${esc(round2(i.qty))}${i.unit ? ' '+esc(i.unit) : ''}</span></div>`).join('')}</div>`
+      : '<div class="empty">No ingredients saved for this food yet.</div>'}`,
+    [
+      { label:'Take off plan', warn:true, go:() => {
+        state.meals = state.meals.filter(m => String(m.id) !== String(meal.id));
+        dropAlertsFor('meal', meal.id);
+        touch(); shut();
+        if (view === 'week') drawBoard(); else drawMonth();
+        toast('Taken off the plan');
+      }},
+      { label:'Full nutrition', go:() => foodFactSheet(food, () => mealSheet(meal)) },
+      { gap:true },
+      { label:'Close', solid:true, go:shut }
+    ]);
+}
+
+
+/* ── reminders ──────────────────────────────────────────────────────── */
+const OFFSETS = [
+  { kind:'day', ms:864e5, lead:'Tomorrow' },
+  { kind:'30m', ms:18e5,  lead:'In 30 minutes' }
+];
+const CATCHUP = 12*3600e3;   // how far back a missed reminder still surfaces
+const KINDMAP = { event:'ev', task:'tk', meal:'ml', weekly:'wk' };
+
+function clearFired(type, id){
+  for (const k of Object.keys(state.fired)) if (k.startsWith(`${type}:${id}:`)) delete state.fired[k];
+}
+
+function dueList(){
+  const out = [];
+  for (const ev of state.events)
+    out.push({ type:'event', id:ev.id, at:ev.startAt, title:ev.title, sub:ev.notes || '', route:{ v:'month' } });
+  for (const t of state.tasks)
+    if (!t.done && t.dueAt)
+      out.push({ type:'task', id:t.id, at:t.dueAt, title:t.title, sub:t.notes || '', route:{ v:'tasks' } });
+  for (const m of state.meals){
+    const food = state.foods.find(f => f.id === m.foodId); if (!food) continue;
+    const list = (food.ingredients || []).map(i => `${i.name} — ${round2(i.qty)}${i.unit ? ' '+i.unit : ''}`).join('\n');
+    out.push({
+      type:'meal', id:m.id, at:at(m.date, slotOf(m.slot).time),
+      title:`${slotOf(m.slot).label}: ${food.name}`,
+      sub: list ? `Ingredients\n${list}` : '',
+      route:{ v:'week', mealId:m.id, date:m.date }
+    });
+  }
+  return out;
+}
+
+function sweep(now = Date.now()){
+  let fresh = 0;
+
+  for (const it of dueList()){
+    if (!Number.isFinite(it.at) || it.at < now - 36e5) continue;
+    for (const off of OFFSETS){
+      const fireAt = it.at - off.ms;
+      if (fireAt > now || fireAt <= now - CATCHUP) continue;
+      const key = `${it.type}:${it.id}:${off.kind}`;
+      if (state.fired[key]) continue;
+      state.fired[key] = now;
+      addAlert({ kind:it.type, lead:off.lead, title:it.title, sub:it.sub, when:it.at,
+                 route:it.route, ref:{ type:it.type, id:it.id } });
+      fresh++;
+    }
+  }
+
+  // Sunday morning: the week's menu and everything to buy
+  const d = new Date(now);
+  if (d.getDay() === 0 && d.getHours() >= 8){
+    const key = `weekly:${today()}`;
+    if (!state.fired[key]){
+      const days = Array.from({length:7}, (_,i) => shift(sunday(today()), i));
+      const planned = state.meals.filter(m => days.includes(m.date));
+      const list = combine(planned.map(m => m.foodId));
+      state.fired[key] = now;
+      addAlert({
+        kind:'weekly', lead:'This week',
+        title: planned.length
+          ? `${planned.length} meal${planned.length === 1 ? '' : 's'} planned — ${list.length} thing${list.length === 1 ? '' : 's'} to buy`
+          : 'Nothing planned for this week yet',
+        sub: list.length ? list.slice(0,6).map(g => `${g.name} — ${g.amount}`).join('\n') +
+                           (list.length > 6 ? `\n+${list.length-6} more` : '')
+                         : 'Open the meal plan to fill in the week.',
+        when: now, route:{ v:'shop' }
+      });
+      fresh++;
+    }
+  }
+
+  const cutoff = now - 30*864e5;
+  for (const k of Object.keys(state.fired)) if (state.fired[k] < cutoff) delete state.fired[k];
+
+  if (fresh){ touch(); }
+  drawBell();
+  return fresh;
+}
+
+function addAlert(a){
+  const alert = { id:uid(), firedAt:Date.now(), read:false, ...a };
+  state.alerts.unshift(alert);
+  if (state.alerts.length > 60) state.alerts.length = 60;
+  showCard(alert);
+  ping(alert);
+  return alert;
+}
+
+function showCard(a){
+  const stack = $('#alertStack');
+  const card = document.createElement('div');
+  card.className = 'alertcard ' + (KINDMAP[a.kind] || 'ev');
+  if (a.ref) card.dataset.ref = `${a.ref.type}:${a.ref.id}`;
+  card.innerHTML = `
+    <div class="top"><span class="lead">${esc(a.lead)}</span>
+      <button class="x" aria-label="Dismiss">×</button></div>
+    <div class="head">${esc(a.title)}</div>
+    ${a.sub ? `<div class="sub">${esc(a.sub)}</div>` : ''}`;
+  card.querySelector('.x').onclick = e => { e.stopPropagation(); card.remove(); };
+  card.onclick = () => { card.remove(); openAlert(a); };
+  stack.prepend(card);
+  while (stack.children.length > 4) stack.lastElementChild.remove();
+  setTimeout(() => card.remove(), 30000);
+}
+
+function ping(a){
+  if (!state.desktop) return;
+  try {
+    if (typeof Notification === 'undefined' || Notification.permission !== 'granted') return;
+    const n = new Notification(`${a.lead}: ${a.title}`, { body:a.sub || '', tag:a.id });
+    n.onclick = () => { try { window.focus(); } catch {} openAlert(a); };
+  } catch {}
+}
+
+async function askDesktop(on){
+  if (!on){ state.desktop = false; touch(); return false; }
+  try {
+    if (typeof Notification === 'undefined'){
+      toast('This browser will not allow desktop pop-ups here — in-app reminders still work');
+      return false;
+    }
+    let perm = Notification.permission;
+    if (perm === 'default') perm = await Notification.requestPermission();
+    if (perm === 'granted'){ state.desktop = true; touch(); toast('Desktop pop-ups are on'); return true; }
+    toast('Your browser is blocking notifications — allow them in site settings');
+  } catch {
+    toast('Desktop pop-ups are not available here — in-app reminders still work');
+  }
+  return false;
+}
+
+function openAlert(a){
+  a.read = true; touch(); drawBell(); shut();
+  const r = a.route || { v:'month' };
+  if (r.date) weekStart = sunday(r.date);
+  go(r.v || 'month');
+  if (r.mealId){
+    const meal = state.meals.find(m => m.id === r.mealId);
+    if (meal) setTimeout(() => mealSheet(meal), 60);
+  }
+}
+
+/** A reminder for something you deleted is just clutter — drop it. */
+function dropAlertsFor(type, id){
+  const before = state.alerts.length;
+  state.alerts = state.alerts.filter(a => !(a.ref && a.ref.type === type && String(a.ref.id) === String(id)));
+  $$('#alertStack .alertcard').forEach(c => { if (c.dataset.ref === `${type}:${id}`) c.remove(); });
+  clearFired(type, id);
+  if (state.alerts.length !== before) drawBell();
+}
+
+/** Catches anything deleted before this rule existed, or while the page was shut. */
+function pruneAlerts(){
+  const foodName = id => { const f = state.foods.find(x => String(x.id) === String(id)); return f ? f.name : null; };
+  const alive = a => {
+    if (a.ref){
+      const { type, id } = a.ref;
+      if (type === 'task')  return state.tasks.some(t => String(t.id) === String(id));
+      if (type === 'event') return state.events.some(e => String(e.id) === String(id));
+      if (type === 'meal')  return state.meals.some(m => String(m.id) === String(id));
+      return true;
+    }
+    // Reminders saved before this rule existed carry no reference — match on the title instead.
+    if (a.kind === 'task')  return state.tasks.some(t => t.title === a.title);
+    if (a.kind === 'event') return state.events.some(e => e.title === a.title);
+    if (a.kind === 'meal'){
+      const dish = String(a.title).split(': ').slice(1).join(': ');
+      return state.meals.some(m => foodName(m.foodId) === dish);
+    }
+    return true;                                   // the weekly summary has no single target
+  };
+  const before = state.alerts.length;
+  state.alerts = state.alerts.filter(alive);
+  const dropped = before - state.alerts.length;
+  if (dropped){
+    $$('#alertStack .alertcard').forEach(c => {
+      const r = c.dataset.ref;
+      if (r && !state.alerts.some(a => a.ref && `${a.ref.type}:${a.ref.id}` === r)) c.remove();
+    });
+    touch();
+  }
+  return dropped;
+}
+
+function drawBell(){
+  pruneAlerts();
+  const n = state.alerts.filter(a => !a.read).length;
+  const b = $('#bellCount');
+  b.textContent = n > 99 ? '99+' : n;
+  b.classList.toggle('zero', n === 0);
+}
+
+$('#bellBtn').onclick = bellSheet;
+
+function bellSheet(){
+  const rows = state.alerts.length
+    ? `<div class="feed">${state.alerts.map(a => `
+        <div class="item" data-id="${a.id}">
+          <i class="mark ${a.read ? 'read' : ''}"></i>
+          <div style="min-width:0">
+            <div class="head">${esc(a.lead)} · ${esc(a.title)}</div>
+            <div class="meta">${esc(stamp(a.firedAt))}</div>
+            ${a.sub ? `<div class="sub">${esc(a.sub)}</div>` : ''}
+          </div>
+        </div>`).join('')}</div>`
+    : '<div class="empty">No reminders yet. They appear here 1 day and 30 minutes before anything you have planned.</div>';
+
+  sheet('Reminders', `
+    <label class="switchrow">
+      <input type="checkbox" id="deskToggle" ${state.desktop ? 'checked' : ''}>
+      <span><b>Also pop up outside this tab.</b><br>
+      Reminders always appear here. Turn this on and your browser will also show them
+      on your desktop while the page is open.</span>
+    </label>
+    ${rows}`,
+    [
+      { label:'Mark all read', go:() => { state.alerts.forEach(a => a.read = true); touch(); drawBell(); bellSheet(); } },
+      { label:'Clear', warn:true, go:() => { state.alerts = []; touch(); drawBell(); bellSheet(); } },
+      { gap:true },
+      { label:'Close', solid:true, go:shut }
+    ]);
+
+  $('#deskToggle').onchange = async e => {
+    const ok = await askDesktop(e.target.checked);
+    e.target.checked = ok;
+  };
+  $('#sheetBody').querySelectorAll('.feed .item').forEach(row => {
+    row.onclick = () => {
+      const a = state.alerts.find(x => x.id === row.dataset.id);
+      if (a) openAlert(a);
+    };
+  });
+}
+
+/* ── boot ───────────────────────────────────────────────────────────── */
+function enterBoard(){
+  $('#gate').hidden = true;
+  $('#shell').hidden = false;
+  $('#whoName').textContent = state.profile.name || 'Your board';
+  $('#whoMail').textContent = state.profile.email || '';
+  $('#lockBtn').textContent = lockKey ? 'Lock board' : 'Add a passcode';
+  $('#lockBtn').hidden = !lockKey && !canLock();
+  setSync(state.updatedAt ? 'ok' : '', state.updatedAt ? (lockKey ? 'Saved, locked' : 'Saved') : 'Nothing saved yet');
+  $('#tDate').value = today();
+  fillFilters();
+  resetFoodForm();
+  go('month');
+  drawBell();
+  drawCartBadge();
+  sweep();
+  if (!enterBoard.ticking){ enterBoard.ticking = true; setInterval(sweep, 30000); }
+}
+
+/* ── sign in ────────────────────────────────────────────────────────── */
+let pending = null;          // the encrypted envelope waiting on a passcode
+let mode = 'new';            // 'new' | 'unlock'
+
+function gateError(msg){
+  const box = $('#gateErr');
+  if (!msg){ box.hidden = true; return; }
+  box.textContent = msg; box.hidden = false;
+}
+
+function showNew(){
+  mode = 'new';
+  $('#gateNew').hidden = false; $('#gateBack').hidden = true; $('#gateReset').hidden = true;
+  $('#gateTitle').textContent = 'Set up your board';
+  $('#gateBlurb').textContent = 'Your calendar, tasks and meal plan — all in one place.';
+  $('#gateGo').textContent = 'Open my board';
+  $('#gateFine').innerHTML = '<b>This page is already private to your Claude account</b> — nobody else can ' +
+    'open the link unless you share it. A passcode adds a second lock on the saved data itself.';
+  $('#lockBox').hidden = !canLock();
+  gateError('');
+  setTimeout(() => $('#gName').focus(), 40);
+}
+
+function showUnlock(env){
+  mode = 'unlock'; pending = env;
+  $('#gateNew').hidden = true; $('#gateBack').hidden = false;
+  $('#gateTitle').textContent = env.who ? `Welcome back, ${env.who}` : 'Welcome back';
+  $('#gateBlurb').textContent = 'Your board is locked. Enter your passcode to open it.';
+  $('#gateGo').textContent = 'Unlock';
+  $('#gateFine').innerHTML = 'Everything you saved is scrambled on disk. Only your passcode unscrambles it.';
+  const reset = $('#gateReset');
+  reset.hidden = false;
+  reset.innerHTML = 'Forgotten it? There is no reset — the board can only be <a href="#" id="wipeLink">cleared and started over</a>.';
+  $('#wipeLink').onclick = e => {
+    e.preventDefault();
+    if (!confirm('Clear this board and start over? Everything saved on it is lost for good.')) return;
+    try { localStorage.removeItem(KEY); } catch {}
+    lockKey = null; lockSalt = null; pending = null;
+    state = normalise({});
+    showNew();
+  };
+  gateError('');
+  setTimeout(() => $('#gUnlock').focus(), 40);
+}
+
+$('#gateForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const go = $('#gateGo');
+  go.disabled = true;
+  try {
+    if (mode === 'unlock'){
+      const pass = $('#gUnlock').value;
+      if (!pass) return gateError('Enter your passcode.');
+      try { state = await unwrap(pending, pass); }
+      catch { $('#gUnlock').value = ''; return gateError('That passcode does not match. Try again.'); }
+      enterBoard();
+      return;
+    }
+
+    const name = $('#gName').value.trim();
+    const email = $('#gEmail').value.trim();
+    if (!name) return gateError('What should the board call you?');
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return gateError('That email address does not look right.');
+
+    const pass = $('#gPass').value, pass2 = $('#gPass2').value;
+    if (pass || pass2){
+      if (pass.length < 4) return gateError('A passcode needs at least 4 characters.');
+      if (pass !== pass2) return gateError('The two passcodes do not match.');
+      lockSalt = crypto.getRandomValues(new Uint8Array(16));
+      lockKey = await deriveKey(pass, lockSalt);
+    }
+    state.profile = { name, email, createdAt: state.profile.createdAt || Date.now() };
+    touch();
+    enterBoard();
+  } finally { go.disabled = false; }
+});
+
+$('#lockBtn').onclick = async () => {
+  if (lockKey){
+    await saveLocal();
+    lockKey = null; lockSalt = null;
+    location.reload();
+    return;
+  }
+  sheet('Add a passcode', `
+    <p style="font-size:13.5px;color:var(--ink-2);margin-bottom:14px">
+      From now on your board is scrambled on disk, and only this passcode unscrambles it.
+      There is no reset — if you forget it, the board is gone.</p>
+    <label class="f"><span>Passcode</span>
+      <input id="np1" type="password" autocomplete="new-password" placeholder="At least 4 characters"></label>
+    <label class="f"><span>Type it again</span>
+      <input id="np2" type="password" autocomplete="new-password"></label>
+    <p class="err" id="npErr" hidden></p>`,
+    [
+      { gap:true },
+      { label:'Cancel', go:shut },
+      { label:'Turn on', solid:true, go: async () => {
+        const a = $('#np1').value, b = $('#np2').value, err = $('#npErr');
+        const fail = m => { err.textContent = m; err.hidden = false; };
+        if (a.length < 4) return fail('A passcode needs at least 4 characters.');
+        if (a !== b) return fail('The two passcodes do not match.');
+        lockSalt = crypto.getRandomValues(new Uint8Array(16));
+        lockKey = await deriveKey(a, lockSalt);
+        touch();
+        $('#lockBtn').textContent = 'Lock board';
+        shut(); toast('Passcode on — your board is encrypted now');
+      }}
+    ]);
+  setTimeout(() => $('#np1')?.focus(), 40);
+};
+
+/* ── boot ───────────────────────────────────────────────────────────── */
+(async () => {
+  const env = newest(readLocal(), await readCloud());
+  if (!env){ showNew(); return; }
+  if (env.enc){
+    if (!canLock()){ showNew(); gateError('This browser cannot unlock the board. Try the browser you set it up in.'); return; }
+    showUnlock(env);
+    return;
+  }
+  state = normalise(env);
+  if (!state.profile || !state.profile.name){ showNew(); return; }
+  enterBoard();
+})();
+
+})();
+</script>

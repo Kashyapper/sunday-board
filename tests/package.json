@@ -1,0 +1,18 @@
+{
+  "name": "sunday-board-tests",
+  "private": true,
+  "description": "Browser tests for Sunday Board, driven by Playwright.",
+  "scripts": {
+    "serve": "python3 -m http.server 8099 --directory ..",
+    "gate": "node gatetest.js",
+    "reminders": "node notiftest.js",
+    "deletes": "node deltest.js",
+    "ghosts": "node deltest2.js",
+    "legacy": "node legacytest.js",
+    "library": "node libtest.js",
+    "cart": "node carttest.js",
+    "planner": "node arttest.js",
+    "names": "node nametest.js"
+  },
+  "devDependencies": { "playwright": "^1.56.0" }
+}

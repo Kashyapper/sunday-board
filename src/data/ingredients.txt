@@ -1,0 +1,1896 @@
+Toor dal (arhar, split)|Dals & pulses|343|22.3|62.8|15.5|2.8|1.7|0.4|17|1392|130|5.2|0|cup=200,tbsp=12|in
+Moong dal (split, skinned)|Dals & pulses|347|24.5|59|16.3|6.6|1.2|0.3|15|1246|132|4.5|4.8|cup=200,tbsp=12|in
+Moong whole (green gram)|Dals & pulses|347|23.9|62.6|16.3|6.6|1.2|0.3|15|1246|132|6.7|4.8|cup=200,tbsp=12|in
+Urad dal (black gram, split)|Dals & pulses|341|25.2|58.9|18.3|1.8|1.6|0.3|38|983|138|7.6|0|cup=200,tbsp=12|in
+Urad whole (black gram)|Dals & pulses|341|25.2|58.9|18.3|1.8|1.6|0.3|38|983|154|7.6|0|cup=200,tbsp=12|in
+Chana dal (split bengal gram)|Dals & pulses|364|20.8|59.8|12.2|10.7|5.3|0.5|24|875|56|5.3|4|cup=200,tbsp=12|in
+Kabuli chana (chickpea, dry)|Dals & pulses|364|19.3|60.7|17.4|10.7|6|0.6|24|875|105|6.2|4|cup=200,tbsp=12|in me w
+Kala chana (black chickpea)|Dals & pulses|360|20.5|61|12.2|10|5.3|0.5|24|875|202|9.5|4|cup=200,tbsp=12|in
+Masoor dal (red lentil)|Dals & pulses|352|24.6|63.1|10.7|2|1.1|0.2|6|955|35|7.5|4.5|cup=200,tbsp=12|in me
+Sabut masoor (brown lentil)|Dals & pulses|353|25.8|60|30.5|2|1.1|0.2|6|955|56|7.5|4.5|cup=192,tbsp=12|in
+Puy / French green lentil|Dals & pulses|352|25.8|60.1|30.5|2|1.1|0.2|6|955|56|7.5|4.5|cup=192|fr
+Beluga black lentil|Dals & pulses|352|25|60|11|2|1.1|0.2|6|955|56|7.5|4.5|cup=192|w
+Rajma (kidney bean, dry)|Dals & pulses|333|23.6|60|24.9|2.1|0.8|0.1|12|1406|143|8.2|4.5|cup=190,tbsp=12|in mx
+Chitra rajma (speckled kidney bean)|Dals & pulses|333|23.6|60|24.9|2.1|0.8|0.1|12|1406|143|8.2|4.5|cup=190|in
+Lobia (black-eyed pea)|Dals & pulses|336|23.5|60|10.6|6.9|1.3|0.3|16|1112|110|8.3|1.5|cup=190,tbsp=12|in us af
+Moth bean (matki)|Dals & pulses|343|22.9|61.5|16|2|1.6|0.2|30|1191|150|10.8|4|cup=195,tbsp=12|in
+Horse gram (kulthi)|Dals & pulses|321|22|57|5.3|2|0.5|0.1|30|800|287|7|1|cup=195,tbsp=12|in
+Soybean (dry)|Dals & pulses|446|36.5|30.2|9.3|7.3|19.9|2.9|2|1797|277|15.7|6|cup=186,tbsp=12|cn jp w
+Black soybean|Dals & pulses|446|36.5|30.2|9.3|7.3|19.9|2.9|2|1797|277|15.7|6|cup=186|jp cn
+Dried green peas|Dals & pulses|341|24.6|60.4|25.5|8|1.2|0.2|15|981|55|4.4|2|cup=196,tbsp=12|w uk
+Yellow split pea|Dals & pulses|341|24.6|60.4|25.5|8|1.2|0.2|15|981|55|4.4|2|cup=196|w uk
+Black bean (turtle bean)|Dals & pulses|341|21.6|62.4|15.5|2.1|1.4|0.4|5|1483|123|5.02|0|cup=194,tbsp=12|mx br
+Pinto bean|Dals & pulses|347|21.4|62.5|15.5|2.1|1.2|0.2|12|1393|113|5.07|6.3|cup=193,tbsp=12|mx us
+Navy bean|Dals & pulses|337|22.3|60.8|24.4|3.9|1.5|0.2|5|1185|147|5.49|1.7|cup=193|us uk
+Cannellini bean|Dals & pulses|333|23.4|60.3|24.9|2.1|0.9|0.2|16|1406|240|10.4|4.5|cup=190|it
+Borlotti bean|Dals & pulses|335|23|60|24.7|2.2|1.2|0.2|13|1332|150|5.5|4|cup=190|it
+Butter bean / lima bean|Dals & pulses|338|21.5|63.4|19|8.5|0.7|0.2|18|1724|81|7.51|0|cup=178|us uk af
+Fava bean (broad bean, dry)|Dals & pulses|341|26.1|58.3|25|5.7|1.5|0.3|13|1062|103|6.7|1.4|cup=150|me gr it
+Adzuki bean|Dals & pulses|329|19.9|62.9|12.7|0|0.5|0.2|5|1254|66|4.98|0|cup=197|jp cn
+Mung bean, yellow (dhuli)|Dals & pulses|347|24.5|59|16.3|6.6|1.2|0.3|15|1246|132|4.5|4.8|cup=200|in
+Great northern bean|Dals & pulses|339|21.9|62.4|20.2|2.2|1.1|0.3|14|1387|175|5.47|4.8|cup=183|us
+Cranberry bean|Dals & pulses|335|23|60.1|24.7|2.2|1.2|0.2|6|1332|127|5.03|0|cup=195|it us
+Flageolet bean|Dals & pulses|333|22|60|24|2|1|0.2|10|1400|140|7|4|cup=190|fr
+Mungo / urad, skinned|Dals & pulses|341|25.2|58.9|18.3|1.8|1.6|0.3|38|983|138|7.6|0|cup=200|in
+Bambara groundnut|Dals & pulses|367|18.6|60|5.5|0|6.1|1.4|10|1200|60|4.9|0|cup=190|af
+Pigeon pea (whole, dry)|Dals & pulses|343|21.7|62.8|15|0|1.5|0.3|17|1392|130|5.2|0|cup=200|in af ca
+Winged bean (dry)|Dals & pulses|409|29.6|41.7|25.9|0|16.3|2.3|38|977|440|13.4|0|cup=182|th id
+Jack bean|Dals & pulses|335|23.8|59.8|8|0|2.4|0.5|20|1180|130|7|0|cup=190|in af
+Cowpea, red|Dals & pulses|336|23.5|60|10.6|6.9|1.3|0.3|16|1112|110|8.3|1.5|cup=190|af in
+Tepary bean|Dals & pulses|340|22|61|16|2|1.2|0.2|10|1300|140|7|0|cup=190|mx us
+Marrowfat pea|Dals & pulses|341|24.6|60.4|25.5|8|1.2|0.2|15|981|55|4.4|2|cup=196|uk
+Chana (whole bengal gram)|Dals & pulses|360|20.5|61|12.2|10|5.3|0.5|24|875|202|9.5|4|cup=200|in
+Green moong split with skin|Dals & pulses|347|23.9|62.6|16.3|6.6|1.2|0.3|15|1246|132|6.7|4.8|cup=200|in
+Peanut (dry, in shell)|Dals & pulses|567|25.8|16.1|8.5|4.7|49.2|6.3|18|705|92|4.58|0|cup=146|in w
+Lupin bean|Dals & pulses|371|36.2|40.4|18.9|0|9.7|1.2|15|1013|176|4.36|4.8|cup=180|it me
+Chickpea flour (besan)|Dals & pulses|387|22.4|57.8|10.8|10.8|6.7|0.7|64|846|45|4.9|0|cup=92,tbsp=6|in me
+Mung bean starch|Dals & pulses|350|0.2|88|0.5|0|0.1|0|5|10|10|0.5|0|cup=130|cn vn
+Red kidney bean, small|Dals & pulses|333|23.6|60|24.9|2.1|0.8|0.1|12|1406|143|8.2|4.5|cup=190|ca us
+Scarlet runner bean|Dals & pulses|340|22.5|60.5|24|2|1.2|0.2|12|1400|140|7.5|4|cup=190|uk
+Hyacinth bean (sem)|Dals & pulses|344|23.9|60.7|25.6|0|1.7|0.3|22|1235|130|5.1|0|cup=190|in
+Rice bean|Dals & pulses|337|20.9|61.2|15|0|1.4|0.3|18|1200|110|6|0|cup=190|in cn
+Velvet bean (kaunch)|Dals & pulses|330|24|58|10|0|6|1.2|20|1200|130|7|0|cup=190|in
+Grass pea (khesari)|Dals & pulses|345|28|58|14|0|0.6|0.1|30|900|100|6|0|cup=195|in
+Split urad with skin|Dals & pulses|341|25.2|58.9|18.3|1.8|1.6|0.3|38|983|154|7.6|0|cup=200|in
+Green pea (dried, whole)|Dals & pulses|341|24.6|60.4|25.5|8|1.2|0.2|15|981|55|4.4|2|cup=196|w
+Baked beans (canned, in sauce)|Dals & pulses|94|4.8|16.9|4.1|5.4|0.5|0.1|422|296|48|1.19|3|cup=254|uk us
+Refried beans (canned)|Dals & pulses|90|5.3|14.6|5.1|0.5|1.3|0.5|375|380|43|1.5|3.5|cup=238|mx
+Chickpea, canned & drained|Dals & pulses|139|7.1|22.5|6.4|3.9|2.6|0.3|241|172|45|1.7|1.5|cup=240|me w
+Kidney bean, canned & drained|Dals & pulses|124|7.5|22.8|6.4|0.3|0.5|0.1|264|291|50|1.9|1.2|cup=256|w
+Black bean, canned & drained|Dals & pulses|91|6|16.6|6.9|0.3|0.4|0.1|265|306|46|1.75|0|cup=240|mx us
+Onion|Vegetables|40|1.1|9.3|1.7|4.2|0.1|0|4|146|23|0.21|7.4|pc=110,cup=160|w
+Red onion|Vegetables|40|1.1|9.3|1.7|4.2|0.1|0|4|146|23|0.21|7.4|pc=110,cup=160|w in
+Shallot|Vegetables|72|2.5|16.8|3.2|7.9|0.1|0|12|334|37|1.2|8|pc=25|fr th vn
+Spring onion / scallion|Vegetables|32|1.8|7.3|2.6|2.3|0.2|0|16|276|72|1.48|18.8|bunch=100,cup=100|cn w
+Leek|Vegetables|61|1.5|14.2|1.8|3.9|0.3|0|20|180|59|2.1|12|pc=89|fr uk
+Garlic|Vegetables|149|6.4|33.1|2.1|1|0.5|0.1|17|401|181|1.7|31.2|clove=3,tbsp=8,tsp=2.8|w in
+Green garlic|Vegetables|41|1.8|8.8|2.5|2|0.3|0|17|300|60|1.2|30|bunch=100|in cn
+Black garlic|Vegetables|170|6|38|2|20|0.6|0.1|20|450|180|2|5|clove=4|kr jp
+Chives|Vegetables|30|3.3|4.4|2.5|1.9|0.7|0.1|3|296|92|1.6|58.1|tbsp=3|fr w
+Ginger (fresh)|Vegetables|80|1.8|17.8|2|1.7|0.8|0.2|13|415|16|0.6|5|tbsp=6,tsp=2,pc=15|in cn w
+Galangal|Vegetables|71|1|15|2|0|0.5|0.1|8|400|18|0.5|5|tbsp=6|th id
+Turmeric root (fresh)|Vegetables|82|1.9|17|4|0|1|0.3|20|900|60|8|8|pc=10|in
+Horseradish root|Vegetables|48|1.2|11.3|3.3|8|0.7|0.1|420|246|56|0.42|24.9|tbsp=15|de ru
+Wasabi root|Vegetables|109|4.8|23.5|7.8|0|0.6|0.2|17|568|128|1.03|41.9|tsp=5|jp
+Tomato|Vegetables|18|0.9|3.9|1.2|2.6|0.2|0|5|237|10|0.27|13.7|pc=100,cup=180|w in it
+Cherry tomato|Vegetables|18|0.9|3.9|1.2|2.6|0.2|0|5|237|10|0.27|13.7|pc=17,cup=149|it w
+Roma / plum tomato|Vegetables|18|0.9|3.9|1.2|2.6|0.2|0|5|237|10|0.27|13.7|pc=62|it
+Green tomato|Vegetables|23|1.2|5.1|1.1|4|0.2|0|13|204|13|0.51|23.4|pc=123|us mx
+Tomatillo|Vegetables|32|1|5.8|1.9|3.9|1|0.1|1|268|7|0.62|11.7|pc=34|mx
+Sun-dried tomato|Vegetables|258|14.1|55.8|12.3|37.6|3|0.4|2095|3427|110|9.09|39.2|cup=54|it
+Tomato paste|Vegetables|82|4.3|18.9|4.1|12.2|0.5|0.1|59|1014|36|2.98|21.9|tbsp=16|it w
+Tomato passata|Vegetables|32|1.6|7|1.5|4.5|0.2|0|11|400|15|0.9|10|cup=245|it
+Potato|Vegetables|77|2|17.5|2.2|0.8|0.1|0|6|425|12|0.81|19.7|pc=150,cup=150|w in
+Baby potato|Vegetables|77|2|17.5|2.2|0.8|0.1|0|6|425|12|0.81|19.7|pc=35|in w
+Sweet potato (orange)|Vegetables|86|1.6|20.1|3|4.2|0.1|0|55|337|30|0.61|2.4|pc=130,cup=133|w in us
+Purple sweet potato|Vegetables|86|1.6|20.1|3|4.2|0.1|0|55|337|30|0.61|2.4|pc=130|jp
+Yam (jimikand / suran)|Vegetables|118|1.5|27.9|4.1|0.5|0.2|0|9|816|17|0.54|17.1|cup=150|in af
+Taro / colocasia (arbi)|Vegetables|112|1.5|26.5|4.1|0.4|0.2|0|11|591|43|0.55|4.5|pc=60,cup=132|in cn ph
+Cassava (tapioca root)|Vegetables|160|1.4|38.1|1.8|1.7|0.3|0.1|14|271|16|0.27|20.6|cup=206|af br th
+Jicama|Vegetables|38|0.7|8.8|4.9|1.8|0.1|0|4|150|12|0.6|20.2|cup=130|mx
+Water chestnut|Vegetables|97|1.4|23.9|3|4.8|0.1|0|14|584|11|0.06|4|cup=124|cn in
+Lotus root|Vegetables|74|2.6|17.2|4.9|0|0.1|0|40|556|45|1.16|44|cup=120|in cn jp
+Bamboo shoot|Vegetables|27|2.6|5.2|2.2|3|0.3|0.1|4|533|13|0.5|4|cup=151|cn th jp
+Carrot|Vegetables|41|0.9|9.6|2.8|4.7|0.2|0|69|320|33|0.3|5.9|pc=61,cup=128|w in
+Black carrot|Vegetables|41|0.9|9.6|2.8|4.7|0.2|0|69|320|33|0.3|5.9|pc=61|in tr
+Parsnip|Vegetables|75|1.2|18|4.9|4.8|0.3|0.1|10|375|36|0.59|17|pc=133|uk fr
+Beetroot|Vegetables|43|1.6|9.6|2.8|6.8|0.2|0|78|325|16|0.8|4.9|pc=82,cup=136|w in ru
+Golden beet|Vegetables|43|1.6|9.6|2.8|6.8|0.2|0|78|325|16|0.8|4.9|pc=82|us
+Radish (mooli / daikon)|Vegetables|18|0.6|4.1|1.6|2.5|0.1|0|21|227|27|0.4|22|pc=340,cup=116|in jp cn
+Red radish|Vegetables|16|0.7|3.4|1.6|1.9|0.1|0|39|233|25|0.34|14.8|pc=4.5,cup=116|w
+Turnip (shalgam)|Vegetables|28|0.9|6.4|1.8|3.8|0.1|0|67|191|30|0.3|21|pc=120,cup=130|in uk
+Rutabaga / swede|Vegetables|37|1.1|8.6|2.3|4.5|0.2|0|12|305|43|0.44|25|pc=386|uk sc
+Kohlrabi|Vegetables|27|1.7|6.2|3.6|2.6|0.1|0|20|350|24|0.4|62|pc=140|in de
+Celeriac|Vegetables|42|1.5|9.2|1.8|1.6|0.3|0.1|100|300|43|0.7|8|pc=500|fr de
+Salsify|Vegetables|82|3.3|18.6|3.3|0|0.2|0|20|380|60|0.7|8|pc=100|fr
+Burdock root (gobo)|Vegetables|72|1.5|17.3|3.3|2.9|0.2|0|5|308|41|0.8|3|pc=100|jp kr
+Cauliflower|Vegetables|25|1.9|5|2|1.9|0.3|0.1|30|299|22|0.42|48.2|cup=107,pc=600|w in
+Romanesco|Vegetables|25|1.9|5|2|1.9|0.3|0.1|30|299|22|0.42|48.2|pc=500|it
+Broccoli|Vegetables|34|2.8|6.6|2.6|1.7|0.4|0|33|316|47|0.73|89.2|cup=91|w it
+Broccolini|Vegetables|35|3.1|6|3.1|1.5|0.4|0.1|30|320|60|0.9|68|bunch=150|it us
+Chinese broccoli (gai lan)|Vegetables|22|1.2|4.7|2.6|0|0.8|0.1|7|230|105|0.6|30|bunch=200|cn
+Cabbage (green)|Vegetables|25|1.3|5.8|2.5|3.2|0.1|0|18|170|40|0.47|36.6|cup=89,pc=900|w in
+Red cabbage|Vegetables|31|1.4|7.4|2.1|3.8|0.2|0|27|243|45|0.8|57|cup=89|de w
+Savoy cabbage|Vegetables|27|2|6.1|3.1|2.3|0.1|0|28|230|35|0.4|31|cup=70|fr
+Napa cabbage|Vegetables|16|1.2|3.2|1.2|1.2|0.2|0|9|238|77|0.31|27|cup=76|cn kr
+Bok choy / pak choi|Vegetables|13|1.5|2.2|1|1.2|0.2|0|65|252|105|0.8|45|cup=70|cn
+Brussels sprouts|Vegetables|43|3.4|8.9|3.8|2.2|0.3|0.1|25|389|42|1.4|85|cup=88|uk w
+Kale|Vegetables|49|4.3|8.8|3.6|2.3|0.9|0.1|38|491|150|1.5|120|cup=67|us uk
+Cavolo nero (Tuscan kale)|Vegetables|49|4.3|8.8|3.6|2.3|0.9|0.1|38|491|150|1.5|120|bunch=200|it
+Collard greens|Vegetables|32|3|5.4|4|0.5|0.6|0.1|17|213|232|0.47|35.3|cup=36|us af
+Mustard greens (sarson)|Vegetables|27|2.9|4.7|3.2|1.3|0.4|0|20|384|115|1.64|70|cup=56,bunch=340|in cn
+Turnip greens|Vegetables|32|1.5|7.1|3.2|0.8|0.3|0.1|40|296|190|1.1|60|cup=55|us
+Spinach (palak)|Vegetables|23|2.9|3.6|2.2|0.4|0.4|0.1|79|558|99|2.71|28.1|cup=30,bunch=340|w in
+Water spinach (kangkung)|Vegetables|19|2.6|3.1|2.1|0|0.2|0|113|312|77|1.67|55|bunch=200|th vn ph
+Malabar spinach (poi)|Vegetables|19|1.8|3.4|2.1|0|0.3|0|24|510|109|1.2|102|bunch=200|in cn
+Amaranth leaves (chaulai)|Vegetables|23|2.5|4|2.2|0|0.3|0.1|20|611|215|2.32|43.3|cup=28,bunch=300|in af cn
+Fenugreek leaves (methi)|Vegetables|49|4.4|6|1.1|0|0.9|0.2|76|51|395|1.9|52|cup=45,bunch=250|in
+Colocasia leaves (arbi patta)|Vegetables|42|5|6.7|3.7|3|0.7|0.2|3|648|107|2.25|52|bunch=200|in ph
+Bathua (chenopodium)|Vegetables|43|4.2|7.3|4|0|0.8|0.1|43|452|309|1.2|80|bunch=250|in
+Moringa leaves|Vegetables|64|9.4|8.3|2|0|1.4|0.2|9|337|185|4|51.7|cup=21,bunch=200|in af ph
+Curry leaves|Vegetables|108|6.1|18.7|6.4|0|1|0.2|20|500|830|0.9|4|bunch=10|in
+Swiss chard|Vegetables|19|1.8|3.7|1.6|1.1|0.2|0|213|379|51|1.8|30|cup=36|it fr
+Arugula / rocket|Vegetables|25|2.6|3.7|1.6|2.1|0.7|0.1|27|369|160|1.46|15|cup=20|it
+Watercress|Vegetables|11|2.3|1.3|0.5|0.2|0.1|0|41|330|120|0.2|43|cup=34|uk cn
+Lettuce (iceberg)|Vegetables|14|0.9|3|1.2|2|0.1|0|10|141|18|0.41|2.8|cup=72,pc=539|w us
+Romaine lettuce|Vegetables|17|1.2|3.3|2.1|1.2|0.3|0|8|247|33|0.97|4|cup=47|it us
+Butterhead lettuce|Vegetables|13|1.4|2.2|1.1|0.9|0.2|0|5|238|35|1.24|3.7|pc=163|fr
+Endive|Vegetables|17|1.3|3.4|3.1|0.3|0.2|0|22|314|52|0.83|6.5|pc=50|fr be
+Radicchio|Vegetables|23|1.4|4.5|0.9|0.6|0.3|0.1|22|302|19|0.57|8|pc=200|it
+Chicory greens|Vegetables|23|1.7|4.7|4|0.7|0.3|0.1|45|420|100|0.9|24|cup=29|it fr
+Sorrel|Vegetables|22|2|3.2|2.9|0|0.7|0.1|4|390|44|2.4|48|cup=133|fr ru
+Perilla leaf (shiso / kkaennip)|Vegetables|37|3.9|7.5|6|0|0.5|0.1|1|500|230|1.7|55|pc=2|kr jp
+Vine leaves (grape)|Vegetables|93|5.6|17.3|11|6.3|2.1|0.3|9|272|363|2.63|11|pc=3|gr tr me
+Okra (bhindi)|Vegetables|33|1.9|7.5|3.2|1.5|0.2|0|7|299|82|0.62|23|cup=100,pc=11|in af us
+Eggplant (baingan)|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|pc=250,cup=82|in it tr me
+Thai eggplant|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|pc=30|th
+Japanese eggplant|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|pc=120|jp
+Zucchini / courgette|Vegetables|17|1.2|3.1|1|2.5|0.3|0.1|8|261|16|0.37|17.9|pc=196,cup=124|it fr
+Yellow squash|Vegetables|16|1.2|3.4|1.1|2.2|0.2|0|2|262|21|0.35|17|pc=196|us
+Butternut squash|Vegetables|45|1|11.7|2|2.2|0.1|0|4|352|48|0.7|21|cup=140|us uk
+Acorn squash|Vegetables|40|0.8|10.4|1.5|0|0.1|0|3|347|33|0.7|11|pc=431|us
+Kabocha squash|Vegetables|49|1.6|12|1.2|0|0.2|0|2|350|30|0.5|15|pc=1200|jp
+Pumpkin (kaddu)|Vegetables|26|1|6.5|0.5|2.8|0.1|0|1|340|21|0.8|9|cup=116|in w
+Bottle gourd (lauki)|Vegetables|14|0.6|3.4|0.5|0|0|0|2|150|26|0.2|10|cup=116,pc=800|in cn
+Bitter gourd (karela)|Vegetables|17|1|3.7|2.8|0|0.2|0|5|296|19|0.43|84|pc=90,cup=93|in cn
+Ridge gourd (turai)|Vegetables|20|1.2|4.4|1.6|0|0.2|0|3|139|18|0.36|5|pc=150,cup=100|in
+Ash gourd (petha)|Vegetables|13|0.4|3|2.9|0|0.2|0|111|6|19|0.4|13|cup=132|in cn
+Snake gourd (chichinda)|Vegetables|18|0.5|3.3|1.2|0|0.3|0|11|140|26|0.3|10|pc=200|in
+Pointed gourd (parwal)|Vegetables|20|2|2.2|3|0|0.3|0|2|83|30|1.7|29|pc=25|in
+Tinda (apple gourd)|Vegetables|21|1.4|3.4|1|0|0.2|0|2|110|25|0.8|18|pc=60|in
+Ivy gourd (tindora)|Vegetables|18|1.2|3.1|1.6|0|0.1|0|10|150|40|1.4|1.4|pc=12|in
+Chayote|Vegetables|19|0.8|4.5|1.7|1.7|0.1|0|2|125|17|0.34|7.7|pc=203|mx ca
+Winter melon|Vegetables|13|0.4|3|2.9|0|0.2|0|111|6|19|0.4|13|cup=132|cn
+Cucumber|Vegetables|15|0.7|3.6|0.5|1.7|0.1|0|2|147|16|0.28|2.8|pc=200,cup=104|w in
+Armenian cucumber|Vegetables|15|0.7|3.6|0.5|1.7|0.1|0|2|147|16|0.28|2.8|pc=300|me
+Gherkin|Vegetables|14|0.6|2.4|1|1.4|0.3|0.1|1208|23|0|0.4|1|pc=30|fr de
+Capsicum (green)|Vegetables|20|0.9|4.6|1.7|2.4|0.2|0|3|175|10|0.34|80.4|pc=119,cup=149|w in
+Red bell pepper|Vegetables|31|1|6|2.1|4.2|0.3|0.1|4|211|7|0.43|127.7|pc=119,cup=149|w it
+Yellow bell pepper|Vegetables|27|1|6.3|0.9|0|0.2|0|2|212|11|0.46|183.5|pc=119|w it
+Green chilli|Vegetables|40|1.9|8.8|1.5|5.3|0.2|0|7|340|18|1.2|143|pc=5|in th w
+Jalapeño|Vegetables|29|0.9|6.5|2.8|4.1|0.4|0|3|248|12|0.25|118.6|pc=14|mx
+Serrano chilli|Vegetables|32|1.7|6.7|3.7|3.8|0.4|0|10|305|11|0.86|44.9|pc=6|mx
+Habanero|Vegetables|40|1.9|8.8|1.5|5.3|0.4|0|7|340|18|1.2|143|pc=8|mx ca
+Bird's eye chilli|Vegetables|40|1.9|8.8|1.5|5.3|0.4|0|7|340|18|1.2|143|pc=2|th vn
+Poblano|Vegetables|20|0.9|4.6|1.7|2.4|0.2|0|3|175|10|0.34|80.4|pc=60|mx
+Padrón pepper|Vegetables|20|0.9|4.6|1.7|2.4|0.2|0|3|175|10|0.34|80.4|pc=8|es
+Banana pepper|Vegetables|27|1.7|5.4|3.4|0|0.5|0.1|13|256|14|0.46|82.7|pc=33|us it
+Shishito pepper|Vegetables|20|0.9|4.6|1.7|2.4|0.2|0|3|175|10|0.34|80.4|pc=6|jp
+Green peas (fresh)|Vegetables|81|5.4|14.5|5.1|5.7|0.4|0.1|5|244|25|1.47|40|cup=145|w in
+Snow pea|Vegetables|42|2.8|7.5|2.6|4|0.2|0|4|200|43|2.08|60|cup=98|cn
+Sugar snap pea|Vegetables|42|2.8|7.5|2.6|4|0.2|0|4|200|43|2.08|60|cup=98|w
+Edamame|Vegetables|122|11.9|9.9|5.2|2.2|5.2|0.6|6|436|63|2.27|6.1|cup=155|jp
+French bean|Vegetables|31|1.8|7|3.4|3.3|0.2|0|6|211|37|1.03|12.2|cup=110|w in
+Long bean (yardlong)|Vegetables|47|2.8|8.4|3.8|0|0.4|0.1|4|240|50|0.47|18.8|bunch=200|cn th in
+Cluster beans (guar)|Vegetables|16|3.2|10.8|3.2|0|0.4|0|6|143|130|4.5|49|cup=100|in
+Broad beans (fresh, sem)|Vegetables|72|5.6|11.7|4.2|0|0.6|0.1|50|250|50|1.5|33|cup=126|in me it
+Bean sprouts (mung)|Vegetables|30|3|5.9|1.8|4.1|0.2|0|6|149|13|0.91|13.2|cup=104|cn in
+Soybean sprouts|Vegetables|122|13.1|9.6|1.1|0|6.7|0.8|14|484|67|2.1|15.3|cup=70|kr
+Alfalfa sprouts|Vegetables|23|4|2.1|1.9|0.2|0.7|0.1|6|79|32|0.96|8.2|cup=33|us
+Sweet corn (kernels)|Vegetables|86|3.3|19|2|3.2|1.4|0.2|15|270|2|0.52|6.8|cup=145,pc=90|w us
+Baby corn|Vegetables|26|2.5|5.2|2|1.5|0.4|0.1|5|200|20|0.5|11|pc=9|cn th
+Celery|Vegetables|16|0.7|3|1.6|1.3|0.2|0|80|260|40|0.2|3.1|cup=101,pc=40|w fr
+Asparagus|Vegetables|20|2.2|3.9|2.1|1.9|0.1|0|2|202|24|2.14|5.6|cup=134,pc=16|fr it
+White asparagus|Vegetables|20|2.2|3.9|2.1|1.9|0.1|0|2|202|24|2.14|5.6|pc=20|de fr
+Artichoke|Vegetables|47|3.3|10.5|5.4|1|0.2|0|94|370|44|1.28|11.7|pc=128|it fr
+Jerusalem artichoke|Vegetables|73|2|17.4|1.6|9.6|0.01|0|4|429|14|3.4|4|cup=150|fr us
+Fennel bulb|Vegetables|31|1.2|7.3|3.1|3.9|0.2|0|52|414|49|0.73|12|pc=234|it
+Cardoon|Vegetables|17|0.7|4.1|1.6|0|0.1|0|170|400|70|0.7|2|pc=200|it
+Nopal (cactus paddle)|Vegetables|16|1.3|3.3|2.2|1.1|0.1|0|21|257|164|0.59|9.3|pc=50|mx
+Raw banana / plantain|Vegetables|122|1.3|31.9|2.3|15|0.4|0.1|4|499|3|0.6|18.4|pc=180|in ca af
+Raw jackfruit (kathal)|Vegetables|95|1.7|23.2|1.5|19.1|0.6|0.2|2|448|24|0.23|13.7|cup=165|in th
+Banana flower|Vegetables|51|1.6|9.9|5.7|0|0.6|0.1|10|553|56|1.6|11|cup=100|in th
+Banana stem|Vegetables|42|0.5|9.9|0.6|0|0.1|0|6|100|10|1.1|11|cup=100|in
+Green papaya|Vegetables|43|0.5|10.8|1.7|5.9|0.3|0.1|8|182|20|0.25|60.9|cup=145|th vn in
+Green mango (raw)|Vegetables|60|0.8|15|1.6|13.7|0.4|0.1|1|168|11|0.16|36.4|pc=200|in th
+Olives (green, brined)|Vegetables|145|1|3.8|3.3|0.5|15.3|2|1556|42|52|0.49|0|pc=4|gr it es
+Olives (black, brined)|Vegetables|115|0.8|6.3|1.6|0|10.9|1.4|735|8|88|3.3|0.9|pc=4|gr it
+Capers|Vegetables|23|2.4|4.9|3.2|0.4|0.9|0.2|2348|40|40|1.67|4.3|tbsp=9|it gr
+Pumpkin flower|Vegetables|15|1.2|3.3|0|0|0.1|0|3|173|39|0.7|28|pc=6|it mx in
+Drumstick pod (moringa)|Vegetables|37|2.1|8.5|3.2|0|0.2|0|42|461|30|0.36|141|pc=50|in af
+Elephant foot yam|Vegetables|118|1.5|27.9|4.1|0.5|0.2|0|9|816|17|0.54|17.1|cup=150|in
+Purslane|Vegetables|16|1.3|3.4|0|0.5|0.1|0|45|494|65|1.99|21|cup=43|gr tr me
+Samphire (sea bean)|Vegetables|21|1.3|3.5|1|0|0.3|0|1500|300|60|1.5|8|cup=50|uk fr
+Nettle (young leaves)|Vegetables|42|2.7|7.5|6.9|0.2|0.1|0|4|334|481|1.64|0|cup=89|uk sc
+Dandelion greens|Vegetables|45|2.7|9.2|3.5|0.7|0.7|0.2|76|397|187|3.1|35|cup=55|it fr
+Banana|Fruits|89|1.1|22.8|2.6|12.2|0.3|0.1|1|358|5|0.26|8.7|pc=118,cup=150|w in
+Plantain (ripe)|Fruits|122|1.3|31.9|2.3|15|0.4|0.1|4|499|3|0.6|18.4|pc=180|af ca br
+Apple|Fruits|52|0.3|13.8|2.4|10.4|0.2|0|1|107|6|0.12|4.6|pc=182,cup=125|w
+Green apple (Granny Smith)|Fruits|52|0.3|13.8|2.4|10.4|0.2|0|1|107|6|0.12|4.6|pc=182|w
+Pear|Fruits|57|0.4|15.2|3.1|9.8|0.1|0|1|116|9|0.18|4.3|pc=178|w
+Asian pear (nashi)|Fruits|42|0.5|10.7|3.6|7.1|0.2|0|0|121|4|0.02|3.8|pc=275|jp kr cn
+Quince|Fruits|57|0.4|15.3|1.9|0|0.1|0|4|197|11|0.7|15|pc=92|tr me
+Orange|Fruits|47|0.9|11.8|2.4|9.4|0.1|0|0|181|40|0.1|53.2|pc=131,cup=180|w
+Blood orange|Fruits|47|0.9|11.8|2.4|9.4|0.1|0|0|181|40|0.1|53.2|pc=131|it es
+Mandarin / tangerine|Fruits|53|0.8|13.3|1.8|10.6|0.3|0|2|166|37|0.15|26.7|pc=88|cn w
+Clementine|Fruits|47|0.9|12|1.7|9|0.2|0|1|177|30|0.14|48.8|pc=74|es fr
+Satsuma|Fruits|47|0.8|11.5|1.7|9|0.2|0|1|170|33|0.15|44|pc=75|jp
+Grapefruit|Fruits|42|0.8|10.7|1.6|6.9|0.1|0|0|135|22|0.08|31.2|pc=246|us w
+Pomelo|Fruits|38|0.8|9.6|1|0|0|0|1|216|4|0.11|61|pc=600|cn th vn
+Lemon|Fruits|29|1.1|9.3|2.8|2.5|0.3|0|2|138|26|0.6|53|pc=58,tbsp=15|w in it
+Lime|Fruits|30|0.7|10.5|2.8|1.7|0.2|0|2|102|33|0.6|29.1|pc=67|mx th in
+Kaffir lime|Fruits|30|0.7|10.5|2.8|1.7|0.2|0|2|102|33|0.6|29.1|pc=40|th
+Sweet lime (mosambi)|Fruits|43|0.8|9.3|0.5|8|0.3|0|0|180|40|0.2|50|pc=150|in
+Yuzu|Fruits|53|0.8|13.3|1.8|0|0.3|0|3|140|21|0.2|102|pc=60|jp
+Calamansi|Fruits|30|0.7|10.5|2.8|1.7|0.2|0|2|102|33|0.6|29|pc=15|ph
+Kumquat|Fruits|71|1.9|15.9|6.5|9.4|0.9|0.1|10|186|62|0.86|43.9|pc=19|cn
+Mango|Fruits|60|0.8|15|1.6|13.7|0.4|0.1|1|168|11|0.16|36.4|pc=200,cup=165|in th w
+Alphonso mango|Fruits|60|0.8|15|1.6|13.7|0.4|0.1|1|168|11|0.16|36.4|pc=250|in
+Papaya (ripe)|Fruits|43|0.5|10.8|1.7|7.8|0.3|0.1|8|182|20|0.25|60.9|cup=145|in w
+Guava|Fruits|68|2.6|14.3|5.4|8.9|1|0.3|2|417|18|0.26|228.3|pc=100,cup=165|in br
+Pink guava|Fruits|68|2.6|14.3|5.4|8.9|1|0.3|2|417|18|0.26|228.3|pc=100|in
+Pineapple|Fruits|50|0.5|13.1|1.4|9.9|0.1|0|1|109|13|0.29|47.8|cup=165|w th
+Watermelon|Fruits|30|0.6|7.6|0.4|6.2|0.2|0|1|112|7|0.24|8.1|cup=152|w in
+Muskmelon / cantaloupe|Fruits|34|0.8|8.2|0.9|7.9|0.2|0.1|16|267|9|0.21|36.7|cup=160|w in
+Honeydew melon|Fruits|36|0.5|9.1|0.8|8.1|0.1|0|18|228|6|0.17|18|cup=170|w
+Grapes (green)|Fruits|69|0.7|18.1|0.9|15.5|0.2|0.1|2|191|10|0.36|3.2|cup=151|w in
+Black grapes|Fruits|69|0.7|18.1|0.9|15.5|0.2|0.1|2|191|10|0.36|3.2|cup=151|w in
+Pomegranate|Fruits|83|1.7|18.7|4|13.7|1.2|0.1|3|236|10|0.3|10.2|pc=282,cup=174|in me tr
+Fig (fresh)|Fruits|74|0.8|19.2|2.9|16.3|0.3|0.1|1|232|35|0.37|2|pc=50|tr me it
+Dried fig|Fruits|249|3.3|63.9|9.8|47.9|0.9|0.1|10|680|162|2.03|1.2|pc=8|tr in me
+Date (Medjool)|Fruits|277|1.8|75|6.7|66.5|0.2|0|1|696|64|0.9|0|pc=24|me in
+Date (Deglet Noor)|Fruits|282|2.5|75|8|63|0.4|0|2|656|39|1.02|0.4|pc=7|me
+Raisin|Fruits|299|3.1|79.2|3.7|59.2|0.5|0.1|11|749|50|1.88|2.3|cup=145,tbsp=9|w in
+Sultana|Fruits|299|3.1|79.2|3.7|59.2|0.5|0.1|11|749|50|1.88|2.3|cup=145|uk tr
+Currant (dried)|Fruits|283|4.1|74.1|6.8|67.3|0.3|0|8|892|86|3.26|4.7|cup=144|uk gr
+Prune|Fruits|240|2.2|63.9|7.1|38.1|0.4|0|2|732|43|0.93|0.6|pc=9.5|fr us
+Dried apricot|Fruits|241|3.4|62.6|7.3|53.4|0.5|0|10|1162|55|2.66|1|pc=8|tr me
+Dried cranberry|Fruits|308|0.1|82.4|5.7|65|1.4|0.1|3|40|9|0.35|0.2|cup=120|us
+Strawberry|Fruits|32|0.7|7.7|2|4.9|0.3|0|1|153|16|0.41|58.8|cup=144|w
+Blueberry|Fruits|57|0.7|14.5|2.4|10|0.3|0|1|77|6|0.28|9.7|cup=148|us
+Raspberry|Fruits|52|1.2|11.9|6.5|4.4|0.7|0|1|151|25|0.69|26.2|cup=123|w
+Blackberry|Fruits|43|1.4|9.6|5.3|4.9|0.5|0|1|162|29|0.62|21|cup=144|w
+Redcurrant|Fruits|56|1.4|13.8|4.3|7.4|0.2|0|1|275|33|1|41|cup=112|uk sc
+Blackcurrant|Fruits|63|1.4|15.4|4.3|8|0.4|0|2|322|55|1.54|181|cup=112|uk fr
+Gooseberry|Fruits|44|0.9|10.2|4.3|0|0.6|0|1|198|25|0.31|27.7|cup=150|uk
+Cranberry (fresh)|Fruits|46|0.4|12.2|4.6|4|0.1|0|2|85|8|0.25|13.3|cup=100|us
+Mulberry|Fruits|43|1.4|9.8|1.7|8.1|0.4|0|10|194|39|1.85|36.4|cup=140|in tr cn
+Goji berry (dried)|Fruits|349|14.3|77.1|13|45.6|0.4|0|298|1132|190|6.8|48.4|tbsp=10|cn
+Cherry (sweet)|Fruits|63|1.1|16|2.1|12.8|0.2|0|0|222|13|0.36|7|cup=154|w
+Sour cherry|Fruits|50|1|12.2|1.6|8.5|0.3|0.1|3|173|16|0.32|10|cup=155|tr de
+Peach|Fruits|39|0.9|9.5|1.5|8.4|0.3|0|0|190|6|0.25|6.6|pc=150|w
+Nectarine|Fruits|44|1.1|10.6|1.7|7.9|0.3|0|0|201|6|0.28|5.4|pc=142|w
+Plum|Fruits|46|0.7|11.4|1.4|9.9|0.3|0|0|157|6|0.17|9.5|pc=66|w
+Apricot (fresh)|Fruits|48|1.4|11.1|2|9.2|0.4|0|1|259|13|0.39|10|pc=35|tr me
+Kiwi|Fruits|61|1.1|14.7|3|9|0.5|0|3|312|34|0.31|92.7|pc=76|w
+Golden kiwi|Fruits|63|1.1|15.8|1.4|12.8|0.3|0|3|315|20|0.21|161.3|pc=81|w
+Persimmon|Fruits|70|0.6|18.6|3.6|12.5|0.2|0|1|161|8|0.15|7.5|pc=168|jp kr
+Passion fruit|Fruits|97|2.2|23.4|10.4|11.2|0.7|0.1|28|348|12|1.6|30|pc=18|br au
+Dragon fruit|Fruits|60|1.2|13|3|8|0.4|0|10|270|18|0.7|9|pc=200|vn th
+Lychee|Fruits|66|0.8|16.5|1.3|15.2|0.4|0.1|1|171|5|0.31|71.5|pc=10|cn in
+Longan|Fruits|60|1.3|15.1|1.1|0|0.1|0|0|266|1|0.13|84|pc=8|cn th
+Rambutan|Fruits|82|0.7|20.9|0.9|0|0.2|0|11|42|22|0.35|4.9|pc=9|id th
+Mangosteen|Fruits|73|0.4|17.9|1.8|0|0.6|0|7|48|12|0.3|2.9|pc=80|th id
+Durian|Fruits|147|1.5|27.1|3.8|0|5.3|1.4|2|436|6|0.43|19.7|cup=243|th id
+Jackfruit (ripe)|Fruits|95|1.7|23.2|1.5|19.1|0.6|0.2|2|448|24|0.23|13.7|cup=165|in th
+Custard apple (sitaphal)|Fruits|94|2.1|23.6|4.4|0|0.3|0|4|382|30|0.6|19.2|pc=155|in
+Soursop|Fruits|66|1|16.8|3.3|13.5|0.3|0.1|14|278|14|0.6|20.6|cup=225|ca br
+Cherimoya|Fruits|75|1.6|17.7|3|12.9|0.7|0.3|7|287|10|0.27|12.6|pc=550|pe
+Sapodilla (chikoo)|Fruits|83|0.4|20|5.3|0|1.1|0.2|12|193|21|0.8|14.7|pc=170|in mx
+Jamun (black plum)|Fruits|62|0.7|15.6|0.6|0|0.2|0|14|79|19|0.19|18|cup=150|in
+Ber (Indian jujube)|Fruits|79|1.2|20.2|0|0|0.2|0|3|250|21|0.48|69|pc=8|in cn
+Amla (Indian gooseberry)|Fruits|44|0.9|10.2|4.3|0|0.6|0.1|5|198|25|0.31|600|pc=25|in
+Bael (wood apple)|Fruits|137|1.8|31.8|2.9|0|0.3|0.1|10|600|85|0.6|8|pc=200|in
+Karonda|Fruits|63|1.1|14|1.4|0|0.5|0.1|5|260|21|0.4|38|pc=5|in
+Phalsa|Fruits|72|1.6|14.7|5.5|0|0.9|0.2|17|372|129|3.1|22|cup=100|in
+Tamarind pulp|Fruits|239|2.8|62.5|5.1|57.4|0.6|0.3|28|628|74|2.8|3.5|tbsp=15,cup=120|in th mx
+Star fruit (carambola)|Fruits|31|1|6.7|2.8|4|0.3|0|2|133|3|0.08|34.4|pc=91|in ph
+Avocado|Fruits|160|2|8.5|6.7|0.7|14.7|2.1|7|485|12|0.55|10|pc=200|mx w
+Coconut (fresh, grated)|Fruits|354|3.3|15.2|9|6.2|33.5|29.7|20|356|14|2.43|3.3|cup=80,tbsp=6|in th w
+Tender coconut water|Fruits|19|0.7|3.7|1.1|2.6|0.2|0.2|105|250|24|0.29|2.4|cup=240,ml=1|in th
+Guanabana|Fruits|66|1|16.8|3.3|13.5|0.3|0.1|14|278|14|0.6|20.6|cup=225|br ca
+Acai (pulp)|Fruits|70|1|4|2|0|5|1.5|7|105|40|0.6|2|cup=100|br
+Camu camu|Fruits|17|0.4|4.7|0.4|0|0.2|0|3|84|27|0.5|2000|tbsp=10|pe
+Feijoa|Fruits|55|0.7|13|6.4|8.2|0.6|0.1|3|172|17|0.14|32.9|pc=50|br
+Loquat|Fruits|47|0.4|12.1|1.7|0|0.2|0|1|266|16|0.28|1|pc=16|jp cn
+Prickly pear|Fruits|41|0.7|9.6|3.6|0|0.5|0.1|5|220|56|0.3|14|pc=103|mx
+Rhubarb|Fruits|21|0.9|4.5|1.8|1.1|0.2|0.1|4|288|86|0.22|8|cup=122|uk
+Cape gooseberry (physalis)|Fruits|53|1.9|11.2|0|0|0.7|0|1|268|9|1|11|pc=5|pe ca
+Pitanga (Surinam cherry)|Fruits|33|0.8|7.5|0|0|0.4|0|3|103|9|0.2|26|pc=5|br
+Salak (snake fruit)|Fruits|82|0.4|20.9|0.3|0|0.4|0|5|200|28|3.9|8.4|pc=60|id
+Breadfruit|Fruits|103|1.1|27.1|4.9|11|0.2|0|2|490|17|0.54|29|cup=220|ca ph in
+Ackee|Fruits|151|2.9|9.6|2.7|0|15.2|1.6|240|270|35|0.7|30|cup=100|ca
+Guava, dried|Fruits|300|4|72|30|45|3|0.9|10|1000|60|1|180|cup=100|in
+Pineapple (dried)|Fruits|347|1.9|89|4|85|0.5|0|8|240|30|0.8|10|cup=120|th w
+Mango (dried)|Fruits|319|2.5|78.6|2.4|73|1.2|0.3|12|279|29|0.5|42.3|cup=120|in th
+Banana chips|Fruits|519|2.3|58.4|7.7|35.3|33.6|28.9|6|536|18|1.25|6.3|cup=72|in ph
+Kai-lan stem|Vegetables|22|1.2|4.7|2.6|0|0.8|0.1|7|230|105|0.6|30|bunch=200|cn
+Choy sum|Vegetables|20|1.8|3.2|1.6|0|0.3|0|30|250|100|0.8|45|bunch=200|cn
+Tatsoi|Vegetables|13|1.5|2.2|1|1.2|0.2|0|65|252|105|0.8|45|bunch=150|cn jp
+Mizuna|Vegetables|21|2.2|3.5|2|0|0.4|0|30|380|120|1.5|55|cup=40|jp
+Komatsuna|Vegetables|14|1.5|2.4|1.9|0|0.2|0|15|500|170|2.8|39|bunch=200|jp
+Shungiku (chrysanthemum greens)|Vegetables|22|3.4|3.1|3|0|0.6|0.1|118|460|120|2.3|10|bunch=150|jp cn
+Chinese celery|Vegetables|16|0.7|3|1.6|1.3|0.2|0|80|260|40|0.2|3.1|bunch=150|cn
+Garland chrysanthemum|Vegetables|22|3.4|3.1|3|0|0.6|0.1|118|460|120|2.3|10|bunch=150|cn
+Yam bean (sengkuang)|Vegetables|38|0.7|8.8|4.9|1.8|0.1|0|4|150|12|0.6|20.2|cup=130|id ph
+Winged bean (fresh pod)|Vegetables|49|6.9|4.3|2.6|0|0.9|0.2|4|240|84|1.5|18.3|cup=100|th id in
+Tamarind leaf|Vegetables|115|5.8|18|3|0|2.1|0.5|28|600|100|3|4|cup=50|th in
+Fiddlehead fern|Vegetables|34|4.6|5.5|0|0|0.4|0.1|1|370|32|1.31|26.6|cup=100|jp us
+Chinese chives (garlic chives)|Vegetables|30|3.3|4.4|2.5|1.9|0.7|0.1|3|296|92|1.6|58.1|bunch=100|cn kr
+Lotus seed (fresh)|Vegetables|89|4.1|17.3|0|0|0.5|0.1|1|367|44|0.95|0|cup=100|cn in
+Cassava leaf|Vegetables|37|3.7|7|3|0|0.5|0.1|11|300|100|2|82|bunch=200|af id
+Sweet potato leaf|Vegetables|42|4|8.8|5.3|0|0.5|0.1|9|508|78|1|11|bunch=200|af ph
+Pumpkin leaf|Vegetables|19|3.2|2.3|1.5|0|0.4|0.2|11|436|39|2.2|11|bunch=200|af in
+Roselle leaf (gongura)|Vegetables|43|3.3|8.5|1.4|0|0.6|0.1|8|208|213|4.8|54|bunch=200|in af
+Drumstick leaf powder|Vegetables|205|27.1|38.2|19.2|0|2.3|0.4|877|1324|2003|28.2|17.3|tbsp=7|in af
+Kale sprouts|Vegetables|49|4.3|8.8|3.6|2.3|0.9|0.1|38|491|150|1.5|120|cup=67|us
+Broccoli sprouts|Vegetables|35|3|6|2.6|1.7|0.5|0.1|33|316|47|0.8|89|cup=40|us
+Pea shoots|Vegetables|42|2.8|7.5|2.6|4|0.2|0|4|200|43|2.08|60|cup=50|cn
+Micro greens (mixed)|Vegetables|30|2.5|5|2|1.5|0.4|0.1|20|300|80|1.2|40|cup=20|w
+Sea asparagus|Vegetables|21|1.3|3.5|1|0|0.3|0|1500|300|60|1.5|8|cup=50|fr uk
+Cardamom leaf|Vegetables|60|3|10|4|0|1|0.2|20|400|150|2|20|pc=1|in
+Bamboo shoot (pickled)|Vegetables|27|2.6|5.2|2.2|3|0.3|0.1|550|400|13|0.5|4|cup=150|cn jp
+Kimchi cabbage (raw)|Vegetables|16|1.2|3.2|1.2|1.2|0.2|0|9|238|77|0.31|27|pc=1000|kr
+Daikon sprouts (kaiware)|Vegetables|43|3.8|3.6|1.6|0|2.5|0.7|6|86|51|0.96|29|cup=40|jp
+Okinawan sweet potato|Vegetables|86|1.6|20.1|3|4.2|0.1|0|55|337|30|0.61|2.4|pc=130|jp
+Sunchoke|Vegetables|73|2|17.4|1.6|9.6|0.01|0|4|429|14|3.4|4|cup=150|us fr
+Hearts of palm|Vegetables|115|2.7|25.6|1.5|17.2|0.2|0.1|14|1806|18|3.13|7.9|cup=146|br ca
+Cactus fruit pad (nopalito)|Vegetables|16|1.3|3.3|2.2|1.1|0.1|0|21|257|164|0.59|9.3|cup=86|mx
+Epazote|Vegetables|32|0.3|7.4|3.8|0|0.5|0.1|43|633|275|1.88|4|tbsp=2|mx
+Huitlacoche (corn smut)|Vegetables|60|4|9|3|0|1.5|0.3|20|300|30|1.5|3|cup=100|mx
+Chilacayote squash|Vegetables|13|0.4|3|2.9|0|0.2|0|111|6|19|0.4|13|pc=1000|mx
+Yuca root|Vegetables|160|1.4|38.1|1.8|1.7|0.3|0.1|14|271|16|0.27|20.6|cup=206|br ca
+Malanga|Vegetables|112|1.5|26.5|4.1|0.4|0.2|0|11|591|43|0.55|4.5|pc=400|ca
+Callaloo (amaranth)|Vegetables|23|2.5|4|2.2|0|0.3|0.1|20|611|215|2.32|43.3|bunch=300|ca
+Scotch bonnet pepper|Vegetables|40|1.9|8.8|1.5|5.3|0.4|0|7|340|18|1.2|143|pc=8|ca
+Ají amarillo|Vegetables|40|1.9|8.8|1.5|5.3|0.4|0|7|340|18|1.2|143|pc=20|pe
+Rocoto pepper|Vegetables|40|1.9|8.8|1.5|5.3|0.4|0|7|340|18|1.2|143|pc=40|pe
+Oca (New Zealand yam)|Vegetables|62|1|13.3|1.5|0|0.6|0.1|10|300|20|0.5|30|pc=60|pe
+Ulluco|Vegetables|62|1.1|14|1|0|0.1|0|10|300|3|1|11|pc=40|pe
+Maca root|Vegetables|325|14.3|71.4|7.4|0|2.2|0.5|35|2000|250|14.7|285|tbsp=8|pe
+Cardoon stalk|Vegetables|17|0.7|4.1|1.6|0|0.1|0|170|400|70|0.7|2|pc=200|it
+Puntarelle|Vegetables|23|1.7|4.7|4|0.7|0.3|0.1|45|420|100|0.9|24|bunch=300|it
+Agretti (monk's beard)|Vegetables|21|2|3|2|0|0.3|0|150|400|80|2|20|bunch=150|it
+Romano bean|Vegetables|31|1.8|7|3.4|3.3|0.2|0|6|211|37|1.03|12.2|cup=110|it
+Cime di rapa (broccoli rabe)|Vegetables|22|3.2|2.9|2.7|0.4|0.5|0.1|33|196|108|2.14|20.2|bunch=250|it
+Sea kale|Vegetables|25|2|4|2|0|0.3|0|60|300|80|1|30|bunch=200|uk
+Marrow (vegetable)|Vegetables|17|1.2|3.1|1|2.5|0.3|0.1|8|261|16|0.37|17.9|pc=800|uk
+Mangetout|Vegetables|42|2.8|7.5|2.6|4|0.2|0|4|200|43|2.08|60|cup=98|uk fr
+Samphire (marsh)|Vegetables|21|1.3|3.5|1|0|0.3|0|1500|300|60|1.5|8|cup=50|uk
+Kohlrabi leaves|Vegetables|27|3.5|4|3.5|0|0.4|0|30|400|180|1.5|90|bunch=200|de
+White asparagus (peeled)|Vegetables|20|2.2|3.9|2.1|1.9|0.1|0|2|202|24|2.14|5.6|pc=25|de
+Sauerkraut|Vegetables|19|0.9|4.3|2.9|1.8|0.1|0|661|170|30|1.47|14.7|cup=142|de
+Beet greens|Vegetables|22|2.2|4.3|3.7|0.5|0.1|0|226|762|117|2.57|30|cup=38|ru de
+Horseradish leaf|Vegetables|48|1.2|11.3|3.3|8|0.7|0.1|420|246|56|0.42|24.9|bunch=150|ru
+Wild garlic (ramsons)|Vegetables|60|2.8|10|3|0|0.6|0.1|20|400|80|1.5|150|bunch=100|de uk
+Lovage|Vegetables|30|3|6|2|0|0.5|0.1|50|400|100|2|40|bunch=50|de ru
+Chard stems|Vegetables|19|1.8|3.7|1.6|1.1|0.2|0|213|379|51|1.8|30|bunch=250|it fr
+Green papaya (shredded)|Vegetables|43|0.5|10.8|1.7|5.9|0.3|0.1|8|182|20|0.25|60.9|cup=145|th vn
+Thai basil stem|Vegetables|23|3.2|2.7|1.6|0.3|0.6|0|4|295|177|3.17|18|bunch=50|th
+Pea eggplant|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|cup=100|th
+Betel leaf|Vegetables|44|3.1|6.1|2.3|0|0.8|0.2|22|550|230|7|5|pc=2|in th
+Turmeric leaf|Vegetables|60|3|10|4|0|1|0.2|20|400|150|2|20|pc=5|in
+Screwpine leaf (pandan)|Vegetables|38|1.4|8|3|0|0.4|0.1|10|300|60|1|10|pc=5|th id
+Torch ginger bud|Vegetables|34|1.5|7|2|0|0.4|0.1|5|300|40|1|8|pc=50|th id
+Kantola (spiny gourd)|Vegetables|17|3.1|7.7|3|0|0.1|0|10|150|33|4.6|8|pc=30|in
+Kachri|Vegetables|20|0.8|4.5|1.5|0|0.2|0|8|180|20|0.6|10|pc=20|in
+Tendli|Vegetables|18|1.2|3.1|1.6|0|0.1|0|10|150|40|1.4|1.4|pc=12|in
+Kundru|Vegetables|18|1.2|3.1|1.6|0|0.1|0|10|150|40|1.4|1.4|pc=12|in
+Sem phali (flat bean)|Vegetables|48|2.7|9|3.5|0|0.3|0|4|250|50|1.2|10|cup=100|in
+Chinese long bean|Vegetables|47|2.8|8.4|3.8|0|0.4|0.1|4|240|50|0.47|18.8|bunch=200|cn
+Bitter melon leaf|Vegetables|30|5.3|3.3|2|0|0.7|0.1|10|500|100|2|88|bunch=150|ph cn
+Chayote shoot|Vegetables|19|0.8|4.5|1.7|1.7|0.1|0|2|125|17|0.34|7.7|bunch=150|ph
+Moringa flower|Vegetables|40|2|8|3|0|0.3|0|10|300|100|1.5|60|cup=50|in
+Neem flower|Vegetables|60|3|10|4|0|1|0.2|15|350|120|2|10|tbsp=5|in
+Agathi leaves|Vegetables|93|8.4|11.4|2.2|0|1.4|0.3|20|500|1130|3.9|169|bunch=200|in
+Ponnanganni greens|Vegetables|73|5|10|3|0|0.7|0.1|60|500|510|16.7|17|bunch=200|in
+Kale, curly|Vegetables|49|4.3|8.8|3.6|2.3|0.9|0.1|38|491|150|1.5|120|cup=67|w
+Sprouted mung|Vegetables|30|3|5.9|1.8|4.1|0.2|0|6|149|13|0.91|13.2|cup=104|in cn
+Sprouted chana|Vegetables|180|10|30|8|3|2.5|0.3|15|450|100|3|10|cup=140|in
+Sprouted moth|Vegetables|150|9|26|7|2|1|0.2|20|500|110|4|8|cup=140|in
+Green peppercorn (fresh)|Vegetables|251|10.4|63.9|25.3|0.6|3.3|1.4|20|1329|443|9.71|0|tbsp=8|th in
+Baby spinach|Vegetables|23|2.9|3.6|2.2|0.4|0.4|0.1|79|558|99|2.71|28.1|cup=30|w
+Frisée|Vegetables|17|1.3|3.4|3.1|0.3|0.2|0|22|314|52|0.83|6.5|pc=200|fr
+Mâche (lamb's lettuce)|Vegetables|21|2|3.6|0|0|0.4|0|4|459|38|2.18|38.2|cup=56|fr
+Escarole|Vegetables|17|1.3|3.4|3.1|0.3|0.2|0|22|314|52|0.83|6.5|pc=300|it
+Treviso|Vegetables|23|1.4|4.5|0.9|0.6|0.3|0.1|22|302|19|0.57|8|pc=200|it
+Baby carrot|Vegetables|35|0.6|8.2|2.9|4.5|0.1|0|78|237|32|0.89|2.6|pc=10|w
+Rainbow carrot|Vegetables|41|0.9|9.6|2.8|4.7|0.2|0|69|320|33|0.3|5.9|pc=61|w
+Purple cauliflower|Vegetables|25|1.9|5|2|1.9|0.3|0.1|30|299|22|0.42|48.2|pc=600|w
+White eggplant|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|pc=200|tr
+Baby aubergine|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|pc=40|in
+Green zucchini blossom|Vegetables|15|1.2|3.3|0|0|0.1|0|3|173|39|0.7|28|pc=6|it
+Cucumber (Japanese)|Vegetables|15|0.7|3.6|0.5|1.7|0.1|0|2|147|16|0.28|2.8|pc=120|jp
+Bitter gourd (Chinese)|Vegetables|17|1|3.7|2.8|0|0.2|0|5|296|19|0.43|84|pc=200|cn
+Winter bamboo shoot|Vegetables|27|2.6|5.2|2.2|3|0.3|0.1|4|533|13|0.5|4|pc=200|cn
+Chinese yam (shan yao)|Vegetables|118|1.5|27.9|4.1|0.5|0.2|0|9|816|17|0.54|17.1|pc=300|cn
+Arrowhead (cigu)|Vegetables|99|5.3|20.2|0|0|0.3|0.1|22|922|10|2.57|1.1|pc=25|cn
+Chinese cabbage stem|Vegetables|16|1.2|3.2|1.2|1.2|0.2|0|9|238|77|0.31|27|pc=1000|cn
+Enokitake stem|Vegetables|37|2.7|7.8|2.7|0.2|0.3|0|3|359|0|1.15|0|pc=100|jp
+Konjac (yam cake)|Vegetables|10|0.1|3|2.9|0|0|0|10|40|43|0.4|0|pc=200|jp
+Gobo (burdock)|Vegetables|72|1.5|17.3|3.3|2.9|0.2|0|5|308|41|0.8|3|pc=150|jp
+Renkon (lotus root)|Vegetables|74|2.6|17.2|4.9|0|0.1|0|40|556|45|1.16|44|pc=200|jp
+Satoimo (taro)|Vegetables|112|1.5|26.5|4.1|0.4|0.2|0|11|591|43|0.55|4.5|pc=60|jp
+Negi (Japanese leek)|Vegetables|32|1.8|7.3|2.6|2.3|0.2|0|16|276|72|1.48|18.8|pc=100|jp
+Myoga ginger|Vegetables|30|0.9|6.5|2.1|0|0.1|0|1|210|25|0.5|2|pc=15|jp
+Yuzu peel|Vegetables|53|0.8|13.3|1.8|0|0.3|0|3|140|21|0.2|102|tbsp=6|jp
+Nira (garlic chive)|Vegetables|30|3.3|4.4|2.5|1.9|0.7|0.1|3|296|92|1.6|58.1|bunch=100|jp kr
+Cheongyang chilli|Vegetables|40|1.9|8.8|1.5|5.3|0.2|0|7|340|18|1.2|143|pc=10|kr
+Korean radish (mu)|Vegetables|18|0.6|4.1|1.6|2.5|0.1|0|21|227|27|0.4|22|pc=800|kr
+Sesame leaf|Vegetables|37|3.9|7.5|6|0|0.5|0.1|1|500|230|1.7|55|pc=2|kr
+Aster scaber (chwinamul)|Vegetables|40|3|7|4|0|0.6|0.1|20|400|100|2|20|bunch=150|kr
+Bracken fern (gosari)|Vegetables|34|4.6|5.5|0|0|0.4|0.1|1|370|32|1.31|26.6|cup=100|kr
+Pickled radish (danmuji)|Vegetables|20|0.5|4.5|1|3|0.1|0|800|150|20|0.3|5|pc=20|kr
+Button mushroom|Fungi & sea greens|22|3.1|3.3|1|2|0.3|0|5|318|3|0.5|2.1|cup=70,pc=18|w
+Cremini mushroom|Fungi & sea greens|22|2.5|4.3|0.6|1.7|0.1|0|6|448|18|0.4|0|cup=72|w it
+Portobello|Fungi & sea greens|22|2.1|3.9|1.3|2.5|0.4|0.1|9|364|3|0.31|0|pc=84|it us
+Shiitake (fresh)|Fungi & sea greens|34|2.2|6.8|2.5|2.4|0.5|0.1|9|304|2|0.41|0|pc=19|jp cn
+Shiitake (dried)|Fungi & sea greens|296|9.6|75.4|11.5|2.2|1|0.2|13|1534|11|1.72|3.5|pc=4|jp cn
+Oyster mushroom|Fungi & sea greens|33|3.3|6.1|2.3|1.1|0.4|0.1|18|420|3|1.33|0|cup=86|cn w
+King oyster mushroom|Fungi & sea greens|35|2.5|6|2.5|1.5|0.5|0.1|20|400|3|1.2|0|pc=80|cn jp
+Enoki|Fungi & sea greens|37|2.7|7.8|2.7|0.2|0.3|0|3|359|0|1.15|0|cup=64|jp kr
+Shimeji|Fungi & sea greens|32|2.7|6|2.5|1|0.5|0.1|5|380|2|0.7|0|cup=80|jp
+Maitake|Fungi & sea greens|31|1.9|6.9|2.7|2.1|0.2|0|1|204|1|0.3|0|cup=70|jp
+Nameko|Fungi & sea greens|21|1.7|4.1|2.4|0|0.2|0|3|230|4|0.7|0|cup=80|jp
+Eryngii|Fungi & sea greens|35|2.5|6|2.5|1.5|0.5|0.1|20|400|3|1.2|0|pc=80|jp
+Wood ear fungus (dried)|Fungi & sea greens|284|9.3|73|70.1|0|0.7|0.1|35|754|159|5.88|0|cup=25|cn
+Snow fungus (dried)|Fungi & sea greens|200|4.6|76|68|0|0.4|0.1|35|1500|380|4.1|0|pc=15|cn
+Porcini (fresh)|Fungi & sea greens|34|3.6|5.5|2.5|1.1|0.4|0.1|5|400|3|0.6|0|pc=60|it fr
+Porcini (dried)|Fungi & sea greens|296|9.6|75.4|11.5|2.2|1|0.2|13|1534|11|1.72|3.5|cup=25|it
+Chanterelle|Fungi & sea greens|32|1.5|6.9|3.8|1.2|0.5|0.1|9|506|15|3.47|0|cup=54|fr sc
+Morel|Fungi & sea greens|31|3.1|5.1|2.8|0.6|0.6|0.1|21|411|43|12.2|0|cup=66|fr in
+Guchhi (Himalayan morel)|Fungi & sea greens|31|3.1|5.1|2.8|0.6|0.6|0.1|21|411|43|12.2|0|cup=66|in
+Truffle (black)|Fungi & sea greens|284|9.3|73|70|0|0.5|0.1|77|526|24|3.5|0|pc=20|it fr
+Truffle (white)|Fungi & sea greens|284|9.3|73|70|0|0.5|0.1|77|526|24|3.5|0|pc=20|it
+Straw mushroom|Fungi & sea greens|32|3.8|5.1|2.5|0|0.7|0.1|384|78|10|1.43|0|cup=90|th cn
+Milky mushroom|Fungi & sea greens|30|3|5|2|1.5|0.3|0|10|350|5|0.8|0|cup=80|in
+Paddy straw mushroom|Fungi & sea greens|32|3.8|5.1|2.5|0|0.7|0.1|384|78|10|1.43|0|cup=90|in cn
+Lion's mane|Fungi & sea greens|35|2.5|7|3|1|0.3|0|5|350|3|0.8|0|pc=100|cn jp
+Nori (dried sheet)|Fungi & sea greens|35|5.8|5.1|0.3|0.5|0.3|0.1|48|356|70|1.8|39|sheet=2.6|jp kr
+Wakame (dried)|Fungi & sea greens|45|3|9.1|0.5|0.6|0.6|0.1|872|50|150|2.18|3|tbsp=3|jp kr
+Kombu (dried)|Fungi & sea greens|43|1.7|9.6|1.3|0.6|0.6|0.2|233|89|168|2.85|3|pc=10|jp
+Hijiki (dried)|Fungi & sea greens|186|10.6|56|43|0|1.3|0.3|1770|4400|1400|58.2|0|tbsp=5|jp
+Arame (dried)|Fungi & sea greens|180|8|60|48|0|0.6|0.1|2000|4000|1200|12|0|tbsp=5|jp
+Dulse (dried)|Fungi & sea greens|250|21|45|33|0|3|0.6|1600|7800|300|20|20|tbsp=5|sc uk
+Irish moss (carrageen)|Fungi & sea greens|49|1.5|12.3|1.3|0.6|0.2|0|67|63|72|8.9|3|tbsp=5|uk ca
+Sea lettuce|Fungi & sea greens|130|20|40|30|0|1|0.2|1500|3000|400|15|10|cup=30|jp
+Agar agar (dried)|Fungi & sea greens|306|6.2|80.9|7.7|0|0.3|0.1|102|1125|625|21.4|0|tbsp=6|jp in
+Spirulina (dried)|Fungi & sea greens|290|57.5|23.9|3.6|3.1|7.7|2.7|1048|1363|120|28.5|10.1|tbsp=7|w
+Chlorella|Fungi & sea greens|410|58|23|10|0|9|2|100|1000|300|130|10|tbsp=7|jp
+Yeast extract spread|Fungi & sea greens|185|24|24|3|1|0.5|0.1|3400|2100|60|3.7|0|tsp=6|uk au
+Nutritional yeast|Fungi & sea greens|325|45|35|22|2|6|1|30|2000|50|5|0|tbsp=5|us
+Brewer's yeast|Fungi & sea greens|325|38|38|21|0|2|0.3|30|1900|100|5|0|tbsp=8|de
+Truffle (preserved)|Fungi & sea greens|60|4|10|8|0|1|0.2|300|300|20|2|0|tsp=5|it
+Mushroom powder|Fungi & sea greens|296|9.6|75.4|11.5|2.2|1|0.2|13|1534|11|1.72|3.5|tbsp=6|w
+Basmati rice (raw)|Grains & flours|356|8.1|78|1.3|0.1|0.9|0.2|5|115|10|0.8|0|cup=185,tbsp=12|in
+Brown basmati rice|Grains & flours|370|7.9|77.2|3.5|0.9|2.9|0.6|7|223|23|1.5|0|cup=190|in
+White rice, long grain|Grains & flours|365|7.1|80|1.3|0.1|0.7|0.2|5|115|28|0.8|0|cup=185|w
+White rice, short grain|Grains & flours|358|6.5|79.2|2.8|0|0.5|0.1|1|76|3|0.4|0|cup=200|jp
+Sushi rice (raw)|Grains & flours|358|6.5|79.2|2.8|0|0.5|0.1|1|76|3|0.4|0|cup=200|jp
+Jasmine rice|Grains & flours|356|6.7|79|1.4|0.1|0.6|0.2|3|115|10|0.7|0|cup=185|th
+Sona masoori rice|Grains & flours|360|7|79|1.3|0.1|0.8|0.2|5|115|10|0.8|0|cup=185|in
+Ponni rice|Grains & flours|360|7|79|1.3|0.1|0.8|0.2|5|115|10|0.8|0|cup=185|in
+Idli rice|Grains & flours|360|6.8|79|1.3|0.1|0.7|0.2|5|110|10|0.8|0|cup=185|in
+Red rice (Kerala matta)|Grains & flours|362|7.9|76|2.8|0.6|2.5|0.5|7|250|30|3|0|cup=190|in
+Black rice (forbidden)|Grains & flours|356|8.9|75.6|4.9|0.6|3.3|0.7|4|280|20|3.5|0|cup=190|cn
+Wild rice|Grains & flours|357|14.7|74.9|6.2|2.5|1.1|0.2|7|427|21|1.96|0|cup=160|us
+Arborio rice|Grains & flours|349|6.5|77.9|1.4|0|0.6|0.1|2|85|9|0.8|0|cup=200|it
+Bomba rice|Grains & flours|349|6.5|77.9|1.4|0|0.6|0.1|2|85|9|0.8|0|cup=200|es
+Glutinous rice|Grains & flours|370|6.8|81.7|2.8|0|0.6|0.2|7|77|11|1.2|0|cup=185|th cn
+Parboiled rice|Grains & flours|374|7.5|81.3|1.8|0|1|0.2|4|118|20|0.8|0|cup=185|in af
+Brown rice (long grain)|Grains & flours|370|7.9|77.2|3.5|0.9|2.9|0.6|7|223|23|1.5|0|cup=190|w
+Rice bran|Grains & flours|316|13.3|49.7|21|0.9|20.9|4.2|5|1485|57|18.5|0|cup=118|in jp
+Poha (flattened rice)|Grains & flours|346|6.6|77.3|2.4|0.4|1.2|0.3|5|100|20|7.5|0|cup=90,tbsp=6|in
+Puffed rice (murmura)|Grains & flours|402|6|87|1.2|0.4|1.4|0.3|4|100|10|4|0|cup=15|in
+Rice flour (white)|Grains & flours|366|5.9|80.1|2.4|0.1|1.4|0.4|0|76|10|0.4|0|cup=158,tbsp=10|in th
+Brown rice flour|Grains & flours|363|7.2|76.5|4.6|0.7|2.8|0.6|8|289|11|1.98|0|cup=158|w
+Glutinous rice flour|Grains & flours|366|5.9|80.1|2.4|0.1|1.4|0.4|0|76|10|0.4|0|cup=158|th jp
+Idli rava|Grains & flours|360|6.8|78|2|0.2|1|0.3|3|90|15|1|0|cup=170|in
+Wheat flour (atta)|Grains & flours|341|12.1|69.4|12.5|0.4|1.7|0.3|2|363|34|3.9|0|cup=120,tbsp=8|in
+Maida (refined flour)|Grains & flours|348|10.3|73.9|2.7|0.3|1|0.2|2|107|15|1.2|0|cup=120,tbsp=8|in
+All-purpose flour|Grains & flours|364|10.3|76.3|2.7|0.3|1|0.2|2|107|15|4.64|0|cup=125,tbsp=8|w
+Bread flour|Grains & flours|361|12|72.5|2.4|0.3|1.7|0.2|2|100|15|4.5|0|cup=127|w
+Cake flour|Grains & flours|362|8.2|78|1.7|0.2|0.9|0.1|2|105|14|4.4|0|cup=114|w
+Whole wheat flour|Grains & flours|340|13.2|72|10.7|0.4|2.5|0.4|2|363|34|3.6|0|cup=120|w
+Semolina (suji / rava)|Grains & flours|360|12.7|72.8|3.9|0.7|1.1|0.2|1|186|17|1.2|0|cup=167,tbsp=10|in it
+Durum wheat flour|Grains & flours|339|13.7|71.1|3.7|0|2.5|0.5|2|431|34|3.5|0|cup=192|it
+00 flour|Grains & flours|348|10.3|73.9|2.7|0.3|1|0.2|2|107|15|1.2|0|cup=120|it
+Spelt flour|Grains & flours|338|14.6|70.2|10.7|6.8|2.4|0.4|8|388|27|4.44|0|cup=120|de
+Einkorn flour|Grains & flours|340|14|70|10|0|2.5|0.4|5|400|30|4|0|cup=120|it
+Kamut flour|Grains & flours|337|14.5|70.6|9.1|8|2.1|0.2|5|403|22|3.77|0|cup=120|me
+Rye flour (dark)|Grains & flours|325|10.3|68.7|22.6|1.3|2.7|0.3|1|730|56|5.51|0|cup=128|de sc
+Barley flour|Grains & flours|345|10.5|74.5|10.1|0.8|1.6|0.3|4|309|32|2.68|0|cup=148|me
+Oat flour|Grains & flours|404|14.7|65.7|6.5|0.8|9.1|1.6|19|371|55|4|0|cup=120|w
+Buckwheat flour (kuttu)|Grains & flours|335|12.6|70.6|10|2.6|3.1|0.7|11|577|41|4.06|0|cup=120|in ru jp
+Cornflour / cornstarch|Grains & flours|381|0.3|91.3|0.9|0|0.1|0|9|3|2|0.5|0|cup=128,tbsp=8|w
+Cornmeal (fine)|Grains & flours|370|8.1|79.5|7.3|1.6|3.6|0.5|7|287|7|3.45|0|cup=157|us it
+Masa harina|Grains & flours|365|9.3|76.3|6.9|1.6|3.9|0.5|5|315|141|8.2|0|cup=114|mx
+Polenta (dry)|Grains & flours|370|8.1|79.5|7.3|1.6|3.6|0.5|7|287|7|3.45|0|cup=157|it
+Grits (dry)|Grains & flours|371|8.8|79.6|4.5|0.6|1.2|0.2|1|142|3|4.36|0|cup=156|us
+Millet flour (bajra)|Grains & flours|361|11.6|67|11.5|1.5|5|0.9|12|307|42|8|0|cup=180,tbsp=11|in af
+Jowar flour (sorghum)|Grains & flours|349|10.4|72.6|6.7|1.9|3.5|0.6|6|350|25|4.1|0|cup=192|in af
+Ragi flour (finger millet)|Grains & flours|328|7.3|72|11.5|0.6|1.3|0.3|11|408|344|3.9|0|cup=180|in af
+Foxtail millet|Grains & flours|331|12.3|60.1|8|0.6|4.3|0.7|4|250|31|2.8|0|cup=185|in cn
+Barnyard millet (sama)|Grains & flours|307|11.2|65.5|13.6|0.6|3.9|0.6|5|200|20|5|0|cup=180|in
+Little millet (kutki)|Grains & flours|341|10.1|65.5|7.7|0.6|3.9|0.7|8|129|17|9.3|0|cup=180|in
+Kodo millet|Grains & flours|353|8.3|66.2|9|0|1.4|0.3|5|150|27|0.5|0|cup=180|in
+Proso millet|Grains & flours|378|11|72.8|8.5|0|4.2|0.7|5|195|8|3.01|0|cup=200|w
+Teff|Grains & flours|367|13.3|73.1|8|1.8|2.4|0.4|12|427|180|7.63|0|cup=193|et
+Fonio|Grains & flours|360|8|75|2|0|1|0.2|5|100|20|2|0|cup=180|af
+Amaranth grain (rajgira)|Grains & flours|371|13.6|65.2|6.7|1.7|7|1.5|4|508|159|7.6|4.2|cup=193|in mx
+Quinoa (white)|Grains & flours|368|14.1|64.2|7|4.6|6.1|0.7|5|563|47|4.6|0|cup=170|pe
+Red quinoa|Grains & flours|368|14.1|64.2|7|4.6|6.1|0.7|5|563|47|4.6|0|cup=170|pe
+Black quinoa|Grains & flours|368|14.1|64.2|7|4.6|6.1|0.7|5|563|47|4.6|0|cup=170|pe
+Oats (rolled)|Grains & flours|389|16.9|66.3|10.6|0.99|6.9|1.2|2|429|54|4.7|0|cup=81,tbsp=5|uk sc w
+Steel-cut oats|Grains & flours|379|13.2|67.7|10.1|0.8|6.5|1.1|6|362|52|4.25|0|cup=176|uk sc
+Instant oats|Grains & flours|379|13.2|67.7|10.1|0.8|6.5|1.1|6|362|52|4.25|0|cup=80|w
+Oat bran|Grains & flours|246|17.3|66.2|15.4|1.5|7|1.3|4|566|58|5.41|0|cup=94|w
+Wheat bran|Grains & flours|216|15.6|64.5|42.8|0.4|4.3|0.6|2|1182|73|10.6|0|cup=58|w
+Wheat germ|Grains & flours|360|23.2|51.8|13.2|0|9.7|1.7|12|892|39|6.26|0|cup=115|w
+Dalia (broken wheat)|Grains & flours|342|12.3|71.2|12.5|0.4|1.8|0.3|2|350|30|3.5|0|cup=170|in
+Bulgur|Grains & flours|342|12.3|75.9|18.3|0.4|1.3|0.2|17|410|35|2.46|0|cup=140|tr me
+Freekeh|Grains & flours|352|12.5|72|13|0|2.5|0.4|10|400|40|3.5|0|cup=180|me
+Couscous (dry)|Grains & flours|376|12.8|77.4|5|0.6|0.6|0.1|10|166|24|1.1|0|cup=173|me af
+Israeli couscous|Grains & flours|376|12.8|77.4|5|0.6|0.6|0.1|10|166|24|1.1|0|cup=180|me
+Farro|Grains & flours|340|14|72|7|1|2.5|0.4|8|350|30|3.5|0|cup=200|it
+Pearl barley|Grains & flours|354|12.5|73.5|17.3|0.8|2.3|0.5|12|452|33|3.6|0|cup=200|w uk
+Rye berries|Grains & flours|338|10.3|75.9|15.1|1|1.6|0.2|2|510|24|2.63|0|cup=169|sc de
+Triticale|Grains & flours|336|13|72.1|14.6|0|2.1|0.4|5|332|37|2.57|0|cup=190|w
+Sabudana (tapioca pearl)|Grains & flours|358|0.2|88.7|0.9|3.4|0|0|1|11|20|1.6|0|cup=152,tbsp=10|in br
+Tapioca flour|Grains & flours|358|0.2|88.7|0.9|3.4|0|0|1|11|20|1.6|0|cup=120|br th
+Arrowroot powder|Grains & flours|357|0.3|88.2|3.4|0|0.1|0|2|11|40|0.33|0|tbsp=8|in ca
+Potato starch|Grains & flours|331|0.1|83|0|0|0.1|0|6|8|10|1.4|0|tbsp=10|de jp
+Water chestnut flour (singhara)|Grains & flours|340|6|75|3|0|0.5|0.1|20|500|20|2|0|cup=140|in
+Sattu (roasted gram flour)|Grains & flours|406|20|59|18|3|6|0.7|30|900|60|5.5|0|cup=100,tbsp=8|in
+Makhana (fox nut)|Grains & flours|347|9.7|76.9|14.5|0|0.1|0|21|500|60|1.4|0|cup=32|in
+Popcorn kernels|Grains & flours|387|13|78|15|0.9|5|0.6|8|329|7|3.19|0|cup=200|us
+Chestnut flour|Grains & flours|371|6.1|78.4|8.5|0|3.7|0.7|18|847|59|1.63|0|cup=100|it fr
+Almond flour|Grains & flours|579|21.2|21.6|12.5|4.4|49.9|3.8|1|733|269|3.71|0|cup=96|w
+Coconut flour|Grains & flours|400|18|60|38|9|13|12|55|1500|60|5|0|cup=112|th in
+Chickpea flour (gram)|Grains & flours|387|22.4|57.8|10.8|10.8|6.7|0.7|64|846|45|4.9|0|cup=92|in it
+Lentil flour|Grains & flours|352|24.6|63.1|10.7|2|1.1|0.2|6|955|35|7.5|0|cup=110|in
+Soy flour|Grains & flours|436|34.5|35.2|9.6|7.5|20.6|3|13|2515|206|9.24|0|cup=84|cn us
+Cassava flour (garri)|Grains & flours|357|1.4|85|3.7|3|0.5|0.1|15|270|20|1|0|cup=140|af br
+Plantain flour|Grains & flours|340|3.5|80|5|10|1|0.3|10|900|20|2|0|cup=130|af ca
+Acorn flour|Grains & flours|501|7.5|54.7|0|0|30.2|3.9|0|712|43|1.04|0|cup=100|kr us
+Job's tears (coix)|Grains & flours|356|12|71|2|0|4|0.9|5|200|10|1.5|0|cup=185|cn kr
+Sorghum grain|Grains & flours|349|10.4|72.6|6.7|1.9|3.5|0.6|6|350|25|4.1|0|cup=192|af in
+Corn grits (yellow)|Grains & flours|371|8.8|79.6|4.5|0.6|1.2|0.2|1|142|3|4.36|0|cup=156|us af
+Hominy|Grains & flours|72|1.5|14.3|2.5|0|0.9|0.1|11|9|10|0.62|0|cup=165|mx us
+Malt extract|Grains & flours|318|6|80|0|60|0.3|0|35|500|60|1.5|0|tbsp=21|uk de
+Vital wheat gluten|Grains & flours|370|75.2|13.8|0.6|0|1.9|0.3|29|100|142|5.2|0|cup=120|w cn
+Chapati / roti|Bread & noodles|297|11|46|4.9|1.5|7.4|2.5|180|180|40|2.5|0|pc=40|in
+Phulka|Bread & noodles|280|10.5|48|5|1|4.5|1.5|120|180|40|2.5|0|pc=30|in
+Paratha (plain)|Bread & noodles|330|8|42|3.5|1.5|15|7|250|150|35|2.2|0|pc=60|in
+Naan|Bread & noodles|310|9|50|2.2|3.5|8|2.5|420|110|60|2.4|0|pc=90|in
+Tandoori roti|Bread & noodles|290|10|50|5|1|5|2|300|180|45|2.5|0|pc=60|in
+Kulcha|Bread & noodles|300|8.5|50|2|3|7|2.5|400|110|55|2.3|0|pc=80|in
+Bhatura|Bread & noodles|380|8|45|2|2|19|8|350|120|40|2|0|pc=70|in
+Puri|Bread & noodles|400|7|45|2|1|22|9|200|110|35|2|0|pc=25|in
+Appam|Bread & noodles|180|3|35|1|3|3|2.5|150|80|15|0.8|0|pc=60|in
+Dosa (plain)|Bread & noodles|168|3.9|29|1.5|0.5|3.7|1|300|90|20|1.2|0|pc=80|in
+Idli|Bread & noodles|140|4.5|28|1.2|0.4|0.5|0.1|280|85|18|1.1|0|pc=40|in
+Uttapam|Bread & noodles|190|5|30|2|1|5|1.5|320|130|25|1.4|0|pc=100|in
+Pav|Bread & noodles|280|8.5|52|2|5|3.5|0.9|450|110|80|2.8|0|pc=45|in
+Rumali roti|Bread & noodles|290|9|52|2.5|1.5|4.5|1.5|280|120|40|2.2|0|pc=50|in
+Missi roti|Bread & noodles|310|12|45|7|1.5|8|2.5|260|300|60|3.5|0|pc=55|in
+Thepla|Bread & noodles|330|9|44|5|1.5|13|4|300|220|90|3|3|pc=45|in
+Khakhra|Bread & noodles|400|11|60|9|2|12|4|400|250|50|3.5|0|pc=20|in
+Papad (urad)|Bread & noodles|371|25|56|10|1|1.5|0.4|2200|900|110|4|0|pc=10|in
+White bread|Bread & noodles|265|9|49|2.7|5|3.2|0.7|491|115|144|3.6|0|slice=28|w
+Whole wheat bread|Bread & noodles|247|13|41|7|6|3.4|0.7|400|248|107|2.5|0|slice=32|w
+Multigrain bread|Bread & noodles|265|13.4|43.3|7.4|6.1|4.2|0.9|449|251|91|2.5|0|slice=32|w
+Sourdough bread|Bread & noodles|289|11.7|56.3|2.4|2.5|1.7|0.4|609|115|48|3.4|0|slice=36|fr us
+Rye bread|Bread & noodles|259|8.5|48.3|5.8|3.9|3.3|0.6|603|166|73|2.8|0.4|slice=32|de sc
+Pumpernickel|Bread & noodles|250|8.2|47.5|6.5|0.5|3.1|0.4|596|208|58|2.9|0|slice=32|de
+Baguette|Bread & noodles|274|9|54|2.3|2.6|2|0.4|602|110|60|3.2|0|pc=250|fr
+Ciabatta|Bread & noodles|271|9|52|2.5|1.5|2.9|0.5|560|120|60|3|0|pc=100|it
+Focaccia|Bread & noodles|300|8|45|2|2|10|1.5|600|120|60|2.5|0|pc=100|it
+Pita bread|Bread & noodles|275|9.1|55.7|2.2|1.2|1.2|0.2|536|120|86|2.4|0|pc=60|me gr
+Lavash|Bread & noodles|290|9.5|58|2.5|1.5|1.5|0.3|500|120|50|3|0|pc=50|me tr
+Khubz|Bread & noodles|275|9.1|55.7|2.2|1.2|1.2|0.2|536|120|86|2.4|0|pc=70|me
+Simit|Bread & noodles|320|10|55|3|3|7|1|450|150|80|3|0|pc=100|tr
+Injera|Bread & noodles|160|4.5|32|3|0.5|1|0.2|180|180|30|2.5|0|pc=150|et
+Bagel|Bread & noodles|257|10.5|50.5|2.2|5.4|1.5|0.3|439|100|53|3.8|0|pc=98|us
+Croissant|Bread & noodles|406|8.2|45.8|2.6|11.4|21|11.7|424|118|37|2.03|0|pc=57|fr
+Brioche|Bread & noodles|380|9|48|2|10|17|9|400|120|60|2.5|0|slice=40|fr
+Challah|Bread & noodles|300|9|50|2|8|7|1.5|400|110|40|3|0|slice=40|me
+Tortilla (corn)|Bread & noodles|218|5.7|44.6|6.3|1.1|2.9|0.4|45|186|81|1.6|0|pc=24|mx
+Tortilla (flour)|Bread & noodles|306|8.2|51.4|3.1|2.6|7.3|1.8|590|130|140|3.2|0|pc=45|mx us
+Arepa|Bread & noodles|220|4|45|3|1|3|0.5|300|100|60|2|0|pc=80|br
+Bao bun (steamed)|Bread & noodles|230|6|45|1.5|8|2.5|0.7|250|80|30|1.8|0|pc=50|cn
+Mantou|Bread & noodles|230|6|45|1.5|3|1.5|0.3|180|80|25|1.5|0|pc=50|cn
+Scallion pancake|Bread & noodles|340|7|40|2|1|17|3|500|100|30|2|1|pc=80|cn
+Roti canai|Bread & noodles|350|7|43|2|2|17|8|400|110|40|2.2|0|pc=70|id
+Banh mi baguette|Bread & noodles|274|9|54|2.3|2.6|2|0.4|602|110|60|3.2|0|pc=100|vn
+English muffin|Bread & noodles|235|7.7|46.3|3|3.6|1.7|0.2|455|110|196|2.4|0|pc=57|uk
+Crumpet|Bread & noodles|180|5|36|2|1|0.8|0.2|450|90|60|1.5|0|pc=60|uk
+Soda bread|Bread & noodles|258|7|48|2.5|3|4|1|500|150|70|2.5|0|slice=40|uk
+Knäckebröd (crispbread)|Bread & noodles|366|11|66|16|1|1.5|0.2|450|500|50|3.5|0|pc=10|sc
+Matzo|Bread & noodles|395|10|83|3|0.6|1.4|0.2|3|113|13|3.6|0|pc=28|me
+Pretzel (soft)|Bread & noodles|338|8.2|71|2.6|1.5|3.1|0.7|1240|130|30|3.5|0|pc=115|de
+Rusk|Bread & noodles|407|12|72|3|8|8|2|500|150|60|3|0|pc=15|in de
+Breadcrumbs|Bread & noodles|395|13.4|71.9|4.5|6.2|5.3|1.2|732|196|183|4.8|0|cup=108,tbsp=7|w
+Panko|Bread & noodles|365|12|72|4|5|3|0.5|500|150|60|3|0|cup=60|jp
+Croutons|Bread & noodles|407|11.9|73.5|5|3|6.6|1.6|698|124|76|4.3|0|cup=30|w
+Pasta, dry (semolina)|Bread & noodles|371|13|74.7|3.2|2.7|1.5|0.3|6|223|21|3.3|0|cup=105|it
+Spaghetti (dry)|Bread & noodles|371|13|74.7|3.2|2.7|1.5|0.3|6|223|21|3.3|0|cup=105|it
+Penne (dry)|Bread & noodles|371|13|74.7|3.2|2.7|1.5|0.3|6|223|21|3.3|0|cup=105|it
+Fusilli (dry)|Bread & noodles|371|13|74.7|3.2|2.7|1.5|0.3|6|223|21|3.3|0|cup=105|it
+Lasagne sheets (dry)|Bread & noodles|371|13|74.7|3.2|2.7|1.5|0.3|6|223|21|3.3|0|pc=25|it
+Whole wheat pasta (dry)|Bread & noodles|348|14.6|75|9|2.7|1.4|0.3|8|215|40|3.6|0|cup=105|it
+Egg pasta (dry)|Bread & noodles|384|14.2|71.3|3.3|1.9|4.4|1.1|21|189|35|3.4|0|cup=105|it
+Gnocchi (potato)|Bread & noodles|150|3.5|31|2|0.5|1|0.2|300|250|20|0.8|3|cup=150|it
+Orzo (dry)|Bread & noodles|371|13|74.7|3.2|2.7|1.5|0.3|6|223|21|3.3|0|cup=105|it gr
+Couscous, prepared|Bread & noodles|112|3.8|23.2|1.4|0.1|0.2|0|5|58|8|0.38|0|cup=157|me af
+Ramen noodles (dry)|Bread & noodles|436|10|63|2.5|1|17|8|1500|150|30|3.5|0|pc=85|jp
+Soba noodles (dry)|Bread & noodles|336|14.4|74.6|3|0|0.7|0.1|60|180|20|2.2|0|pc=90|jp
+Udon (dry)|Bread & noodles|337|8.5|71|3|0|0.8|0.2|1040|60|20|1.1|0|pc=90|jp
+Somen (dry)|Bread & noodles|356|9.5|72.7|2.5|0|1.1|0.2|1500|120|20|0.6|0|pc=90|jp
+Rice noodles (dry)|Bread & noodles|364|3.4|83.2|1.6|0.1|0.6|0.2|182|30|18|0.7|0|pc=100|th vn cn
+Rice vermicelli (dry)|Bread & noodles|364|3.4|83.2|1.6|0.1|0.6|0.2|182|30|18|0.7|0|pc=100|vn cn
+Glass noodles (mung bean)|Bread & noodles|351|0.2|86|0.5|0|0.1|0|9|10|20|2.4|0|pc=100|cn kr
+Sweet potato noodles (dangmyeon)|Bread & noodles|351|0.2|86|0.5|0|0.1|0|9|10|20|2.4|0|pc=100|kr
+Egg noodles (Chinese, dry)|Bread & noodles|384|14.2|71.3|3.3|1.9|4.4|1.1|21|189|35|3.4|0|pc=90|cn
+Wonton wrappers|Bread & noodles|291|9.7|58.4|1.8|1|1.3|0.3|557|89|48|3.5|0|pc=8|cn
+Dumpling wrappers|Bread & noodles|291|9.7|58.4|1.8|1|1.3|0.3|557|89|48|3.5|0|pc=10|cn
+Spring roll wrapper|Bread & noodles|300|8|60|2|1|2|0.4|400|100|40|2.5|0|pc=15|cn vn
+Rice paper (banh trang)|Bread & noodles|333|0.5|82|1|0|0.2|0|500|20|20|0.5|0|pc=10|vn
+Sevaiyan (vermicelli)|Bread & noodles|370|11|75|2.5|1.5|1.5|0.3|5|140|20|1.5|0|cup=100|in
+Falooda sev|Bread & noodles|350|0.5|86|0.5|0|0.2|0|10|20|15|1|0|cup=100|in
+Filo pastry|Bread & noodles|307|8|53|1.8|0.4|6|1|483|100|20|3|0|sheet=19|gr tr
+Puff pastry|Bread & noodles|551|7.3|45.1|1.6|0.8|38.1|9.5|452|71|18|2.5|0|sheet=100|fr
+Shortcrust pastry|Bread & noodles|466|6.5|45|1.5|1|29|13|400|80|30|2|0|pc=100|uk fr
+Pizza base (raw)|Bread & noodles|270|9|50|2|3|4|0.8|500|120|60|3|0|pc=200|it
+Corn tortilla chips|Bread & noodles|489|7.1|63.3|5.4|0.9|23.4|3.1|376|191|139|1.4|0|cup=28|mx us
+Poppadom (fried)|Bread & noodles|500|20|45|8|1|28|6|1800|800|100|3.5|0|pc=12|in
+Wheat noodles (fresh)|Bread & noodles|138|4.5|25|1.5|0.5|2|0.4|300|60|15|1.2|0|cup=150|cn
+Shirataki noodles|Bread & noodles|10|0.1|3|2.9|0|0|0|10|40|43|0.4|0|pc=200|jp
+Turmeric (haldi, ground)|Herbs & spices|312|9.7|67.1|22.7|3.2|3.2|1.8|27|2080|168|41.4|0.7|tsp=3,tbsp=9|in
+Cumin seed (jeera)|Herbs & spices|375|17.8|44.2|10.5|2.25|22.3|1.5|168|1788|931|66.4|7.7|tsp=2.1,tbsp=6|in me mx
+Cumin powder|Herbs & spices|375|17.8|44.2|10.5|2.25|22.3|1.5|168|1788|931|66.4|7.7|tsp=2.5,tbsp=7|in me mx
+Black cumin (shahi jeera)|Herbs & spices|375|17.8|44.2|10.5|2.25|22.3|1.5|168|1788|931|66.4|7.7|tsp=2|in
+Coriander seed (dhania)|Herbs & spices|298|12.4|55|41.9|0|17.8|1|35|1267|709|16.3|21|tsp=1.8,tbsp=5|in me
+Coriander powder|Herbs & spices|298|12.4|55|41.9|0|17.8|1|35|1267|709|16.3|21|tsp=2,tbsp=6|in
+Mustard seed (rai / sarson)|Herbs & spices|508|26.1|28.1|12.2|6.8|36.2|1.9|13|738|266|9.21|7.1|tsp=3.5,tbsp=10|in de
+Black mustard seed|Herbs & spices|508|26.1|28.1|12.2|6.8|36.2|1.9|13|738|266|9.21|7.1|tsp=3.5|in
+Yellow mustard seed|Herbs & spices|508|26.1|28.1|12.2|6.8|36.2|1.9|13|738|266|9.21|7.1|tsp=3.5|de us
+Fenugreek seed (methi dana)|Herbs & spices|323|23|58.4|24.6|0|6.4|1.5|67|770|176|33.5|3|tsp=3.7,tbsp=11|in me
+Kasuri methi|Herbs & spices|323|23|58|24|0|6.4|1.5|67|770|176|33.5|3|tsp=1,tbsp=3|in
+Fennel seed (saunf)|Herbs & spices|345|15.8|52.3|39.8|0|14.9|0.5|88|1694|1196|18.5|21|tsp=2,tbsp=6|in it me
+Ajwain (carom)|Herbs & spices|305|15.5|43.2|38.6|0|15.5|3|10|1400|1525|12.5|0|tsp=2.5,tbsp=7|in
+Kalonji (nigella)|Herbs & spices|400|17.8|44.2|10.5|0|22.3|1.5|88|1694|931|66|7.7|tsp=2.5,tbsp=7|in me
+Asafoetida (hing)|Herbs & spices|297|4|67.8|4.1|0|1.1|0.2|50|80|690|39|0|tsp=3|in
+Red chilli powder|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|tsp=2.6,tbsp=8|in
+Kashmiri chilli powder|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|tsp=2.6|in
+Dry red chilli (whole)|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=1|in th mx
+Kashmiri dry chilli|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=1.5|in
+Guntur chilli|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=1|in
+Byadgi chilli|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=1.2|in
+Bhut jolokia (ghost pepper, dried)|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=1|in
+Black pepper (kali mirch)|Herbs & spices|251|10.4|63.9|25.3|0.6|3.3|1.4|20|1329|443|9.71|0|tsp=2.3,tbsp=7|in w
+White pepper|Herbs & spices|296|10.4|68.6|26.2|0|2.1|0.6|5|73|265|14.3|21|tsp=2.4|cn w
+Long pepper (pippali)|Herbs & spices|280|11|64|25|0|3|1.2|30|1300|400|10|0|tsp=2|in
+Sichuan peppercorn|Herbs & spices|300|11|65|25|0|8|1.5|30|1300|500|12|0|tsp=2|cn
+Green cardamom (elaichi)|Herbs & spices|311|10.8|68.5|28|0|6.7|0.7|18|1119|383|13.97|21|tsp=2,pc=0.2|in me
+Black cardamom (badi elaichi)|Herbs & spices|311|10.8|68.5|28|0|6.7|0.7|18|1119|383|13.97|21|pc=0.5|in
+Clove (laung)|Herbs & spices|274|6|65.5|33.9|2.4|13|3.9|277|1020|632|11.8|0.2|tsp=2.1,pc=0.1|in id
+Cinnamon (dalchini)|Herbs & spices|247|4|80.6|53.1|2.2|1.2|0.3|10|431|1002|8.32|3.8|tsp=2.6,tbsp=8|in w
+Cassia bark|Herbs & spices|247|4|80.6|53.1|2.2|1.2|0.3|10|431|1002|8.32|3.8|pc=2|cn in
+Nutmeg (jaiphal)|Herbs & spices|525|5.8|49.3|20.8|28.5|36.3|25.9|16|350|184|3.04|3|tsp=2.2,pc=5|in id
+Mace (javitri)|Herbs & spices|475|6.7|50.5|20.2|0|32.4|9.5|80|463|252|13.9|21|tsp=1.7|in id
+Bay leaf (tej patta)|Herbs & spices|313|7.6|75|26.3|0|8.4|2.3|23|529|834|43|46.5|pc=0.2|in w
+Star anise|Herbs & spices|337|17.6|50|14.6|0|15.9|0.6|16|1441|646|36.9|21|pc=1|cn in
+Dry ginger powder (sonth)|Herbs & spices|335|8.98|71.6|14.1|3.4|4.24|2.6|27|1320|114|19.8|0.7|tsp=2,tbsp=5.4|in
+Amchur (dry mango powder)|Herbs & spices|302|2.5|74|6|40|1.2|0.2|30|800|46|4|25|tsp=2.5,tbsp=8|in
+Anardana (dry pomegranate)|Herbs & spices|300|3|65|10|40|3|0.3|10|500|60|3|8|tsp=3|in
+Kokum (dried)|Herbs & spices|250|1|60|5|30|1|0.2|20|500|50|3|5|pc=2|in
+Tamarind (dried block)|Herbs & spices|239|2.8|62.5|5.1|57.4|0.6|0.3|28|628|74|2.8|3.5|tbsp=15|in th
+Saffron (kesar)|Herbs & spices|310|11.4|65.4|3.9|0|5.9|1.6|148|1724|111|11.1|80.8|tsp=0.7|in es me
+Poppy seed (khus khus)|Herbs & spices|525|18|28.1|19.5|3|41.6|4.5|26|719|1438|9.76|1|tsp=3,tbsp=9|in tr
+Stone flower (dagad phool)|Herbs & spices|300|8|60|30|0|4|0.8|50|900|400|15|0|tsp=1|in
+Marathi moggu|Herbs & spices|300|8|60|30|0|5|1|40|800|400|12|0|pc=0.5|in
+Garam masala|Herbs & spices|379|14|45|25|3|15|3|60|1300|600|25|5|tsp=2.5,tbsp=7.5|in
+Chaat masala|Herbs & spices|280|10|50|15|4|8|1.5|8500|1200|350|15|8|tsp=3,tbsp=9|in
+Sambar powder|Herbs & spices|340|15|45|22|3|12|2|60|1200|400|18|5|tsp=3,tbsp=9|in
+Rasam powder|Herbs & spices|330|14|46|21|3|11|2|55|1150|380|17|5|tsp=3,tbsp=9|in
+Pav bhaji masala|Herbs & spices|350|11|48|20|4|13|2.5|4500|1300|420|16|6|tsp=3,tbsp=9|in
+Tandoori masala|Herbs & spices|330|12|47|20|4|11|2|3800|1250|400|16|6|tsp=3,tbsp=9|in
+Biryani masala|Herbs & spices|360|12|46|22|3|14|3|500|1300|450|18|5|tsp=3,tbsp=9|in
+Chana masala|Herbs & spices|340|12|47|21|3|12|2.2|3000|1250|400|16|6|tsp=3|in
+Kitchen king masala|Herbs & spices|350|12|46|21|3|13|2.5|2000|1250|420|17|5|tsp=3|in
+Panch phoron|Herbs & spices|400|18|45|22|2|18|2.5|50|1200|500|25|4|tsp=3|in
+Goda masala|Herbs & spices|360|11|46|22|3|14|3|100|1200|450|18|4|tsp=3|in
+Kolhapuri masala|Herbs & spices|350|12|45|22|4|13|2.8|300|1250|420|17|6|tsp=3|in
+Chettinad masala|Herbs & spices|350|12|46|22|3|13|2.6|200|1250|420|17|5|tsp=3|in
+Curry powder|Herbs & spices|325|14.3|55.8|53.2|2.8|14|2.3|52|1543|478|19.1|11.4|tsp=2,tbsp=6|uk in
+Madras curry powder|Herbs & spices|325|14.3|55.8|53.2|2.8|14|2.3|52|1543|478|19.1|11.4|tsp=2|uk in
+Coriander leaves (fresh)|Herbs & spices|23|2.1|3.7|2.8|0.9|0.5|0|46|521|67|1.77|27|bunch=50,cup=16|in th mx
+Mint leaves (pudina)|Herbs & spices|70|3.8|14.9|8|0|0.9|0.2|31|569|243|11.9|31.8|bunch=40,cup=25|in me
+Curry leaves (fresh)|Herbs & spices|108|6.1|18.7|6.4|0|1|0.2|20|500|830|0.9|4|bunch=10|in
+Basil (sweet, fresh)|Herbs & spices|23|3.2|2.7|1.6|0.3|0.6|0|4|295|177|3.17|18|cup=24|it th
+Thai basil|Herbs & spices|23|3.2|2.7|1.6|0.3|0.6|0|4|295|177|3.17|18|cup=24|th vn
+Holy basil (tulsi)|Herbs & spices|23|3.2|2.7|1.6|0.3|0.6|0|4|295|177|3.17|18|cup=24|in th
+Parsley (flat-leaf)|Herbs & spices|36|3|6.3|3.3|0.9|0.8|0.1|56|554|138|6.2|133|cup=60|it me
+Dill (fresh)|Herbs & spices|43|3.5|7|2.1|0|1.1|0.1|61|738|208|6.6|85|cup=9|sc ru in
+Chervil|Herbs & spices|237|23.2|49.1|11.3|0|3.9|0.2|83|4740|1346|31.9|50|tbsp=2|fr
+Tarragon (fresh)|Herbs & spices|295|22.8|50.2|7.4|0|7.2|1.9|62|3020|1139|32.3|50|tsp=1.6|fr
+Oregano (dried)|Herbs & spices|265|9|68.9|42.5|4.1|4.3|1.6|25|1260|1597|36.8|2.3|tsp=1,tbsp=3|it gr
+Marjoram (dried)|Herbs & spices|271|12.7|60.6|40.3|4.1|7|0.5|77|1522|1990|82.7|51.4|tsp=0.6|gr it
+Thyme (dried)|Herbs & spices|276|9.1|63.9|37|1.7|7.4|2.7|55|814|1890|123.6|50|tsp=1,tbsp=3|fr me
+Rosemary (dried)|Herbs & spices|331|4.9|64.1|42.6|0|15.2|7.4|50|955|1280|29.3|61.2|tsp=1.2|it fr
+Sage (dried)|Herbs & spices|315|10.6|60.7|40.3|1.7|12.8|7|11|1070|1652|28.1|32.4|tsp=0.7|it fr
+Bay leaf (Turkish)|Herbs & spices|313|7.6|75|26.3|0|8.4|2.3|23|529|834|43|46.5|pc=0.2|tr gr
+Lemongrass|Herbs & spices|99|1.8|25.3|0|0|0.5|0.1|6|723|65|8.17|2.6|stalk=15|th vn
+Kaffir lime leaf|Herbs & spices|50|1|10|4|0|1|0.2|5|200|100|2|10|pc=0.3|th
+Pandan leaf|Herbs & spices|38|1.4|8|3|0|0.4|0.1|10|300|60|1|10|pc=5|th id
+Vietnamese coriander (rau ram)|Herbs & spices|23|2.1|3.7|2.8|0.9|0.5|0|46|521|67|1.77|27|bunch=30|vn
+Perilla (dried)|Herbs & spices|300|20|40|30|0|8|1.5|20|1500|900|15|10|tsp=2|kr
+Epazote (dried)|Herbs & spices|300|18|45|30|0|6|1.2|40|1200|900|20|5|tsp=1|mx
+Mexican oregano|Herbs & spices|265|9|68.9|42.5|4.1|4.3|1.6|25|1260|1597|36.8|2.3|tsp=1|mx
+Achiote / annatto seed|Herbs & spices|350|13|60|30|0|8|2|30|1200|200|10|0|tsp=3|mx br
+Sumac|Herbs & spices|312|5|68|30|0|7|1|30|1200|300|20|10|tsp=2.8|me tr
+Za'atar blend|Herbs & spices|350|12|45|25|2|14|2|1500|900|800|30|5|tsp=2.5|me
+Baharat|Herbs & spices|340|12|50|25|3|11|2|60|1200|500|20|5|tsp=2.5|me
+Ras el hanout|Herbs & spices|340|12|50|25|3|11|2|60|1200|500|20|5|tsp=2.5|af me
+Harissa powder|Herbs & spices|300|12|50|30|5|10|1.8|1000|1500|200|10|20|tsp=2.5|af me
+Berbere|Herbs & spices|320|12|52|28|4|10|2|1200|1400|300|15|20|tsp=2.5|et
+Mitmita|Herbs & spices|320|12|52|28|4|10|2|1200|1400|300|15|20|tsp=2.5|et
+Dukkah|Herbs & spices|500|18|25|10|2|38|5|500|700|300|8|1|tbsp=8|af me
+Shichimi togarashi|Herbs & spices|300|12|50|25|3|10|1.5|1500|1000|300|10|10|tsp=2|jp
+Furikake|Herbs & spices|380|18|35|8|8|18|3|3000|500|400|6|2|tsp=3|jp
+Gochugaru (Korean chilli flakes)|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|tbsp=7|kr
+Five spice powder|Herbs & spices|330|8|55|25|3|10|2|30|1100|500|22|3|tsp=2.5|cn
+Chinese white pepper|Herbs & spices|296|10.4|68.6|26.2|0|2.1|0.6|5|73|265|14.3|21|tsp=2.4|cn
+Herbes de Provence|Herbs & spices|290|9|60|38|3|8|2|40|1100|1400|40|10|tsp=1|fr
+Italian seasoning|Herbs & spices|280|9|62|40|3|7|1.8|30|1200|1500|38|5|tsp=1|it
+Bouquet garni|Herbs & spices|290|9|60|38|3|8|2|40|1100|1400|40|10|pc=3|fr
+Old Bay seasoning|Herbs & spices|180|4|32|10|1|4|0.6|12000|500|400|10|0|tsp=2.4|us
+Cajun seasoning|Herbs & spices|280|10|48|22|3|9|1.5|9000|1000|300|12|10|tsp=2.5|us
+Jerk seasoning|Herbs & spices|280|9|50|20|8|8|1.5|6000|1200|300|12|15|tsp=3|ca
+Adobo seasoning|Herbs & spices|150|4|25|8|1|3|0.5|15000|400|200|6|0|tsp=3|mx
+Chimichurri (dried mix)|Herbs & spices|280|9|50|25|3|8|1.5|2000|1100|500|15|10|tsp=2|br
+Paprika (sweet)|Herbs & spices|282|14.1|53.9|34.9|10.3|12.9|2.1|68|2280|229|21.1|0.9|tsp=2.3,tbsp=7|de es
+Smoked paprika|Herbs & spices|282|14.1|53.9|34.9|10.3|12.9|2.1|68|2280|229|21.1|0.9|tsp=2.3|es
+Cayenne pepper|Herbs & spices|318|12|56.6|27.2|10.3|17.3|3.3|30|2014|148|7.8|76.4|tsp=1.8|w
+Chipotle powder|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|tsp=2.5|mx
+Ancho chilli (dried)|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=17|mx
+Guajillo chilli (dried)|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=10|mx
+Pasilla chilli (dried)|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=12|mx
+Chilli flakes|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|tsp=2|it w
+Aleppo pepper|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|tsp=2.5|tr me
+Juniper berry|Herbs & spices|300|10|55|30|0|10|2|10|900|100|8|10|tsp=2|sc de
+Caraway seed|Herbs & spices|333|19.8|49.9|38|0.6|14.6|0.6|17|1351|689|16.2|21|tsp=2.1|de me
+Dill seed|Herbs & spices|305|16|55|21|0|14.5|0.7|20|1186|1516|16.3|21|tsp=2.1|ru sc
+Celery seed|Herbs & spices|392|18.1|41.4|11.8|0.7|25.3|2.2|160|1400|1767|44.9|17.1|tsp=2|us in
+Anise seed|Herbs & spices|337|17.6|50|14.6|0|15.9|0.6|16|1441|646|36.9|21|tsp=2.1|me it
+Allspice|Herbs & spices|263|6.1|72.1|21.6|0|8.7|2.6|77|1044|661|7.06|39.2|tsp=1.9|ca me
+Vanilla bean|Herbs & spices|288|0.1|12.7|0|12.7|0.1|0|9|148|11|0.12|0|pc=3|mx w
+Mustard powder|Herbs & spices|508|26.1|28.1|12.2|6.8|36.2|1.9|13|738|266|9.21|7.1|tsp=2|de uk
+Garlic powder|Herbs & spices|331|16.6|72.7|9|2.4|0.7|0.2|60|1193|79|5.65|1.2|tsp=3,tbsp=8.5|w
+Onion powder|Herbs & spices|341|10.4|79.1|15.2|6.6|1|0.2|73|985|384|3.9|8.3|tsp=2.4|w
+Ginger powder|Herbs & spices|335|9|71.6|14.1|3.4|4.2|2.6|27|1320|114|19.8|0.7|tsp=2|w
+Kala namak (black salt)|Herbs & spices|0|0|0|0|0|0|0|38000|10|30|0.5|0|tsp=6|in
+Rock salt (sendha namak)|Herbs & spices|0|0|0|0|0|0|0|38000|8|25|0.4|0|tsp=6|in
+Table salt|Herbs & spices|0|0|0|0|0|0|0|38758|8|24|0.33|0|tsp=6,tbsp=18|w
+Sea salt (flaky)|Herbs & spices|0|0|0|0|0|0|0|38758|8|24|0.33|0|tsp=5|w
+Himalayan pink salt|Herbs & spices|0|0|0|0|0|0|0|38000|20|40|1|0|tsp=6|in w
+Fleur de sel|Herbs & spices|0|0|0|0|0|0|0|38000|10|30|0.5|0|tsp=5|fr
+MSG|Herbs & spices|0|0|0|0|0|0|0|12300|0|0|0|0|tsp=5|cn jp
+Citric acid|Herbs & spices|0|0|0|0|0|0|0|5|0|0|0|0|tsp=4|w
+Cream of tartar|Herbs & spices|258|0|61.5|0.1|0|0|0|52|16500|8|3.72|0|tsp=3|w
+Cow milk (whole)|Dairy & eggs|61|3.2|4.8|0|5.1|3.3|1.9|43|132|113|0.03|0|cup=244,ml=1.03|w in
+Buffalo milk|Dairy & eggs|97|3.8|5.2|0|5.2|6.9|4.6|52|178|169|0.12|2.3|cup=244,ml=1.03|in
+Toned milk|Dairy & eggs|58|3.1|4.7|0|4.7|3|1.8|45|130|110|0.05|1|cup=244|in
+Skim milk|Dairy & eggs|34|3.4|5|0|5.1|0.1|0.1|42|156|122|0.03|0|cup=245|w
+Semi-skimmed milk|Dairy & eggs|46|3.4|4.8|0|4.8|1.7|1.1|44|150|120|0.03|0|cup=244|uk
+Goat milk|Dairy & eggs|69|3.6|4.5|0|4.5|4.1|2.7|50|204|134|0.05|1.3|cup=244|gr me in
+Sheep milk|Dairy & eggs|108|5.98|5.4|0|5.4|7|4.6|44|137|193|0.1|4.2|cup=245|gr it
+Camel milk|Dairy & eggs|63|3.1|4.4|0|4.4|3.5|2.1|59|156|114|0.05|3|cup=244|me in af
+A2 cow milk|Dairy & eggs|61|3.2|4.8|0|5.1|3.3|1.9|43|132|113|0.03|0|cup=244|in
+Raw milk|Dairy & eggs|61|3.2|4.8|0|5.1|3.3|1.9|43|132|113|0.03|0|cup=244|w
+Evaporated milk|Dairy & eggs|135|6.8|10|0|10|7.6|4.6|106|303|261|0.19|1.9|cup=252|w
+Condensed milk (sweetened)|Dairy & eggs|321|7.9|54.4|0|54.4|8.7|5.5|127|371|284|0.19|2.6|cup=306,tbsp=19|in w
+Milk powder (whole)|Dairy & eggs|496|26.3|38.4|0|38.4|26.7|16.7|371|1330|912|0.47|8.6|tbsp=8|w in
+Skim milk powder|Dairy & eggs|362|36.2|52|0|52|0.8|0.5|535|1794|1257|0.32|6.8|tbsp=7|w
+Curd / dahi|Dairy & eggs|60|3.5|4.7|0|4.7|3.3|2.1|46|155|121|0.1|0.5|cup=245,tbsp=15|in
+Greek yogurt (plain)|Dairy & eggs|59|10|3.6|0|3.2|0.4|0.1|36|141|110|0.07|0|cup=245|gr w
+Full-fat yogurt|Dairy & eggs|61|3.5|4.7|0|4.7|3.3|2.1|46|155|121|0.05|0.5|cup=245|w
+Skyr|Dairy & eggs|63|11|4|0|4|0.2|0.1|40|150|120|0.05|0|cup=245|sc
+Labneh|Dairy & eggs|174|8|6|0|6|13|8|300|150|150|0.1|0|tbsp=15|me
+Buttermilk (chaas)|Dairy & eggs|40|3.3|4.8|0|4.8|0.9|0.5|105|151|116|0.05|1|cup=245|in
+Lassi (plain)|Dairy & eggs|60|3|8|0|8|2|1.2|50|150|110|0.05|0.5|cup=245|in
+Kefir|Dairy & eggs|41|3.3|4.5|0|4.5|1|0.7|40|164|120|0.04|0.9|cup=245|ru tr
+Sour cream|Dairy & eggs|198|2.4|4.6|0|3.5|19.4|11.4|80|141|101|0.06|0.9|tbsp=12,cup=230|us mx
+Crème fraîche|Dairy & eggs|292|2.4|3|0|3|30|20|35|110|80|0.05|0.8|tbsp=15|fr
+Fresh cream / malai|Dairy & eggs|340|2.1|2.8|0|2.9|36|23|38|75|65|0.03|0.6|cup=238,tbsp=15|in
+Double cream|Dairy & eggs|449|1.7|2.7|0|2.7|48|30|30|75|60|0.03|0.6|tbsp=15|uk
+Whipping cream|Dairy & eggs|340|2.1|2.8|0|2.9|36|23|38|75|65|0.03|0.6|cup=238|w
+Single cream|Dairy & eggs|198|2.9|4|0|4|19|12|40|120|90|0.04|0.9|tbsp=15|uk
+Clotted cream|Dairy & eggs|586|1.6|2.3|0|2.3|63|40|20|60|50|0.02|0.5|tbsp=15|uk
+Butter (salted)|Dairy & eggs|717|0.9|0.1|0|0.1|81|51|643|24|24|0.02|0|tbsp=14,tsp=5|w
+Butter (unsalted)|Dairy & eggs|717|0.9|0.1|0|0.1|81|51|11|24|24|0.02|0|tbsp=14,tsp=5|w
+Cultured butter|Dairy & eggs|717|0.9|0.1|0|0.1|81|51|30|24|24|0.02|0|tbsp=14|fr
+White butter (makhan)|Dairy & eggs|717|0.9|0.1|0|0.1|81|51|11|24|24|0.02|0|tbsp=14|in
+Ghee|Dairy & eggs|900|0|0|0|0|100|62|2|5|4|0|0|tbsp=14,tsp=5|in
+Buffalo ghee|Dairy & eggs|900|0|0|0|0|100|65|2|5|4|0|0|tbsp=14|in
+Paneer|Dairy & eggs|265|18.3|3.6|0|2.6|20.8|13|18|138|208|0.2|0|cup=226|in
+Low-fat paneer|Dairy & eggs|190|22|4|0|3|10|6.5|20|140|220|0.2|0|cup=226|in
+Chenna|Dairy & eggs|265|18.3|3.6|0|2.6|20.8|13|18|138|208|0.2|0|cup=200|in
+Khoya / mawa|Dairy & eggs|421|14.6|20.5|0|20.5|31|20|60|250|650|0.6|0|cup=200,tbsp=15|in
+Cheddar|Dairy & eggs|403|25|1.3|0|0.5|33|21|621|98|721|0.7|0|slice=28,cup=113|uk us
+Mature cheddar|Dairy & eggs|410|25|0.5|0|0.5|34|21|650|98|730|0.7|0|slice=28|uk
+Mozzarella|Dairy & eggs|300|22|2.2|0|1|22|13|627|76|505|0.44|0|slice=28,cup=112|it
+Buffalo mozzarella|Dairy & eggs|288|17|2|0|1|24|15|350|80|450|0.3|0|pc=125|it
+Burrata|Dairy & eggs|330|17|3|0|2|28|18|350|90|400|0.3|0|pc=125|it
+Parmigiano Reggiano|Dairy & eggs|392|36|3.2|0|0.8|25|16|1529|92|1184|0.82|0|tbsp=5,cup=100|it
+Grana Padano|Dairy & eggs|384|33|0|0|0|28|18|1400|100|1165|0.3|0|tbsp=5|it
+Pecorino Romano|Dairy & eggs|387|32|3.6|0|0.2|27|17|1800|85|1064|0.5|0|tbsp=5|it
+Ricotta|Dairy & eggs|174|11.3|3|0|0.3|13|8.3|84|105|207|0.38|0|cup=246|it
+Mascarpone|Dairy & eggs|429|4.8|4.8|0|3.6|44|28|30|100|100|0.1|0|tbsp=15|it
+Gorgonzola|Dairy & eggs|350|19|2.3|0|0.5|30|19|1200|180|530|0.3|0|pc=30|it
+Provolone|Dairy & eggs|351|25.6|2.1|0|0.6|26.6|17.1|876|138|756|0.52|0|slice=28|it
+Taleggio|Dairy & eggs|315|19|0.9|0|0.9|26|17|880|100|500|0.2|0|pc=30|it
+Fontina|Dairy & eggs|389|25.6|1.6|0|1.6|31|19|800|64|550|0.23|0|slice=28|it
+Asiago|Dairy & eggs|390|25|2|0|1|31|19|1200|100|700|0.3|0|slice=28|it
+Feta|Dairy & eggs|264|14|4.1|0|4.1|21|15|917|62|493|0.65|0|cup=150|gr
+Halloumi|Dairy & eggs|321|22|2.2|0|1|25|17|1200|60|750|0.3|0|slice=30|gr tr
+Kefalotyri|Dairy & eggs|390|26|1|0|1|31|20|1200|90|900|0.4|0|slice=28|gr
+Manouri|Dairy & eggs|330|12|3|0|3|30|19|300|100|300|0.2|0|pc=50|gr
+Brie|Dairy & eggs|334|20.8|0.5|0|0.5|27.7|17.4|629|152|184|0.5|0|pc=30|fr
+Camembert|Dairy & eggs|300|19.8|0.5|0|0.5|24.3|15.3|842|187|388|0.33|0|pc=30|fr
+Roquefort|Dairy & eggs|369|21.5|2|0|0|30.6|19.3|1809|91|662|0.56|0|pc=30|fr
+Comté|Dairy & eggs|410|28|1.5|0|1|33|21|600|100|900|0.2|0|slice=28|fr
+Gruyère|Dairy & eggs|413|29.8|0.4|0|0.4|32.3|18.9|336|81|1011|0.17|0|slice=28|fr
+Emmental|Dairy & eggs|380|28|1.4|0|1.4|29|18|200|110|1000|0.2|0|slice=28|fr de
+Raclette|Dairy & eggs|357|23|1|0|1|28|18|700|110|750|0.2|0|slice=30|fr
+Chèvre (goat cheese)|Dairy & eggs|364|21.6|2.5|0|2.5|29.8|20.6|415|158|298|1.62|0|pc=30|fr
+Reblochon|Dairy & eggs|330|20|1|0|1|27|18|550|110|500|0.2|0|pc=30|fr
+Époisses|Dairy & eggs|320|18|2|0|2|27|17|700|120|400|0.3|0|pc=30|fr
+Gouda|Dairy & eggs|356|24.9|2.2|0|2.2|27.4|17.6|819|121|700|0.24|0|slice=28|de
+Edam|Dairy & eggs|357|25|1.4|0|1.4|28|18|965|188|731|0.44|0|slice=28|de
+Swiss cheese|Dairy & eggs|380|27|5.4|0|1.3|28|18|192|77|791|0.2|0|slice=28|de
+Quark|Dairy & eggs|68|12|4|0|4|0.3|0.2|40|130|90|0.1|0|cup=230|de
+Blue cheese|Dairy & eggs|353|21.4|2.3|0|0.5|28.7|18.7|1395|256|528|0.31|0|pc=30|uk fr
+Stilton|Dairy & eggs|393|23.7|0.1|0|0.1|33|21|1150|130|320|0.3|0|pc=30|uk
+Red Leicester|Dairy & eggs|400|24|0.1|0|0.1|34|21|600|100|700|0.3|0|slice=28|uk
+Wensleydale|Dairy & eggs|375|23|0.1|0|0.1|31|20|600|100|700|0.3|0|slice=28|uk
+Manchego|Dairy & eggs|392|32|0.6|0|0.6|29|18|1100|60|780|0.4|0|slice=28|es
+Cotija|Dairy & eggs|365|24|3|0|1|28|18|1600|100|700|0.3|0|tbsp=8|mx
+Queso fresco|Dairy & eggs|299|18|3|0|3|24|15|700|130|600|0.3|0|pc=30|mx
+Oaxaca cheese|Dairy & eggs|356|24|3|0|1|27|17|700|90|600|0.3|0|pc=30|mx
+Cream cheese|Dairy & eggs|342|6.2|4.1|0|3.8|34|19.3|314|138|98|0.11|0|tbsp=14|us
+Cottage cheese|Dairy & eggs|98|11.1|3.4|0|2.7|4.3|1.7|364|104|83|0.07|0|cup=226|us uk
+Processed cheese slice|Dairy & eggs|375|18|8|0|5|31|19|1400|180|600|0.5|0|slice=20|in us
+Cheese spread|Dairy & eggs|290|12|8|0|5|24|15|1200|180|450|0.4|0|tbsp=15|in w
+Paneer tikka masala base|Dairy & eggs|180|8|9|1|4|13|7|400|200|150|0.8|3|cup=200|in
+Amul cheese cube|Dairy & eggs|375|18|8|0|5|31|19|1400|180|600|0.5|0|pc=20|in
+Egg (whole, raw)|Dairy & eggs|143|12.6|0.7|0|0.4|9.5|3.1|142|138|56|1.75|0|pc=50|w in
+Egg white (raw)|Dairy & eggs|52|10.9|0.7|0|0.7|0.2|0|166|163|7|0.08|0|pc=33|w
+Egg yolk (raw)|Dairy & eggs|322|15.9|3.6|0|0.6|26.5|9.6|48|109|129|2.73|0|pc=17|w
+Duck egg|Dairy & eggs|185|12.8|1.4|0|0.9|13.8|3.7|146|222|64|3.85|0|pc=70|cn vn
+Quail egg|Dairy & eggs|158|13.1|0.4|0|0.4|11.1|3.6|141|132|64|3.65|0|pc=9|jp in
+Goose egg|Dairy & eggs|185|13.9|1.4|0|0.9|13.3|3.6|138|210|60|3.64|0|pc=144|de
+Century egg|Dairy & eggs|171|14|4|0|0|11|3|1500|150|60|3|0|pc=60|cn
+Salted duck egg|Dairy & eggs|190|12|1.5|0|1|14|4|2500|200|70|4|0|pc=70|cn
+Egg powder|Dairy & eggs|594|47.4|4.9|0|3|41.2|12.5|548|518|213|6.79|0|tbsp=8|w
+Paneer whey|Dairy & eggs|27|0.9|5.1|0|5.1|0.4|0.2|54|161|47|0.06|0.5|cup=240|in
+Chicken breast (skinless, raw)|Meat & poultry|120|22.5|0|0|0|2.6|0.7|45|334|5|0.7|0|pc=170|w in
+Chicken breast (with skin, raw)|Meat & poultry|172|20.8|0|0|0|9.2|2.7|63|220|11|0.7|0|pc=200|w
+Chicken thigh (boneless, raw)|Meat & poultry|177|18|0|0|0|11|3.2|84|230|8|0.9|0|pc=110|w in
+Chicken drumstick (raw)|Meat & poultry|161|18.4|0|0|0|9.2|2.5|88|230|10|1|0|pc=100|w in
+Chicken wing (raw)|Meat & poultry|222|18.3|0|0|0|15.9|4.4|82|180|13|1|0|pc=35|w
+Chicken (whole, raw)|Meat & poultry|215|18.6|0|0|0|15.1|4.3|70|189|11|0.9|0|w in
+Chicken mince (raw)|Meat & poultry|143|17.4|0|0|0|8.1|2.3|60|280|10|0.9|0|cup=225|w
+Chicken liver|Meat & poultry|119|16.9|0.7|0|0|4.8|1.6|71|230|8|8.99|17.9|pc=45|w in
+Chicken heart|Meat & poultry|153|15.6|0.7|0|0|9.3|2.7|74|176|12|5.96|3.2|pc=6|w
+Chicken skin|Meat & poultry|349|13.3|0|0|0|32.4|9.1|63|100|11|0.6|0|pc=30|w
+Turkey breast (raw)|Meat & poultry|111|24.6|0|0|0|0.7|0.2|55|302|8|0.7|0|pc=200|us uk
+Turkey thigh (raw)|Meat & poultry|145|19.5|0|0|0|7|2.2|75|280|15|1.4|0|pc=200|us
+Turkey mince (raw)|Meat & poultry|148|19.7|0|0|0|7.7|2|72|270|17|1.3|0|cup=225|us
+Duck breast (raw)|Meat & poultry|201|18.3|0|0|0|13.8|4.5|74|271|11|2.7|5.8|pc=200|fr cn
+Duck (whole, raw)|Meat & poultry|337|19|0|0|0|28.4|9.7|59|204|11|2.7|5.8|fr cn
+Goose (raw)|Meat & poultry|371|15.9|0|0|0|33.6|9.8|73|308|12|2.2|4.6|de
+Quail (raw)|Meat & poultry|192|19.6|0|0|0|12.1|3.4|53|216|13|3.97|6.1|pc=110|in fr
+Guinea fowl (raw)|Meat & poultry|110|20.6|0|0|0|2.5|0.6|69|220|11|0.8|0|af fr
+Mutton / goat (lean, raw)|Meat & poultry|109|20.6|0|0|0|2.3|0.7|82|385|13|3.7|0|in me ca
+Goat leg (raw)|Meat & poultry|109|20.6|0|0|0|2.3|0.7|82|385|13|3.7|0|in
+Mutton keema (mince)|Meat & poultry|180|18|0|0|0|12|5|75|290|15|2.5|0|cup=225|in
+Lamb (lean, raw)|Meat & poultry|258|16.6|0|0|0|20.9|9|62|230|13|1.6|0|w
+Lamb leg (raw)|Meat & poultry|230|17.9|0|0|0|17.1|7.4|60|250|10|1.7|0|w
+Lamb chop (raw)|Meat & poultry|282|16.6|0|0|0|23.4|10.2|65|230|15|1.5|0|pc=90|w uk
+Lamb shoulder (raw)|Meat & poultry|280|16.6|0|0|0|23.4|10.2|65|230|15|1.5|0|uk gr
+Lamb liver|Meat & poultry|139|20.4|1.8|0|0|5|1.9|70|313|7|7.37|4|pc=100|w in
+Lamb kidney|Meat & poultry|97|15.7|0.8|0|0|2.9|1|156|277|13|6.38|11|pc=60|uk fr
+Beef (lean, raw)|Meat & poultry|217|20|0|0|0|15|6|66|318|12|2.1|0|w
+Beef sirloin (raw)|Meat & poultry|201|21.2|0|0|0|12.7|5|54|331|18|1.8|0|us
+Beef ribeye (raw)|Meat & poultry|291|18.9|0|0|0|23.5|9.6|54|300|14|1.9|0|us
+Beef tenderloin (raw)|Meat & poultry|179|20.8|0|0|0|10.1|3.9|50|343|18|2.2|0|fr us
+Beef brisket (raw)|Meat & poultry|251|18.6|0|0|0|19|7.6|60|290|11|1.9|0|us
+Beef chuck (raw)|Meat & poultry|217|19.6|0|0|0|15|6|66|300|14|2.3|0|us
+Beef mince (lean)|Meat & poultry|176|20|0|0|0|10|4|66|318|18|2.2|0|cup=225|w
+Beef mince (regular)|Meat & poultry|254|17.2|0|0|0|20|7.7|67|270|17|1.9|0|cup=225|w
+Beef liver|Meat & poultry|135|20.4|3.9|0|0|3.6|1.2|69|313|5|4.9|1.3|pc=100|w
+Beef tongue|Meat & poultry|224|14.9|3.7|0|0|16.1|5.9|69|315|6|2.4|3.8|mx
+Oxtail|Meat & poultry|262|26.7|0|0|0|16.4|6.6|73|219|13|3.2|0|ca uk
+Veal (raw)|Meat & poultry|172|19.4|0|0|0|9.8|3.9|82|328|17|1|0|it fr
+Pork loin (raw)|Meat & poultry|198|20.7|0|0|0|12.3|4.4|53|373|17|0.8|0|w
+Pork belly (raw)|Meat & poultry|518|9.3|0|0|0|53|19.3|32|185|5|0.5|0|cn kr
+Pork shoulder (raw)|Meat & poultry|242|20|0|0|0|17|6.2|62|353|14|0.9|0|w
+Pork chop (raw)|Meat & poultry|231|20.9|0|0|0|15.8|5.6|56|360|18|0.7|0|pc=140|w
+Pork mince (raw)|Meat & poultry|263|16.9|0|0|0|21.2|7.9|56|287|14|0.9|0|cup=225|w
+Pork ribs (raw)|Meat & poultry|277|17.2|0|0|0|22.5|8.4|60|280|30|1|0|us cn
+Bacon (raw)|Meat & poultry|541|37|1.4|0|0|41.8|13.7|1717|565|11|1.44|0|slice=12|uk us
+Pancetta|Meat & poultry|458|15|0|0|0|44|16|1600|200|10|0.8|0|slice=15|it
+Prosciutto|Meat & poultry|195|26|0.4|0|0.4|10|3.5|2200|400|10|1.5|0|slice=15|it
+Serrano ham|Meat & poultry|195|26|0.4|0|0.4|10|3.5|2200|400|10|1.5|0|slice=15|es
+Chorizo (cured)|Meat & poultry|455|24.1|1.9|0|1.1|38.3|14.4|1235|397|8|1.6|0|pc=30|es mx
+Salami|Meat & poultry|336|22|2.4|0|0.9|26|9.6|1740|340|13|1.4|0|slice=10|it
+Pepperoni|Meat & poultry|504|19.3|1.2|0|0|46|17|1761|274|22|1.3|0|slice=5|us it
+Mortadella|Meat & poultry|311|16.4|3.1|0|0|25.4|9.5|1246|163|20|1.4|0|slice=28|it
+Ham (cooked)|Meat & poultry|145|20.9|1.5|0|1.5|5.5|1.8|1203|287|10|1.1|0|slice=28|w
+Sausage (pork)|Meat & poultry|301|18.1|1.3|0|0.9|24.5|8.8|848|267|17|1.1|0|pc=75|uk de
+Bratwurst|Meat & poultry|333|13.4|2.9|0|0|30|10.6|846|247|21|1|0|pc=85|de
+Frankfurter|Meat & poultry|290|10.6|4.1|0|1.5|26|9.7|1090|140|60|1|0|pc=45|de us
+Andouille|Meat & poultry|300|15|2|0|1|26|9|1200|250|15|1.2|0|pc=75|us fr
+Merguez|Meat & poultry|320|16|1|0|0|28|11|900|280|15|2|0|pc=60|af fr
+Blood sausage|Meat & poultry|379|14.6|1.3|0|0|34.5|13.4|680|38|6|6.4|0|pc=60|de es
+Liverwurst|Meat & poultry|326|14.1|2.2|0|0|28.5|10.6|860|170|26|6|0|slice=20|de
+Corned beef|Meat & poultry|251|18.2|0.5|0|0|18.98|6.3|973|145|12|1.86|0|slice=30|uk ca
+Pastrami|Meat & poultry|147|21|2|0|1|6|2|1200|300|10|2|0|slice=28|us
+Biltong|Meat & poultry|250|50|2|0|1|5|2|2000|900|20|6|0|pc=25|af
+Beef jerky|Meat & poultry|410|33.2|11|1.8|9|25.6|10.8|2081|597|20|5.4|0|pc=20|us
+Rabbit (raw)|Meat & poultry|173|20|0|0|0|9.8|2.9|40|343|13|3.7|0|fr it
+Venison (raw)|Meat & poultry|120|22.9|0|0|0|2.4|0.9|51|318|5|3.4|0|sc de
+Wild boar (raw)|Meat & poultry|122|21.5|0|0|0|3.3|1|0|378|13|1|0|it de
+Kangaroo (raw)|Meat & poultry|98|21.9|0|0|0|1|0.4|48|380|4|3.7|0|au
+Ostrich (raw)|Meat & poultry|110|21.7|0|0|0|2|0.7|72|318|6|3.2|0|af
+Emu (raw)|Meat & poultry|110|22|0|0|0|2|0.7|70|320|6|3.5|0|au
+Camel meat|Meat & poultry|120|21|0|0|0|3.5|1.4|90|300|10|3|0|me af
+Horse meat|Meat & poultry|133|21.4|0|0|0|4.6|1.5|53|379|7|3.8|2|fr jp
+Tripe|Meat & poultry|85|12.1|2|0|0|3.7|1.3|68|67|69|0.6|0|it mx
+Trotters (pork)|Meat & poultry|212|18|0|0|0|15|5|100|150|30|1|0|cn kr
+Chicken feet|Meat & poultry|215|19.4|0.2|0|0|14.6|3.9|67|31|88|0.9|0|pc=35|cn
+Bone marrow|Meat & poultry|786|7|0|0|0|84|36|55|30|10|0.5|0|pc=50|fr it
+Sweetbreads|Meat & poultry|319|12.9|0|0|0|29|10|58|340|10|1.3|18|fr
+Foie gras|Meat & poultry|462|11.4|4.7|0|0|43.8|14.5|697|138|10|5.5|2|pc=30|fr
+Spam / luncheon meat|Meat & poultry|315|13.4|4.6|0|0|26.6|9.9|1370|409|8|0.9|0|slice=30|us ph
+Nuggets (chicken, frozen)|Meat & poultry|296|15.5|15.5|1|0.5|19.5|4|557|278|22|1|0|pc=17|us
+Chicken sausage|Meat & poultry|172|17|2|0|1|10|3|750|250|20|1|0|pc=60|w
+Tandoori chicken (cooked)|Meat & poultry|195|29|3|0.5|1.5|7|2.5|600|350|40|1.4|3|pc=150|in
+Chicken tikka (cooked)|Meat & poultry|205|28|4|0.5|2|8|3|550|340|60|1.5|3|pc=120|in
+Seekh kebab (cooked)|Meat & poultry|250|20|4|1|1|17|7|600|300|30|2.5|2|pc=60|in
+Keema (cooked)|Meat & poultry|230|19|4|1|1|15|6|500|300|30|2.5|3|cup=200|in
+Rohu|Fish & seafood|97|16.6|0|0|0|1.4|0.4|60|300|90|1|0|pc=250|in
+Katla|Fish & seafood|97|16.6|0|0|0|1.4|0.4|60|300|90|1|0|pc=300|in
+Hilsa (ilish)|Fish & seafood|273|21.8|0|0|0|19.4|5|90|280|180|2.1|0|pc=250|in
+Pomfret (white)|Fish & seafood|87|17|0|0|0|1.3|0.4|90|320|40|0.9|0|pc=250|in
+Black pomfret|Fish & seafood|100|18|0|0|0|3|0.9|95|310|45|1|0|pc=250|in
+Bangda (Indian mackerel)|Fish & seafood|205|18.6|0|0|0|13.9|3.3|90|314|12|1.6|0.4|pc=150|in
+Surmai (kingfish)|Fish & seafood|105|20|0|0|0|2.5|0.6|80|340|25|0.9|0|pc=200|in
+Bombay duck|Fish & seafood|78|16|0|0|0|1.2|0.3|100|250|100|1.5|0|pc=60|in
+Singhara (catfish)|Fish & seafood|105|18|0|0|0|3.5|0.9|60|350|15|0.5|0|pc=200|in
+Tilapia|Fish & seafood|96|20.1|0|0|0|1.7|0.6|52|302|10|0.56|0|pc=180|w af
+Basa / pangasius|Fish & seafood|90|15|0|0|0|3|1|60|300|10|0.3|0|pc=180|vn
+Salmon (Atlantic)|Fish & seafood|208|20.4|0|0|0|13.4|3.1|59|363|9|0.34|0|pc=170|sc us
+Salmon (wild sockeye)|Fish & seafood|168|21.3|0|0|0|8.6|1.5|47|391|7|0.5|0|pc=170|us
+Smoked salmon|Fish & seafood|117|18.3|0|0|0|4.3|0.9|784|175|11|0.85|0|slice=28|sc uk
+Trout (rainbow)|Fish & seafood|148|20.8|0|0|0|6.6|1.9|52|417|43|0.3|2.4|pc=150|sc us
+Sea bass|Fish & seafood|97|18.4|0|0|0|2|0.4|68|256|10|0.3|0|pc=200|it gr
+Sea bream|Fish & seafood|96|19|0|0|0|2|0.5|70|300|20|0.4|0|pc=250|gr tr
+Cod|Fish & seafood|82|18|0|0|0|0.7|0.1|54|413|16|0.38|1|pc=180|uk sc
+Haddock|Fish & seafood|90|20|0|0|0|0.6|0.1|68|351|33|0.2|0|pc=180|uk
+Pollock|Fish & seafood|92|19.4|0|0|0|1|0.2|86|356|60|0.24|0|pc=180|us
+Hake|Fish & seafood|90|18.3|0|0|0|1.3|0.3|72|320|30|0.4|0|pc=180|es
+Halibut|Fish & seafood|111|22.5|0|0|0|1.3|0.2|68|435|7|0.2|0|pc=180|us sc
+Plaice|Fish & seafood|79|17|0|0|0|1.1|0.2|93|305|20|0.2|0|pc=180|uk
+Sole|Fish & seafood|79|17|0|0|0|1.1|0.2|93|305|20|0.2|0|pc=150|fr
+Turbot|Fish & seafood|95|16.1|0|0|0|3|0.8|150|280|18|0.4|1.6|pc=200|fr
+Monkfish|Fish & seafood|76|14.5|0|0|0|1.5|0.3|18|400|8|0.3|1|pc=200|fr es
+Tuna (yellowfin)|Fish & seafood|109|24.4|0|0|0|0.5|0.2|45|441|4|0.77|0|pc=170|jp w
+Tuna (bluefin)|Fish & seafood|144|23.3|0|0|0|4.9|1.3|39|252|8|1|0|pc=170|jp
+Tuna (canned in water)|Fish & seafood|116|25.5|0|0|0|0.8|0.2|247|237|11|1.02|0|cup=154|w
+Tuna (canned in oil)|Fish & seafood|198|29.1|0|0|0|8.2|1.5|354|207|13|1.2|0|cup=146|w
+Mackerel (Atlantic)|Fish & seafood|205|18.6|0|0|0|13.9|3.3|90|314|12|1.63|0.4|pc=170|sc jp
+Sardine (fresh)|Fish & seafood|208|24.6|0|0|0|11.5|1.5|505|397|382|2.9|0|pc=40|it es
+Sardine (canned in oil)|Fish & seafood|208|24.6|0|0|0|11.5|1.5|505|397|382|2.9|0|cup=149|w
+Anchovy (fresh)|Fish & seafood|131|20.4|0|0|0|4.8|1.3|104|383|147|3.25|0|pc=15|it es
+Anchovy (canned)|Fish & seafood|210|28.9|0|0|0|9.7|2.2|3668|544|232|4.63|0|pc=4|it
+Herring|Fish & seafood|158|18|0|0|0|9|2|90|327|57|1.1|0.7|pc=150|sc de
+Pickled herring|Fish & seafood|262|14.2|9.6|0|9.6|18|2.4|870|69|77|1.1|0|pc=30|sc de
+Kipper|Fish & seafood|217|24.6|0|0|0|12.4|2.8|918|447|66|1.4|0|pc=150|uk
+Snapper|Fish & seafood|100|20.5|0|0|0|1.3|0.3|64|417|32|0.2|1.6|pc=200|ca th
+Grouper|Fish & seafood|92|19.4|0|0|0|1|0.2|53|475|27|0.9|0|pc=200|ca cn
+Barramundi|Fish & seafood|97|19|0|0|0|2.5|0.8|70|300|20|0.3|0|pc=200|au th
+Swordfish|Fish & seafood|144|19.8|0|0|0|6.7|1.8|81|418|5|0.38|1|pc=180|it us
+Mahi mahi|Fish & seafood|85|18.5|0|0|0|0.7|0.2|88|416|16|1.13|0|pc=180|ca us
+Eel (freshwater)|Fish & seafood|184|18.4|0|0|0|11.7|2.4|51|272|20|0.5|1.8|pc=150|jp
+Unagi (grilled eel)|Fish & seafood|293|23|3|0|3|21|5|500|300|150|0.8|1|pc=100|jp
+Milkfish|Fish & seafood|148|20.5|0|0|0|6.7|1.7|72|292|51|0.3|0|pc=250|ph
+Carp|Fish & seafood|127|17.8|0|0|0|5.6|1.1|49|333|41|1.24|1.6|pc=250|cn de
+Perch|Fish & seafood|91|19.4|0|0|0|0.9|0.2|62|356|80|0.9|1.7|pc=150|sc
+Pike|Fish & seafood|88|19.3|0|0|0|0.7|0.1|39|259|57|0.55|3.5|pc=200|ru sc
+Sturgeon|Fish & seafood|105|16.1|0|0|0|4|0.9|54|284|13|0.7|0|pc=200|ru
+Caviar|Fish & seafood|264|24.6|4|0|0|17.9|4.1|1500|181|275|11.9|0|tsp=5|ru
+Roe (fish)|Fish & seafood|143|22.3|1.5|0|0|6.4|1.5|90|221|22|0.6|16|tbsp=15|jp sc
+Ikura (salmon roe)|Fish & seafood|250|32|1|0|0|13|2.5|1500|220|30|1.8|0|tbsp=15|jp
+Tarako (cod roe)|Fish & seafood|140|24|0.4|0|0|3.3|0.8|1800|300|24|0.6|33|pc=40|jp
+Bonito flakes (katsuobushi)|Fish & seafood|356|77.1|0.8|0|0|2.9|0.9|130|940|46|5.6|0|cup=5|jp
+Dried anchovy (niboshi)|Fish & seafood|332|64.5|0.3|0|0|6.2|1.6|1700|1200|2200|18|0|tbsp=5|jp kr
+Dried shrimp|Fish & seafood|307|62.4|3.1|0|0|3.1|0.6|1550|1200|2300|5|0|tbsp=8|cn th
+Salt cod (bacalao)|Fish & seafood|290|62.8|0|0|0|2.4|0.5|7027|1458|160|2.5|0|pc=100|es br
+Prawns / shrimp|Fish & seafood|99|24|0.2|0|0|0.3|0.1|111|259|70|0.51|0|pc=15|w in
+Tiger prawn|Fish & seafood|99|24|0.2|0|0|0.3|0.1|111|259|70|0.51|0|pc=25|in th
+Crab (blue)|Fish & seafood|97|19.4|0|0|0|1.5|0.2|293|262|59|0.76|3|pc=100|us in
+Crab (king)|Fish & seafood|84|18.3|0|0|0|0.6|0.1|836|204|46|0.6|6.5|pc=200|sc us
+Lobster|Fish & seafood|77|16.5|0|0|0|0.7|0.1|423|200|48|0.29|0|pc=250|fr us
+Langoustine|Fish & seafood|90|18|0|0|0|1.5|0.3|400|300|50|0.5|0|pc=30|fr
+Crayfish|Fish & seafood|82|16.8|0|0|0|1.1|0.2|62|302|26|0.83|0.9|pc=15|us fr
+Squid|Fish & seafood|92|15.6|3.1|0|0|1.4|0.4|44|246|32|0.68|4.7|pc=100|it jp
+Octopus|Fish & seafood|82|14.9|2.2|0|0|1|0.2|230|350|53|5.3|5|pc=300|gr jp
+Cuttlefish|Fish & seafood|79|16.2|0.8|0|0|0.7|0.1|372|354|90|6.02|5.3|pc=200|it jp
+Mussels|Fish & seafood|86|11.9|3.7|0|0|2.2|0.4|286|320|26|3.95|8|pc=10|fr uk
+Clams|Fish & seafood|86|14.7|4.9|0|0|1|0.1|56|314|46|14|13|pc=10|it jp
+Oyster|Fish & seafood|68|7.1|3.9|0|0|2.5|0.6|106|168|45|5.11|3.7|pc=25|fr us
+Scallops|Fish & seafood|69|12.1|3.2|0|0|0.5|0.1|392|205|6|0.38|0|pc=15|fr jp
+Abalone|Fish & seafood|105|17.1|6|0|0|0.8|0.2|301|250|31|3.19|2|pc=60|cn jp
+Sea urchin (uni)|Fish & seafood|120|13|3|0|0|4.8|1|400|340|20|1.5|0|pc=10|jp
+Whelk|Fish & seafood|137|23.8|7.8|0|0|0.4|0.1|206|347|57|5.03|4|pc=15|uk kr
+Cockle|Fish & seafood|79|13.8|3|0|0|0.6|0.1|300|300|50|13|5|pc=8|uk es
+Razor clam|Fish & seafood|86|14.7|4.9|0|0|1|0.1|56|314|46|14|13|pc=25|es
+Surimi / crab stick|Fish & seafood|99|12.9|9.9|0|4|0.9|0.2|841|91|9|0.26|0|pc=17|jp
+Fish ball|Fish & seafood|110|12|10|0|1|2.5|0.8|700|150|30|0.5|0|pc=15|cn th
+Fish cake (kamaboko)|Fish & seafood|95|12|11|0|3|0.5|0.1|850|100|25|0.3|0|slice=15|jp
+Salted mackerel|Fish & seafood|250|20|0|0|0|18|4|2000|300|20|1.8|0|pc=150|kr jp
+Dried squid|Fish & seafood|330|60|8|0|0|5|1.5|1500|1500|100|3|0|pc=30|kr
+Jellyfish (salted)|Fish & seafood|36|5.5|0|0|0|1.4|0.3|9690|10|2|1.8|0|cup=58|cn
+Sea cucumber|Fish & seafood|56|13|0|0|0|0.4|0.1|300|100|30|3|0|pc=50|cn
+Fish maw|Fish & seafood|300|75|0|0|0|1|0.3|300|100|60|3|0|pc=30|cn
+Mustard oil|Oils & fats|884|0|0|0|0|100|11.6|0|0|0|0|0|tbsp=14,tsp=4.5|in
+Groundnut oil|Oils & fats|884|0|0|0|0|100|16.9|0|0|0|0|0|tbsp=14,tsp=4.5|in cn
+Coconut oil|Oils & fats|862|0|0|0|0|100|82.5|0|0|0|0|0|tbsp=14,tsp=4.5|in th
+Sesame oil (light)|Oils & fats|884|0|0|0|0|100|14.2|0|0|0|0|0|tbsp=14,tsp=4.5|in me
+Toasted sesame oil|Oils & fats|884|0|0|0|0|100|14.2|0|0|0|0|0|tbsp=14,tsp=4.5|cn kr jp
+Sunflower oil|Oils & fats|884|0|0|0|0|100|10.3|0|0|0|0|0|tbsp=14,tsp=4.5|w
+Rice bran oil|Oils & fats|884|0|0|0|0|100|19.7|0|0|0|0|0|tbsp=14|in jp
+Olive oil (extra virgin)|Oils & fats|884|0|0|0|0|100|13.8|2|1|1|0.56|0|tbsp=13.5,tsp=4.5|it gr es
+Olive oil (light)|Oils & fats|884|0|0|0|0|100|13.8|2|1|1|0.56|0|tbsp=13.5|it
+Canola / rapeseed oil|Oils & fats|884|0|0|0|0|100|7.4|0|0|0|0|0|tbsp=14|w
+Avocado oil|Oils & fats|884|0|0|0|0|100|11.6|0|0|0|0|0|tbsp=14|mx
+Corn oil|Oils & fats|884|0|0|0|0|100|12.9|0|0|0|0|0|tbsp=14|us
+Soybean oil|Oils & fats|884|0|0|0|0|100|15.6|0|0|0|0|0|tbsp=14|cn us
+Palm oil|Oils & fats|884|0|0|0|0|100|49.3|0|0|0|0|0|tbsp=14|af id
+Red palm oil|Oils & fats|884|0|0|0|0|100|49.3|0|0|0|0|0|tbsp=14|af
+Grapeseed oil|Oils & fats|884|0|0|0|0|100|9.6|0|0|0|0|0|tbsp=14|fr it
+Walnut oil|Oils & fats|884|0|0|0|0|100|9.1|0|0|0|0|0|tbsp=14|fr
+Hazelnut oil|Oils & fats|884|0|0|0|0|100|7.4|0|0|0|0|0|tbsp=14|fr
+Flaxseed oil|Oils & fats|884|0|0|0|0|100|8.9|0|0|0|0|0|tbsp=14|w
+Pumpkin seed oil|Oils & fats|884|0|0|0|0|100|17.6|0|0|0|0|0|tbsp=14|de
+Argan oil|Oils & fats|884|0|0|0|0|100|16|0|0|0|0|0|tbsp=14|af me
+Peanut oil (roasted)|Oils & fats|884|0|0|0|0|100|16.9|0|0|0|0|0|tbsp=14|cn
+Vanaspati|Oils & fats|900|0|0|0|0|100|45|0|0|0|0|0|tbsp=14|in
+Shortening|Oils & fats|884|0|0|0|0|100|25|0|0|0|0|0|tbsp=13|us
+Lard|Oils & fats|902|0|0|0|0|100|39.2|0|0|0|0|0|tbsp=13|de mx
+Beef tallow|Oils & fats|902|0|0|0|0|100|49.8|0|0|0|0|0|tbsp=13|us uk
+Duck fat|Oils & fats|882|0|0|0|0|99.8|33.2|0|0|0|0|0|tbsp=13|fr
+Schmaltz (chicken fat)|Oils & fats|900|0|0|0|0|99.8|29.8|0|0|0|0|0|tbsp=13|me
+Margarine|Oils & fats|717|0.2|0.7|0|0|80.7|15.9|751|18|3|0.06|0.2|tbsp=14|w
+Coconut cream|Oils & fats|330|3.6|6.7|2.2|4.8|34.7|30.7|17|325|11|1.68|1|cup=240|th in
+Ghee (vegetable)|Oils & fats|900|0|0|0|0|100|45|0|0|0|0|0|tbsp=14|in
+Sugar (white)|Sweeteners|387|0|99.8|0|99.8|0|0|1|2|1|0.05|0|cup=200,tbsp=12.5,tsp=4.2|w
+Caster sugar|Sweeteners|387|0|99.8|0|99.8|0|0|1|2|1|0.05|0|cup=200,tbsp=12.5|uk
+Icing sugar|Sweeteners|389|0|99.5|0|97.8|0|0|2|2|1|0.06|0|cup=120,tbsp=8|w
+Brown sugar|Sweeteners|380|0.1|98.1|0|97|0|0|28|133|83|0.71|0|cup=200,tbsp=13|w
+Demerara sugar|Sweeteners|380|0.1|98.1|0|97|0|0|28|133|83|0.71|0|cup=200|uk
+Muscovado|Sweeteners|380|0.1|98.1|0|97|0|0|28|133|83|0.71|0|tbsp=13|uk ca
+Jaggery (gur)|Sweeteners|383|0.4|98|0|85|0.1|0|30|1050|80|11|0|cup=200,tbsp=13|in
+Palm jaggery|Sweeteners|375|0.5|93|0|90|0.2|0|30|1030|75|4|0|tbsp=13|in th
+Coconut sugar|Sweeteners|375|0|93|0|90|0|0|30|1030|75|4|0|tbsp=12|id th
+Honey|Sweeteners|304|0.3|82.4|0.2|82.1|0|0|4|52|6|0.42|0.5|tbsp=21,tsp=7|w in
+Manuka honey|Sweeteners|304|0.3|82.4|0.2|82.1|0|0|4|52|6|0.42|0.5|tbsp=21|au
+Maple syrup|Sweeteners|260|0|67|0|60.4|0.1|0|12|212|102|0.11|0|tbsp=20,tsp=6.7|us
+Golden syrup|Sweeteners|298|0.3|79|0|58|0|0|60|130|30|1.4|0|tbsp=21|uk
+Molasses|Sweeteners|290|0|74.7|0|74.7|0.1|0|37|1464|205|4.72|0|tbsp=20|us ca
+Treacle|Sweeteners|290|0|74.7|0|74.7|0.1|0|37|1464|205|4.72|0|tbsp=20|uk
+Corn syrup|Sweeteners|286|0|77.6|0|30.9|0|0|155|1|13|0.04|0|tbsp=20|us
+Agave syrup|Sweeteners|310|0|76|0.2|68|0.5|0.1|4|4|1|0.09|0|tbsp=21|mx
+Date syrup|Sweeteners|290|1.5|72|3|65|0.2|0|10|700|60|1.5|0|tbsp=20|me
+Rice syrup|Sweeteners|310|0.5|78|0|40|0.2|0|50|10|10|0.3|0|tbsp=21|jp
+Stevia (powder)|Sweeteners|0|0|100|0|0|0|0|0|0|0|0|0|tsp=2|br pe
+Erythritol|Sweeteners|20|0|100|0|0|0|0|0|0|0|0|0|tsp=4|w
+Xylitol|Sweeteners|240|0|100|0|0|0|0|0|0|0|0|0|tsp=4|sc
+Misri (rock sugar)|Sweeteners|387|0|99.8|0|99.8|0|0|1|2|1|0.05|0|tbsp=13|in
+Nulla / candy sugar|Sweeteners|387|0|99.8|0|99.8|0|0|1|2|1|0.05|0|tbsp=13|de
+Fruit sugar (fructose)|Sweeteners|368|0|100|0|100|0|0|0|0|0|0|0|tsp=4|w
+Condensed milk (sweet)|Sweeteners|321|7.9|54.4|0|54.4|8.7|5.5|127|371|284|0.19|2.6|tbsp=19|in w
+Chocolate (dark 70%)|Sweeteners|546|4.9|61.2|7|47.9|31.3|18.5|24|559|56|8|0|pc=10|w
+Milk chocolate|Sweeteners|535|7.6|59.4|3.4|51.5|29.7|18.5|79|372|189|2.35|0|pc=10|w
+White chocolate|Sweeteners|539|5.9|59.2|0.2|59|32.1|19.4|90|286|199|0.24|0.5|pc=10|w
+Cocoa powder (unsweetened)|Sweeteners|228|19.6|57.9|33.2|1.8|13.7|8.1|21|1524|128|13.9|0|tbsp=5,cup=86|w mx
+Cacao nibs|Sweeteners|650|14|35|33|1|52|31|20|1500|130|13|0|tbsp=10|mx
+Nutella-style spread|Sweeteners|539|6.3|57.5|5|56.3|30.9|10.6|41|407|108|4.4|0|tbsp=20|it
+Almond|Nuts & seeds|579|21.2|21.6|12.5|4.4|49.9|3.8|1|733|269|3.71|0|cup=143,pc=1.2|in w
+Blanched almond|Nuts & seeds|590|21.4|19.5|10.4|4.4|52.5|4|4|713|239|3.5|0|cup=145|w
+Cashew|Nuts & seeds|553|18.2|30.2|3.3|5.9|43.8|7.8|12|660|37|6.68|0.5|cup=137,pc=1.5|in
+Pistachio|Nuts & seeds|560|20.2|27.2|10.6|7.7|45.3|5.9|1|1025|105|3.92|5.6|cup=123,pc=0.7|in me
+Walnut|Nuts & seeds|654|15.2|13.7|6.7|2.6|65.2|6.1|2|441|98|2.91|1.3|cup=117,pc=4|in fr
+Pecan|Nuts & seeds|691|9.2|13.9|9.6|4|72|6.2|0|410|70|2.53|1.1|cup=99|us
+Hazelnut|Nuts & seeds|628|15|16.7|9.7|4.3|60.8|4.5|0|680|114|4.7|6.3|cup=135,pc=1|it fr tr
+Macadamia|Nuts & seeds|718|7.9|13.8|8.6|4.6|75.8|12.1|5|368|85|3.69|1.2|cup=134|au
+Brazil nut|Nuts & seeds|659|14.3|11.7|7.5|2.3|67.1|16.1|3|659|160|2.43|0.7|pc=5|br
+Pine nut (chilgoza)|Nuts & seeds|673|13.7|13.1|3.7|3.6|68.4|4.9|2|597|16|5.53|0.8|tbsp=9|in it
+Chestnut|Nuts & seeds|213|2.4|45.5|8.1|0|2.3|0.4|3|518|27|1.01|43|pc=13|it fr cn
+Peanut|Nuts & seeds|567|25.8|16.1|8.5|4.7|49.2|6.3|18|705|92|4.58|0|cup=146,tbsp=9|in w
+Roasted salted peanut|Nuts & seeds|599|24.4|21.5|8|4.2|52|7.4|400|658|54|2.26|0|cup=146|in w
+Desiccated coconut|Nuts & seeds|660|6.9|23.7|16.3|7.4|64.5|57.2|37|543|26|3.32|1.5|cup=93,tbsp=6|in
+Dry coconut (copra)|Nuts & seeds|660|6.9|23.7|16.3|7.4|64.5|57.2|37|543|26|3.32|1.5|cup=93|in
+Sesame seed (white)|Nuts & seeds|573|17.7|23.4|11.8|0.3|49.7|7|11|468|975|14.6|0|tsp=3,tbsp=9|in me
+Black sesame seed|Nuts & seeds|573|17.7|23.4|11.8|0.3|49.7|7|11|468|975|14.6|0|tbsp=9|jp kr cn
+Sunflower seed|Nuts & seeds|584|20.8|20|8.6|2.6|51.5|4.5|9|645|78|5.25|1.4|cup=140,tbsp=9|w
+Pumpkin seed|Nuts & seeds|559|30.2|10.7|6|1.4|49.1|8.7|7|809|46|8.82|1.9|cup=129,tbsp=8|mx w
+Melon seed (magaz)|Nuts & seeds|557|28.3|15.2|3.9|0|47.4|9.8|99|122|54|7.28|0|tbsp=10|in
+Flaxseed (alsi)|Nuts & seeds|534|18.3|28.9|27.3|1.6|42.2|3.7|30|813|255|5.73|0.6|tbsp=10,tsp=3.4|in w
+Chia seed|Nuts & seeds|486|16.5|42.1|34.4|0|30.7|3.3|16|407|631|7.72|1.6|tbsp=12,tsp=4|mx
+Hemp seed|Nuts & seeds|553|31.6|8.7|4|1.5|48.8|4.6|5|1200|70|7.95|0.5|tbsp=10|w
+Poppy seed|Nuts & seeds|525|18|28.1|19.5|3|41.6|4.5|26|719|1438|9.76|1|tsp=3,tbsp=9|in tr de
+Chironji (charoli)|Nuts & seeds|656|19|12|3|0|59|13|10|600|280|8|0|tbsp=10|in
+Watermelon seed|Nuts & seeds|557|28.3|15.2|3.9|0|47.4|9.8|99|648|54|7.28|0|tbsp=10|af me
+Nigella seed|Nuts & seeds|400|17.8|44.2|10.5|0|22.3|1.5|88|1694|931|66|7.7|tsp=2.5|in me
+Lotus seed (dried)|Nuts & seeds|332|15.4|64.5|0|0|1.97|0.3|5|1368|163|3.53|0|cup=32|cn in
+Tiger nut|Nuts & seeds|400|4|60|30|20|24|4|10|700|60|3|2|cup=100|af es
+Ginkgo nut|Nuts & seeds|182|4.3|37.6|0|0|1.7|0.3|7|510|2|0.5|15|pc=2|cn jp
+Acorn|Nuts & seeds|387|6.2|40.8|0|0|23.9|3.1|0|539|41|0.79|0|pc=3|kr us
+Peanut butter|Nuts & seeds|588|25.1|19.6|6|9.2|50.4|10.3|429|649|43|1.9|0|tbsp=16|us
+Almond butter|Nuts & seeds|614|21|18.8|10.3|4.4|55.5|4.2|7|748|347|3.49|0|tbsp=16|w
+Cashew butter|Nuts & seeds|587|17.6|27.6|2|5.1|49.4|9.8|15|546|43|5.03|0|tbsp=16|w
+Tahini|Nuts & seeds|595|17|21.2|9.3|0.5|53.8|7.5|115|414|426|8.95|0|tbsp=15|me
+Sunflower seed butter|Nuts & seeds|617|17.3|23.3|6.9|9.2|55.2|4.8|3|576|78|4.96|1|tbsp=16|w
+Hazelnut butter|Nuts & seeds|628|15|16.7|9.7|4.3|60.8|4.5|0|680|114|4.7|6.3|tbsp=16|it
+Mixed nuts (roasted)|Nuts & seeds|607|20|21|7|4.4|54|7.4|10|660|110|3.7|0.3|cup=137|w
+Trail mix|Nuts & seeds|462|13.8|44.9|5.1|30|29.4|5.5|229|747|78|2.6|1|cup=140|us
+Soy sauce (light)|Condiments & sauces|53|8.1|4.9|0.8|0.4|0.6|0.1|5493|435|33|1.45|0|tbsp=16,tsp=5.3|cn jp
+Dark soy sauce|Condiments & sauces|60|6|10|0.8|4|0.1|0|5000|400|30|1.5|0|tbsp=18|cn
+Tamari|Condiments & sauces|60|10.5|5.6|0.8|1.7|0.1|0|5586|212|20|2.38|0|tbsp=18|jp
+Ponzu|Condiments & sauces|60|3|10|0|5|0.1|0|3500|200|20|0.8|5|tbsp=18|jp
+Mirin|Condiments & sauces|258|0.2|43.2|0|43|0|0|3|7|2|0|0|tbsp=18|jp
+Sake (cooking)|Condiments & sauces|134|0.5|5|0|0|0|0|2|25|5|0.1|0|tbsp=15|jp
+Rice vinegar|Condiments & sauces|18|0.1|0.5|0|0.5|0|0|3|20|2|0.1|0|tbsp=15|jp cn
+Black vinegar (Chinkiang)|Condiments & sauces|35|0.5|8|0|4|0|0|500|100|20|1|0|tbsp=15|cn
+Oyster sauce|Condiments & sauces|51|1.4|10.9|0.3|0|0.3|0.1|2733|54|32|0.18|0|tbsp=18|cn
+Hoisin sauce|Condiments & sauces|220|3.3|44|2.8|30|3.4|0.6|1615|194|32|1|0|tbsp=16|cn
+Doubanjiang (chilli bean paste)|Condiments & sauces|150|8|20|5|4|4|0.7|6000|400|60|3|2|tbsp=18|cn
+Shaoxing wine|Condiments & sauces|134|0.5|5|0|0|0|0|2|25|5|0.1|0|tbsp=15|cn
+XO sauce|Condiments & sauces|400|12|10|1|5|35|6|2500|300|80|2|0|tbsp=16|cn
+Chilli oil|Condiments & sauces|850|1|3|1|0.5|93|13|300|100|20|1|1|tbsp=14|cn
+Sriracha|Condiments & sauces|93|1.9|19|2.2|15|0.9|0.1|2124|188|21|0.9|3|tbsp=17|th us
+Sweet chilli sauce|Condiments & sauces|220|0.5|54|1|48|0.2|0|1200|100|15|0.5|3|tbsp=20|th
+Fish sauce (nam pla)|Condiments & sauces|35|5.1|3.6|0|3.6|0|0|7851|288|43|0.78|0|tbsp=18|th vn
+Nuoc cham|Condiments & sauces|60|1|13|0|12|0|0|2500|100|20|0.3|3|tbsp=18|vn
+Shrimp paste (belacan)|Condiments & sauces|150|20|3|0|1|6|2|8000|300|500|4|0|tsp=6|th id
+Tamarind paste|Condiments & sauces|239|2.8|62.5|5.1|57.4|0.6|0.3|28|628|74|2.8|3.5|tbsp=16|in th
+Green curry paste|Condiments & sauces|130|3|15|4|4|6|3|3000|500|60|2|10|tbsp=16|th
+Red curry paste|Condiments & sauces|130|3|15|4|4|6|3|3000|500|60|2|10|tbsp=16|th
+Massaman curry paste|Condiments & sauces|150|3|16|4|5|8|4|2800|500|60|2|8|tbsp=16|th
+Panang curry paste|Condiments & sauces|140|3|15|4|5|7|3.5|2900|500|60|2|9|tbsp=16|th
+Gochujang|Condiments & sauces|214|5.4|41|3|22|2.5|0.4|2000|300|30|1.5|0|tbsp=18|kr
+Doenjang|Condiments & sauces|199|12.8|26.5|5.4|6.2|6|1|3728|210|57|2.5|0|tbsp=17|kr
+Ssamjang|Condiments & sauces|180|8|25|4|10|5|0.8|3000|300|50|2|1|tbsp=18|kr
+Miso (white)|Condiments & sauces|199|12.8|26.5|5.4|6.2|6|1|3728|210|57|2.5|0|tbsp=17|jp
+Miso (red)|Condiments & sauces|199|12.8|26.5|5.4|6.2|6|1|4300|210|57|2.5|0|tbsp=17|jp
+Wasabi paste|Condiments & sauces|292|4.8|63|7.8|36|10.9|1|1000|568|128|1.03|41.9|tsp=5|jp
+Japanese curry roux|Condiments & sauces|470|6|45|3|10|30|14|3000|300|40|1.5|0|pc=20|jp
+Tonkatsu sauce|Condiments & sauces|130|1|30|1|20|0.1|0|2200|300|20|0.8|3|tbsp=18|jp
+Okonomiyaki sauce|Condiments & sauces|140|1|33|1|25|0.1|0|2000|300|20|0.8|3|tbsp=18|jp
+Yuzu kosho|Condiments & sauces|60|2|10|3|2|1|0.2|9000|200|40|1|30|tsp=5|jp
+Tomato ketchup|Condiments & sauces|101|1.3|27.4|0.3|21.8|0.1|0|907|281|15|0.35|4.1|tbsp=17|us w
+Mayonnaise|Condiments & sauces|680|1|0.6|0|0.6|75|11.7|635|20|8|0.21|0|tbsp=14|fr w
+Kewpie mayonnaise|Condiments & sauces|703|1.5|0.6|0|0.6|77|6|800|20|8|0.2|0|tbsp=14|jp
+Aioli|Condiments & sauces|680|1|1.5|0.1|0.6|74|11|600|30|10|0.3|1|tbsp=15|es fr
+Dijon mustard|Condiments & sauces|66|4|5.3|3.3|1|3.3|0.2|1120|138|58|1.5|0|tbsp=15,tsp=5|fr
+Wholegrain mustard|Condiments & sauces|130|8|10|5|1|8|0.5|1200|200|100|2.5|0|tbsp=15|fr de
+English mustard|Condiments & sauces|180|8|15|5|4|10|0.7|1500|200|80|2|0|tsp=5|uk
+Yellow mustard|Condiments & sauces|60|3.7|5.8|4|0.9|3.3|0.2|1135|138|58|1.5|1.5|tbsp=15|us
+Kasundi (mustard sauce)|Condiments & sauces|120|5|12|3|4|6|0.5|2000|250|80|2|2|tbsp=16|in
+Worcestershire sauce|Condiments & sauces|78|0|19.5|0|10|0|0|980|800|107|5.3|13|tbsp=17|uk
+HP / brown sauce|Condiments & sauces|120|1|28|1|22|0.1|0|1200|400|30|1|2|tbsp=17|uk
+Malt vinegar|Condiments & sauces|21|0|0.9|0|0.4|0|0|5|73|7|0.2|0|tbsp=15|uk
+Balsamic vinegar|Condiments & sauces|88|0.5|17|0|15|0|0|23|112|27|0.72|0|tbsp=16|it
+Red wine vinegar|Condiments & sauces|19|0|0.3|0|0.1|0|0|8|39|6|0.45|0|tbsp=15|fr it
+White wine vinegar|Condiments & sauces|19|0|0.3|0|0.1|0|0|8|39|6|0.45|0|tbsp=15|fr
+Apple cider vinegar|Condiments & sauces|22|0|0.9|0|0.4|0|0|5|73|7|0.2|0|tbsp=15|us
+Sherry vinegar|Condiments & sauces|20|0|0.5|0|0.3|0|0|10|50|8|0.5|0|tbsp=15|es
+Coconut vinegar|Condiments & sauces|20|0|0.5|0|0.3|0|0|10|50|8|0.5|0|tbsp=15|ph in
+Sugarcane vinegar|Condiments & sauces|20|0|0.5|0|0.3|0|0|10|50|8|0.5|0|tbsp=15|ph
+Pesto (basil)|Condiments & sauces|450|6|6|1.5|1|46|8|800|200|300|1.5|3|tbsp=16|it
+Sun-dried tomato pesto|Condiments & sauces|350|5|12|3|6|32|5|900|400|150|2|8|tbsp=16|it
+Tapenade|Condiments & sauces|250|2|5|3|0.5|25|3.5|1800|100|80|2|1|tbsp=16|fr
+Harissa paste|Condiments & sauces|120|3|10|4|4|8|1|1300|400|60|2|15|tbsp=16|af me
+Romesco|Condiments & sauces|300|5|12|3|5|27|3.5|500|300|60|1.5|20|tbsp=16|es
+Chimichurri|Condiments & sauces|300|1.5|4|2|1|32|4.5|800|200|80|2|20|tbsp=15|br
+Salsa verde (Mexican)|Condiments & sauces|35|1.2|6.5|1.9|3.5|0.5|0.1|500|250|20|0.6|12|tbsp=16|mx
+Salsa roja|Condiments & sauces|30|1.5|6|1.5|3.5|0.2|0|600|300|20|0.7|12|tbsp=16|mx
+Guacamole|Condiments & sauces|160|2|8.5|6.7|0.7|14.7|2.1|300|485|12|0.55|10|tbsp=15|mx
+Mole poblano paste|Condiments & sauces|350|8|35|10|15|20|4|1500|800|100|4|5|tbsp=18|mx
+Adobo sauce|Condiments & sauces|100|2|18|5|8|3|0.5|1500|500|40|2|10|tbsp=16|mx
+Chipotle in adobo|Condiments & sauces|100|2|18|5|8|3|0.5|1500|500|40|2|10|pc=15|mx
+Tahini sauce|Condiments & sauces|400|12|15|6|1|35|5|500|350|300|6|2|tbsp=16|me
+Hummus|Condiments & sauces|166|7.9|14.3|6|0.3|9.6|1.4|379|228|38|2.44|0|tbsp=15,cup=246|me
+Baba ganoush|Condiments & sauces|140|3|10|4|4|10|1.5|400|300|50|1|3|tbsp=15|me
+Toum (garlic sauce)|Condiments & sauces|600|2|8|1|1|63|8|500|150|40|1|5|tbsp=15|me
+Zhoug|Condiments & sauces|200|3|8|3|2|18|2.5|900|400|100|2|40|tbsp=15|me
+Amba|Condiments & sauces|100|1|22|2|18|1|0.2|1500|300|30|1|10|tbsp=16|me
+Tzatziki|Condiments & sauces|90|3|4|0.5|3|7|4|350|150|100|0.2|2|tbsp=15|gr
+Skordalia|Condiments & sauces|250|3|15|1.5|1|20|3|500|200|40|0.6|4|tbsp=16|gr
+Hollandaise|Condiments & sauces|525|3|1|0|0.5|56|33|400|30|30|0.6|0|tbsp=15|fr
+Béchamel|Condiments & sauces|120|3.5|8|0.2|3|8|5|300|120|100|0.2|0|cup=250|fr it
+Demi-glace|Condiments & sauces|60|5|6|0|1|2|0.8|900|200|20|0.6|0|tbsp=15|fr
+Ranch dressing|Condiments & sauces|430|1|6|0|4|45|7|1000|60|40|0.2|0|tbsp=15|us
+Thousand island|Condiments & sauces|390|1|15|0.5|12|36|5.5|900|80|20|0.3|1|tbsp=16|us
+Caesar dressing|Condiments & sauces|480|3|3|0|2|50|8|1100|50|60|0.4|0|tbsp=15|it us
+Vinaigrette|Condiments & sauces|450|0.1|3|0|2|48|7|600|20|5|0.2|0|tbsp=15|fr
+BBQ sauce|Condiments & sauces|172|0.8|40.8|0.8|33.2|0.6|0.1|1027|229|24|0.6|1|tbsp=17|us
+Hot sauce (Louisiana)|Condiments & sauces|11|0.5|1.8|0.3|1|0.4|0.1|2643|144|9|0.4|13|tsp=5|us
+Tabasco|Condiments & sauces|12|1.3|0.8|0.6|0.4|0.8|0.1|633|1|4|1|4|tsp=5|us
+Pickle relish|Condiments & sauces|130|0.4|35|1.2|30|0.5|0.1|1000|40|20|0.7|0|tbsp=15|us
+Sauerkraut juice|Condiments & sauces|12|0.7|2.4|1|1|0.1|0|600|150|20|0.7|10|cup=240|de
+Horseradish sauce|Condiments & sauces|150|1|10|2|6|12|2|600|150|40|0.4|10|tbsp=15|uk de
+Cranberry sauce|Condiments & sauces|151|0.1|39|1|36|0.1|0|29|30|6|0.2|2|tbsp=20|us
+Apple sauce|Condiments & sauces|68|0.2|17.5|1.2|15|0.2|0|2|75|4|0.2|1|cup=244|de us
+Mint chutney|Condiments & sauces|60|3|9|4|2|1.5|0.3|500|400|150|5|20|tbsp=16|in
+Coriander chutney|Condiments & sauces|60|2.5|8|4|2|1.8|0.3|450|400|100|3|20|tbsp=16|in
+Coconut chutney|Condiments & sauces|180|3|8|4|3|15|12|400|250|30|1.5|3|tbsp=16|in
+Tamarind chutney (imli)|Condiments & sauces|200|1|50|3|42|0.4|0.1|500|500|60|2|3|tbsp=18|in
+Mango pickle (achar)|Condiments & sauces|220|1|12|3|5|18|2|4000|200|60|2|10|tbsp=15|in
+Lime pickle|Condiments & sauces|180|1|14|3|4|13|1.5|5000|200|60|2|12|tbsp=15|in
+Garlic pickle|Condiments & sauces|220|3|18|3|4|15|2|3500|300|80|2|8|tbsp=15|in
+Gongura pickle|Condiments & sauces|200|2|14|4|4|15|2|4000|300|150|3|15|tbsp=15|in
+Mixed pickle|Condiments & sauces|200|1.5|13|3|5|16|2|4200|250|70|2|10|tbsp=15|in
+Kimchi|Condiments & sauces|15|1.1|2.4|1.6|1.1|0.5|0.1|498|151|33|0.5|14.7|cup=150|kr
+Kkakdugi (radish kimchi)|Condiments & sauces|20|1|4|1.5|2|0.2|0|600|200|30|0.5|10|cup=150|kr
+Takuan (pickled radish)|Condiments & sauces|20|0.5|4.5|1|3|0.1|0|800|150|20|0.3|5|pc=20|jp
+Umeboshi|Condiments & sauces|33|0.7|8|3|2|0.2|0|7000|200|65|1.1|0|pc=8|jp
+Gari (pickled ginger)|Condiments & sauces|50|0.2|12|1|10|0.1|0|1000|50|10|0.2|1|tbsp=15|jp
+Cornichons|Condiments & sauces|14|0.6|2.4|1|1.4|0.3|0.1|1208|23|0|0.4|1|pc=8|fr
+Giardiniera|Condiments & sauces|60|1|5|2|2|4|0.6|1200|150|30|0.5|10|tbsp=15|it
+Preserved lemon|Condiments & sauces|30|1|9|3|2|0.3|0|6000|140|30|0.6|30|pc=25|af me
+Anchovy paste|Condiments & sauces|180|25|1|0|0|9|2|3500|400|200|4|0|tsp=6|it
+Marmite / yeast extract|Condiments & sauces|185|24|24|3|1|0.5|0.1|3400|2100|60|3.7|0|tsp=6|uk au
+Curry leaf powder (podi)|Condiments & sauces|400|18|40|18|3|18|4|2000|900|400|8|3|tbsp=10|in
+Gunpowder / milagai podi|Condiments & sauces|420|20|38|16|3|20|4|1800|900|300|7|4|tbsp=10|in
+Sambar (prepared)|Condiments & sauces|70|3.5|10|3|2|2|0.4|400|300|40|1.5|5|cup=240|in
+Rasam (prepared)|Condiments & sauces|35|1.5|6|1.5|2|0.8|0.2|450|250|30|1|8|cup=240|in
+Coconut milk|Condiments & sauces|230|2.3|5.5|2.2|3.3|23.8|21.1|15|263|16|1.64|2.8|cup=240,ml=1|in th
+Light coconut milk|Condiments & sauces|73|0.7|1.5|0.7|1|7.5|6.6|13|145|9|0.5|1|cup=240|th
+Evaporated coconut milk|Condiments & sauces|330|3.6|6.7|2.2|4.8|34.7|30.7|17|325|11|1.68|1|cup=240|th
+Passata|Condiments & sauces|32|1.6|7|1.5|4.5|0.2|0|11|400|15|0.9|10|cup=245|it
+Canned chopped tomatoes|Condiments & sauces|32|1.6|7|1.5|4.5|0.2|0|186|293|34|1.3|9|cup=240|it w
+Marinara sauce|Condiments & sauces|61|1.7|8.6|1.9|5.5|2.1|0.3|400|362|31|0.9|9|cup=250|it
+Arrabbiata sauce|Condiments & sauces|70|1.8|9|2|5.5|3|0.4|450|380|32|1|10|cup=250|it
+Vodka sauce|Condiments & sauces|110|2.5|9|1.8|5|7|3|450|350|60|0.9|8|cup=250|it
+Alfredo sauce|Condiments & sauces|200|4|5|0.2|2|18|11|600|100|150|0.3|0|cup=250|it us
+Stock cube (vegetable)|Condiments & sauces|200|8|20|2|4|10|4|20000|300|100|3|0|pc=10|w
+Chicken stock (liquid)|Condiments & sauces|15|1.5|1|0|0.5|0.5|0.1|350|100|5|0.2|0|cup=240|w
+Vegetable stock (liquid)|Condiments & sauces|10|0.5|2|0|1|0.1|0|350|100|10|0.2|0|cup=240|w
+Dashi stock|Condiments & sauces|5|0.5|0.5|0|0|0|0|180|60|5|0.1|0|cup=240|jp
+Bone broth|Condiments & sauces|35|6|1|0|0.5|0.5|0.2|300|150|20|0.3|0|cup=240|w
+Tofu (firm)|Plant proteins|76|8.1|1.9|0.3|0.6|4.8|0.7|7|121|350|5.4|0.1|cup=252|cn jp
+Silken tofu|Plant proteins|55|4.8|2|0.2|0.6|3|0.4|4|150|110|1.1|0|cup=248|jp
+Fried tofu (aburaage)|Plant proteins|271|18.8|9|3|1|20|3|4|140|310|3.5|0|pc=30|jp
+Tofu skin (yuba)|Plant proteins|440|52|12|1|2|24|3.5|10|500|200|9|0|pc=20|cn jp
+Tempeh|Plant proteins|192|20.3|7.6|0|0|10.8|2.2|9|412|111|2.7|0|cup=166|id
+Seitan|Plant proteins|370|75.2|13.8|0.6|0|1.9|0.3|29|100|142|5.2|0|cup=120|cn w
+Soy chunks (nutrela)|Plant proteins|345|52|33|13|0|0.5|0.1|5|1600|350|20|0|cup=90|in
+Soy granules|Plant proteins|345|52|33|13|0|0.5|0.1|5|1600|350|20|0|cup=90|in
+Natto|Plant proteins|212|17.7|14.4|5.4|4.9|11|1.6|7|729|217|8.6|13|cup=175|jp
+Edamame (shelled)|Plant proteins|122|11.9|9.9|5.2|2.2|5.2|0.6|6|436|63|2.27|6.1|cup=155|jp
+Soy milk (unsweetened)|Plant proteins|33|2.9|1.8|0.4|0.9|1.6|0.2|47|118|123|0.42|0|cup=243|cn w
+Almond milk (unsweetened)|Plant proteins|17|0.6|1.5|0.3|0.9|1.1|0.1|72|67|188|0.28|0|cup=240|w
+Oat milk|Plant proteins|46|1|6.7|0.8|4.1|1.5|0.2|42|150|145|0.2|0|cup=240|sc w
+Coconut milk drink|Plant proteins|31|0.2|3.1|0|2.9|2.1|1.9|30|50|188|0.1|0|cup=240|w
+Cashew milk|Plant proteins|25|0.5|1.4|0|1|2|0.4|60|60|180|0.2|0|cup=240|w
+Rice milk|Plant proteins|47|0.3|9.2|0.3|5.3|1|0|39|27|118|0.2|0|cup=240|w
+Pea protein milk|Plant proteins|39|3.3|0.4|0.4|0|1.8|0.2|50|180|180|0.4|0|cup=240|w
+Whey protein powder|Plant proteins|400|80|8|1|5|5|2|400|500|500|1|0|scoop=30,tbsp=8|w
+Pea protein powder|Plant proteins|380|80|5|3|1|5|1|800|100|100|8|0|scoop=30|w
+Soy protein isolate|Plant proteins|335|88.3|0|1.6|0|3.4|0.4|1005|81|178|14.5|0|scoop=30|w
+Casein protein powder|Plant proteins|370|80|6|1|4|2|1|500|400|1500|0.5|0|scoop=30|w
+Textured vegetable protein|Plant proteins|327|52|34|18|8|1.2|0.2|20|2100|280|9|0|cup=90|w in
+Jackfruit (young, canned)|Plant proteins|40|0.6|9.4|1.5|4|0.3|0.1|20|200|20|0.3|8|cup=180|in us
+Falafel mix (dry)|Plant proteins|350|18|48|12|3|8|1|1200|800|100|5|3|cup=120|me
+Vegan burger patty|Plant proteins|220|18|8|3|1|13|5|400|400|100|4|0|pc=113|us
+Vegan sausage|Plant proteins|230|17|9|3|1|14|4|800|350|80|3|0|pc=60|de us
+Lentil pasta (dry)|Plant proteins|350|25|55|10|2|2|0.3|10|900|60|7|0|cup=100|it
+Chickpea pasta (dry)|Plant proteins|340|22|58|12|3|4|0.5|20|800|70|6|0|cup=100|it
+Black bean pasta (dry)|Plant proteins|340|40|45|20|2|2|0.4|15|1400|150|10|0|cup=100|w
+Tea leaves (black, dry)|Beverages|1|0|0.3|0|0|0|0|3|37|0|0.02|0|tsp=2|in uk
+Green tea leaves|Beverages|1|0|0.3|0|0|0|0|3|37|0|0.02|0|tsp=2|jp cn
+Matcha powder|Beverages|324|29|39|39|0|5|1|6|2700|420|17|60|tsp=2|jp
+Oolong tea (dry)|Beverages|1|0|0.3|0|0|0|0|3|37|0|0.02|0|tsp=2|cn
+Chai masala|Beverages|350|10|60|25|5|10|3|30|1200|500|20|3|tsp=2|in
+Coffee (ground)|Beverages|2|0.1|0|0|0|0|0|2|49|2|0.01|0|tsp=2,tbsp=5|w
+Instant coffee|Beverages|353|12.2|75.4|0|0|0.5|0.2|37|3535|141|4.41|0|tsp=2|w
+Espresso (brewed)|Beverages|9|0.1|1.7|0|0|0.2|0.1|14|115|2|0.13|0.2|cup=30|it
+Filter coffee (brewed)|Beverages|1|0.1|0|0|0|0|0|2|49|2|0.01|0|cup=240|w
+Hot chocolate powder|Beverages|400|5|80|5|70|8|5|200|800|150|3|0|tbsp=15|w
+Orange juice|Beverages|45|0.7|10.4|0.2|8.4|0.2|0|1|200|11|0.2|50|cup=248|w
+Apple juice|Beverages|46|0.1|11.3|0.2|9.6|0.1|0|4|101|8|0.12|1|cup=248|w
+Pineapple juice|Beverages|53|0.4|12.9|0.2|9.9|0.1|0|2|130|13|0.31|10.8|cup=250|w
+Mango juice / aamras|Beverages|60|0.4|15|0.5|14|0.2|0|3|130|10|0.2|20|cup=250|in
+Tomato juice|Beverages|17|0.8|4.2|0.4|3.6|0.1|0|253|229|10|0.4|18|cup=243|w
+Carrot juice|Beverages|40|0.9|9.3|0.8|3.9|0.2|0|66|292|24|0.46|8.5|cup=236|w
+Beetroot juice|Beverages|42|1.6|9.5|0.8|7|0.2|0|60|300|15|0.8|5|cup=240|w
+Sugarcane juice|Beverages|39|0.2|9.1|0.1|9|0.1|0|8|150|18|0.4|3|cup=240|in br
+Lemonade / nimbu pani|Beverages|40|0.1|10.4|0.1|10|0|0|5|20|5|0.1|10|cup=240|in w
+Coconut water|Beverages|19|0.7|3.7|1.1|2.6|0.2|0.2|105|250|24|0.29|2.4|cup=240|in th
+Buttermilk drink|Beverages|40|3.3|4.8|0|4.8|0.9|0.5|105|151|116|0.05|1|cup=245|in
+Sweet lassi|Beverages|100|3|18|0|18|2|1.2|50|150|110|0.05|0.5|cup=245|in
+Mango lassi|Beverages|110|3|21|0.4|20|2|1.2|50|180|110|0.1|8|cup=245|in
+Cola|Beverages|42|0|10.6|0|10.6|0|0|4|2|2|0.02|0|cup=240|us
+Ginger ale|Beverages|34|0|9|0|9|0|0|10|1|3|0.1|0|cup=240|us
+Tonic water|Beverages|34|0|8.8|0|8.8|0|0|4|0|1|0.01|0|cup=240|uk
+Beer (lager)|Beverages|43|0.5|3.6|0|0|0|0|4|27|4|0.02|0|ml=1|de w
+Stout|Beverages|43|0.4|4.5|0|0|0|0|10|60|8|0.06|0|ml=1|uk
+Red wine|Beverages|85|0.1|2.6|0|0.6|0|0|4|127|8|0.46|0|ml=1|fr it
+White wine|Beverages|82|0.1|2.6|0|1|0|0|5|71|9|0.27|0|ml=1|fr it
+Rosé wine|Beverages|83|0.1|2.6|0|0.8|0|0|5|90|9|0.3|0|ml=1|fr
+Champagne|Beverages|84|0.2|1.4|0|0.8|0|0|5|60|8|0.3|0|ml=1|fr
+Sake|Beverages|134|0.5|5|0|0|0|0|2|25|5|0.1|0|ml=1|jp
+Soju|Beverages|140|0|3|0|0|0|0|1|10|2|0.05|0|ml=1|kr
+Whisky|Beverages|250|0|0.1|0|0.1|0|0|1|2|0|0.02|0|ml=1|uk us
+Vodka|Beverages|231|0|0|0|0|0|0|1|1|0|0.02|0|ml=1|ru
+Rum|Beverages|231|0|0|0|0|0|0|1|2|0|0.02|0|ml=1|ca
+Gin|Beverages|263|0|0|0|0|0|0|1|1|0|0.02|0|ml=1|uk
+Tequila|Beverages|231|0|0|0|0|0|0|1|2|0|0.02|0|ml=1|mx
+Feni|Beverages|231|0|0|0|0|0|0|1|2|0|0.02|0|ml=1|in
+Kombucha|Beverages|30|0|7|0|4|0|0|10|30|10|0.1|0|cup=240|cn us
+Baking powder|Baking & pantry|53|0|27.7|0.2|0|0|0|10600|20|5876|0.5|0|tsp=4.6|w
+Baking soda|Baking & pantry|0|0|0|0|0|0|0|27360|0|0|0|0|tsp=4.6|w
+Active dry yeast|Baking & pantry|325|40.4|41.2|26.9|0|7.6|1|51|955|30|2.17|0.3|tsp=3|w
+Fresh yeast|Baking & pantry|105|8.4|18.1|8.1|0|1.9|0.3|30|610|20|1.4|0|pc=15|fr de
+Vanilla extract|Baking & pantry|288|0.1|12.7|0|12.7|0.1|0|9|148|11|0.12|0|tsp=4.2|w
+Almond extract|Baking & pantry|300|0|13|0|13|0|0|10|10|5|0.1|0|tsp=4.2|w
+Rose water|Baking & pantry|1|0|0.2|0|0|0|0|2|5|2|0|0|tbsp=15|in me
+Kewra water|Baking & pantry|1|0|0.2|0|0|0|0|2|5|2|0|0|tbsp=15|in
+Orange blossom water|Baking & pantry|1|0|0.2|0|0|0|0|2|5|2|0|0|tbsp=15|me
+Gelatin (powder)|Baking & pantry|335|85.6|0|0|0|0.1|0|196|16|55|1.8|0|tbsp=7|w
+Agar agar powder|Baking & pantry|306|6.2|80.9|7.7|0|0.3|0.1|102|1125|625|21.4|0|tsp=2|jp in
+Pectin|Baking & pantry|325|0.3|90|8|0|0.2|0|10|100|50|1|0|tbsp=8|w
+Xanthan gum|Baking & pantry|333|0|77.8|77.8|0|0|0|3500|100|50|1|0|tsp=3|w
+Custard powder|Baking & pantry|380|0.5|93|0.5|10|0.5|0.2|60|20|20|0.5|0|tbsp=10|uk in
+Cornflakes|Baking & pantry|357|7.5|84.1|3.3|8.4|0.4|0.1|729|110|4|28.9|21|cup=28|w
+Muesli|Baking & pantry|380|10|66|8|20|8|1.2|180|400|60|4|1|cup=85|de sc
+Granola|Baking & pantry|471|10|64|7|24|20|3|30|380|70|3|0|cup=110|us
+Rice krispies|Baking & pantry|382|6.5|87|1|10|0.9|0.2|790|110|10|28|20|cup=28|w
+Digestive biscuit|Baking & pantry|480|7|62|3.5|17|22|10|600|200|100|2.5|0|pc=15|uk
+Marie biscuit|Baking & pantry|440|7|75|2|22|13|6|400|150|80|2|0|pc=6|in
+Cream cracker|Baking & pantry|440|10|68|3|2|14|6|900|150|100|3|0|pc=7|uk
+Rice cake|Baking & pantry|387|8.2|81.5|4.2|0.7|2.8|0.6|307|261|11|1.4|0|pc=9|jp w
+Potato chips (salted)|Baking & pantry|536|7|53|4.8|0.3|34.6|3.1|525|1275|24|1.6|31|cup=25|w
+Popcorn (air-popped)|Baking & pantry|387|13|78|15|0.9|5|0.6|8|329|7|3.19|0|cup=8|us
+Pretzel sticks|Baking & pantry|380|10|79|3|2.5|3|0.6|1240|150|30|4|0|cup=30|de us
+Namkeen / bhujia|Baking & pantry|550|15|45|8|3|35|6|1200|500|80|4|0|cup=60|in
+Sev|Baking & pantry|550|15|45|8|3|35|6|1200|500|80|4|0|cup=60|in
+Boondi|Baking & pantry|560|13|48|6|4|36|7|1000|450|70|3.5|0|cup=60|in
+Chivda|Baking & pantry|480|10|55|6|8|25|5|900|400|60|4|0|cup=60|in
+Papad (roasted)|Baking & pantry|371|25|56|10|1|1.5|0.4|2200|900|110|4|0|pc=10|in
+Globe artichoke heart|Vegetables|47|3.3|10.5|5.4|1|0.2|0|94|370|44|1.28|11.7|pc=40|it fr
+Sea beet|Vegetables|22|2.2|4.3|3.7|0.5|0.1|0|226|762|117|2.57|30|bunch=200|uk it
+Good King Henry|Vegetables|43|4.2|7.3|4|0|0.8|0.1|43|452|309|1.2|80|bunch=150|uk
+Orach|Vegetables|23|2.5|4|2.2|0|0.3|0.1|20|611|215|2.32|43.3|bunch=200|fr it
+Skirret|Vegetables|82|3.3|18.6|3.3|0|0.2|0|20|380|60|0.7|8|pc=60|uk
+Scorzonera|Vegetables|82|3.3|18.6|3.3|0|0.2|0|20|380|60|0.7|8|pc=100|fr es
+Crosnes|Vegetables|75|2|17|2|0|0.2|0|15|350|30|0.8|4|cup=100|fr jp
+Samphire rock|Vegetables|21|1.3|3.5|1|0|0.3|0|1500|300|60|1.5|8|cup=50|fr it
+Sea buckthorn leaf|Vegetables|60|5|8|4|0|1|0.2|20|400|200|3|60|cup=50|ru sc
+Chinese artichoke|Vegetables|75|2|17|2|0|0.2|0|15|350|30|0.8|4|cup=100|cn
+Yacon|Vegetables|54|0.3|12.8|1.5|9|0.3|0|10|185|23|0.3|13|pc=200|pe
+Arracacha|Vegetables|104|1|24|1.8|1|0.3|0.1|10|400|30|1|25|pc=200|pe
+Mashua|Vegetables|50|1.5|11|1.5|0|0.7|0.1|10|300|12|1|77|pc=60|pe
+Huauzontle|Vegetables|43|4.2|7.3|4|0|0.8|0.1|43|452|309|1.2|80|bunch=200|mx
+Verdolagas (purslane)|Vegetables|16|1.3|3.4|0|0.5|0.1|0|45|494|65|1.99|21|bunch=200|mx
+Squash blossom|Vegetables|15|1.2|3.3|0|0|0.1|0|3|173|39|0.7|28|pc=6|mx it
+Xoconostle|Vegetables|41|0.7|9.6|3.6|0|0.5|0.1|5|220|56|0.3|14|pc=80|mx
+Chaya|Vegetables|60|5.7|9|3|0|1.2|0.2|30|400|200|3|165|bunch=200|mx
+Bitter leaf|Vegetables|52|5.2|10|3|0|0.4|0.1|20|400|145|2.5|45|bunch=200|af
+Egusi seed|Vegetables|593|28|10|4|0|48|9|100|600|60|8|0|cup=140|af
+Fluted pumpkin leaf (ugu)|Vegetables|30|4|4|2|0|0.5|0.1|20|500|100|3|60|bunch=200|af
+Waterleaf|Vegetables|22|2.4|3.6|1|0|0.4|0.1|20|450|120|3|30|bunch=200|af
+Jute leaf (ewedu)|Vegetables|34|4.7|5.8|2|0|0.3|0.1|8|559|184|2.7|37|bunch=200|af me
+Baobab leaf|Vegetables|60|4|10|4|0|1|0.2|20|500|400|4|50|cup=50|af
+Cocoyam|Vegetables|112|1.5|26.5|4.1|0.4|0.2|0|11|591|43|0.55|4.5|pc=200|af
+Garden egg|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|pc=60|af
+Locust bean (iru)|Vegetables|350|30|25|10|0|18|4|500|800|150|5|0|tbsp=15|af
+Moringa pod (drumstick)|Vegetables|37|2.1|8.5|3.2|0|0.2|0|42|461|30|0.36|141|pc=50|af in
+Ethiopian kale (gomen)|Vegetables|32|3|5.4|4|0.5|0.6|0.1|17|213|232|0.47|35.3|bunch=250|et
+Enset (false banana)|Vegetables|120|1|30|2|3|0.3|0.1|10|400|20|1|10|cup=150|et
+Cardoon heart|Vegetables|17|0.7|4.1|1.6|0|0.1|0|170|400|70|0.7|2|pc=100|it
+Kalettes|Vegetables|45|3.8|8|3.7|2.2|0.5|0.1|30|420|100|1.4|100|cup=80|uk
+Salsify root|Vegetables|82|3.3|18.6|3.3|0|0.2|0|20|380|60|0.7|8|pc=100|fr be
+Chinese mustard green|Vegetables|27|2.9|4.7|3.2|1.3|0.4|0|20|384|115|1.64|70|bunch=250|cn
+Yu choy|Vegetables|20|1.8|3.2|1.6|0|0.3|0|30|250|100|0.8|45|bunch=200|cn
+Snow pea shoots|Vegetables|42|2.8|7.5|2.6|4|0.2|0|4|200|43|2.08|60|cup=50|cn
+Chinese celery leaf|Vegetables|16|0.7|3|1.6|1.3|0.2|0|80|260|40|0.2|3.1|bunch=100|cn
+Chinese okra|Vegetables|20|1.2|4.4|1.6|0|0.2|0|3|139|18|0.36|5|pc=200|cn
+Fuzzy melon|Vegetables|13|0.4|3|2.9|0|0.2|0|111|6|19|0.4|13|pc=300|cn
+Chinese eggplant|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|pc=200|cn
+Wolfberry leaf|Vegetables|40|4|6|3|0|0.5|0.1|20|400|200|3|30|bunch=150|cn
+Baby bok choy|Vegetables|13|1.5|2.2|1|1.2|0.2|0|65|252|105|0.8|45|pc=100|cn
+Chinese spinach|Vegetables|23|2.5|4|2.2|0|0.3|0.1|20|611|215|2.32|43.3|bunch=250|cn
+Winter melon (dong gua)|Vegetables|13|0.4|3|2.9|0|0.2|0|111|6|19|0.4|13|pc=1500|cn
+Silver sprout|Vegetables|30|3|5.9|1.8|4.1|0.2|0|6|149|13|0.91|13.2|cup=104|cn
+Preserved mustard green|Vegetables|30|2|5|2|1|0.3|0|3000|300|80|1.5|10|cup=100|cn
+Pickled cabbage (suan cai)|Vegetables|19|0.9|4.3|2.9|1.8|0.1|0|661|170|30|1.47|14.7|cup=142|cn
+Japanese pumpkin|Vegetables|49|1.6|12|1.2|0|0.2|0|2|350|30|0.5|15|pc=1200|jp
+Mitsuba|Vegetables|20|1.5|3|2|0|0.3|0|10|500|50|1|15|bunch=50|jp
+Wasabi leaf|Vegetables|30|3|5|2|0|0.4|0.1|10|400|100|1.5|40|bunch=100|jp
+Udo|Vegetables|20|0.8|4|1.5|0|0.1|0|3|220|7|0.2|4|pc=100|jp
+Takenoko (bamboo shoot)|Vegetables|27|2.6|5.2|2.2|3|0.3|0.1|4|533|13|0.5|4|pc=300|jp
+Kabu (Japanese turnip)|Vegetables|28|0.9|6.4|1.8|3.8|0.1|0|67|191|30|0.3|21|pc=100|jp
+Shiso bud|Vegetables|37|3.9|7.5|6|0|0.5|0.1|1|500|230|1.7|55|pc=1|jp
+Chwinamul|Vegetables|40|3|7|4|0|0.6|0.1|20|400|100|2|20|bunch=150|kr
+Deodeok root|Vegetables|80|2|18|4|0|0.5|0.1|15|400|60|1.5|10|pc=30|kr
+Doraji (bellflower root)|Vegetables|80|2|18|4|0|0.5|0.1|15|400|60|1.5|10|pc=30|kr
+Minari (water dropwort)|Vegetables|20|2|3|2|0|0.2|0|30|400|50|1.5|20|bunch=150|kr
+Kkaennip (perilla leaf)|Vegetables|37|3.9|7.5|6|0|0.5|0.1|1|500|230|1.7|55|pc=2|kr
+Napa cabbage core|Vegetables|16|1.2|3.2|1.2|1.2|0.2|0|9|238|77|0.31|27|pc=500|kr
+Thai pea aubergine|Vegetables|25|1|5.9|3|3.5|0.2|0|2|229|9|0.23|2.2|cup=100|th
+Yardlong bean|Vegetables|47|2.8|8.4|3.8|0|0.4|0.1|4|240|50|0.47|18.8|bunch=200|th vn
+Betel nut leaf|Vegetables|44|3.1|6.1|2.3|0|0.8|0.2|22|550|230|7|5|pc=2|th vn
+Bitter bean (petai)|Vegetables|120|8|20|4|0|1.5|0.3|10|500|60|3|30|pc=5|th id
+Water mimosa|Vegetables|25|3|4|2|0|0.3|0|20|400|80|2|25|bunch=150|th
+Ivy gourd shoot|Vegetables|30|3|5|2|0|0.4|0.1|15|350|90|2|20|bunch=150|th
+Sawtooth coriander|Vegetables|23|2.1|3.7|2.8|0.9|0.5|0|46|521|67|1.77|27|bunch=30|th vn
+Elephant ear stalk|Vegetables|20|0.5|4|1.5|0|0.1|0|10|300|40|0.5|5|pc=100|vn
+Rau muong|Vegetables|19|2.6|3.1|2.1|0|0.2|0|113|312|77|1.67|55|bunch=200|vn
+Banana blossom|Vegetables|51|1.6|9.9|5.7|0|0.6|0.1|10|553|56|1.6|11|pc=500|vn in
+Kohlrabi (purple)|Vegetables|27|1.7|6.2|3.6|2.6|0.1|0|20|350|24|0.4|62|pc=140|de
+Black radish|Vegetables|16|0.7|3.4|1.6|1.9|0.1|0|39|233|25|0.34|14.8|pc=200|ru de
+Pattypan squash|Vegetables|16|1.2|3.4|1.1|2.2|0.2|0|2|262|21|0.35|17|pc=100|fr us
+Delicata squash|Vegetables|40|0.8|10.4|1.5|0|0.1|0|3|347|33|0.7|11|pc=400|us
+Spaghetti squash|Vegetables|31|0.6|6.9|1.5|2.8|0.6|0.1|17|108|21|0.31|2.1|pc=1000|it us
+Hubbard squash|Vegetables|40|2|8.7|0|0|0.5|0.1|7|320|14|0.4|11|pc=2000|us
+Green tomato (fried style)|Vegetables|23|1.2|5.1|1.1|4|0.2|0|13|204|13|0.51|23.4|pc=123|us
+Okra (baby)|Vegetables|33|1.9|7.5|3.2|1.5|0.2|0|7|299|82|0.62|23|pc=6|in af
+Cherry pepper|Vegetables|20|0.9|4.6|1.7|2.4|0.2|0|3|175|10|0.34|80.4|pc=10|it
+Peperoncino|Vegetables|282|13.5|49.7|34.8|7.2|14.3|2.5|30|1950|148|7.8|76.4|pc=1|it
+Cubanelle pepper|Vegetables|20|0.9|4.6|1.7|2.4|0.2|0|3|175|10|0.34|80.4|pc=50|ca us
+Piquillo pepper|Vegetables|31|1|6|2.1|4.2|0.3|0.1|4|211|7|0.43|127.7|pc=20|es
+Pimiento|Vegetables|31|1|6|2.1|4.2|0.3|0.1|4|211|7|0.43|127.7|tbsp=15|es
+Calçot|Vegetables|32|1.8|7.3|2.6|2.3|0.2|0|16|276|72|1.48|18.8|pc=50|es
+Chard (rainbow)|Vegetables|19|1.8|3.7|1.6|1.1|0.2|0|213|379|51|1.8|30|bunch=250|it
+Broccoli stem|Vegetables|34|2.8|6.6|2.6|1.7|0.4|0|33|316|47|0.73|89.2|pc=100|w
+Cauliflower leaf|Vegetables|25|1.9|5|2|1.9|0.3|0.1|30|299|22|0.42|48.2|bunch=150|in
+Radish greens|Vegetables|27|2.9|4.7|3.2|1.3|0.4|0|20|384|115|1.64|70|bunch=200|in
+Beet greens (Indian)|Vegetables|22|2.2|4.3|3.7|0.5|0.1|0|226|762|117|2.57|30|bunch=200|in
+Carrot greens|Vegetables|36|3|6.3|3.3|0.9|0.8|0.1|56|554|138|6.2|133|bunch=150|w
+Turnip tops|Vegetables|32|1.5|7.1|3.2|0.8|0.3|0.1|40|296|190|1.1|60|bunch=200|it
+Pumpkin seeds in shell|Vegetables|446|18.6|53.8|18.4|1.3|19.4|3.4|18|919|55|3.31|1.9|cup=64|mx
+Corn husk|Vegetables|0|0|0|0|0|0|0|0|0|0|0|0|pc=5|mx
+Green jackfruit seed|Vegetables|184|7|38|1.5|0|0.4|0.1|20|400|50|1.5|11|cup=150|in
+Sprouted wheat|Vegetables|198|7.5|42.5|1.1|0|1.3|0.2|16|169|28|2.14|2.6|cup=108|w
+Sprouted lentil|Vegetables|106|9|22|4|0|0.5|0.1|11|322|25|3.21|16.5|cup=77|in w
+Pink lady apple|Fruits|52|0.3|13.8|2.4|10.4|0.2|0|1|107|6|0.12|4.6|pc=182|w
+Fuji apple|Fruits|52|0.3|13.8|2.4|10.4|0.2|0|1|107|6|0.12|4.6|pc=200|jp
+Crab apple|Fruits|76|0.4|19.9|0|0|0.3|0|1|194|18|0.36|8|pc=30|uk
+Conference pear|Fruits|57|0.4|15.2|3.1|9.8|0.1|0|1|116|9|0.18|4.3|pc=170|uk
+Bartlett pear|Fruits|57|0.4|15.2|3.1|9.8|0.1|0|1|116|9|0.18|4.3|pc=178|us
+Prickly pear (tuna)|Fruits|41|0.7|9.6|3.6|0|0.5|0.1|5|220|56|0.3|14|pc=103|mx
+Sugar apple|Fruits|94|2.1|23.6|4.4|0|0.3|0|4|382|30|0.6|19.2|pc=155|in
+Cashew apple|Fruits|46|0.2|11.6|0.9|9|0.1|0|10|170|10|0.2|180|pc=60|br in
+Ambarella|Fruits|46|0.5|11.5|1|8|0.3|0|3|250|30|0.4|30|pc=60|th ca
+Santol|Fruits|85|0.5|21|0|0|0.2|0|2|130|5|0.3|14|pc=100|th ph
+Langsat|Fruits|57|1|14|0.8|0|0.2|0|1|150|20|0.5|1|pc=15|id th
+Pulasan|Fruits|82|0.7|20.9|0.9|0|0.2|0|11|42|22|0.35|4.9|pc=15|id
+Jujube (Chinese, dried)|Fruits|287|3.7|73.6|6.7|0|1.1|0.2|9|531|79|1.8|13|pc=8|cn
+Hawthorn berry|Fruits|60|0.7|13|3|8|0.3|0|5|200|60|1|50|pc=5|cn
+Wolfberry (fresh)|Fruits|80|4|18|3|10|0.4|0|30|300|60|2|30|cup=100|cn
+Yuzu (juice)|Fruits|30|0.5|8|0.4|4|0.1|0|2|120|20|0.2|40|tbsp=15|jp
+Sudachi|Fruits|30|0.7|10.5|2.8|1.7|0.2|0|2|102|33|0.6|29.1|pc=30|jp
+Ume (Japanese plum)|Fruits|33|0.7|8|3|2|0.2|0|2|200|65|1.1|6|pc=15|jp
+Nashi pear|Fruits|42|0.5|10.7|3.6|7.1|0.2|0|0|121|4|0.02|3.8|pc=275|jp
+Korean melon (chamoe)|Fruits|34|0.8|8.2|0.9|7.9|0.2|0.1|16|267|9|0.21|36.7|pc=300|kr
+Bokbunja (Korean raspberry)|Fruits|52|1.2|11.9|6.5|4.4|0.7|0|1|151|25|0.69|26.2|cup=123|kr
+Physalis|Fruits|53|1.9|11.2|0|0|0.7|0|1|268|9|1|11|pc=5|pe ca
+Lucuma|Fruits|99|1.5|25|1.5|0|0.5|0.1|10|400|20|1|10|pc=100|pe
+Aguaje|Fruits|180|2|30|10|0|8|3|10|500|100|2|20|pc=40|pe
+Copoazu|Fruits|72|1|18|3|0|0.5|0.1|5|300|20|1|30|pc=800|br
+Cupuacu|Fruits|72|1|18|3|0|0.5|0.1|5|300|20|1|30|pc=800|br
+Jabuticaba|Fruits|58|0.6|15.3|2.3|0|0.1|0|3|130|8|0.5|16|pc=8|br
+Pitanga|Fruits|33|0.8|7.5|0|0|0.4|0|3|103|9|0.2|26|pc=5|br
+Graviola|Fruits|66|1|16.8|3.3|13.5|0.3|0.1|14|278|14|0.6|20.6|cup=225|br
+Naranjilla (lulo)|Fruits|25|0.6|5.7|0.3|0|0.2|0|4|200|8|0.6|31|pc=100|pe
+Tamarillo|Fruits|31|2|4|3.3|0|0.4|0|4|321|11|0.6|29|pc=90|pe
+Cherimoya (custard)|Fruits|75|1.6|17.7|3|12.9|0.7|0.3|7|287|10|0.27|12.6|pc=550|pe
+Guava (white)|Fruits|68|2.6|14.3|5.4|8.9|1|0.3|2|417|18|0.26|228.3|pc=100|in
+Sweet tamarind|Fruits|239|2.8|62.5|5.1|57.4|0.6|0.3|28|628|74|2.8|3.5|pc=10|th
+Longkong|Fruits|57|1|14|0.8|0|0.2|0|1|150|20|0.5|1|pc=15|th
+Pomelo (pink)|Fruits|38|0.8|9.6|1|0|0|0|1|216|4|0.11|61|pc=600|th
+Rose apple|Fruits|25|0.6|5.7|1.1|0|0.3|0|0|123|29|0.07|22.3|pc=60|th in
+Water apple|Fruits|25|0.6|5.7|1.1|0|0.3|0|0|123|29|0.07|22.3|pc=50|id
+Snake fruit|Fruits|82|0.4|20.9|0.3|0|0.4|0|5|200|28|3.9|8.4|pc=60|id
+Buah naga|Fruits|60|1.2|13|3|8|0.4|0|10|270|18|0.7|9|pc=250|id
+Marang|Fruits|100|1.5|24|2|0|0.5|0.1|5|350|20|1|20|pc=800|ph
+Chico (sapodilla)|Fruits|83|0.4|20|5.3|0|1.1|0.2|12|193|21|0.8|14.7|pc=170|ph
+Calamansi juice|Fruits|30|0.7|10.5|2.8|1.7|0.2|0|2|102|33|0.6|29|tbsp=15|ph
+Kiwano (horned melon)|Fruits|44|1.8|7.6|0|0|1.3|0.4|2|123|13|1.13|5.3|pc=200|af
+Baobab fruit powder|Fruits|240|2.3|76|44|22|0.4|0.1|10|2000|300|3|280|tbsp=10|af
+Marula fruit|Fruits|60|0.6|13|1|10|0.2|0|3|200|10|0.4|200|pc=25|af
+Tamarind (African)|Fruits|239|2.8|62.5|5.1|57.4|0.6|0.3|28|628|74|2.8|3.5|pc=10|af
+Date (Barhi)|Fruits|282|2.5|75|8|63|0.4|0|2|656|39|1.02|0.4|pc=10|me
+Date (Ajwa)|Fruits|282|2.5|75|8|63|0.4|0|2|656|39|1.02|0.4|pc=8|me
+Fig (Turkish, dried)|Fruits|249|3.3|63.9|9.8|47.9|0.9|0.1|10|680|162|2.03|1.2|pc=20|tr
+Mulberry (dried)|Fruits|359|9.6|70|13|40|3|0.4|20|1000|300|4|10|cup=140|tr
+Sour cherry (dried)|Fruits|340|2|80|4|60|1|0.2|10|500|30|1.5|1|cup=120|tr
+Pomegranate seeds (arils)|Fruits|83|1.7|18.7|4|13.7|1.2|0.1|3|236|10|0.3|10.2|cup=174|me in
+Quince paste (membrillo)|Fruits|250|0.4|63|4|55|0.1|0|10|150|10|0.4|5|pc=30|es
+Medlar|Fruits|47|0.4|12.1|1.7|0|0.2|0|1|266|16|0.28|1|pc=30|it tr
+Cornelian cherry|Fruits|55|1|13|2|10|0.3|0|2|300|50|1|60|pc=3|tr
+Sea buckthorn berry|Fruits|82|1.4|11|10|3|3|0.4|4|133|42|0.4|600|cup=100|ru sc
+Lingonberry|Fruits|53|0.4|11|2.5|8|0.5|0|2|100|20|0.4|10|cup=110|sc
+Cloudberry|Fruits|51|2.4|8.6|6.3|3|0.8|0|1|130|15|0.7|158|cup=110|sc
+Bilberry|Fruits|57|0.7|14.5|2.4|10|0.3|0|1|77|6|0.28|9.7|cup=148|sc
+Rowan berry|Fruits|55|1.4|12|6|8|0.5|0|3|200|40|1|98|cup=100|sc
+Elderberry|Fruits|73|0.7|18.4|7|0|0.5|0|6|280|38|1.6|36|cup=145|de uk
+Damson|Fruits|46|0.7|11.4|1.4|9.9|0.3|0|0|157|6|0.17|9.5|pc=20|uk
+Greengage|Fruits|46|0.7|11.4|1.4|9.9|0.3|0|0|157|6|0.17|9.5|pc=30|fr uk
+Mirabelle plum|Fruits|46|0.7|11.4|1.4|9.9|0.3|0|0|157|6|0.17|9.5|pc=15|fr
+Reine-claude|Fruits|46|0.7|11.4|1.4|9.9|0.3|0|0|157|6|0.17|9.5|pc=25|fr
+Sultana grape|Fruits|69|0.7|18.1|0.9|15.5|0.2|0.1|2|191|10|0.36|3.2|cup=151|tr
+Muscat grape|Fruits|69|0.7|18.1|0.9|15.5|0.2|0.1|2|191|10|0.36|3.2|cup=151|it fr
+Concord grape|Fruits|67|0.6|17.2|0.9|16|0.4|0.1|2|191|14|0.29|4|cup=92|us
+Boysenberry|Fruits|43|1.4|9.6|5.3|4.9|0.5|0|1|162|29|0.62|21|cup=144|us au
+Loganberry|Fruits|55|1.5|13|5.3|0|0.3|0|1|145|26|0.9|15|cup=147|uk
+Marionberry|Fruits|43|1.4|9.6|5.3|4.9|0.5|0|1|162|29|0.62|21|cup=144|us
+Salmonberry|Fruits|43|1.4|9.6|5.3|4.9|0.5|0|1|162|29|0.62|21|cup=140|us
+Huckleberry|Fruits|37|0.4|8.9|2|7|0.2|0|1|80|15|0.3|6|cup=140|us
+Aronia (chokeberry)|Fruits|47|0.7|9.6|5.3|4|0.5|0|2|162|30|0.6|21|cup=140|us ru
+Muscadine|Fruits|57|0.8|13.9|3.9|8|0.5|0.1|1|203|14|0.26|6|cup=150|us
+Pawpaw (American)|Fruits|80|1.2|18.8|2.6|0|1.2|0|4|345|63|7|18.3|pc=100|us
+Persimmon (Fuyu)|Fruits|70|0.6|18.6|3.6|12.5|0.2|0|1|161|8|0.15|7.5|pc=168|jp
+Persimmon (Hachiya)|Fruits|127|0.8|33.5|0|0|0.4|0|1|310|27|2.5|66|pc=200|jp
+Dried persimmon|Fruits|274|1.4|73.4|14|55|0.6|0|10|800|25|1.5|10|pc=35|kr jp
+Apricot (Hunza)|Fruits|241|3.4|62.6|7.3|53.4|0.5|0|10|1162|55|2.66|1|pc=8|in
+Kiwi berry|Fruits|61|1.1|14.7|3|9|0.5|0|3|312|34|0.31|92.7|pc=10|jp
+Buddha's hand|Fruits|29|1.1|9.3|2.8|2.5|0.3|0|2|138|26|0.6|53|pc=400|cn
+Finger lime|Fruits|30|0.7|10.5|2.8|1.7|0.2|0|2|102|33|0.6|29.1|pc=10|au
+Davidson plum|Fruits|46|0.7|11.4|1.4|9.9|0.3|0|0|157|6|0.17|9.5|pc=25|au
+Quandong|Fruits|60|1|13|4|8|0.5|0|5|300|30|1|30|pc=15|au
+Riberry|Fruits|43|1.4|9.6|5.3|4.9|0.5|0|1|162|29|0.62|21|cup=140|au
+Feijoa (pineapple guava)|Fruits|55|0.7|13|6.4|8.2|0.6|0.1|3|172|17|0.14|32.9|pc=50|br au
+Guava jelly fruit|Fruits|68|2.6|14.3|5.4|8.9|1|0.3|2|417|18|0.26|228.3|pc=100|ca
+June plum|Fruits|46|0.5|11.5|1|8|0.3|0|3|250|30|0.4|30|pc=60|ca
+Naseberry|Fruits|83|0.4|20|5.3|0|1.1|0.2|12|193|21|0.8|14.7|pc=170|ca
+Otaheite apple|Fruits|25|0.6|5.7|1.1|0|0.3|0|0|123|29|0.07|22.3|pc=60|ca
+Genip|Fruits|58|0.5|13.5|1|0|0.1|0|3|200|15|0.5|10|pc=10|ca
+Chana sattu drink base|Grains & flours|406|20|59|18|3|6|0.7|30|900|60|5.5|0|cup=100|in
+Ragi malt|Grains & flours|328|7.3|72|11.5|0.6|1.3|0.3|11|408|344|3.9|0|cup=180|in
+Bajra flour|Grains & flours|361|11.6|67|11.5|1.5|5|0.9|12|307|42|8|0|cup=180|in
+Kuttu ka atta|Grains & flours|335|12.6|70.6|10|2.6|3.1|0.7|11|577|41|4.06|0|cup=120|in
+Rajgira atta|Grains & flours|371|13.6|65.2|6.7|1.7|7|1.5|4|508|159|7.6|4.2|cup=193|in
+Samak ke chawal|Grains & flours|307|11.2|65.5|13.6|0.6|3.9|0.6|5|200|20|5|0|cup=180|in
+Multigrain atta|Grains & flours|345|13|68|11|1|3|0.5|5|400|60|4.5|0|cup=120|in
+Khapli wheat flour|Grains & flours|338|14.6|70.2|10.7|6.8|2.4|0.4|8|388|27|4.44|0|cup=120|in
+Jau (barley) flour|Grains & flours|345|10.5|74.5|10.1|0.8|1.6|0.3|4|309|32|2.68|0|cup=148|in
+Corn atta (makki)|Grains & flours|365|9.4|74.3|7.3|0.6|4.7|0.7|35|287|7|2.7|0|cup=120|in
+Rice rava|Grains & flours|366|5.9|80.1|2.4|0.1|1.4|0.4|0|76|10|0.4|0|cup=170|in
+Ragi flakes|Grains & flours|328|7.3|72|11.5|0.6|1.3|0.3|11|408|344|3.9|0|cup=90|in
+Jowar flakes|Grains & flours|349|10.4|72.6|6.7|1.9|3.5|0.6|6|350|25|4.1|0|cup=90|in
+Wheat flakes|Grains & flours|342|12.3|71.2|12.5|0.4|1.8|0.3|2|350|30|3.5|0|cup=90|in
+Oats (Indian, plain)|Grains & flours|389|16.9|66.3|10.6|0.99|6.9|1.2|2|429|54|4.7|0|cup=81|in
+Sooji (fine)|Grains & flours|360|12.7|72.8|3.9|0.7|1.1|0.2|1|186|17|1.2|0|cup=167|in
+Sooji (coarse)|Grains & flours|360|12.7|72.8|3.9|0.7|1.1|0.2|1|186|17|1.2|0|cup=167|in
+Poha (thick)|Grains & flours|346|6.6|77.3|2.4|0.4|1.2|0.3|5|100|20|7.5|0|cup=90|in
+Poha (thin)|Grains & flours|346|6.6|77.3|2.4|0.4|1.2|0.3|5|100|20|7.5|0|cup=70|in
+Bhagar|Grains & flours|307|11.2|65.5|13.6|0.6|3.9|0.6|5|200|20|5|0|cup=180|in
+Rajma masala base|Condiments & sauces|120|4|14|4|4|5|1|600|400|60|2|8|cup=200|in
+Butter chicken gravy|Condiments & sauces|180|4|10|2|6|14|8|500|300|80|1|5|cup=240|in
+Makhani gravy|Condiments & sauces|180|4|10|2|6|14|8|500|300|80|1|5|cup=240|in
+Korma base|Condiments & sauces|200|5|12|3|5|15|6|450|350|100|1.5|4|cup=240|in
+Vindaloo paste|Condiments & sauces|180|4|15|5|4|12|2|2500|500|80|3|10|tbsp=18|in
+Xacuti paste|Condiments & sauces|250|6|18|6|4|18|9|1500|600|100|4|5|tbsp=18|in
+Rechado masala|Condiments & sauces|200|5|20|6|6|12|2|3000|600|90|4|12|tbsp=18|in
+Malvani masala|Condiments & sauces|350|12|45|22|3|13|3|300|1250|420|17|6|tsp=3|in
+Bafat powder|Condiments & sauces|340|12|46|22|3|12|2.5|400|1200|400|16|8|tsp=3|in
+Achari masala|Condiments & sauces|360|14|42|20|3|16|2.5|2000|1200|500|20|5|tsp=3|in
+Dhansak masala|Condiments & sauces|350|13|45|22|3|13|2.6|300|1250|420|17|5|tsp=3|in
+Podi (idli)|Condiments & sauces|420|20|38|16|3|20|4|1800|900|300|7|4|tbsp=10|in
+Puliyogare paste|Condiments & sauces|250|5|30|6|12|12|3|2500|600|100|4|3|tbsp=18|in
+Schezwan chutney|Condiments & sauces|200|3|18|4|8|13|2|2500|400|60|3|15|tbsp=16|in cn
+Manchurian sauce|Condiments & sauces|150|2|25|1|15|5|1|2000|300|40|1.5|3|tbsp=18|in cn
+Green chutney (dhaniya-pudina)|Condiments & sauces|60|3|9|4|2|1.5|0.3|500|400|150|5|20|tbsp=16|in
+Peanut chutney|Condiments & sauces|300|12|15|5|3|22|4|500|400|60|2|3|tbsp=16|in
+Tomato chutney|Condiments & sauces|80|2|12|2|8|3|0.5|600|300|40|1.5|10|tbsp=16|in
+Onion chutney|Condiments & sauces|90|2|13|2|8|4|0.7|600|300|40|1.5|8|tbsp=16|in
+Curd rice base|Condiments & sauces|90|3|14|0.5|4|2.5|1.5|300|150|100|0.5|1|cup=240|in
+Ricotta salata|Dairy & eggs|300|20|3|0|1|22|14|900|120|400|0.3|0|slice=28|it
+Caciocavallo|Dairy & eggs|380|26|2|0|1|30|19|800|110|800|0.3|0|slice=28|it
+Scamorza|Dairy & eggs|330|24|2|0|1|25|16|700|90|600|0.3|0|slice=30|it
+Stracchino|Dairy & eggs|300|18|1|0|1|25|16|500|90|400|0.2|0|pc=50|it
+Robiola|Dairy & eggs|330|18|2|0|2|28|18|500|100|350|0.2|0|pc=50|it
+Pecorino Sardo|Dairy & eggs|390|32|1|0|1|29|18|1500|90|900|0.4|0|slice=28|it
+Casu marzu|Dairy & eggs|390|30|1|0|1|30|19|1500|90|800|0.4|0|pc=30|it
+Tomme de Savoie|Dairy & eggs|340|24|1|0|1|27|17|600|100|700|0.2|0|slice=30|fr
+Munster|Dairy & eggs|368|23.4|1.1|0|0.5|30|19.1|628|134|717|0.41|0|slice=28|fr de
+Morbier|Dairy & eggs|350|23|1|0|1|28|18|700|100|700|0.2|0|slice=30|fr
+Saint-Nectaire|Dairy & eggs|340|23|1|0|1|27|17|600|100|650|0.2|0|slice=30|fr
+Cantal|Dairy & eggs|380|25|1|0|1|31|20|700|100|750|0.2|0|slice=30|fr
+Beaufort|Dairy & eggs|400|26|1|0|1|33|21|600|100|1000|0.2|0|slice=28|fr
+Ossau-Iraty|Dairy & eggs|400|25|1|0|1|33|21|700|100|900|0.3|0|slice=28|fr
+Fourme d'Ambert|Dairy & eggs|350|21|1|0|1|29|19|1200|150|500|0.3|0|pc=30|fr
+Bleu d'Auvergne|Dairy & eggs|350|21|1|0|1|29|19|1300|150|500|0.3|0|pc=30|fr
+Appenzeller|Dairy & eggs|400|26|1|0|1|32|20|700|100|950|0.2|0|slice=28|de
+Limburger|Dairy & eggs|327|20.1|0.5|0|0.5|27.3|16.7|800|128|497|0.13|0|pc=30|de
+Handkäse|Dairy & eggs|125|30|0.5|0|0.5|0.3|0.2|1200|100|100|0.5|0|pc=50|de
+Butterkäse|Dairy & eggs|360|22|1|0|1|30|19|600|100|600|0.2|0|slice=28|de
+Havarti|Dairy & eggs|371|24|1.1|0|0.4|30|19|1244|138|633|0.2|0|slice=28|sc
+Jarlsberg|Dairy & eggs|352|27|1.3|0|0.2|27|16|500|100|780|0.1|0|slice=28|sc
+Västerbotten|Dairy & eggs|400|28|0.5|0|0.5|32|20|800|100|900|0.2|0|slice=28|sc
+Brunost (brown cheese)|Dairy & eggs|466|9.7|41.9|0|41.9|29.4|19|560|500|300|0.4|0|slice=15|sc
+Idiazabal|Dairy & eggs|400|26|1|0|1|33|21|1000|90|800|0.4|0|slice=28|es
+Mahón|Dairy & eggs|390|25|1|0|1|32|20|1200|100|750|0.3|0|slice=28|es
+Tetilla|Dairy & eggs|350|22|1|0|1|29|18|700|100|600|0.2|0|slice=30|es
+Cabrales|Dairy & eggs|380|21|1|0|1|33|21|1500|150|500|0.4|0|pc=30|es
+Kasseri|Dairy & eggs|390|26|2|0|1|31|20|1200|90|800|0.4|0|slice=28|gr
+Mizithra|Dairy & eggs|300|15|3|0|3|25|16|400|100|300|0.2|0|pc=50|gr
+Graviera|Dairy & eggs|400|27|1|0|1|32|20|900|100|900|0.3|0|slice=28|gr
+Beyaz peynir|Dairy & eggs|264|14|4.1|0|4.1|21|15|917|62|493|0.65|0|pc=30|tr
+Kashkaval|Dairy & eggs|380|25|2|0|1|30|19|1200|100|800|0.3|0|slice=28|tr
+Tulum cheese|Dairy & eggs|370|25|1|0|1|30|19|1500|100|700|0.4|0|pc=30|tr
+Ackawi|Dairy & eggs|280|18|3|0|3|22|14|1000|100|500|0.3|0|pc=30|me
+Nabulsi|Dairy & eggs|280|18|3|0|3|22|14|1500|100|500|0.3|0|pc=30|me
+Jibneh Arabieh|Dairy & eggs|300|20|2|0|2|24|15|900|100|600|0.3|0|pc=30|me
+Kashk|Dairy & eggs|150|12|10|0|8|7|4|1500|200|300|0.5|0|tbsp=18|me
+Ayran|Dairy & eggs|38|1.6|3|0|3|2|1.3|300|110|60|0.05|0.5|cup=245|tr
+Doogh|Dairy & eggs|38|1.6|3|0|3|2|1.3|350|110|60|0.05|0.5|cup=245|me
+Chhurpi|Dairy & eggs|380|55|5|0|3|15|9|300|200|600|0.5|0|pc=20|in
+Kalari cheese|Dairy & eggs|300|22|3|0|2|23|14|400|120|500|0.3|0|pc=50|in
+Bandel cheese|Dairy & eggs|320|24|2|0|2|24|15|1200|100|550|0.3|0|pc=30|in
+Yak cheese|Dairy & eggs|380|30|2|0|2|28|18|600|120|800|0.4|0|pc=30|in
+Seer fish (surmai)|Fish & seafood|105|20|0|0|0|2.5|0.6|80|340|25|0.9|0|pc=200|in
+Mahi (Indian)|Fish & seafood|85|18.5|0|0|0|0.7|0.2|88|416|16|1.13|0|pc=200|in
+Bekti (barramundi)|Fish & seafood|97|19|0|0|0|2.5|0.8|70|300|20|0.3|0|pc=200|in
+Pabda|Fish & seafood|105|17|0|0|0|3.5|0.9|60|320|40|0.8|0|pc=100|in
+Koi fish|Fish & seafood|127|17.8|0|0|0|5.6|1.1|49|333|41|1.24|1.6|pc=150|in
+Chital|Fish & seafood|100|18|0|0|0|3|0.8|60|320|60|1|0|pc=250|in
+Magur (catfish)|Fish & seafood|105|18|0|0|0|3.5|0.9|60|350|15|0.5|0|pc=200|in
+Anchovy (Indian, nethili)|Fish & seafood|131|20.4|0|0|0|4.8|1.3|104|383|147|3.25|0|pc=8|in
+Sardine (Indian, mathi)|Fish & seafood|208|24.6|0|0|0|11.5|1.5|505|397|382|2.9|0|pc=50|in
+Prawn (small)|Fish & seafood|99|24|0.2|0|0|0.3|0.1|111|259|70|0.51|0|pc=5|in
+Lobster (rock)|Fish & seafood|77|16.5|0|0|0|0.7|0.1|423|200|48|0.29|0|pc=400|in au
+Mud crab|Fish & seafood|97|19.4|0|0|0|1.5|0.2|293|262|59|0.76|3|pc=400|in th
+Clam (Indian)|Fish & seafood|86|14.7|4.9|0|0|1|0.1|56|314|46|14|13|pc=8|in
+Oyster (rock)|Fish & seafood|68|7.1|3.9|0|0|2.5|0.6|106|168|45|5.11|3.7|pc=25|fr au
+Sea bass (Chilean)|Fish & seafood|166|17.6|0|0|0|10.1|2.1|60|400|10|0.3|0|pc=180|pe us
+Arctic char|Fish & seafood|154|20|0|0|0|8|1.5|55|380|10|0.3|0|pc=180|sc
+Whitefish|Fish & seafood|134|19.1|0|0|0|5.9|0.9|51|317|28|0.37|0|pc=180|sc us
+Sablefish|Fish & seafood|195|13.4|0|0|0|15.3|3.2|56|361|38|0.32|0|pc=180|us jp
+Rockfish|Fish & seafood|94|18.9|0|0|0|1.6|0.4|60|442|10|0.4|0|pc=180|us
+Skate|Fish & seafood|89|19.6|0|0|0|0.7|0.2|90|300|20|0.4|0|pc=200|fr uk
+John Dory|Fish & seafood|88|18.5|0|0|0|1|0.3|80|350|20|0.4|0|pc=200|fr
+Red mullet|Fish & seafood|119|19.3|0|0|0|4.4|1|80|380|30|1|0|pc=150|fr gr
+Gurnard|Fish & seafood|90|18.5|0|0|0|1.5|0.4|85|330|25|0.5|0|pc=200|uk fr
+Brill|Fish & seafood|95|16.1|0|0|0|3|0.8|150|280|18|0.4|1.6|pc=250|fr
+Dover sole|Fish & seafood|79|17|0|0|0|1.1|0.2|93|305|20|0.2|0|pc=200|uk fr
+Whiting|Fish & seafood|90|19|0|0|0|1.3|0.3|72|320|30|0.4|0|pc=180|uk
+Coley|Fish & seafood|92|19.4|0|0|0|1|0.2|86|356|60|0.24|0|pc=180|uk
+Ling|Fish & seafood|87|19|0|0|0|0.7|0.1|135|400|15|0.3|0|pc=200|sc
+Wolffish|Fish & seafood|96|17.5|0|0|0|2.4|0.4|90|350|20|0.3|0|pc=200|sc
+Capelin|Fish & seafood|180|17|0|0|0|12|2.5|100|300|60|1|0|pc=25|sc
+Smelt|Fish & seafood|97|17.6|0|0|0|2.4|0.5|60|316|60|0.9|0|pc=20|jp sc
+Shishamo|Fish & seafood|166|21|0.2|0|0|8|1.7|300|380|350|1.6|1|pc=25|jp
+Saba (mackerel)|Fish & seafood|205|18.6|0|0|0|13.9|3.3|90|314|12|1.63|0.4|pc=170|jp
+Buri (yellowtail)|Fish & seafood|257|21.4|0|0|0|17.6|4.4|32|380|5|1.3|2|pc=170|jp
+Tai (sea bream)|Fish & seafood|96|19|0|0|0|2|0.5|70|300|20|0.4|0|pc=250|jp
+Hamachi|Fish & seafood|257|21.4|0|0|0|17.6|4.4|32|380|5|1.3|2|pc=170|jp
+Katsuo (bonito)|Fish & seafood|114|25.8|0|0|0|0.5|0.2|43|430|11|1.9|0|pc=170|jp
+Saury (sanma)|Fish & seafood|297|18.5|0.1|0|0|24.6|4.7|140|200|32|1.4|0|pc=150|jp
+Ayu|Fish & seafood|100|18|0|0|0|2.4|0.6|70|370|270|0.9|2|pc=80|jp
+Tara (cod)|Fish & seafood|82|18|0|0|0|0.7|0.1|54|413|16|0.38|1|pc=180|jp
+Hokke|Fish & seafood|115|17.3|0.1|0|0|4.4|0.9|81|360|22|0.4|0|pc=200|jp
+Anago (conger eel)|Fish & seafood|161|17.3|0|0|0|9.3|2.3|150|370|75|0.8|2|pc=100|jp
+Hotate (scallop)|Fish & seafood|69|12.1|3.2|0|0|0.5|0.1|392|205|6|0.38|0|pc=20|jp
+Amaebi (sweet shrimp)|Fish & seafood|87|19.8|0.1|0|0|0.7|0.1|300|310|50|0.1|1|pc=8|jp
+Tako (octopus)|Fish & seafood|82|14.9|2.2|0|0|1|0.2|230|350|53|5.3|5|pc=200|jp
+Ika (squid)|Fish & seafood|92|15.6|3.1|0|0|1.4|0.4|44|246|32|0.68|4.7|pc=150|jp
+Awabi (abalone)|Fish & seafood|105|17.1|6|0|0|0.8|0.2|301|250|31|3.19|2|pc=80|jp
+Namako (sea cucumber)|Fish & seafood|56|13|0|0|0|0.4|0.1|300|100|30|3|0|pc=60|jp
+Shirasu (whitebait)|Fish & seafood|76|15|0.1|0|0|1.3|0.4|380|170|210|0.4|0|tbsp=8|jp
+Chirimen jako|Fish & seafood|206|40.5|0.1|0|0|3.5|1|1600|490|520|0.6|0|tbsp=6|jp
+Mentaiko|Fish & seafood|121|21|3|0|0|2.3|0.5|2500|300|24|0.7|33|pc=40|jp kr
+Godeungeo (mackerel)|Fish & seafood|205|18.6|0|0|0|13.9|3.3|90|314|12|1.63|0.4|pc=170|kr
+Myeolchi (dried anchovy)|Fish & seafood|332|64.5|0.3|0|0|6.2|1.6|1700|1200|2200|18|0|tbsp=5|kr
+Gim (roasted seaweed)|Fish & seafood|35|5.8|5.1|0.3|0.5|0.3|0.1|48|356|70|1.8|39|sheet=2|kr
+Ojingeo (squid)|Fish & seafood|92|15.6|3.1|0|0|1.4|0.4|44|246|32|0.68|4.7|pc=200|kr
+Nakji (octopus)|Fish & seafood|82|14.9|2.2|0|0|1|0.2|230|350|53|5.3|5|pc=150|kr
+Jogae (clam)|Fish & seafood|86|14.7|4.9|0|0|1|0.1|56|314|46|14|13|pc=10|kr
+Bacalhau|Fish & seafood|290|62.8|0|0|0|2.4|0.5|7027|1458|160|2.5|0|pc=100|es br
+Boquerones|Fish & seafood|131|20.4|0|0|0|4.8|1.3|1200|383|147|3.25|0|pc=8|es
+Percebes|Fish & seafood|60|12|1|0|0|1|0.2|1000|200|60|2|0|pc=10|es
+Pulpo (octopus)|Fish & seafood|82|14.9|2.2|0|0|1|0.2|230|350|53|5.3|5|pc=300|es
+Baccalà|Fish & seafood|290|62.8|0|0|0|2.4|0.5|7027|1458|160|2.5|0|pc=100|it
+Vongole|Fish & seafood|86|14.7|4.9|0|0|1|0.1|56|314|46|14|13|pc=8|it
+Branzino|Fish & seafood|97|18.4|0|0|0|2|0.4|68|256|10|0.3|0|pc=300|it
+Orata|Fish & seafood|96|19|0|0|0|2|0.5|70|300|20|0.4|0|pc=300|it
+Acciughe|Fish & seafood|131|20.4|0|0|0|4.8|1.3|104|383|147|3.25|0|pc=10|it
+Bottarga|Fish & seafood|350|40|3|0|0|20|5|3000|300|50|2|0|tbsp=10|it
+Tilapia fillet|Fish & seafood|96|20.1|0|0|0|1.7|0.6|52|302|10|0.56|0|pc=120|af w
+Catfish (African)|Fish & seafood|105|18|0|0|0|3.5|0.9|60|350|15|0.5|0|pc=250|af
+Nile perch|Fish & seafood|92|19.4|0|0|0|1|0.2|53|475|27|0.9|0|pc=200|af
+Dagaa (dried sardine)|Fish & seafood|332|64.5|0.3|0|0|6.2|1.6|1700|1200|2200|18|0|tbsp=8|af
+Stockfish|Fish & seafood|290|62.8|0|0|0|2.4|0.5|300|1458|160|2.5|0|pc=50|af sc
+Escolar|Fish & seafood|193|14|0|0|0|15|4|60|300|10|0.3|0|pc=180|w
+Pangasius fillet|Fish & seafood|90|15|0|0|0|3|1|60|300|10|0.3|0|pc=150|vn
+Ca loc (snakehead)|Fish & seafood|97|18|0|0|0|2|0.5|60|350|30|0.8|0|pc=250|vn
+Shrimp paste (mam tom)|Fish & seafood|150|20|3|0|1|6|2|8000|300|500|4|0|tsp=6|vn
+Pla thu|Fish & seafood|205|18.6|0|0|0|13.9|3.3|90|314|12|1.63|0.4|pc=100|th
+Pla salid|Fish & seafood|300|55|1|0|0|8|2|2000|500|300|3|0|pc=40|th
+Bangus (milkfish)|Fish & seafood|148|20.5|0|0|0|6.7|1.7|72|292|51|0.3|0|pc=250|ph
+Tuyo (dried fish)|Fish & seafood|300|55|1|0|0|8|2|3000|500|400|4|0|pc=30|ph
+Danggit|Fish & seafood|300|55|1|0|0|8|2|3000|500|400|4|0|pc=30|ph
+Chicken leg quarter (raw)|Meat & poultry|170|18|0|0|0|10.9|3|85|230|10|1|0|pc=250|w
+Chicken tenderloin (raw)|Meat & poultry|110|23|0|0|0|1.3|0.3|45|340|5|0.7|0|pc=30|w
+Chicken gizzard|Meat & poultry|94|17.7|0|0|0|2.1|0.5|69|237|11|2.49|3.7|pc=25|w in
+Chicken neck|Meat & poultry|297|14|0|0|0|26.2|7.3|64|110|30|1.2|0|pc=50|cn
+Poussin|Meat & poultry|215|18.6|0|0|0|15.1|4.3|70|189|11|0.9|0|pc=450|fr
+Capon|Meat & poultry|234|18.8|0|0|0|17|4.7|49|200|12|1|0|it fr
+Turkey wing|Meat & poultry|197|18|0|0|0|13.5|3.6|65|200|15|1.2|0|pc=200|us
+Turkey leg|Meat & poultry|145|19.5|0|0|0|7|2.2|75|280|15|1.4|0|pc=350|us
+Duck leg|Meat & poultry|337|19|0|0|0|28.4|9.7|59|204|11|2.7|5.8|pc=200|fr
+Duck confit|Meat & poultry|300|22|0|0|0|24|8|900|250|12|2.5|0|pc=180|fr
+Pigeon / squab|Meat & poultry|142|17.5|0|0|0|7.5|2|51|199|12|3.5|5.2|pc=200|fr cn
+Pheasant|Meat & poultry|133|22|0|0|0|4.3|1.4|39|262|13|1.1|6|pc=800|uk fr
+Partridge|Meat & poultry|145|23|0|0|0|5|1.5|45|280|15|1.2|6|pc=350|uk es
+Grouse|Meat & poultry|120|24|0|0|0|2.5|0.8|50|300|15|4|0|pc=350|uk
+Beef flank|Meat & poultry|192|21|0|0|0|11.5|4.8|66|300|18|2|0|us mx
+Beef skirt|Meat & poultry|220|20|0|0|0|15|6|70|300|15|2.2|0|us mx
+Beef short rib|Meat & poultry|350|15|0|0|0|32|14|55|250|10|1.8|0|us kr
+Beef shank|Meat & poultry|180|21|0|0|0|10|4|60|320|15|2.5|0|it fr
+Beef cheek|Meat & poultry|180|20|0|0|0|11|4.5|70|300|15|2.5|0|es fr
+Beef heart|Meat & poultry|112|17.7|0.1|0|0|3.9|1.4|98|287|7|4.31|2|pc=200|pe
+Beef kidney|Meat & poultry|103|17.4|0.3|0|0|3.1|0.9|182|262|13|4.6|9.4|pc=150|uk fr
+Wagyu beef|Meat & poultry|350|17|0|0|0|31|13|55|280|12|1.8|0|jp
+Bulgogi beef (raw)|Meat & poultry|201|21.2|0|0|0|12.7|5|54|331|18|1.8|0|kr
+Pork tenderloin|Meat & poultry|143|21|0|0|0|5.9|2|53|399|11|1.1|0|pc=400|w
+Pork jowl|Meat & poultry|518|9.3|0|0|0|53|19.3|32|185|5|0.5|0|it kr
+Pork hock|Meat & poultry|212|18|0|0|0|15|5|100|150|30|1|0|de cn
+Pork liver|Meat & poultry|134|21.4|2.5|0|0|3.6|1.2|87|273|9|23.3|25.3|pc=100|w
+Guanciale|Meat & poultry|655|10|0|0|0|69|25|1500|180|10|0.7|0|slice=15|it
+Lardo|Meat & poultry|750|3|0|0|0|82|30|1200|100|5|0.3|0|slice=10|it
+Speck|Meat & poultry|195|26|0.4|0|0.4|10|3.5|2200|400|10|1.5|0|slice=15|it de
+Bresaola|Meat & poultry|151|32|0.5|0|0.5|2|0.7|1600|400|10|3|0|slice=12|it
+Coppa|Meat & poultry|350|24|1|0|0|28|10|1800|350|12|1.5|0|slice=15|it
+Nduja|Meat & poultry|450|13|2|1|1|43|16|1500|300|15|1.5|2|tbsp=18|it
+Soppressata|Meat & poultry|400|22|2|0|1|34|12|1700|350|15|1.5|0|slice=12|it
+Jamón ibérico|Meat & poultry|250|31|0.5|0|0.5|14|5|1800|450|12|2|0|slice=15|es
+Lomo embuchado|Meat & poultry|240|35|0.5|0|0.5|11|4|1900|450|12|2|0|slice=15|es
+Morcilla|Meat & poultry|379|14.6|1.3|0|0|34.5|13.4|680|38|6|6.4|0|pc=60|es
+Butifarra|Meat & poultry|320|16|1|0|0|28|10|900|280|15|1.5|0|pc=80|es
+Boudin blanc|Meat & poultry|300|13|3|0|1|26|10|800|200|30|1|0|pc=80|fr
+Saucisson sec|Meat & poultry|420|25|2|0|1|35|13|1800|400|15|1.8|0|slice=10|fr
+Rillettes|Meat & poultry|430|15|0.5|0|0|41|16|900|150|10|1|0|tbsp=20|fr
+Pâté de campagne|Meat & poultry|320|13|3|0|1|28|10|800|200|20|4|0|slice=30|fr
+Weisswurst|Meat & poultry|280|12|2|0|1|25|9|900|200|20|1|0|pc=80|de
+Currywurst|Meat & poultry|290|11|6|0|4|25|9|1000|220|25|1|2|pc=100|de
+Leberkäse|Meat & poultry|310|13|3|0|1|27|10|1000|200|20|1.5|0|slice=50|de
+Kabanos|Meat & poultry|430|22|1|0|0|38|14|1800|350|15|1.5|0|pc=25|ru de
+Kielbasa|Meat & poultry|300|13|3|0|1|26|9|900|250|20|1.5|0|pc=80|ru
+Sujuk|Meat & poultry|400|20|2|0|1|35|14|1800|350|20|2.5|0|slice=15|tr me
+Pastirma|Meat & poultry|240|35|2|0|1|10|4|2000|450|20|3|0|slice=10|tr
+Merguez sausage|Meat & poultry|320|16|1|0|0|28|11|900|280|15|2|0|pc=60|af fr
+Chorizo (fresh, Mexican)|Meat & poultry|350|18|2|0|1|30|11|1200|350|15|1.5|1|pc=80|mx
+Carnitas (cooked)|Meat & poultry|290|22|0|0|0|22|8|500|300|20|1.2|0|cup=150|mx
+Cecina|Meat & poultry|240|35|1|0|0|10|4|1900|450|15|3|0|slice=15|mx es
+Barbacoa (cooked)|Meat & poultry|230|24|1|0|0|14|5|500|350|20|2.5|0|cup=150|mx
+Al pastor (cooked)|Meat & poultry|250|20|5|0|3|17|6|700|300|25|1.5|3|cup=150|mx
+Char siu (cooked)|Meat & poultry|280|22|12|0|11|16|5|1200|300|20|1.2|0|pc=100|cn
+Lap cheong|Meat & poultry|500|22|10|0|9|42|16|1500|300|20|1.5|0|pc=30|cn
+Peking duck (cooked)|Meat & poultry|340|19|1|0|1|29|10|500|200|12|2.7|0|pc=100|cn
+Roast pork belly (cooked)|Meat & poultry|518|15|0|0|0|50|18|600|200|10|0.8|0|pc=100|cn
+Samgyeopsal (raw)|Meat & poultry|518|9.3|0|0|0|53|19.3|32|185|5|0.5|0|pc=100|kr
+Yakitori (cooked)|Meat & poultry|220|22|8|0|7|11|3|800|250|15|1|0|pc=40|jp
+Katsu (pork, cooked)|Meat & poultry|300|18|15|1|1|19|5|500|300|30|1.2|0|pc=120|jp
+Goat curry cut|Meat & poultry|109|20.6|0|0|0|2.3|0.7|82|385|13|3.7|0|in ca
+Lamb kheema|Meat & poultry|230|18|0|0|0|18|8|70|280|15|2|0|cup=225|in
+Chicken kheema|Meat & poultry|143|17.4|0|0|0|8.1|2.3|60|280|10|0.9|0|cup=225|in
+Achar masala|Herbs & spices|360|14|42|20|3|16|2.5|2000|1200|500|20|5|tsp=3|in
+Sabji masala|Herbs & spices|350|12|46|21|3|13|2.5|2500|1250|420|17|5|tsp=3|in
+Chole masala|Herbs & spices|340|12|47|21|3|12|2.2|3000|1250|400|16|6|tsp=3|in
+Meat masala|Herbs & spices|355|13|45|21|3|14|3|400|1250|430|18|5|tsp=3|in
+Fish masala|Herbs & spices|345|13|46|21|3|13|2.6|500|1200|420|17|6|tsp=3|in
+Kashmiri garam masala|Herbs & spices|379|14|45|25|3|15|3|60|1300|600|25|5|tsp=2.5|in
+Bengali garam masala|Herbs & spices|379|14|45|25|3|15|3|60|1300|600|25|5|tsp=2.5|in
+Radhuni|Herbs & spices|392|18.1|41.4|11.8|0.7|25.3|2.2|160|1400|1767|44.9|17.1|tsp=2|in
+Mangrela|Herbs & spices|400|17.8|44.2|10.5|0|22.3|1.5|88|1694|931|66|7.7|tsp=2.5|in
+Methi powder|Herbs & spices|323|23|58.4|24.6|0|6.4|1.5|67|770|176|33.5|3|tsp=3|in
+Dhania jeera powder|Herbs & spices|330|15|50|26|1|20|1.2|100|1500|800|40|14|tsp=2.5|in
+Sonf powder|Herbs & spices|345|15.8|52.3|39.8|0|14.9|0.5|88|1694|1196|18.5|21|tsp=2|in
+Kabab chini|Herbs & spices|300|10|60|25|0|8|2|30|1200|400|10|0|tsp=2|in
+Pathar ke phool|Herbs & spices|300|8|60|30|0|4|0.8|50|900|400|15|0|tsp=1|in
+Anise star (whole)|Herbs & spices|337|17.6|50|14.6|0|15.9|0.6|16|1441|646|36.9|21|pc=1|cn in
+Dried lime (loomi)|Herbs & spices|300|4|70|10|20|1|0.2|20|900|100|3|20|pc=8|me
+Mahlab|Herbs & spices|500|15|30|10|5|40|8|20|800|200|5|0|tsp=3|me
+Mastic|Herbs & spices|400|0|90|0|0|5|1|10|50|50|1|0|pc=0.5|gr tr
+Urfa biber|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|1500|1950|148|7.8|76.4|tsp=2.5|tr
+Pul biber|Herbs & spices|282|13.5|49.7|34.8|7.2|14.3|2.5|1000|1950|148|7.8|76.4|tsp=2.5|tr
+Nigella (Turkish)|Herbs & spices|400|17.8|44.2|10.5|0|22.3|1.5|88|1694|931|66|7.7|tsp=2.5|tr
+Advieh|Herbs & spices|340|12|50|25|3|11|2|60|1200|500|20|5|tsp=2.5|me
+Hawaij|Herbs & spices|340|12|50|25|3|11|2|60|1200|500|20|5|tsp=2.5|me
+Panch phoron (Bengali)|Herbs & spices|400|18|45|22|2|18|2.5|50|1200|500|25|4|tsp=3|in
+Shichimi|Herbs & spices|300|12|50|25|3|10|1.5|1500|1000|300|10|10|tsp=2|jp
+Sansho pepper|Herbs & spices|300|11|65|25|0|8|1.5|30|1300|500|12|0|tsp=2|jp
+Karashi (mustard)|Herbs & spices|508|26.1|28.1|12.2|6.8|36.2|1.9|13|738|266|9.21|7.1|tsp=3|jp
+Aonori|Herbs & spices|150|20|40|30|0|1|0.2|1500|3000|400|15|10|tbsp=3|jp
+Sesame salt (gomashio)|Herbs & spices|500|15|20|10|0.3|43|6|5000|400|850|13|0|tsp=4|jp
+Doenjang powder|Herbs & spices|350|25|40|8|8|8|1.5|5000|500|100|4|0|tsp=3|kr
+Annatto powder|Herbs & spices|350|13|60|30|0|8|2|30|1200|200|10|0|tsp=3|mx ph
+Recado rojo|Herbs & spices|300|8|50|20|5|10|2|3000|800|150|8|5|tbsp=15|mx
+Achiote paste|Herbs & spices|300|8|50|20|5|10|2|3000|800|150|8|5|tbsp=15|mx
+Grains of paradise|Herbs & spices|300|10|60|25|0|8|2|20|1100|400|12|0|tsp=2|af
+Selim pepper|Herbs & spices|300|10|60|25|0|8|2|20|1100|400|12|0|tsp=2|af
+Njangsa|Herbs & spices|550|20|20|8|0|45|10|30|800|200|6|0|tbsp=10|af
+Suya spice|Herbs & spices|450|20|30|10|3|28|5|2000|900|200|6|3|tbsp=10|af
+Korerima|Herbs & spices|311|10.8|68.5|28|0|6.7|0.7|18|1119|383|13.97|21|tsp=2|et
+Besobela|Herbs & spices|265|9|68.9|42.5|4.1|4.3|1.6|25|1260|1597|36.8|2.3|tsp=1|et
+Nigella (Ethiopian)|Herbs & spices|400|17.8|44.2|10.5|0|22.3|1.5|88|1694|931|66|7.7|tsp=2.5|et
+Vanilla paste|Baking & pantry|288|0.1|12.7|0|12.7|0.1|0|9|148|11|0.12|0|tsp=5|w
+Chocolate chips|Baking & pantry|479|4.2|63.9|5.9|54.5|24.2|14.4|11|365|32|3.13|0|cup=170|us
+Marzipan|Baking & pantry|455|9|50|3|46|25|2|10|300|100|1.5|0|pc=30|de
+Almond paste|Baking & pantry|458|9|48|3|44|27|2|10|320|110|1.7|0|tbsp=20|fr
+Fondant|Baking & pantry|380|0|95|0|90|0.5|0.3|30|10|5|0.1|0|pc=50|uk
+Meringue powder|Baking & pantry|380|55|35|0|30|0|0|800|300|30|0.5|0|tbsp=10|us
+Golden raisins|Baking & pantry|299|3.1|79.2|3.7|59.2|0.5|0.1|11|749|50|1.88|2.3|cup=145|w
+Mixed peel|Baking & pantry|320|0.3|82|5|75|0.3|0|80|100|50|0.5|10|tbsp=15|uk
+Glacé cherry|Baking & pantry|320|0.2|82|1|80|0.1|0|20|50|20|0.4|1|pc=5|uk
+Desiccated coconut (sweet)|Baking & pantry|500|3|53|5|48|31|27|250|350|15|2|1|cup=93|w
+Condensed coconut milk|Baking & pantry|330|3|55|1|50|11|10|60|300|20|1.5|1|tbsp=20|th
+Instant custard powder|Baking & pantry|380|0.5|93|0.5|10|0.5|0.2|60|20|20|0.5|0|tbsp=10|uk in
+Jelly crystals|Baking & pantry|380|6|88|0|85|0|0|300|10|10|0.2|0|tbsp=12|uk
+Cake mix (dry)|Baking & pantry|420|5|75|2|40|11|4|600|100|150|2|0|cup=130|us
+Pancake mix (dry)|Baking & pantry|360|9|70|2|10|5|1|1000|150|200|3|0|cup=120|us
+Dosa mix (dry)|Baking & pantry|360|8|72|3|1|3|0.8|500|150|30|2|0|cup=120|in
+Idli mix (dry)|Baking & pantry|355|8|73|3|1|2|0.5|500|140|30|2|0|cup=120|in
+Instant noodles (dry)|Baking & pantry|436|10|63|2.5|1|17|8|1500|150|30|3.5|0|pc=70|jp in
+Instant soup powder|Baking & pantry|350|8|60|3|10|9|3|8000|400|100|3|2|tbsp=12|w
+Bouillon powder|Baking & pantry|200|8|20|2|4|10|4|20000|300|100|3|0|tsp=4|w
+Tofu skin (dried)|Plant proteins|440|52|12|1|2|24|3.5|10|500|200|9|0|pc=20|cn
+Wheat gluten (dry)|Plant proteins|370|75.2|13.8|0.6|0|1.9|0.3|29|100|142|5.2|0|cup=120|cn
+Bean curd stick|Plant proteins|440|52|12|1|2|24|3.5|10|500|200|9|0|pc=20|cn
+Fermented bean curd|Plant proteins|140|11|5|1|1|8|1.5|4000|100|150|3|0|pc=15|cn
+Douchi (fermented black bean)|Plant proteins|220|20|20|8|2|8|1.5|6000|500|150|5|0|tbsp=12|cn
+Okara|Plant proteins|77|3.5|12.5|4.1|0.5|1.7|0.2|9|213|80|1.3|0|cup=120|jp
+Kinako (roasted soy flour)|Plant proteins|450|37|31|18|10|25|3.6|1|1900|190|8|0|tbsp=6|jp
+Yuba (fresh)|Plant proteins|230|22|5|0|1|13|2|10|300|100|4|0|pc=50|jp
+Chickpea tofu|Plant proteins|130|9|15|4|1|4|0.5|300|250|80|2.5|0|pc=100|me
+Peanut tofu|Plant proteins|150|8|12|2|1|9|1.5|200|200|60|1.5|0|pc=100|jp
+Rice bran powder|Plant proteins|316|13.3|49.7|21|0.9|20.9|4.2|5|1485|57|18.5|0|tbsp=8|jp in
+Moringa powder|Plant proteins|205|27.1|38.2|19.2|0|2.3|0.4|877|1324|2003|28.2|17.3|tbsp=7|in
+Wheatgrass powder|Plant proteins|300|30|40|30|2|4|0.7|200|1500|300|10|20|tbsp=8|w
+Barley grass powder|Plant proteins|300|30|40|30|2|4|0.7|200|1500|300|10|20|tbsp=8|jp
+Amla powder|Plant proteins|300|5|70|30|10|3|0.5|30|1200|150|5|1500|tbsp=8|in
+Ashwagandha powder|Plant proteins|280|4|75|30|5|1|0.2|30|1000|100|4|0|tsp=3|in
+Turmeric latte mix|Baking & pantry|350|8|60|15|25|8|4|100|1200|300|20|1|tbsp=10|in
+Horlicks / malt drink|Baking & pantry|400|10|78|1|30|5|3|300|600|500|10|30|tbsp=20|in uk
+Bournvita|Baking & pantry|400|6|80|2|60|6|4|200|500|300|8|0|tbsp=20|in
+Drinking chocolate|Baking & pantry|400|5|80|5|70|8|5|200|800|150|3|0|tbsp=15|w
+Ovaltine|Baking & pantry|380|9|76|3|50|4|2|400|700|400|9|25|tbsp=20|w
+Protein bar|Baking & pantry|380|30|38|8|18|12|5|300|400|200|3|0|pc=60|w
+Energy bar|Baking & pantry|400|8|60|6|30|14|4|150|400|100|3|0|pc=50|w
+Chikki (peanut brittle)|Baking & pantry|480|14|55|5|40|24|5|30|400|60|2|0|pc=25|in
+Til laddoo|Baking & pantry|500|12|50|8|38|30|8|30|450|700|9|0|pc=20|in
+Gajak|Baking & pantry|480|11|52|7|40|27|7|40|420|650|8|0|pc=25|in
+Murukku|Baking & pantry|520|10|55|4|1|30|10|900|300|60|3|0|pc=20|in
+Mathri|Baking & pantry|520|9|55|3|1|30|12|800|200|50|2.5|0|pc=20|in
+Shakarpara|Baking & pantry|480|7|60|2|25|25|10|300|150|40|2|0|pc=15|in
+Chakli|Baking & pantry|520|10|55|4|1|30|10|900|300|60|3|0|pc=20|in
+Nankhatai|Baking & pantry|500|6|60|1.5|25|27|13|300|120|60|2|0|pc=20|in
+Rusk (Indian toast)|Baking & pantry|407|12|72|3|8|8|2|500|150|60|3|0|pc=15|in

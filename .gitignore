@@ -1,0 +1,5 @@
+node_modules/
+tests/screenshots/*
+!tests/screenshots/.gitkeep
+.DS_Store
+*.log
