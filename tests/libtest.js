@@ -16,6 +16,7 @@ const URL = BASE;
   console.log('boot + sign-in ms:', Date.now()-t0);
 
   await page.click('#nav button[data-v=pantry]'); await page.waitForTimeout(500);
+  await page.click('#newFoodBtn'); await page.waitForTimeout(300);
   console.log('library count label:', await page.textContent('#libCount'));
   const cuisines = await page.$$eval('#fCuisine option', o => o.map(x => x.textContent));
   console.log('cuisine options:', cuisines.length, '->', cuisines.slice(0,8).join(' | '));
@@ -71,6 +72,7 @@ const URL = BASE;
   await page.click('#sheetX');
 
   // build a real recipe and check the recipe card
+  await page.click('#newFoodBtn'); await page.waitForTimeout(250);
   await page.fill('#ingSearch','toor dal'); await page.waitForTimeout(350);
   await page.click('#ingResults .pick .plus'); await page.waitForTimeout(300);
   await page.fill('#ingSearch','spinach'); await page.waitForTimeout(350);
@@ -90,11 +92,13 @@ const URL = BASE;
   const mp = await m.newPage(); await mp.goto(URL); await mp.waitForTimeout(600);
   await mp.fill('#gName','Shiv'); await mp.click('#gateGo'); await mp.waitForTimeout(600);
   await mp.click('#nav button[data-v=pantry]'); await mp.waitForTimeout(600);
+  await mp.click('#newFoodBtn'); await mp.waitForTimeout(300);
   await mp.screenshot({ path:'screenshots/y6-mobile.png' });
   const d = await browser.newContext({ colorScheme:'dark', viewport:{width:1440,height:1000} });
   const dp = await d.newPage(); await dp.goto(URL); await dp.waitForTimeout(600);
   await dp.fill('#gName','Shiv'); await dp.click('#gateGo'); await dp.waitForTimeout(600);
   await dp.click('#nav button[data-v=pantry]'); await dp.waitForTimeout(500);
+  await dp.click('#newFoodBtn'); await dp.waitForTimeout(300);
   await dp.fill('#ingSearch','kimchi'); await dp.waitForTimeout(400);
   await dp.click('#ingResults .pick'); await dp.waitForTimeout(400);
   await dp.screenshot({ path:'screenshots/y7-dark.png' });

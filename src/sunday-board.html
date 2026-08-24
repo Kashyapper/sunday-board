@@ -6,13 +6,24 @@
 <style>
 /* ── tokens ─────────────────────────────────────────────────────────── */
 :root{
-  --paper:#eef2f0; --card:#ffffff; --sunk:#f5f8f6;
+  --paper:#eef2f1; --card:#ffffff; --sunk:#f4f7f6;
   --ink:#0f1a18; --ink-2:#42544f; --ink-3:#7f918c;
   --rule:#d9e2de; --rule-soft:#e9efec;
-  --time:#0f6b64;   /* events */
-  --duty:#a24a1c;   /* tasks  */
-  --food:#5b7320;   /* meals  */
-  --warn:#a3341f;
+
+  /* one colour per section — it tells you where you are */
+  --c-meal:#c2710c;   /* meal plan */
+  --c-food:#3f8a34;   /* foods     */
+  --c-shop:#0d7183;   /* shopping  */
+  --c-cal:#4a47b8;    /* calendar  */
+  --c-task:#b8501f;   /* tasks     */
+
+  --time:var(--c-food);  /* the accent — re-pointed per section below */
+  --duty:#b8501f;
+  --food:#3f8a34;
+  --warn:#b3341f;
+
+  /* per-food hues: JS sets --fh, the theme decides how light it lands */
+  --fc-s:52%; --fc-l:34%; --fc-bg-l:94%; --fc-br-l:78%;
   --shadow:0 1px 1px rgba(15,26,24,.04), 0 10px 26px rgba(15,26,24,.06);
   --r:10px;
 }
@@ -21,7 +32,9 @@
     --paper:#0c1211; --card:#141d1b; --sunk:#101817;
     --ink:#e7edea; --ink-2:#a2b2ad; --ink-3:#6d807b;
     --rule:#233130; --rule-soft:#1a2423;
-    --time:#4fb5ac; --duty:#e0895a; --food:#a6bf58; --warn:#ec8577;
+    --c-meal:#f0a64a; --c-food:#7fca6a; --c-shop:#57bbd0; --c-cal:#9591f0; --c-task:#f0975f;
+    --time:var(--c-food); --duty:#f0975f; --food:#7fca6a; --warn:#f5877a;
+    --fc-s:58%; --fc-l:70%; --fc-bg-l:20%; --fc-br-l:34%;
     --shadow:0 1px 1px rgba(0,0,0,.4), 0 10px 26px rgba(0,0,0,.35);
   }
 }
@@ -29,9 +42,17 @@
   --paper:#0c1211; --card:#141d1b; --sunk:#101817;
   --ink:#e7edea; --ink-2:#a2b2ad; --ink-3:#6d807b;
   --rule:#233130; --rule-soft:#1a2423;
-  --time:#4fb5ac; --duty:#e0895a; --food:#a6bf58; --warn:#ec8577;
+  --c-meal:#f0a64a; --c-food:#7fca6a; --c-shop:#57bbd0; --c-cal:#9591f0; --c-task:#f0975f;
+  --time:var(--c-food); --duty:#f0975f; --food:#7fca6a; --warn:#f5877a;
+  --fc-s:58%; --fc-l:70%; --fc-bg-l:20%; --fc-br-l:34%;
   --shadow:0 1px 1px rgba(0,0,0,.4), 0 10px 26px rgba(0,0,0,.35);
 }
+
+body[data-section="week"]  { --time:var(--c-meal) }
+body[data-section="pantry"]{ --time:var(--c-food) }
+body[data-section="shop"]  { --time:var(--c-shop) }
+body[data-section="month"] { --time:var(--c-cal)  }
+body[data-section="tasks"] { --time:var(--c-task) }
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -64,10 +85,28 @@ p{margin:0}
   font:inherit;font-weight:600;font-size:14px;color:var(--ink-2);padding:8px 10px;border-radius:8px;cursor:pointer
 }
 .railnav button:hover{background:var(--sunk);color:var(--ink)}
-.railnav button.on{background:var(--sunk);color:var(--ink)}
-.railnav button.on .tick{background:var(--time)}
+.railnav button[data-v="week"].on  { background:color-mix(in srgb,var(--c-meal) 14%,transparent); color:var(--c-meal) }
+.railnav button[data-v="pantry"].on{ background:color-mix(in srgb,var(--c-food) 14%,transparent); color:var(--c-food) }
+.railnav button[data-v="shop"].on  { background:color-mix(in srgb,var(--c-shop) 14%,transparent); color:var(--c-shop) }
+.railnav button[data-v="month"].on { background:color-mix(in srgb,var(--c-cal)  14%,transparent); color:var(--c-cal)  }
+.railnav button[data-v="tasks"].on { background:color-mix(in srgb,var(--c-task) 14%,transparent); color:var(--c-task) }
+.railnav button[data-v="week"] .tick  { background:var(--c-meal) }
+.railnav button[data-v="pantry"] .tick{ background:var(--c-food) }
+.railnav button[data-v="shop"] .tick  { background:var(--c-shop) }
+.railnav button[data-v="month"] .tick { background:var(--c-cal)  }
+.railnav button[data-v="tasks"] .tick { background:var(--c-task) }
+.railnav button .tick{opacity:0}
+.railnav button.on .tick{opacity:1}
+
+/* every food gets a stable hue, so you recognise it across the week */
+.hued{ --fcol:hsl(var(--fh) var(--fc-s) var(--fc-l));
+       --fbg:hsl(var(--fh) var(--fc-s) var(--fc-bg-l));
+       --fbr:hsl(var(--fh) var(--fc-s) var(--fc-br-l)) }
 .tick{width:3px;height:15px;border-radius:2px;background:transparent;flex:0 0 auto}
-.rail-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+.rail-foot{margin-top:auto;display:flex;flex-direction:column;gap:9px}
+.navrule{height:1px;background:var(--rule);margin:9px 10px}
+.footline{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.footline .linkbtn{font-size:11.5px;font-weight:600}
 .syncline{font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:6px}
 .syncdot{width:6px;height:6px;border-radius:50%;background:var(--ink-3);flex:0 0 auto}
 .syncdot.ok{background:var(--food)}
@@ -96,7 +135,8 @@ main{padding:26px 30px 70px;max-width:1180px}
   .railnav{order:3;flex:1 1 100%;flex-direction:row;gap:2px;overflow-x:auto;padding-bottom:2px;
            scrollbar-width:none}
   .railnav::-webkit-scrollbar{display:none}
-  .railnav button{padding:7px 11px;white-space:nowrap;flex:0 0 auto}
+  .railnav button{width:auto;padding:7px 11px;white-space:nowrap;flex:0 0 auto}
+  .navrule{width:1px;height:18px;margin:0 5px;flex:0 0 auto;align-self:center}
   .navcount{margin-left:6px}
   .tick{display:none}
   main{padding:18px 14px 70px}
@@ -125,6 +165,9 @@ main{padding:26px 30px 70px;max-width:1180px}
 .btn.sm{padding:5px 9px;font-size:12.5px}
 .btn.sq{padding:5px 10px;font-size:16px;line-height:1.1}
 .btn.wide{width:100%}
+.linkbtn{background:none;border:0;padding:0;font:inherit;font-size:12.5px;font-weight:600;
+  color:var(--time);cursor:pointer}
+.linkbtn:hover{text-decoration:underline}
 label.f{display:block;margin-bottom:13px}
 label.f>span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
 input,select,textarea{
@@ -166,7 +209,7 @@ textarea{resize:vertical}
 .ent .tname{font-weight:600}
 .ent .ttime{font-size:10.5px;opacity:.7;margin-left:4px;white-space:nowrap;
   font-family:"JetBrains Mono",ui-monospace,monospace}
-.ent.ev{border-color:var(--time);color:var(--time);background:color-mix(in srgb,var(--time) 10%,transparent)}
+.ent.ev{border-color:var(--c-cal);color:var(--c-cal);background:color-mix(in srgb,var(--c-cal) 12%,transparent)}
 .ent.tk{border-color:var(--duty);color:var(--duty);background:color-mix(in srgb,var(--duty) 12%,transparent)}
 .ent.ml{border-color:var(--food);color:var(--food);background:color-mix(in srgb,var(--food) 12%,transparent)}
 .ent.off{opacity:.45;text-decoration:line-through}
@@ -192,6 +235,17 @@ textarea{resize:vertical}
 .row .name.off{text-decoration:line-through;color:var(--ink-3)}
 .row .note{font-size:13px;color:var(--ink-3);margin-top:3px;white-space:pre-wrap;word-break:break-word}
 .row input[type=checkbox]{width:16px;height:16px;margin-top:3px;flex:0 0 auto;accent-color:var(--time)}
+
+/* saved foods read as a grid of colour-coded cards, not a long column */
+#foodRows .rows{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:10px}
+#foodRows .rows .row{flex-direction:column;align-items:stretch;gap:7px;border-bottom:0;
+  border:1px solid var(--rule);border-left:4px solid var(--fcol);border-radius:10px;
+  padding:12px 13px;background:var(--card)}
+#foodRows .rows .row:hover{border-color:var(--fcol)}
+#foodRows .rows .row .name{color:var(--fcol);font-size:15px}
+#foodRows .rows .row .fill{width:100%}
+#foodRows .rows .row .note{background:none;border:0;padding:0;border-radius:0;font-size:12.5px;color:var(--ink-3);margin:0}
+.foodactions{display:flex;gap:6px}
 .pill{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:20px;
       background:var(--sunk);color:var(--ink-2);font-variant-numeric:tabular-nums}
 .pill.late{background:color-mix(in srgb,var(--warn) 15%,transparent);color:var(--warn)}
@@ -208,10 +262,11 @@ textarea{resize:vertical}
 @media (max-width:1000px){.board{grid-template-columns:1fr}}
 .pantry{position:sticky;top:20px}
 .pantrylist{display:flex;flex-direction:column;gap:6px;margin-top:10px;max-height:58vh;overflow:auto}
-.dish{border:1px solid var(--rule);border-radius:8px;padding:7px 10px;cursor:grab;background:var(--card);user-select:none}
-.dish:hover{border-color:var(--food);background:color-mix(in srgb,var(--food) 7%,transparent)}
-.dish.held{border-color:var(--food);background:color-mix(in srgb,var(--food) 15%,transparent)}
-.dish b{display:block;font-size:13.5px;font-weight:600}
+.dish{border:1px solid var(--fbr);border-left:4px solid var(--fcol);border-radius:8px;
+  padding:7px 10px;cursor:grab;background:var(--fbg);user-select:none;transition:transform .1s}
+.dish:hover{transform:translateX(2px)}
+.dish.held{box-shadow:0 0 0 2px var(--fcol)}
+.dish b{display:block;font-size:13.5px;font-weight:650;color:var(--fcol)}
 .dish em{font-style:normal;font-size:11px;color:var(--ink-3)}
 .weekwrap{overflow-x:auto;min-width:0}
 .week{display:grid;grid-template-columns:86px repeat(7,minmax(102px,1fr));gap:5px;min-width:716px}
@@ -226,8 +281,8 @@ textarea{resize:vertical}
       display:flex;flex-direction:column;gap:3px}
 .slot.over{border-color:var(--food);background:color-mix(in srgb,var(--food) 11%,transparent)}
 .slot.armed{border-style:dashed;border-color:var(--food)}
-.served{display:flex;align-items:center;gap:4px;font-size:11.5px;padding:3px 5px;border-radius:6px;cursor:pointer;
-        background:color-mix(in srgb,var(--food) 13%,transparent);color:var(--food);border-left:2.5px solid var(--food)}
+.served{display:flex;align-items:center;gap:4px;font-size:11.5px;padding:4px 6px;border-radius:6px;
+  cursor:pointer;background:var(--fbg);color:var(--fcol);border-left:3px solid var(--fcol);font-weight:600}
 .served span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .served button{border:0;background:none;color:inherit;opacity:.55;cursor:pointer;font-size:13px;line-height:1;padding:0 1px}
 .served button:hover{opacity:1}
@@ -238,7 +293,7 @@ textarea{resize:vertical}
 .up .when{flex:0 0 96px;font-size:11.5px;color:var(--ink-3);font-family:"JetBrains Mono",monospace}
 .up .what{flex:1;font-size:13.5px;min-width:0}
 .up .kind{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-.up .kind.ev{color:var(--time)}.up .kind.tk{color:var(--duty)}.up .kind.ml{color:var(--food)}
+.up .kind.ev{color:var(--c-cal)}.up .kind.tk{color:var(--duty)}.up .kind.ml{color:var(--food)}
 
 /* ── shopping ───────────────────────────────────────────────────────── */
 .navcount{margin-left:auto;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--food);
@@ -329,7 +384,7 @@ textarea{resize:vertical}
 .daytot em{font-style:normal;font-size:10px;color:var(--ink-3)}
 .daytot.good{border-color:var(--food);color:var(--food)}
 .daytot.ok{border-color:var(--duty)}
-.daytot.bad{border-color:var(--warn);color:var(--warn)}
+.daytot.bad{border-color:var(--duty);color:var(--duty)}
 .daytot.none{opacity:.5}
 .verdict{border-radius:10px;padding:13px 14px;margin-bottom:16px;border:1px solid var(--rule)}
 .verdict.good{background:color-mix(in srgb,var(--food) 11%,transparent);border-color:color-mix(in srgb,var(--food) 40%,transparent)}
@@ -389,7 +444,7 @@ textarea{resize:vertical}
 .alertstack{position:fixed;top:16px;right:16px;z-index:70;display:flex;flex-direction:column;gap:9px;
             width:320px;max-width:calc(100vw - 32px)}
 .alertcard{
-  background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--time);border-radius:10px;
+  background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--c-cal);border-radius:10px;
   padding:11px 12px;box-shadow:0 8px 26px rgba(15,26,24,.16);cursor:pointer;
   animation:slidein .22s cubic-bezier(.2,.8,.3,1)
 }
@@ -476,11 +531,12 @@ textarea{resize:vertical}
   <aside class="rail">
     <div class="wordmark"><b>Sunday</b><span>Board</span></div>
     <nav class="railnav" id="nav">
-      <button class="on" data-v="month"><i class="tick"></i>Calendar</button>
-      <button data-v="tasks"><i class="tick"></i>Tasks</button>
+      <button class="on" data-v="week"><i class="tick"></i>Meal plan</button>
       <button data-v="pantry"><i class="tick"></i>Foods</button>
-      <button data-v="week"><i class="tick"></i>Meal plan</button>
       <button data-v="shop"><i class="tick"></i>Shopping<span class="navcount" id="cartCount" hidden>0</span></button>
+      <i class="navrule" aria-hidden="true"></i>
+      <button data-v="month"><i class="tick"></i>Calendar</button>
+      <button data-v="tasks"><i class="tick"></i>Tasks</button>
     </nav>
     <div class="rail-foot">
       <div class="who" id="whoBox"><b id="whoName"></b><span id="whoMail"></span></div>
@@ -492,8 +548,10 @@ textarea{resize:vertical}
         </svg><span class="lbl">Reminders</span>
         <span class="badge zero" id="bellCount">0</span>
       </button>
-      <div class="syncline"><i class="syncdot" id="syncDot"></i><span id="syncText">Loading…</span></div>
-      <button class="bell" id="lockBtn" style="justify-content:center">Sign out</button>
+      <div class="footline">
+        <span class="syncline"><i class="syncdot" id="syncDot"></i><span id="syncText">Loading…</span></span>
+        <button class="linkbtn" id="lockBtn">Sign out</button>
+      </div>
     </div>
   </aside>
 
@@ -513,7 +571,7 @@ textarea{resize:vertical}
         </div>
       </div>
       <div class="key">
-        <span><i style="background:var(--time)"></i>Events</span>
+        <span><i style="background:var(--c-cal)"></i>Events</span>
         <span><i style="background:var(--duty)"></i>Task due</span>
         <span><i style="background:var(--food)"></i>Meals</span>
         <span class="muted">Click a day to see what&rsquo;s on it, or to add something.</span>
@@ -554,10 +612,15 @@ textarea{resize:vertical}
 
     <!-- FOODS --------------------------------------------------------- -->
     <section id="v-pantry" hidden>
-      <div class="pagehead"><div><h1>Foods</h1><p class="sub">List what goes into a dish once, and the grocery list and the nutrition build themselves.</p></div></div>
-      <div class="foodlayout">
+      <div class="pagehead">
+        <div><h1>Foods</h1><p class="sub">List what goes into a dish once. The shopping list and the nutrition follow.</p></div>
+        <button class="btn solid" id="newFoodBtn">+ New food</button>
+      </div>
+
+      <div class="foodlayout" id="foodCompose" hidden>
         <form class="card" id="foodForm">
-          <h3 id="foodFormHead">Create a food</h3>
+          <div class="cardhead"><h3 id="foodFormHead">New food</h3>
+            <button class="linkbtn" type="button" id="fCancel">Close</button></div>
           <label class="f"><span>Name</span><input id="fName" placeholder="Chicken tacos" required></label>
           <label class="f"><span>Notes</span><textarea id="fNotes" rows="2" placeholder="About 20 minutes"></textarea></label>
           <label class="f" style="margin-bottom:7px"><span>Ingredients</span></label>
@@ -565,10 +628,7 @@ textarea{resize:vertical}
           <p class="hint">Drag ingredients in from the library, or add your own.</p>
           <button class="btn sm" type="button" id="ingAdd">+ Add my own</button>
           <div class="nutstrip" id="foodNut"></div>
-          <div class="pair" style="margin-top:14px">
-            <button class="btn solid" type="submit" id="fSave">Save food</button>
-            <button class="btn" type="button" id="fCancel" hidden>Cancel</button>
-          </div>
+          <button class="btn solid wide" type="submit" id="fSave" style="margin-top:14px">Save food</button>
         </form>
 
         <aside class="card library">
@@ -583,11 +643,11 @@ textarea{resize:vertical}
           <div class="picker-list" id="ingResults"></div>
           <p class="hint">Click one for its full nutrition. Drag it onto the recipe, or press <b>+</b> to add.</p>
         </aside>
+      </div>
 
-        <div class="card foods-saved">
-          <div class="cardhead"><h3>Your foods</h3><span class="eyebrow" id="foodTally"></span></div>
-          <div id="foodRows"></div>
-        </div>
+      <div class="card">
+        <div class="cardhead"><h3>Your foods</h3><span class="eyebrow" id="foodTally"></span></div>
+        <div id="foodRows"></div>
       </div>
     </section>
 
@@ -1190,6 +1250,7 @@ function go(v){
   view = v;
   $$('#nav button').forEach(b => b.classList.toggle('on', b.dataset.v === v));
   ['month','tasks','pantry','week','shop'].forEach(k => { $('#v-'+k).hidden = k !== v; });
+  document.body.dataset.section = v;
   if (v === 'month')  drawMonth();
   if (v === 'tasks')  drawTasks();
   if (v === 'pantry') drawFoods();
@@ -1637,14 +1698,23 @@ function resetFoodForm(){
   editingFood = null;
   $('#foodFormHead').textContent = 'Create a food';
   $('#fSave').textContent = 'Save food';
-  $('#fCancel').hidden = true;
   $('#fName').value = ''; $('#fNotes').value = '';
   $('#ingBox').innerHTML = '';
   $('#ingSearch').value = '';
   drawPicker();
   refreshFoodNut();
 }
-$('#fCancel').onclick = resetFoodForm;
+function openCompose(){
+  $('#foodCompose').hidden = false;
+  drawPicker();
+  setTimeout(() => $('#fName').focus(), 30);
+}
+function closeCompose(){
+  $('#foodCompose').hidden = true;
+  resetFoodForm();
+}
+$('#newFoodBtn').onclick = () => { resetFoodForm(); openCompose(); };
+$('#fCancel').onclick = closeCompose;
 
 $('#foodForm').addEventListener('submit', e => {
   e.preventDefault();
@@ -1656,7 +1726,7 @@ $('#foodForm').addEventListener('submit', e => {
   } else {
     state.foods.push({ id:uid(), ...payload });
   }
-  touch(); resetFoodForm(); drawFoods(); toast('Food saved');
+  touch(); closeCompose(); drawFoods(); toast('Food saved');
 });
 
 function foodFactSheet(food, back){
@@ -1692,7 +1762,7 @@ function drawFoods(){
   box.innerHTML = `<div class="rows">${list.map(f => {
     const nut = foodNutrition(f);
     return `
-    <div class="row" data-id="${f.id}">
+    <div class="row hued" data-id="${f.id}" style="--fh:${hueOf(f.name)}">
       <div class="fill">
         <div class="name">${esc(f.name)}</div>
         ${f.notes ? `<div class="note">${esc(f.notes)}</div>` : ''}
@@ -1706,8 +1776,10 @@ function drawFoods(){
             ${nut.known < nut.total ? `<span class="muted">${nut.total-nut.known} not counted</span>` : ''}
           </div>` : ''}
       </div>
-      <button class="btn sm" data-a="edit">Edit</button>
-      <button class="btn sm" data-a="del" aria-label="Delete">✕</button>
+      <div class="foodactions">
+        <button class="btn sm" data-a="edit">Edit</button>
+        <button class="btn sm" data-a="del" aria-label="Delete">✕</button>
+      </div>
     </div>`; }).join('')}</div>`;
 
   box.querySelectorAll('.row').forEach(row => {
@@ -1719,11 +1791,11 @@ function drawFoods(){
       editingFood = f.id;
       $('#foodFormHead').textContent = 'Edit food';
       $('#fSave').textContent = 'Update food';
-      $('#fCancel').hidden = false;
-      $('#fName').value = f.name; $('#fNotes').value = f.notes || '';
+          $('#fName').value = f.name; $('#fNotes').value = f.notes || '';
       const b = $('#ingBox'); b.innerHTML = '';
       (f.ingredients || []).forEach(i => b.appendChild(ingLine(i)));
       setTimeout(refreshFoodNut, 10);
+      openCompose();
       $('#fName').scrollIntoView({ behavior:'smooth', block:'center' });
     };
     row.querySelector('[data-a=del]').onclick = () => sheet('Delete this food?',
@@ -1753,11 +1825,15 @@ function drawWeek(){ drawPantry(); drawBoard(); }
 function drawPantry(){
   const list = [...state.foods].sort((a,b) => a.name.localeCompare(b.name, undefined, {sensitivity:'base'}));
   const box = $('#pantryList');
-  if (!list.length){ box.innerHTML = '<div class="empty">Add foods first.</div>'; return; }
+  if (!list.length){
+    box.innerHTML = '<div class="empty">No foods yet.<br><button class="btn sm solid" id="goFoods" style="margin-top:9px">Add your first food</button></div>';
+    const b = $('#goFoods'); if (b) b.onclick = () => go('pantry');
+    return;
+  }
   box.innerHTML = list.map(f => {
-    const n = (f.ingredients||[]).length;
-    return `<div class="dish" draggable="true" data-id="${f.id}">
-      <b>${esc(f.name)}</b><em>${n} ingredient${n===1?'':'s'}</em></div>`;
+    const n = (f.ingredients || []).length;
+    return `<div class="dish hued" draggable="true" data-id="${f.id}" style="--fh:${hueOf(f.name)}">
+      <b>${esc(f.name)}</b><em>${n} ingredient${n === 1 ? '' : 's'}</em></div>`;
   }).join('');
 
   box.querySelectorAll('.dish').forEach(el => {
@@ -1795,7 +1871,9 @@ function drawBoard(){
       for (const meal of state.meals.filter(m => m.date === date && m.slot === slot.key)){
         const food = state.foods.find(f => f.id === meal.foodId); if (!food) continue;
         const chip = document.createElement('div');
-        chip.className = 'served'; chip.draggable = true;
+        chip.className = 'served hued';
+        chip.style.setProperty('--fh', String(hueOf(food.name)));
+        chip.draggable = true;
         chip.innerHTML = `<span>${esc(food.name)}</span><button aria-label="Remove">×</button>`;
         chip.querySelector('span').onclick = () => mealSheet(meal);
         chip.querySelector('button').onclick = e => {
@@ -1846,6 +1924,17 @@ function drawBoard(){
 
 
 /* ── shopping cart ──────────────────────────────────────────────────── */
+/** Same dish, same colour, every time — derived from the name. */
+const FOOD_HUES = [4, 28, 45, 68, 96, 132, 162, 188, 208, 232, 268, 300, 330];
+function hueOf(name){
+  let h = 2166136261;
+  const t = String(name).trim().toLowerCase();
+  for (let i = 0; i < t.length; i++){ h ^= t.charCodeAt(i); h = Math.imul(h, 16777619); }
+  // a fixed wheel rather than the raw hash, so two dishes rarely land on
+  // near-identical colours
+  return FOOD_HUES[(h >>> 0) % FOOD_HUES.length];
+}
+
 const cartKey = name => String(name).trim().toLowerCase();
 const inCart = key => state.cart.some(c => c.key === key);
 
@@ -2369,7 +2458,7 @@ function enterBoard(){
   $('#tDate').value = today();
   fillFilters();
   resetFoodForm();
-  go('month');
+  go('week');
   drawBell();
   drawCartBadge();
   sweep();

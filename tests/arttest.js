@@ -16,6 +16,7 @@ const { chromium } = require('playwright');
   await page.screenshot({ path:'screenshots/a1-calendar.png' });
 
   // event
+  await page.click('#nav button[data-v=month]'); await page.waitForTimeout(400);
   await page.click('#mAdd');
   await page.waitForSelector('#scrim:not([hidden])');
   await page.fill('#sTitle','Soccer practice');
@@ -39,6 +40,7 @@ const { chromium } = require('playwright');
 
   // foods — built from the ingredient library
   await page.click('#nav button[data-v=pantry]');
+  await page.click('#newFoodBtn'); await page.waitForTimeout(300);
   await page.waitForTimeout(400);
   const addFromLib = async (term) => {
     await page.fill('#ingSearch', term);
@@ -46,9 +48,11 @@ const { chromium } = require('playwright');
     await page.click('#ingResults .pick .plus');
     await page.waitForTimeout(220);
   };
+  await page.click('#newFoodBtn'); await page.waitForTimeout(250);
   await page.fill('#fName','Chicken tacos'); await page.fill('#fNotes','About 20 minutes');
   await addFromLib('chicken breast'); await addFromLib('flour tortilla'); await addFromLib('cheddar');
   await page.click('#fSave'); await page.waitForTimeout(500);
+  await page.click('#newFoodBtn'); await page.waitForTimeout(250);
   await page.fill('#fName','Veggie stir fry');
   await addFromLib('brown rice'); await addFromLib('broccoli'); await addFromLib('cheddar');
   await page.click('#fSave'); await page.waitForTimeout(500);
@@ -88,6 +92,7 @@ const { chromium } = require('playwright');
 
   // persistence across reload
   await page.reload(); await page.waitForTimeout(900);
+  await page.click('#nav button[data-v=month]'); await page.waitForTimeout(400);
   console.log('after reload — entries:', (await page.$$('.month .ent')).length,
               '| sync:', await page.textContent('#syncText'));
 

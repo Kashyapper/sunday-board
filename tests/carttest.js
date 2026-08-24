@@ -18,9 +18,12 @@ const cart = p => p.$$eval('#cartList .gitem .gname', e => e.map(x => x.textCont
 
   // build two foods from the library
   await page.click('#nav button[data-v=pantry]'); await page.waitForTimeout(400);
+  await page.click('#newFoodBtn'); await page.waitForTimeout(300);
   const add = async term => { await page.fill('#ingSearch', term); await page.waitForTimeout(280); await page.click('#ingResults .pick .plus'); await page.waitForTimeout(200); };
+  await page.click('#newFoodBtn'); await page.waitForTimeout(250);
   await page.fill('#fName','Dal tadka'); await add('toor dal'); await add('ghee'); await add('onion');
   await page.click('#fSave'); await page.waitForTimeout(400);
+  await page.click('#newFoodBtn'); await page.waitForTimeout(250);
   await page.fill('#fName','Palak paneer'); await add('spinach'); await add('paneer'); await add('onion');
   await page.click('#fSave'); await page.waitForTimeout(400);
 
