@@ -12,7 +12,11 @@
     "library": "node libtest.js",
     "cart": "node carttest.js",
     "planner": "node arttest.js",
-    "names": "node nametest.js"
+    "names": "node nametest.js",
+    "supplies": "node suptest.js",
+    "repeats": "node reptest.js",
+    "categories": "node cattest.js",
+    "suggestions": "node rectest.js"
   },
   "devDependencies": { "playwright": "^1.56.0" }
 }

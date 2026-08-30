@@ -25,9 +25,30 @@ the full read-out.
 ![The meal plan](docs/mealplan.png)
 
 **Shopping** — the week's ingredients with quantities added up. Drag what you're
-buying into the cart, tick things off as you go, add your own items.
+buying into the cart and tick things off as you go.
+
+**Library** — a page of shelves, not a search box hidden behind a button. Three
+tabs: all 1,896 **Ingredients** on 106 shelves grouped under the 17 aisles they
+belong to, 5,053 **Supplies** on 37 shelves, and **Mine** — anything you add
+yourself, on shelves you name. Every row goes to the cart, straight into a dish,
+or onto a repeat.
+
+**Repeats** — give something a frequency and it arrives on its own. Cilantro every
+Monday, milk every day, toilet roll on the 15th. The board can't run while it's
+closed, so it looks backwards when you open it: the most recent due date that hasn't
+been served yet gets served now, up to two months back.
+
+**Suggestions** — what you buy most often, the ingredients your own dishes lean on,
+and which dish to cook again. All of it read off your own history; before there is
+any, it falls back to the things most kitchens run out of.
 
 ![Shopping and the cart](docs/shopping.png)
+
+![The supply library](docs/supplies.png)
+
+![The library](docs/library-page.png)
+
+![Things that come round again](docs/repeats.png)
 
 **Reminders** — one day before and thirty minutes before every event, task and meal,
 plus a Sunday summary of the week's menu and shopping. They appear in the page and,
@@ -109,11 +130,46 @@ which is why it's off by default.
 ```
 index.html              the whole app, generated — open this
 src/sunday-board.html   the source page
-src/build.py            injects the ingredient table, writes index.html
+src/build.py            injects both data tables, writes index.html
 src/data/ingredients.txt  1,896 ingredients, pipe-delimited
+src/data/supplies.txt     5,053 household supplies, pipe-delimited
+src/gen_supplies.py       regenerates supplies.txt
 tests/                  Playwright tests
 docs/                   screenshots
 ```
+
+## Categories
+
+The 17 groups the ingredient data ships with are too coarse to browse — "Vegetables"
+is 368 things. `subCategory()` in the page sorts every ingredient into one of **106
+finer categories** you would actually go looking for: Leaves & greens, Gourds &
+squash, Whole spices, Cured meats & sausages, Roots & tubers, Souring agents. They
+are the shelves on the Library page, sorted under their aisle, and they work in
+search too — typing `leaves` returns the whole leaf shelf, not just the things with
+"leaf" in the name.
+
+Supplies carry their 37 categories in the data file. Your own items carry whichever
+category you file them under, new ones included.
+
+## The supply library
+
+5,053 household supplies in `src/data/supplies.txt`, one per line:
+
+```
+name|category|unit|tags
+Bin bag, 30 L (30)|Cleaning|roll|
+Agarbatti (incense sticks)|Pooja & festival|each|in
+AA alkaline battery, pack of 8|Batteries & power|pack|
+```
+
+37 categories, from **Cleaning** and **Hardware** through **Plumbing**, **Office &
+stationery**, **Pooja & festival**, **Pet supplies**, **Garden & outdoor** and
+**Baby & kids**. `tags` marks the Indian-household staples. No nutrition here — a
+supply is a thing you buy, not a thing you eat, so it carries a category and a
+purchase unit and nothing more.
+
+Regenerate it with `python3 src/gen_supplies.py`. The generator is the source of
+truth: it holds the item lists and the size and pack variants they expand into.
 
 ## Known limits
 

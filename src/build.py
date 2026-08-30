@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Inject the ingredient table into the page and write the publishable index.html.
+"""Inject the data tables into the page and write the publishable index.html.
 
-The source page carries a __INGREDIENT_TABLE__ placeholder so it stays editable
-without 1,896 lines of data in the middle of it. This script fills that in.
+The source page carries __INGREDIENT_TABLE__ and __SUPPLY_TABLE__ placeholders so
+it stays editable without 7,000 lines of data in the middle of it. This script
+fills them in.
 
     python3 src/build.py
 """
@@ -12,30 +13,36 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "src" / "sunday-board.html"
 DATA = ROOT / "src" / "data" / "ingredients.txt"
+SUPPLIES = ROOT / "src" / "data" / "supplies.txt"
 OUT = ROOT / "index.html"
 
 PLACEHOLDER = "__INGREDIENT_TABLE__"
+SUP_PLACEHOLDER = "__SUPPLY_TABLE__"
 
 
 def main() -> int:
     page = SRC.read_text(encoding="utf-8")
-    if PLACEHOLDER not in page:
-        print(f"error: {PLACEHOLDER} not found in {SRC}", file=sys.stderr)
-        return 1
-
-    rows = [
-        line for line in DATA.read_text(encoding="utf-8").splitlines()
-        if line and not line.startswith("#")
-    ]
-    table = "\n".join(rows)
-
-    # the table is embedded in a JS template literal, so these would break it
-    for bad in ("`", "${"):
-        if bad in table:
-            print(f"error: ingredient data contains {bad!r}", file=sys.stderr)
+    for ph in (PLACEHOLDER, SUP_PLACEHOLDER):
+        if ph not in page:
+            print(f"error: {ph} not found in {SRC}", file=sys.stderr)
             return 1
 
-    body = page.replace(PLACEHOLDER, table)
+    def rows_of(path, label):
+        rows = [
+            line for line in path.read_text(encoding="utf-8").splitlines()
+            if line and not line.startswith("#")
+        ]
+        table = "\n".join(rows)
+        # the table is embedded in a JS template literal, so these would break it
+        for bad in ("`", "${"):
+            if bad in table:
+                raise SystemExit(f"error: {label} data contains {bad!r}")
+        return rows, table
+
+    rows, table = rows_of(DATA, "ingredient")
+    sup_rows, sup_table = rows_of(SUPPLIES, "supply")
+
+    body = page.replace(PLACEHOLDER, table).replace(SUP_PLACEHOLDER, sup_table)
 
     # The artifact host wraps the page in its own skeleton, so the source has no
     # <head>. A file served from a repo or GitHub Pages needs one — without the
@@ -54,7 +61,7 @@ def main() -> int:
     )
     OUT.write_text(doc, encoding="utf-8")
     print(f"built {OUT.relative_to(ROOT)} — {OUT.stat().st_size // 1024} KB, "
-          f"{len(rows)} base ingredients")
+          f"{len(rows)} base ingredients, {len(sup_rows)} supplies")
     return 0
 
 

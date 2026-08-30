@@ -38,5 +38,9 @@ Serve over **HTTP, not `file://`**. Browsers partition storage differently for
 | `cart` | Drag into and out of the cart, own items, ticking off, reload, emptying |
 | `planner` | Meal drag-and-drop, grocery aggregation, calendar entries |
 | `names` | Task names staying legible on the calendar at every width |
+| `supplies` | Supply shelves and search, into the cart, ticking off, reload |
+| `repeats` | Frequencies landing on the day, catching up, not doubling up, stopping |
+| `categories` | The Library page: shelves, aisles, the three tabs, cart/dish/repeat, your own categories |
+| `suggestions` | Cold-start staples, then what you actually buy, cook with and plan |
 
 Screenshots land in `tests/screenshots/`.

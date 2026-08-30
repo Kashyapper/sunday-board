@@ -12,6 +12,7 @@
 
   /* one colour per section — it tells you where you are */
   --c-meal:#c2710c;   /* meal plan */
+  --c-lib:#7a3fa0;    /* library   */
   --c-food:#3f8a34;   /* foods     */
   --c-shop:#0d7183;   /* shopping  */
   --c-cal:#4a47b8;    /* calendar  */
@@ -32,7 +33,7 @@
     --paper:#0c1211; --card:#141d1b; --sunk:#101817;
     --ink:#e7edea; --ink-2:#a2b2ad; --ink-3:#6d807b;
     --rule:#233130; --rule-soft:#1a2423;
-    --c-meal:#f0a64a; --c-food:#7fca6a; --c-shop:#57bbd0; --c-cal:#9591f0; --c-task:#f0975f;
+    --c-meal:#f0a64a; --c-food:#7fca6a; --c-shop:#57bbd0; --c-cal:#9591f0; --c-task:#f0975f; --c-lib:#c08ae0;
     --time:var(--c-food); --duty:#f0975f; --food:#7fca6a; --warn:#f5877a;
     --fc-s:58%; --fc-l:70%; --fc-bg-l:20%; --fc-br-l:34%;
     --shadow:0 1px 1px rgba(0,0,0,.4), 0 10px 26px rgba(0,0,0,.35);
@@ -42,7 +43,7 @@
   --paper:#0c1211; --card:#141d1b; --sunk:#101817;
   --ink:#e7edea; --ink-2:#a2b2ad; --ink-3:#6d807b;
   --rule:#233130; --rule-soft:#1a2423;
-  --c-meal:#f0a64a; --c-food:#7fca6a; --c-shop:#57bbd0; --c-cal:#9591f0; --c-task:#f0975f;
+  --c-meal:#f0a64a; --c-food:#7fca6a; --c-shop:#57bbd0; --c-cal:#9591f0; --c-task:#f0975f; --c-lib:#c08ae0;
   --time:var(--c-food); --duty:#f0975f; --food:#7fca6a; --warn:#f5877a;
   --fc-s:58%; --fc-l:70%; --fc-bg-l:20%; --fc-br-l:34%;
   --shadow:0 1px 1px rgba(0,0,0,.4), 0 10px 26px rgba(0,0,0,.35);
@@ -51,6 +52,7 @@
 body[data-section="week"]  { --time:var(--c-meal) }
 body[data-section="pantry"]{ --time:var(--c-food) }
 body[data-section="shop"]  { --time:var(--c-shop) }
+body[data-section="lib"]   { --time:var(--c-lib)  }
 body[data-section="month"] { --time:var(--c-cal)  }
 body[data-section="tasks"] { --time:var(--c-task) }
 
@@ -88,11 +90,13 @@ p{margin:0}
 .railnav button[data-v="week"].on  { background:color-mix(in srgb,var(--c-meal) 14%,transparent); color:var(--c-meal) }
 .railnav button[data-v="pantry"].on{ background:color-mix(in srgb,var(--c-food) 14%,transparent); color:var(--c-food) }
 .railnav button[data-v="shop"].on  { background:color-mix(in srgb,var(--c-shop) 14%,transparent); color:var(--c-shop) }
+.railnav button[data-v="lib"].on   { background:color-mix(in srgb,var(--c-lib)  14%,transparent); color:var(--c-lib)  }
 .railnav button[data-v="month"].on { background:color-mix(in srgb,var(--c-cal)  14%,transparent); color:var(--c-cal)  }
 .railnav button[data-v="tasks"].on { background:color-mix(in srgb,var(--c-task) 14%,transparent); color:var(--c-task) }
 .railnav button[data-v="week"] .tick  { background:var(--c-meal) }
 .railnav button[data-v="pantry"] .tick{ background:var(--c-food) }
 .railnav button[data-v="shop"] .tick  { background:var(--c-shop) }
+.railnav button[data-v="lib"] .tick   { background:var(--c-lib)  }
 .railnav button[data-v="month"] .tick { background:var(--c-cal)  }
 .railnav button[data-v="tasks"] .tick { background:var(--c-task) }
 .railnav button .tick{opacity:0}
@@ -115,7 +119,8 @@ p{margin:0}
 main{padding:26px 30px 70px;max-width:1180px}
 .pagehead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
 .pagehead .sub{color:var(--ink-3);font-size:13.5px;margin-top:3px}
-.navgroup{display:flex;align-items:center;gap:8px}
+.navgroup{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.navgroup>*{flex:0 0 auto}
 
 @media (max-width:880px){
   /* a bare 1fr track never shrinks below its content — this is what stops sideways scroll */
@@ -323,6 +328,90 @@ textarea{resize:vertical}
 .addown .amtbox{flex:0 0 78px}
 .shopempty{border:1px dashed var(--rule);border-radius:9px;padding:22px 16px;text-align:center;
   color:var(--ink-3);font-size:13px}
+#supBtn,#repBtn{white-space:nowrap}
+.tabrow{display:flex;gap:4px;margin-bottom:10px;border-bottom:1px solid var(--rule-soft);padding-bottom:8px}
+.liblayout{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:16px;align-items:start}
+.shelves{position:sticky;top:20px}
+.shelflist{display:flex;flex-direction:column;gap:1px;max-height:64vh;overflow:auto}
+.shelflist .aisle{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--ink-3);padding:11px 6px 4px}
+.shelflist .shelf{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;
+  border:0;background:none;font:inherit;font-size:13px;font-weight:600;color:var(--ink-2);
+  text-align:left;padding:5px 8px;border-radius:7px;cursor:pointer}
+.shelflist .shelf.sub{font-weight:500;padding-left:14px}
+.shelflist .shelf:hover{background:var(--sunk);color:var(--ink)}
+.shelflist .shelf.on{background:color-mix(in srgb,var(--time) 13%,transparent);color:var(--time)}
+.shelflist .shelf i{font-style:normal;font-size:11px;color:var(--ink-3);font-family:"JetBrains Mono",monospace}
+.shelflist .shelf.on i{color:inherit;opacity:.8}
+.libmain #libSearch{width:100%}
+.shelfhead{display:flex;align-items:baseline;gap:8px;font-size:11px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-3);margin:16px 0 7px;padding-bottom:5px;
+  border-bottom:1px solid var(--rule-soft)}
+.shelfhead i{font-style:normal;font-family:"JetBrains Mono",monospace;letter-spacing:0}
+#libRows .picker-list{max-height:none;overflow:visible;margin-top:0}
+#libRows{max-height:62vh;overflow:auto;margin-top:12px}
+.pick .acts{display:flex;gap:4px;position:absolute;right:6px;top:6px}
+.pick .acts .plus{position:static}
+.pick .acts .plus.wide{width:auto;padding:0 6px;font-size:10.5px;font-weight:700;letter-spacing:.03em}
+.pick.sup{padding-right:104px}
+.pick .plus.rep.on{border-color:var(--time);color:var(--time)}
+@media (max-width:880px){.liblayout{grid-template-columns:1fr}.shelves{position:static}
+  .shelflist{max-height:210px}#libRows{max-height:none}}
+.tabrow .tab{border:1px solid transparent;background:none;font:inherit;font-size:13px;font-weight:600;
+  color:var(--ink-3);padding:6px 12px;border-radius:7px;cursor:pointer}
+.tabrow .tab:hover{color:var(--ink);background:var(--sunk)}
+.tabrow .tab.on{color:var(--time);background:color-mix(in srgb,var(--time) 12%,transparent);
+  border-color:color-mix(in srgb,var(--time) 30%,transparent)}
+.chiprow{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.chiprow button{border:1px solid var(--rule);background:var(--card);font:inherit;font-size:11.5px;
+  font-weight:600;color:var(--ink-2);padding:4px 9px;border-radius:99px;cursor:pointer;white-space:nowrap}
+.chiprow button:hover{border-color:var(--time);color:var(--time)}
+.chiprow button.on{background:color-mix(in srgb,var(--time) 13%,transparent);
+  border-color:var(--time);color:var(--time)}
+.chiprow button i{font-style:normal;color:var(--ink-3);font-weight:500;margin-left:4px}
+.chiprow button.on i{color:inherit;opacity:.75}
+.reco{margin-top:11px;padding:9px 11px;border:1px dashed var(--rule);border-radius:9px;background:var(--sunk)}
+.reco .recolabel{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:6px}
+.reco .chiprow{margin-top:0}
+.repform{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.repform input{font-size:13px;padding:7px 9px}
+.repform #rpName,.repform #myName{flex:1 1 220px;min-width:0}
+.repform #myNewCat{flex:1 1 170px;min-width:0}
+.repform #myCat{max-width:210px}
+.repform .amtbox{flex:0 0 84px}
+.repform select{flex:0 0 auto;font-size:13px;padding:7px 9px}
+.repeatrow{display:flex;align-items:center;gap:10px;padding:9px 10px;border:1px solid var(--rule);
+  border-radius:8px;background:var(--card);font-size:13.5px;margin-top:6px}
+.repeatrow .rname{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.repeatrow .rwhen{font-size:12px;color:var(--time);font-weight:600;white-space:nowrap}
+.repeatrow .rnext{font-size:11.5px;color:var(--ink-3);white-space:nowrap;
+  font-family:"JetBrains Mono",monospace}
+.repeatrow .rx{flex:0 0 auto;border:1px solid var(--rule);background:var(--card);color:var(--ink-3);
+  border-radius:6px;width:22px;height:22px;font-size:13px;line-height:1;cursor:pointer;padding:0}
+.repeatrow .rx:hover{border-color:var(--warn);color:var(--warn)}
+.gitem .rbtn{flex:0 0 auto;border:1px solid var(--rule);background:var(--card);color:var(--ink-3);
+  border-radius:6px;width:22px;height:22px;font-size:12px;line-height:1;cursor:pointer;padding:0}
+.gitem .rbtn:hover{border-color:var(--time);color:var(--time)}
+.gitem .rbtn.on{border-color:var(--time);color:var(--time);background:color-mix(in srgb,var(--time) 12%,transparent)}
+.gitem.rep .gname::after{content:" · repeats";font-size:10.5px;color:var(--time);letter-spacing:.03em}
+@media (max-width:880px){.repform #rpName{flex:1 1 100%}.repform select{flex:1 1 46%}}
+.supplypanel{margin-bottom:16px}
+.supplypanel .filters{margin-top:0}
+.supplypanel .filters input{flex:1;min-width:0}
+.supplypanel .filters select{flex:0 0 190px}
+.headright{display:flex;align-items:center;gap:10px}
+.picker-list.supgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));
+  gap:5px;max-height:34vh;align-content:start}
+.pick.sup{display:block;position:relative;padding:7px 32px 7px 9px}
+.pick.sup b{display:block;white-space:normal;overflow:visible;font-size:12.8px;line-height:1.3}
+.pick.sup .cat{display:block;margin-top:2px;font-size:9.5px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--ink-3)}
+.pick.sup .flag{position:static;margin-left:5px;vertical-align:middle}
+.pick.insup{opacity:.5}
+.pick.insup .plus{border-color:var(--food);color:var(--food)}
+@media (max-width:880px){.supplypanel .filters{flex-wrap:wrap}.supplypanel .filters select{flex:1 1 100%}
+  .picker-list.supgrid{grid-template-columns:1fr;max-height:40vh}}
 
 /* ── ingredient picker & nutrition ──────────────────────────────────── */
 .foodlayout{display:grid;grid-template-columns:minmax(340px,1.15fr) minmax(250px,.85fr);gap:16px;align-items:start}
@@ -339,6 +428,8 @@ textarea{resize:vertical}
   border-radius:6px;width:22px;height:22px;font-size:14px;line-height:1;cursor:pointer;padding:0}
 .pick .plus:hover{border-color:var(--time);color:var(--time)}
 .pick.cooked b{font-weight:500;color:var(--ink-2)}
+.pick.mineown{border-color:color-mix(in srgb,var(--time) 40%,var(--rule))}
+.pick.mineown .prep{color:var(--time)}
 .pick .prep{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--duty)}
 .factsheet{display:flex;flex-direction:column;gap:0}
 .factsheet .fr{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
@@ -534,6 +625,7 @@ textarea{resize:vertical}
       <button class="on" data-v="week"><i class="tick"></i>Meal plan</button>
       <button data-v="pantry"><i class="tick"></i>Foods</button>
       <button data-v="shop"><i class="tick"></i>Shopping<span class="navcount" id="cartCount" hidden>0</span></button>
+      <button data-v="lib"><i class="tick"></i>Library</button>
       <i class="navrule" aria-hidden="true"></i>
       <button data-v="month"><i class="tick"></i>Calendar</button>
       <button data-v="tasks"><i class="tick"></i>Tasks</button>
@@ -638,6 +730,8 @@ textarea{resize:vertical}
             <select id="fCuisine" aria-label="Filter by cuisine"></select>
             <select id="fGroup" aria-label="Filter by category"></select>
           </div>
+          <div class="chiprow" id="ingChips"></div>
+          <div class="reco" id="ingReco" hidden></div>
           <label class="libtoggle"><input type="checkbox" id="fCooked" checked>
             <span>Include cooked forms</span></label>
           <div class="picker-list" id="ingResults"></div>
@@ -665,23 +759,94 @@ textarea{resize:vertical}
       <div class="board">
         <aside class="card pantry">
           <h3>Foods</h3>
+          <div class="reco" id="dishReco" hidden></div>
           <div class="pantrylist" id="pantryList"></div>
         </aside>
         <div class="weekwrap"><div class="week" id="week"></div></div>
       </div>
     </section>
 
+    <!-- LIBRARY ------------------------------------------------------- -->
+    <section id="v-lib" hidden>
+      <div class="pagehead">
+        <div><h1>Library</h1><p class="sub" id="libHint">Everything you can buy or cook with, sorted onto shelves.</p></div>
+        <div class="navgroup">
+          <button class="btn sm" id="libRepeats">&#8635; Repeats</button>
+          <button class="btn solid" id="libToCart">Go to the cart</button>
+        </div>
+      </div>
+      <div class="tabrow" id="libTabs">
+        <button type="button" class="tab on" data-t="ing">Ingredients</button>
+        <button type="button" class="tab" data-t="sup">Supplies</button>
+        <button type="button" class="tab" data-t="mine">Mine</button>
+      </div>
+      <div class="liblayout">
+        <aside class="card shelves">
+          <div class="cardhead"><h3>Shelves</h3><span class="eyebrow" id="shelfCount"></span></div>
+          <div class="shelflist" id="shelfList"></div>
+        </aside>
+        <div class="card libmain">
+          <div class="cardhead">
+            <h3 id="libWhere">Everything</h3>
+            <span class="eyebrow" id="libTally"></span>
+          </div>
+          <input id="libSearch" placeholder="Search the shelves" autocomplete="off">
+          <form class="repform" id="mineForm" hidden>
+            <input id="myName" placeholder="What is it?" autocomplete="off">
+            <input id="myAmt" placeholder="Qty" class="amtbox">
+            <select id="myCat" aria-label="Category"></select>
+            <input id="myNewCat" placeholder="New category name" autocomplete="off" hidden>
+            <button class="btn solid" type="submit">Save it</button>
+          </form>
+          <div class="reco" id="libReco" hidden></div>
+          <div id="libRows"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- SHOPPING ------------------------------------------------------ -->
     <section id="v-shop" hidden>
       <div class="pagehead">
-        <div><h1>Shopping</h1><p class="sub" id="shopHint">Everything this week&rsquo;s meals need. Drag what you&rsquo;re buying into the cart &mdash; or just tap it.</p></div>
+        <div><h1>Shopping</h1><p class="sub" id="shopHint">This week&rsquo;s meals, 5,000 supplies, 1,896 ingredients and anything you add yourself. Drag it into the cart &mdash; or just tap it.</p></div>
         <div class="navgroup">
           <button class="btn sq" id="sPrev" aria-label="Previous week">&lsaquo;</button>
           <span class="weeklabel" id="shopWeek">&mdash;</span>
           <button class="btn sq" id="sNext" aria-label="Next week">&rsaquo;</button>
           <button class="btn sm" id="sNow">This week</button>
+          <button class="btn sm" id="repBtn">&#8635; Repeats</button>
+          <button class="btn solid" id="supBtn">+ Add from the library</button>
         </div>
       </div>
+
+      <div class="card supplypanel" id="repeatPanel" hidden>
+        <div class="cardhead">
+          <h3>Things that come round again</h3>
+          <div class="headright"><span class="eyebrow" id="repCount"></span>
+            <button class="linkbtn" type="button" id="repClose">Close</button></div>
+        </div>
+        <form class="repform" id="repForm" novalidate>
+          <input id="rpName" placeholder="What &mdash; cilantro, milk, bin bags&hellip;" autocomplete="off">
+          <input id="rpAmt" placeholder="Qty" class="amtbox">
+          <select id="rpEvery" aria-label="How often">
+            <option value="week">Every week</option>
+            <option value="fortnight">Every 2 weeks</option>
+            <option value="month">Every month</option>
+            <option value="day">Every day</option>
+          </select>
+          <select id="rpDay" aria-label="Which day">
+            <option value="0">Sunday</option><option value="1">Monday</option>
+            <option value="2">Tuesday</option><option value="3">Wednesday</option>
+            <option value="4">Thursday</option><option value="5">Friday</option>
+            <option value="6">Saturday</option>
+          </select>
+          <select id="rpDom" aria-label="Which date" hidden></select>
+          <button class="btn solid" type="submit" id="rpSave">Add</button>
+        </form>
+        <div id="repRows"></div>
+        <p class="hint">On the day it comes round, it drops into your cart by itself &mdash;
+          even if the board was closed, as long as you open it within a couple of months.</p>
+      </div>
+
       <div class="shoplayout">
         <div class="card">
           <div class="cardhead"><h3>To buy</h3><span class="eyebrow" id="buyCount"></span></div>
@@ -758,7 +923,7 @@ function toast(msg){
 
 /* ── state + persistence ────────────────────────────────────────────── */
 const KEY = 'sundayboard.v1';
-let state = { v:1, updatedAt:0, profile:{name:'',email:''}, targets:{}, cart:[], events:[], tasks:[], foods:[], meals:[], alerts:[], fired:{}, desktop:false };
+let state = { v:1, updatedAt:0, profile:{name:'',email:''}, targets:{}, cart:[], repeats:[], myItems:[], myCats:[], bought:{}, events:[], tasks:[], foods:[], meals:[], alerts:[], fired:{}, desktop:false };
 let ns = null, nsAsked = false, saveT = null;
 
 function normalise(raw){
@@ -772,6 +937,10 @@ function normalise(raw){
     profile: (s.profile && typeof s.profile === 'object') ? s.profile : { name:'', email:'' },
     targets: (s.targets && typeof s.targets === 'object') ? s.targets : {},
     cart:   Array.isArray(s.cart)   ? s.cart   : [],
+    repeats: Array.isArray(s.repeats) ? s.repeats : [],
+    myItems: Array.isArray(s.myItems) ? s.myItems : [],
+    myCats:  Array.isArray(s.myCats)  ? s.myCats  : [],
+    bought:  (s.bought && typeof s.bought === 'object') ? s.bought : {},
     alerts: Array.isArray(s.alerts) ? s.alerts : [],
     fired:  (s.fired && typeof s.fired === 'object') ? s.fired : {},
     desktop: !!s.desktop
@@ -886,6 +1055,168 @@ const CUISINES = [
 ];
 const CUISINE_NAME = Object.fromEntries(CUISINES);
 
+/* ── fine categories ────────────────────────────────────────────────────
+   The 17 groups the data ships with are too coarse to browse: "Vegetables"
+   is 368 things. These rules sort every ingredient into something you'd
+   actually go looking for — leaves, gourds, whole spices, shellfish. First
+   rule that matches wins, so the specific ones come before the general.   */
+const SUBRULES = {
+  'Vegetables': [
+    [/onion|shallot|leek|garlic|chive|scallion/, 'Onions & garlic'],
+    [/cauliflower|broccol|cabbage|brussels|romanesco|gai lan|kohlrabi/, 'Cabbage family'],
+    [/leaf|leaves|greens\b|spinach|palak|kale|cavolo|collard|chard|lettuce|romaine|arugula|rocket|watercress|amaranth|methi|sorrel|endive|radicchio|chicory|escarole|purslane|bok choy|pak choi|choy sum|tatsoi|mizuna|komatsuna|shungiku|chrysanthemum|dandelion|nettle|bathua|epazote|lovage|puntarelle|agretti|malabar spinach|water spinach|kangkong|samphire|micro ?green|sprout|kai-?lan/, 'Leaves & greens'],
+    [/gourd|pumpkin|squash|zucchini|courgette|marrow|chayote|tinda|cucumber|parwal|pointed gourd|luffa|winter melon|ash melon/, 'Gourds & squash'],
+    [/tomato|tomatillo|passata/, 'Tomatoes'],
+    [/pepper|capsicum|chilli|chili|jalapeno|jalapeño|poblano|habanero|serrano|padron|pimiento/, 'Peppers & chillies'],
+    [/brinjal|eggplant|aubergine/, 'Aubergine'],
+    [/potato|yam|taro|colocasia|arbi|cassava|tapioca root|yuca|malanga|ulluco|maca root|carrot|parsnip|beet|radish|mooli|daikon|turnip|shalgam|rutabaga|swede|celeriac|salsify|burdock|lotus root|jicama|water chestnut|ginger|turmeric root|galangal|horseradish|wasabi root|sunchoke|jerusalem artichoke/, 'Roots & tubers'],
+    [/bean|pea\b|peas|okra|bhindi|lady finger|drumstick|snow pea|sugar snap|edamame|guar/, 'Beans & pods'],
+    [/celery|asparagus|fennel bulb|bamboo shoot|artichoke|cardoon|rhubarb|palm heart|hearts? of palm|fiddlehead|banana stem|banana flower|stem\b/, 'Stems & shoots'],
+    [/corn|maize/, 'Corn'],
+    [/olive|caper|gherkin|pickled/, 'Olives & pickled veg'],
+    [/raw banana|plantain|raw jackfruit|kathal|green papaya|green mango|unripe/, 'Unripe & starchy'],
+    [null, 'Other vegetables']
+  ],
+  'Fruits': [
+    [/lemon|lime|orange|mandarin|clementine|tangerine|grapefruit|pomelo|citron|kumquat|yuzu|calamansi|bergamot/, 'Citrus'],
+    [/strawberr|raspberr|blueberr|blackberr|cranberr|gooseberr|mulberr|currant|elderberr|boysenberr|cloudberr|lingonberr|acai|goji/, 'Berries'],
+    [/mango|papaya|pineapple|guava|lychee|litchi|rambutan|longan|dragon fruit|passion fruit|jackfruit|custard apple|sitaphal|chikoo|sapota|starfruit|carambola|soursop|tamarillo|durian|mangosteen|breadfruit|jabuticaba|feijoa|persimmon|pomegranate|coconut \(|tender coconut/, 'Tropical fruit'],
+    [/peach|nectarine|plum|apricot|cherry|cherries|damson|greengage|lychee/, 'Stone fruit'],
+    [/melon|watermelon|cantaloupe|honeydew|muskmelon/, 'Melons'],
+    [/apple|pear|quince|crabapple/, 'Apples & pears'],
+    [/grape|raisin|sultana|currant/, 'Grapes & raisins'],
+    [/banana|plantain/, 'Bananas'],
+    [/date|fig|prune|dried |candied/, 'Dried fruit'],
+    [null, 'Exotic & other fruit']
+  ],
+  'Herbs & spices': [
+    [/curry leaf|curry leaves|bay leaf|bay leaves|kaffir lime leaf|pandan|banana leaf|betel leaf|tejpatta|holy basil leaf/, 'Aromatic leaves'],
+    [/fresh|coriander leaves|cilantro|parsley|basil|mint|dill|thyme|rosemary|sage|oregano|tarragon|chervil|marjoram|lemongrass|chive|epazote|shiso|perilla/, 'Fresh herbs'],
+    [/masala|blend|mix|seasoning|za'?atar|ras el|herbes de|five spice|shichimi|furikake|baharat|berbere|jerk|garam|sambar powder|rasam powder|chaat|panch phoron|dukkah|harissa powder/, 'Spice blends'],
+    [/powder|ground|paprika|cayenne/, 'Ground spices'],
+    [/seed|pod|stick|whole|cardamom|clove|cinnamon|star anise|peppercorn|mace|nutmeg|asafoetida|hing|saffron|vanilla|juniper|allspice|mustard|cumin|coriander|fennel|fenugreek|ajwain|nigella|caraway|anise|poppy|sesame/, 'Whole spices'],
+    [/chilli|chili|chile|pepper/, 'Dried chillies'],
+    [/salt|namak|fleur de sel/, 'Salts'],
+    [/tamarind|kokum|anardana|sumac|dried lime|loomi|mango powder|amchur/, 'Souring agents'],
+    [null, 'Speciality spices']
+  ],
+  'Grains & flours': [
+    [/rice|poha|flattened|puffed rice|idli rava/, 'Rice'],
+    [/atta|maida|wheat|semolina|sooji|rava|bulgur|freekeh|farro|spelt|durum|couscous/, 'Wheat'],
+    [/bajra|jowar|ragi|millet|amaranth|rajgira|buckwheat|kuttu|quinoa|teff|sorghum|fonio/, 'Millets & pseudo-grains'],
+    [/oat|barley|rye|corn|maize|makki|polenta|cornmeal|masa/, 'Other grains'],
+    [/starch|arrowroot|besan|gram flour|flour/, 'Flours & starches'],
+    [null, 'Other grains']
+  ],
+  'Dals & pulses': [
+    [/toor|arhar|masoor|moong|mung|urad|chana dal|split/, 'Split dals'],
+    [/chana|chickpea|kabuli|garbanzo|besan/, 'Chickpeas & grams'],
+    [/rajma|kidney|black bean|pinto|navy|cannellini|butter bean|lima|adzuki|black-eyed|lobia|fava|broad bean|soy/, 'Dried beans'],
+    [/pea|matar|lentil/, 'Lentils & peas'],
+    [null, 'Other pulses']
+  ],
+  'Dairy & eggs': [
+    [/egg/, 'Eggs'],
+    [/paneer|cheese|mozzarella|cheddar|parmesan|feta|ricotta|halloumi|brie|gouda|gruy|mascarpone|burrata|manchego|pecorino/, 'Cheese'],
+    [/curd|dahi|yoghurt|yogurt|lassi|shrikhand|kefir|buttermilk|chaas|raita|skyr|labneh|quark/, 'Yoghurt & curd'],
+    [/ghee|butter/, 'Butter & ghee'],
+    [/soy milk|almond milk|oat milk|coconut milk|cashew milk|rice milk|plant/, 'Milk alternatives'],
+    [/cream|milk|khoya|mawa|condensed|evaporated|malai/, 'Milk & cream'],
+    [null, 'Cheese']
+  ],
+  'Meat & poultry': [
+    [/chicken|poultry|hen|broiler/, 'Chicken'],
+    [/mutton|lamb|goat|hogget/, 'Mutton & lamb'],
+    [/salami|sausage|pepperoni|chorizo|mortadella|bratwurst|frankfurter|andouille|merguez|pastrami|biltong|guanciale|bresaola|coppa|nduja|soppressata|jam[oó]n|lomo|morcilla|butifarra|boudin|saucisson|rillettes|p[âa]t[ée]|wurst|leberk|kabanos|kielbasa|sujuk|pastirma|cecina|prosciutto|pancetta|speck|lardo|bacon|ham\b|gammon|salumi|luncheon meat|spam/, 'Cured meats & sausages'],
+    [/pork|hog/, 'Pork'],
+    [/kebab|keema|carnitas|barbacoa|al pastor|tikka|seekh/, 'Cooked & prepared'],
+    [/beef|veal|steak|brisket|mince|ox/, 'Beef'],
+    [/liver|kidney|heart|tripe|brain|trotter|marrow|offal|gizzard/, 'Offal'],
+    [/duck|turkey|quail|goose|pigeon|rabbit|venison|boar|emu|ostrich/, 'Game & other birds'],
+    [null, 'Other meat']
+  ],
+  'Fish & seafood': [
+    [/prawn|shrimp|crab|lobster|crayfish|langoustine|krill/, 'Shellfish'],
+    [/squid|octopus|cuttlefish|clam|mussel|oyster|scallop|abalone|snail|whelk|cockle/, 'Molluscs'],
+    [/roe|caviar|tobiko|ikura|bottarga/, 'Roe'],
+    [/dried|salted|smoked|canned|tinned|cured|pickled|maldive/, 'Preserved fish'],
+    [null, 'Fish']
+  ],
+  'Nuts & seeds': [
+    [/butter|paste|tahini/, 'Nut & seed butters'],
+    [/seed|til|sesame|flax|alsi|chia|hemp|sunflower|pumpkin seed|melon seed|magaz|poppy/, 'Seeds'],
+    [null, 'Nuts']
+  ],
+  'Oils & fats': [
+    [/ghee|butter|lard|tallow|dripping|suet|schmaltz/, 'Animal fats'],
+    [/spray|shortening|margarine|vanaspati/, 'Other fats'],
+    [null, 'Cooking oils']
+  ],
+  'Bread & noodles': [
+    [/roti|chapati|paratha|naan|kulcha|puri|bhatura|thepla|tortilla|pita|lavash|flatbread|dosa|appam|injera|arepa/, 'Flatbreads'],
+    [/noodle|ramen|udon|soba|rice stick|vermicelli|sevai|hakka|glass noodle|shirataki/, 'Noodles'],
+    [/pasta|spaghetti|penne|macaroni|fusilli|lasagne|linguine|farfalle|orzo|gnocchi|ravioli|tagliatelle|rigatoni|conchiglie/, 'Pasta'],
+    [/wrapper|sheet|skin|filo|phyllo|puff pastry|spring roll|wonton|dumpling/, 'Wrappers & pastry'],
+    [/crumb|crouton|rusk|cracker|crispbread|papad|pappadam/, 'Crumbs & crispbread'],
+    [null, 'Breads']
+  ],
+  'Condiments & sauces': [
+    [/pickle|achar|chutney|relish|kasundi/, 'Pickles & chutneys'],
+    [/vinegar/, 'Vinegars'],
+    [/paste|puree|purée|concentrate|masala paste/, 'Pastes & purées'],
+    [/mayonnaise|dressing|aioli|tartare|ranch|thousand island|vinaigrette/, 'Dressings'],
+    [/kimchi|sauerkraut|miso|natto|tempeh|fermented|gochujang|doenjang/, 'Ferments'],
+    [/jam|marmalade|preserve|conserve|curd|spread|nutella/, 'Jams & spreads'],
+    [/stock|broth|bouillon|cube/, 'Stocks'],
+    [null, 'Sauces']
+  ],
+  'Plant proteins': [
+    [/tofu|soy|edamame|tempeh|tvp|soya/, 'Soy'],
+    [/seitan|gluten|wheat protein/, 'Wheat protein'],
+    [/burger|mince|sausage|nugget|substitute|mock|vegan/, 'Meat substitutes'],
+    [null, 'Other plant proteins']
+  ],
+  'Fungi & sea greens': [
+    [/nori|wakame|kombu|kelp|dulse|arame|hijiki|agar|sea |seaweed|laver|irish moss/, 'Sea greens'],
+    [null, 'Mushrooms']
+  ],
+  'Beverages': [
+    [/tea|chai|matcha|kombucha/, 'Tea'],
+    [/coffee|espresso|decoction/, 'Coffee'],
+    [/juice|squash|nectar|sherbet|thandai|lassi/, 'Juices & cordials'],
+    [/wine|beer|rum|whisky|vodka|gin|brandy|liqueur|sake|cider|arrack|feni/, 'Alcohol'],
+    [/water|soda|cola|tonic|drink/, 'Waters & soft drinks'],
+    [null, 'Other drinks']
+  ],
+  'Sweeteners': [
+    [/jaggery|gur|honey|maple|molasses|treacle|golden syrup|agave|date syrup|glucose|corn syrup|syrup/, 'Syrups & jaggery'],
+    [/stevia|erythritol|xylitol|aspartame|sucralose|monk fruit/, 'Sugar substitutes'],
+    [null, 'Sugars']
+  ],
+  'Baking & pantry': [
+    [/baking powder|baking soda|yeast|cream of tartar|eno|leaven/, 'Leaveners'],
+    [/cornflour|corn starch|arrowroot|gelatin|agar|pectin|xanthan|thickener/, 'Thickeners & setting'],
+    [/essence|extract|vanilla|colour|color|sprinkle|fondant|marzipan|cocoa|chocolate|chip|icing/, 'Baking extras'],
+    [/salt|pepper|msg|soda/, 'Salt & basics'],
+    [/cornflake|muesli|granola|krispies|porridge|cereal/, 'Breakfast cereals'],
+    [/biscuit|cracker|rice cake|pretzel|popcorn|namkeen|bhujia|\bsev\b|boondi|chivda|papad|murukku|chikki|laddoo|gajak|crisps|wafer/, 'Snacks & namkeen'],
+    [/mix \(dry\)|instant|custard powder|jelly crystal|malt drink|horlicks|bournvita|ovaltine|bar\b/, 'Mixes & instant'],
+    [/rose water|kewra|blossom water/, 'Flavour waters'],
+    [null, 'Other pantry']
+  ]
+};
+
+function subCategory(name, group){
+  const rules = SUBRULES[group];
+  const low = String(name).toLowerCase();
+  if (!rules) return group;
+  for (const [re, cat] of rules){
+    if (re === null) return cat;
+    if (re.test(low)) return cat;
+  }
+  return group;
+}
+
 const BASE = ING_RAW.trim().split('\n')
   .filter(l => l && !l.startsWith('#'))
   .map(line => {
@@ -898,7 +1229,7 @@ const BASE = ING_RAW.trim().split('\n')
     const n = {};
     NUT_KEYS.forEach((k, i) => { n[k] = +p[i + 2] || 0; });
     const tags = (p[15] || '').trim().split(/\s+/).filter(Boolean);
-    return { name:p[0], group:p[1], n, units, tags, raw:true };
+    return { name:p[0], group:p[1], cat:subCategory(p[0], p[1]), n, units, tags, raw:true };
   });
 
 /* ── cooked forms ───────────────────────────────────────────────────────
@@ -953,7 +1284,7 @@ function derive(base, prep){
   const units = { g:1, kg:1000, oz:28.35, lb:453.6, cup: CUP_G[base.group] || 150 };
   if (base.units.pc) units.pc = Math.round(base.units.pc * prep.yield * 10) / 10;
   return {
-    name: `${base.name}, ${prep.label}`, group: base.group, n, units,
+    name: `${base.name}, ${prep.label}`, group: base.group, cat: base.cat, n, units,
     tags: base.tags, raw:false, from: base.name, prep: prep.label
   };
 }
@@ -998,7 +1329,8 @@ for (const base of BASE){
 ING.forEach((it, ix) => {
   it.ix = ix;
   it.indian = it.tags.includes('in');
-  it.hay = (it.name + ' ' + it.group + ' ' + it.tags.map(t => CUISINE_NAME[t] || '').join(' ')).toLowerCase();
+  it.hay = (it.name + ' ' + it.cat + ' ' + it.group + ' ' +
+    it.tags.map(t => CUISINE_NAME[t] || '').join(' ')).toLowerCase();
 });
 
 const ING_BY_NAME = new Map(ING.map(i => [i.name.toLowerCase(), i]));
@@ -1020,11 +1352,19 @@ const servingOf = it => SERVING_FIX[it.name] || SERVING[it.group] || 60;
 /** Categories that are seasoning, not nourishment — never offered as a fix. */
 const NOT_A_SOURCE = new Set(['Condiments','Sweeteners','Oils & fats','Beverages']);
 
+const ING_CATS = (() => {
+  const n = {};
+  for (const i of BASE) n[i.cat] = (n[i.cat] || 0) + 1;
+  return Object.keys(n).sort((a, b) => n[b] - n[a] || a.localeCompare(b));
+})();
+const ING_CAT_COUNT = Object.fromEntries(ING_CATS.map(c =>
+  [c, BASE.filter(i => i.cat === c).length]));
+
 function searchIng(q, limit = 60, filter = {}){
   const terms = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const pool = ING.filter(i =>
     (!filter.cuisine || i.tags.includes(filter.cuisine)) &&
-    (!filter.group || i.group === filter.group) &&
+    (!filter.group || i.cat === filter.group) &&
     (filter.cooked || i.raw));
 
   // Browsing with no query: lead with the raw ingredients, cooked forms after.
@@ -1036,11 +1376,14 @@ function searchIng(q, limit = 60, filter = {}){
   }
 
   // Every word must match somewhere, so "grilled chicken" finds it whatever the order.
-  const tiers = [[], [], [], []];
+  // Searching a category name — "leaves", "whole spices" — shows that whole shelf.
+  const asCat = ING_CATS.find(c => c.toLowerCase().includes(q.trim().toLowerCase()));
+  const tiers = [[], [], [], [], []];
   for (const i of pool){
+    if (asCat && i.cat === asCat){ tiers[i.raw ? 0 : 4].push(i); continue; }
     if (!terms.every(t => i.hay.includes(t))) continue;
-    const leads = i.hay.startsWith(terms[0]);
-    tiers[(leads ? 0 : 2) + (i.raw ? 0 : 1)].push(i);
+    const leads = i.name.toLowerCase().startsWith(terms[0]);
+    tiers[(leads ? 1 : 2) + (i.raw ? 0 : 1)].push(i);
   }
   return [].concat(...tiers).slice(0, limit);
 }
@@ -1249,13 +1592,14 @@ $('#nav').addEventListener('click', e => {
 function go(v){
   view = v;
   $$('#nav button').forEach(b => b.classList.toggle('on', b.dataset.v === v));
-  ['month','tasks','pantry','week','shop'].forEach(k => { $('#v-'+k).hidden = k !== v; });
+  ['month','tasks','pantry','week','shop','lib'].forEach(k => { $('#v-'+k).hidden = k !== v; });
   document.body.dataset.section = v;
   if (v === 'month')  drawMonth();
   if (v === 'tasks')  drawTasks();
   if (v === 'pantry') drawFoods();
   if (v === 'week')   drawWeek();
   if (v === 'shop')   drawShop();
+  if (v === 'lib')    drawLibrary();
 }
 
 /* ── calendar ───────────────────────────────────────────────────────── */
@@ -1598,17 +1942,89 @@ function fillFilters(){
       .sort((a, b) => (b[0] === 'in') - (a[0] === 'in') || a[1].localeCompare(b[1]))
       .map(([k, label]) => `<option value="${k}">${esc(label)} (${counts[k]})</option>`).join('');
 
-  const groups = [...new Set(BASE.map(i => i.group))].sort();
   $('#fGroup').innerHTML = '<option value="">Every category</option>' +
-    groups.map(g => `<option value="${esc(g)}">${esc(g)}</option>`).join('');
+    [...ING_CATS].sort().map(g =>
+      `<option value="${esc(g)}">${esc(g)} (${ING_CAT_COUNT[g]})</option>`).join('');
+}
+
+function drawIngChips(){
+  const box = $('#ingChips');
+  if (!box) return;
+  const cats = FILTER.group ? [...ING_CATS].sort() : ING_CATS.slice(0, 14);
+  box.innerHTML = cats.map(c =>
+    `<button type="button" class="${c === FILTER.group ? 'on' : ''}" data-c="${esc(c)}">${esc(c)}<i>${ING_CAT_COUNT[c]}</i></button>`).join('');
+  box.querySelectorAll('button').forEach(b => {
+    b.onclick = () => {
+      FILTER.group = (FILTER.group === b.dataset.c) ? '' : b.dataset.c;
+      $('#fGroup').value = FILTER.group;
+      drawPicker();
+    };
+  });
+}
+
+/* the things you added yourself, offered alongside the library */
+function drawMineRows(box){
+  // if a category is showing, only your things filed under it belong here
+  const mine = searchMine($('#ingSearch').value, 8, '')
+    .filter(m => !FILTER.group || m.cat === FILTER.group);
+  if (!mine.length) return;
+  const rows = mine.map(m =>
+    `<div class="pick mineown" data-my="${esc(m.name)}" title="${esc(m.cat || 'Yours')}">
+      <b>${esc(m.name)}</b><span class="prep">yours</span>
+      <em>no nutrition</em>
+      <button class="plus" type="button" aria-label="Add ${esc(m.name)} to the recipe">+</button>
+    </div>`).join('');
+  box.insertAdjacentHTML('afterbegin', rows);
+  box.querySelectorAll('.mineown').forEach(el => {
+    const name = el.dataset.my;
+    const add = e => { e.stopPropagation();
+      $('#ingBox').appendChild(ingLine({ name, qty:1, unit:'' })); refreshFoodNut(); };
+    el.querySelector('.plus').onclick = add;
+    el.onclick = add;
+  });
+}
+
+function drawIngReco(){
+  const box = $('#ingReco');
+  if (!box) return;
+  if ($('#ingSearch').value.trim() || FILTER.group){ box.hidden = true; return; }
+  const used = new Map();
+  for (const f of state.foods) for (const g of (f.ingredients || [])){
+    if (g.ref === undefined || g.ref === null) continue;
+    used.set(g.ref, (used.get(g.ref) || 0) + 1);
+  }
+  const inRecipe = new Set([...$('#ingBox').querySelectorAll('.ingitem')]
+    .map(r => (r.querySelector('input') || {}).value || '').map(cartKey));
+  let list = [...used.entries()].sort((a, b) => b[1] - a[1]).map(([ix]) => ING[ix]).filter(Boolean);
+  if (list.length < 6){
+    const staples = STAPLES_ING.map(n => ING.find(i => i.raw && cartKey(i.name) === cartKey(n))).filter(Boolean);
+    list = [...list, ...staples];
+  }
+  const seen = new Set();
+  list = list.filter(i => {
+    const k = cartKey(i.name);
+    if (seen.has(k) || inRecipe.has(k)) return false;
+    seen.add(k); return true;
+  }).slice(0, 10);
+  if (!list.length){ box.hidden = true; return; }
+  box.hidden = false;
+  box.innerHTML = `<div class="recolabel">${used.size ? 'You cook with these' : 'Most dishes start here'}</div>
+    <div class="chiprow">${list.map(i =>
+      `<button type="button" data-ix="${i.ix}">${esc(i.name)}</button>`).join('')}</div>`;
+  box.querySelectorAll('button').forEach(b => {
+    b.onclick = () => { addFromLibrary(+b.dataset.ix); drawPicker(); };
+  });
 }
 
 function drawPicker(){
   $('#libCount').textContent = `${ING.length.toLocaleString()} ingredients`;
+  drawIngChips();
+  drawIngReco();
   const hits = searchIng($('#ingSearch').value, 60, FILTER);
   const box = $('#ingResults');
   if (!hits.length){
     box.innerHTML = '<div class="none">Nothing matched. Widen the filters, or use “+ Add my own”.</div>';
+    drawMineRows(box);
     return;
   }
   box.innerHTML = hits.map(i => `
@@ -1629,6 +2045,7 @@ function drawPicker(){
     el.querySelector('.plus').onclick = e => { e.stopPropagation(); addFromLibrary(ix); };
     el.onclick = () => factSheet(ix);
   });
+  drawMineRows(box);
 }
 
 /* the full nutrition card for one ingredient */
@@ -1673,6 +2090,7 @@ function factSheet(ix, back){
         if (view !== 'pantry') go('pantry');
         toast(`${it.name} added`);
       }},
+      { label:'Add to cart', go:() => { addNamedToCart(it.raw ? it.name : it.from); shut(); }},
       { gap:true },
       { label:'Close', go: back ? back : shut }
     ]);
@@ -1820,7 +2238,64 @@ $('#wNext').onclick = () => { weekStart = shift(weekStart, 7); drawWeek(); };
 $('#wNow').onclick  = () => { weekStart = sunday(today()); drawWeek(); };
 $('#wShop').onclick = () => go('shop');
 
-function drawWeek(){ drawPantry(); drawBoard(); }
+function drawWeek(){ drawPantry(); drawDishReco(); drawBoard(); }
+
+/* ── which dish next ────────────────────────────────────────────────────
+   Two useful answers, and they are different. "Cook again" is the one you
+   turn to most. "Not for a while" is the one you liked and forgot. Both
+   come from this person's own plan, so an empty board suggests nothing.  */
+function dishStats(){
+  const t = today();
+  const stat = new Map();
+  for (const f of state.foods) stat.set(String(f.id), { food:f, times:0, last:null });
+  for (const m of state.meals){
+    const st = stat.get(String(m.foodId));
+    if (!st) continue;
+    if (m.date > t) continue;                 // planning ahead isn't cooking
+    st.times++;
+    if (!st.last || m.date > st.last) st.last = m.date;
+  }
+  return [...stat.values()];
+}
+
+function drawDishReco(){
+  const box = $('#dishReco');
+  if (!box) return;
+  const stats = dishStats();
+  const planned = stats.filter(s => s.times > 0);
+  if (state.foods.length < 3 || !planned.length){ box.hidden = true; return; }
+
+  const week = Array.from({ length:7 }, (_, i) => shift(weekStart, i));
+  const onBoard = new Set(state.meals.filter(m => week.includes(m.date)).map(m => String(m.foodId)));
+  const free = s => !onBoard.has(String(s.food.id));
+
+  // a dish cooked once isn't a habit — it belongs in the forgotten pile
+  const often = planned.filter(free).filter(s => s.times > 1)
+    .sort((a, b) => b.times - a.times).slice(0, 3);
+  const quiet = planned.filter(free).filter(s => !often.includes(s))
+    .sort((a, b) => String(a.last).localeCompare(String(b.last))).slice(0, 2);
+
+  const pick = [
+    ...often.map(s => ({ s, why:`${s.times}×` })),
+    ...quiet.map(s => ({ s, why:'a while ago' }))
+  ];
+  if (!pick.length){ box.hidden = true; return; }
+
+  box.hidden = false;
+  box.innerHTML = `<div class="recolabel">Cook again</div>
+    <div class="chiprow">${pick.map(({ s, why }) =>
+      `<button type="button" data-id="${esc(s.food.id)}">${esc(s.food.name)}<i>${esc(why)}</i></button>`).join('')}</div>`;
+  box.querySelectorAll('button').forEach(b => {
+    b.onclick = () => {
+      held = b.dataset.id;
+      $$('.dish').forEach(d => d.classList.toggle('held', d.dataset.id === held));
+      $$('.slot').forEach(sl => sl.classList.add('armed'));
+      $('#weekHint').textContent = 'Now tap the slot where it goes.';
+      const row = $(`.dish[data-id="${CSS.escape(held)}"]`);
+      if (row) row.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    };
+  });
+}
 
 function drawPantry(){
   const list = [...state.foods].sort((a,b) => a.name.localeCompare(b.name, undefined, {sensitivity:'base'}));
@@ -1935,6 +2410,537 @@ function hueOf(name){
   return FOOD_HUES[(h >>> 0) % FOOD_HUES.length];
 }
 
+/* ── things that come round again ───────────────────────────────────────
+   "Cilantro, every Monday." On the day it is due the item drops into the
+   cart by itself. The board can't run while it is closed, so instead of
+   firing on a timer we look backwards on open: the most recent due date
+   that hasn't been served yet gets served now.                          */
+const FREQ = [
+  ['week',      'Every week'],
+  ['fortnight', 'Every 2 weeks'],
+  ['month',     'Every month'],
+  ['day',       'Every day']
+];
+const WEEKDAY = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const ordinal = n => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th'
+  : ['th','st','nd','rd'][n % 10] || 'th');
+const lastDayOf = d => new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+
+function repeatMatches(r, iso){
+  const d = fromISO(iso);
+  if (r.every === 'day')  return true;
+  if (r.every === 'week') return d.getDay() === r.day;
+  if (r.every === 'fortnight'){
+    if (d.getDay() !== r.day) return false;
+    // count whole weeks from the week it was set up, so it lands on alternate ones
+    const weeks = Math.round((fromISO(sunday(iso)) - fromISO(sunday(r.from))) / 6048e5);
+    return weeks % 2 === 0;
+  }
+  if (r.every === 'month') return d.getDate() === Math.min(r.dom, lastDayOf(d));
+  return false;
+}
+
+function freqLabel(r){
+  if (r.every === 'day')       return 'Every day';
+  if (r.every === 'week')      return `Every ${WEEKDAY[r.day]}`;
+  if (r.every === 'fortnight') return `Every other ${WEEKDAY[r.day]}`;
+  if (r.every === 'month')     return `The ${ordinal(r.dom)} of the month`;
+  return '';
+}
+
+function nextDue(r){
+  const t = today();
+  for (let i = 0; i < 400; i++){
+    const iso = shift(t, i);
+    if (r.last && iso <= r.last) continue;
+    if (iso < r.from) continue;
+    if (repeatMatches(r, iso)) return iso;
+  }
+  return null;
+}
+
+/* the most recent date this was due and hasn't been served — look back two
+   months, so a fortnight away from the board still catches up */
+function dueSince(r){
+  const t = today();
+  for (let i = 0; i < 62; i++){
+    const iso = shift(t, -i);
+    if (r.last && iso <= r.last) return null;
+    if (iso < r.from) return null;
+    if (repeatMatches(r, iso)) return iso;
+  }
+  return null;
+}
+
+function runRepeats(){
+  const added = [];
+  let changed = false;
+  for (const r of state.repeats){
+    const due = dueSince(r);
+    if (!due) continue;
+    r.last = due;
+    changed = true;
+    const key = cartKey(r.name);
+    if (inCart(key)) continue;
+    state.cart.push({ key, name:r.name, amount:r.amount || '', own:true, rep:r.id, bought:false });
+    added.push(r.name);
+  }
+  if (changed) touch();
+  return added;
+}
+
+const repeatFor = name => state.repeats.find(r => cartKey(r.name) === cartKey(name));
+
+function addRepeat(name, amount, every, day, dom){
+  name = String(name || '').trim();
+  if (!name) return null;
+  const existing = repeatFor(name);
+  const r = existing || { id:uid(), from:today(), last:'' };
+  Object.assign(r, { name, amount:String(amount || '').trim(), every,
+                     day:Number(day) || 0, dom:Math.min(28, Math.max(1, Number(dom) || 1)) });
+  if (!existing){ r.from = today(); r.last = ''; state.repeats.push(r); }
+  else { r.last = ''; }        // the schedule changed — let it land on the new one
+  runRepeats();
+  touch(); drawRepeats(); drawShop();
+  return r;
+}
+
+function dropRepeat(id){
+  const r = state.repeats.find(x => x.id === id);
+  state.repeats = state.repeats.filter(x => x.id !== id);
+  if (r) for (const c of state.cart) if (c.rep === id) delete c.rep;
+  touch(); drawRepeats(); drawShop();
+}
+
+function drawRepeats(){
+  const list = [...state.repeats].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, { sensitivity:'base' }));
+  $('#repCount').textContent = list.length
+    ? `${list.length} repeating` : '';
+  const box = $('#repRows');
+  if (!list.length){
+    box.innerHTML = '<div class="shopempty" style="margin-top:10px">Nothing repeats yet. ' +
+      'Add one above — or press ↻ on anything already in your list.</div>';
+    return;
+  }
+  box.innerHTML = list.map(r => {
+    const n = nextDue(r);
+    return `<div class="repeatrow" data-id="${esc(r.id)}">
+      <span class="rname">${esc(r.name)}${r.amount ? ` <span class="rnext">${esc(r.amount)}</span>` : ''}</span>
+      <span class="rwhen">${esc(freqLabel(r))}</span>
+      <span class="rnext">${n ? (n === today() ? 'today' : 'next ' + dayShort(n)) : ''}</span>
+      <button class="rx" type="button" aria-label="Stop repeating ${esc(r.name)}">×</button>
+    </div>`;
+  }).join('');
+  box.querySelectorAll('.repeatrow').forEach(el => {
+    el.querySelector('.rx').onclick = () => dropRepeat(el.dataset.id);
+  });
+}
+
+function syncRepeatForm(){
+  const every = $('#rpEvery').value;
+  $('#rpDay').hidden = !(every === 'week' || every === 'fortnight');
+  $('#rpDom').hidden = every !== 'month';
+}
+
+function fillRepeatForm(){
+  $('#rpDom').innerHTML = Array.from({ length:28 }, (_, i) =>
+    `<option value="${i + 1}">${ordinal(i + 1)}</option>`).join('');
+  $('#rpDay').value = String(fromISO(today()).getDay());
+  $('#rpDom').value = String(Math.min(28, fromISO(today()).getDate()));
+  syncRepeatForm();
+}
+
+function openRepeats(prefill){
+  $('#repeatPanel').hidden = false;
+  if (prefill){
+    const r = repeatFor(prefill.name);
+    $('#rpName').value = prefill.name;
+    $('#rpAmt').value = prefill.amount || '';
+    if (r){ $('#rpEvery').value = r.every; $('#rpDay').value = String(r.day); $('#rpDom').value = String(r.dom); }
+    syncRepeatForm();
+  }
+  drawRepeats();
+  setTimeout(() => $('#rpName').focus(), 30);
+}
+
+$('#repBtn').onclick = () => {
+  const panel = $('#repeatPanel');
+  if (panel.hidden) openRepeats(); else panel.hidden = true;
+};
+$('#repClose').onclick = () => { $('#repeatPanel').hidden = true; };
+$('#rpEvery').addEventListener('change', syncRepeatForm);
+
+$('#repForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#rpName').value.trim();
+  if (!name) return toast('What should come round again?');
+  const r = addRepeat(name, $('#rpAmt').value, $('#rpEvery').value, $('#rpDay').value, $('#rpDom').value);
+  $('#rpName').value = ''; $('#rpAmt').value = '';
+  toast(`${r.name} — ${freqLabel(r).toLowerCase()}`);
+});
+
+/* ── supply library ─────────────────────────────────────────────────────
+   Household things a shop trip is actually made of — cleaning, hardware,
+   stationery, pooja, pet, garden. Same shape as the ingredient library:
+   search it, then drag what you want straight into the cart.            */
+const SUP_RAW = `__SUPPLY_TABLE__`;
+
+const SUP = SUP_RAW.trim().split('\n')
+  .filter(l => l && !l.startsWith('#'))
+  .map((line, ix) => {
+    const p = line.split('|');
+    return { ix, name:p[0], cat:p[1], unit:p[2] || 'each',
+             tags:(p[3] || '').trim().split(/\s+/).filter(Boolean),
+             low:p[0].toLowerCase() };
+  });
+
+const SUP_CATS = [...new Set(SUP.map(s => s.cat))].sort();
+const SUP_CATS_BY_SIZE = [...SUP_CATS].sort((a, b) =>
+  SUP.filter(i => i.cat === b).length - SUP.filter(i => i.cat === a).length || a.localeCompare(b));
+
+function searchSup(q, limit, cat){
+  const terms = String(q || '').toLowerCase().split(/\s+/).filter(Boolean);
+  const pool = cat ? SUP.filter(i => i.cat === cat) : SUP;
+
+  // browsing, not searching — alphabetical reads better than a relevance guess
+  const alpha = (a, b) => a.name.localeCompare(b.name, undefined, { sensitivity:'base' });
+
+  if (!terms.length){
+    if (cat) return pool.slice().sort(alpha).slice(0, limit);
+    // no query, no filter: a straight A–Z opens on nothing but batteries, so
+    // take a turn through every category instead — it shows what is in here
+    const byCat = new Map();
+    for (const it of pool){
+      if (!byCat.has(it.cat)) byCat.set(it.cat, []);
+      byCat.get(it.cat).push(it);
+    }
+    const lists = [...byCat.keys()].sort().map(k => byCat.get(k).slice().sort(alpha));
+    const out = [];
+    for (let round = 0; out.length < limit; round++){
+      let any = false;
+      for (const l of lists){
+        if (round < l.length){ out.push(l[round]); any = true; }
+        if (out.length >= limit) break;
+      }
+      if (!any) break;
+    }
+    return out;
+  }
+
+  const out = [];
+  for (const it of pool){
+    const words = it.low.split(/[^a-z0-9]+/).filter(Boolean);
+    let score = 0, ok = true;
+    for (const t of terms){
+      // a whole word beats the start of a word beats a match anywhere:
+      // "aa" should find "AA alkaline battery" before "AAAA battery"
+      if (words.includes(t))                          score += 0;
+      else if (words.some(w => w.startsWith(t)))      score += 4;
+      else if (it.low.includes(t))                    score += 9;
+      else { ok = false; break; }
+    }
+    if (!ok) continue;
+    if (!it.low.startsWith(terms[0])) score += 2;
+    out.push({ it, rank: score * 200 + Math.min(199, it.name.length) });
+  }
+  out.sort((a, b) => a.rank - b.rank ||
+    a.it.name.localeCompare(b.it.name, undefined, { numeric:true, sensitivity:'base' }));
+  return out.slice(0, limit).map(o => o.it);
+}
+
+const SUPF = { tab:'ing', cat:'' };
+
+/* ── your own items and categories ──────────────────────────────────────
+   The two libraries between them cover most of a shopping trip, but not
+   the thing your corner shop calls something else. Anything you add here
+   behaves like a library item: it has a category, it is searchable, and it
+   turns up in the recipe builder as well as the cart.                    */
+const myItems = () => state.myItems || (state.myItems = []);
+const myCats  = () => state.myCats  || (state.myCats  = []);
+
+function allCatsFor(tab){
+  if (tab === 'ing')  return [...ING_CATS].sort();
+  if (tab === 'sup')  return [...SUP_CATS];
+  return [...new Set([...myCats(), ...myItems().map(i => i.cat)])].filter(Boolean).sort();
+}
+
+function catCount(tab, cat){
+  if (tab === 'ing')  return ING_CAT_COUNT[cat] || 0;
+  if (tab === 'sup')  return SUP.filter(i => i.cat === cat).length;
+  return myItems().filter(i => i.cat === cat).length;
+}
+
+function searchMine(q, limit, cat){
+  const terms = String(q || '').toLowerCase().split(/\s+/).filter(Boolean);
+  return myItems()
+    .filter(i => (!cat || i.cat === cat) &&
+      terms.every(t => (i.name + ' ' + (i.cat || '')).toLowerCase().includes(t)))
+    .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity:'base' }))
+    .slice(0, limit);
+}
+
+function fillSupCats(){
+  drawMyCatSelect();
+}
+
+function drawMyCatSelect(){
+  const mine = allCatsFor('mine');
+  const known = [...new Set([...mine, ...SUP_CATS])];
+  $('#myCat').innerHTML = known.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('') +
+    '<option value="__new">+ New category…</option>';
+}
+
+/* ── what to suggest ────────────────────────────────────────────────────
+   Ranked by what this person actually buys. state.bought counts every trip
+   an item has made into the cart; before there is any history to go on we
+   fall back to the things nearly every kitchen runs out of.              */
+const STAPLES_SUP = ['Toilet roll, pack of 9','Kitchen paper towel, pack of 4','Bin bag, 30 L (30)',
+  'Dish soap, 500 ml','Laundry detergent powder, 1 kg','All-purpose cleaner, 500 ml',
+  'Toothpaste, pack of 2','Bath soap, 100 ml','Shampoo, 200 ml','Sponge scourer, pack of 6',
+  'Aluminium foil, medium roll','Cling film, medium roll','AA alkaline battery, pack of 4',
+  'Agarbatti (incense sticks)','Hand wash refill, 500 ml','Wet wipes, pack of 4'];
+const STAPLES_ING = ['Onion','Tomato','Garlic','Ginger (fresh)','Potato','Green chilli',
+  'Coriander leaves (cilantro)','Curry leaves','Lemon','Milk (whole)','Curd / dahi','Paneer',
+  'Egg (whole, raw)','Toor dal (arhar, split)','Basmati rice (raw)','Atta (whole wheat flour)',
+  'Mustard oil','Ghee','Table salt','Cumin seed (jeera)','Turmeric powder (haldi)'];
+
+const boughtCount = name => (state.bought || {})[cartKey(name)] || 0;
+
+function noteBought(name){
+  state.bought = state.bought || {};
+  const k = cartKey(name);
+  state.bought[k] = (state.bought[k] || 0) + 1;
+}
+
+function suggestions(tab, n = 10){
+  const pool = tab === 'ing' ? ING.filter(i => i.raw) : tab === 'sup' ? SUP : myItems();
+  const seen = new Set(), out = [];
+  const push = it => {
+    const k = cartKey(it.name);
+    if (seen.has(k) || inCart(k)) return;
+    seen.add(k); out.push(it);
+  };
+  pool.filter(i => boughtCount(i.name) > 0)
+      .sort((a, b) => boughtCount(b.name) - boughtCount(a.name)).forEach(push);
+  if (tab === 'ing'){
+    const used = {};
+    for (const f of state.foods) for (const g of (f.ingredients || []))
+      used[cartKey(g.name)] = (used[cartKey(g.name)] || 0) + 1;
+    pool.filter(i => used[cartKey(i.name)])
+        .sort((a, b) => used[cartKey(b.name)] - used[cartKey(a.name)]).forEach(push);
+  }
+  for (const name of (tab === 'ing' ? STAPLES_ING : tab === 'sup' ? STAPLES_SUP : [])){
+    const hit = pool.find(i => cartKey(i.name) === cartKey(name));
+    if (hit) push(hit);
+  }
+  return out.slice(0, n);
+}
+
+/* ── the library page ───────────────────────────────────────────────────
+   A shelf list you can see without hunting for it, and the shelf's
+   contents beside it. Ingredient shelves sit under the aisle they belong
+   to, so 106 categories read as a shop rather than a wall of chips.     */
+const AISLES = ['Vegetables','Fruits','Herbs & spices','Grains & flours','Dals & pulses',
+  'Dairy & eggs','Meat & poultry','Fish & seafood','Nuts & seeds','Oils & fats',
+  'Bread & noodles','Condiments & sauces','Plant proteins','Fungi & sea greens',
+  'Beverages','Sweeteners','Baking & pantry'];
+
+const ING_AISLE = (() => {
+  const m = {};
+  for (const i of BASE){ (m[i.group] ||= new Set()).add(i.cat); }
+  return m;
+})();
+
+function shelfPool(){
+  if (SUPF.tab === 'ing')  return ING.filter(i => i.raw);
+  if (SUPF.tab === 'sup')  return SUP;
+  return myItems();
+}
+
+function drawShelves(){
+  const box = $('#shelfList');
+  const tab = SUPF.tab;
+  const row = (c, count, cls, label) =>
+    `<button type="button" class="shelf${cls || ''}${c === SUPF.cat ? ' on' : ''}" data-c="${esc(c)}">` +
+    `<span>${esc(label || c)}</span><i>${count}</i></button>`;
+
+  let html = row('', shelfPool().length, '', 'Everything');
+  if (tab === 'ing'){
+    html += AISLES.filter(a => ING_AISLE[a]).map(a =>
+      `<div class="aisle">${esc(a)}</div>` +
+      [...ING_AISLE[a]].sort().map(c => row(c, ING_CAT_COUNT[c], ' sub')).join('')).join('');
+  } else if (tab === 'sup'){
+    html += SUP_CATS.map(c => row(c, SUP.filter(i => i.cat === c).length)).join('');
+  } else {
+    const cats = allCatsFor('mine');
+    html += cats.length
+      ? cats.map(c => row(c, myItems().filter(i => i.cat === c).length)).join('')
+      : '<div class="aisle">Nothing of your own yet</div>';
+  }
+  box.innerHTML = html;
+  const shelves = tab === 'ing' ? ING_CATS.length
+    : tab === 'sup' ? SUP_CATS.length : allCatsFor('mine').length;
+  $('#shelfCount').textContent = shelves ? `${shelves} ${shelves === 1 ? 'shelf' : 'shelves'}` : '';
+
+  box.querySelectorAll('.shelf').forEach(b => {
+    b.onclick = () => { SUPF.cat = b.dataset.c; drawLibrary(); };
+  });
+}
+
+function libraryHits(){
+  const q = $('#libSearch').value;
+  if (SUPF.tab === 'ing')  return searchIng(q, 240, { group:SUPF.cat, cooked:false });
+  if (SUPF.tab === 'mine') return searchMine(q, 240, SUPF.cat);
+  return searchSup(q, 240, SUPF.cat);
+}
+
+function drawReco(){
+  const box = $('#libReco');
+  const list = suggestions(SUPF.tab, 10);
+  if (!list.length || SUPF.cat || $('#libSearch').value.trim()){ box.hidden = true; return; }
+  box.hidden = false;
+  box.innerHTML = `<div class="recolabel">${
+    boughtCount(list[0].name) > 0 ? 'You buy these often' : 'Usually worth having in'}</div>
+    <div class="chiprow">${list.map(i =>
+      `<button type="button" data-n="${esc(i.name)}">${esc(i.name)}</button>`).join('')}</div>`;
+  box.querySelectorAll('button').forEach(b => { b.onclick = () => addNamedToCart(b.dataset.n); });
+}
+
+function libRow(it){
+  const got = inCart(cartKey(it.name));
+  const rep = repeatFor(it.name);
+  return `<div class="pick sup${got ? ' insup' : ''}" draggable="true" data-n="${esc(it.name)}"
+       data-ix="${it.ix === undefined ? '' : it.ix}" title="${esc(it.cat || '')}">
+      <b>${esc(it.name)}${it.indian || (it.tags || []).includes('in')
+        ? ' <span class="flag">IN</span>' : ''}</b>
+      <span class="cat">${esc(it.cat || '')}</span>
+      <span class="acts">
+        ${it.ix === undefined ? '' : `<button class="plus dish wide" type="button" title="Use it in a dish" aria-label="Use ${esc(it.name)} in a dish">dish</button>`}
+        <button class="plus rep${rep ? ' on' : ''}" type="button" title="${rep ? esc(freqLabel(rep)) : 'Buy it again and again'}" aria-label="Repeat ${esc(it.name)}">&#8635;</button>
+        <button class="plus" type="button" aria-label="${got ? 'Already in the cart' : 'Add ' + esc(it.name) + ' to the cart'}">${got ? '✓' : '+'}</button>
+      </span>
+    </div>`;
+}
+
+function drawLibrary(){
+  const tab = SUPF.tab;
+  $$('#libTabs .tab').forEach(t => t.classList.toggle('on', t.dataset.t === tab));
+  $('#mineForm').hidden = tab !== 'mine';
+  $('#libSearch').placeholder = tab === 'ing' ? 'Search — “paneer”, “leaves”, “whole spices”'
+    : tab === 'mine' ? 'Search your own things'
+    : 'Search — “bin bags”, “AA battery”, “agarbatti”';
+  $('#libWhere').textContent = SUPF.cat || 'Everything';
+  $('#libHint').textContent = tab === 'ing'
+    ? 'Every ingredient, on 106 shelves. Add one to the cart, or straight into a dish.'
+    : tab === 'sup' ? 'Household supplies on 37 shelves. Add one to the cart.'
+    : 'The things you added yourself, on shelves you named.';
+
+  drawShelves();
+  drawReco();
+
+  const hits = libraryHits();
+  $('#libTally').textContent = hits.length
+    ? `${hits.length}${hits.length >= 240 ? '+' : ''} item${hits.length === 1 ? '' : 's'}` : '';
+
+  const box = $('#libRows');
+  if (!hits.length){
+    box.innerHTML = `<div class="shopempty" style="margin-top:12px">${tab === 'mine'
+      ? 'Nothing of your own yet — add it above.'
+      : 'Nothing matched. Try a shorter word, or add it under “Mine”.'}</div>`;
+    return;
+  }
+
+  // grouped by shelf, unless you are already standing at one
+  if (SUPF.cat){
+    box.innerHTML = `<div class="rows supgrid picker-list">${hits.map(libRow).join('')}</div>`;
+  } else {
+    const by = new Map();
+    for (const it of hits){ const k = it.cat || 'Everything else';
+      if (!by.has(k)) by.set(k, []); by.get(k).push(it); }
+    box.innerHTML = [...by.entries()].map(([cat, list]) =>
+      `<div class="shelfhead">${esc(cat)}<i>${list.length}</i></div>
+       <div class="rows supgrid picker-list">${list.map(libRow).join('')}</div>`).join('');
+  }
+
+  box.querySelectorAll('.pick').forEach(el => {
+    const name = el.dataset.n;
+    const ix = el.dataset.ix === '' ? null : +el.dataset.ix;
+    el.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', JSON.stringify({ t:'supply', name }));
+      e.dataTransfer.effectAllowed = 'copy';
+    });
+    const acts = [...el.querySelectorAll('.plus')];
+    const cart = acts[acts.length - 1];
+    cart.onclick = e => { e.stopPropagation(); addNamedToCart(name); };
+    const rep = el.querySelector('.plus.rep');
+    if (rep) rep.onclick = e => {
+      e.stopPropagation();
+      go('shop'); openRepeats({ name, amount:amountFor(name) });
+    };
+    const dish = el.querySelector('.plus.dish');
+    if (dish) dish.onclick = e => {
+      e.stopPropagation();
+      go('pantry'); openCompose(); addFromLibrary(ix);
+      toast(`${name} added to the dish you're building`);
+    };
+    el.onclick = () => { if (ix !== null) factSheet(ix); };
+  });
+}
+
+$('#libTabs').addEventListener('click', e => {
+  const b = e.target.closest('.tab');
+  if (!b) return;
+  SUPF.tab = b.dataset.t; SUPF.cat = ''; $('#libSearch').value = '';
+  drawLibrary();
+});
+
+$('#libToCart').onclick = () => go('shop');
+$('#libRepeats').onclick = () => { go('shop'); openRepeats(); };
+$('#supBtn').onclick = () => go('lib');
+
+$('#myCat').addEventListener('change', e => {
+  const isNew = e.target.value === '__new';
+  $('#myNewCat').hidden = !isNew;
+  if (isNew) setTimeout(() => $('#myNewCat').focus(), 20);
+});
+
+$('#mineForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#myName').value.trim();
+  if (!name) return toast('Give it a name');
+  let cat = $('#myCat').value;
+  if (cat === '__new'){
+    cat = $('#myNewCat').value.trim();
+    if (!cat) return toast('Name the new category');
+    if (!myCats().includes(cat)) myCats().push(cat);
+  }
+  if (myItems().some(i => cartKey(i.name) === cartKey(name)))
+    return toast(`${name} is already on your list`);
+  myItems().push({ id:uid(), name, cat, amount:$('#myAmt').value.trim() });
+  $('#myName').value = ''; $('#myAmt').value = ''; $('#myNewCat').value = '';
+  $('#myNewCat').hidden = true;
+  touch(); drawMyCatSelect(); drawLibrary(); drawPicker();
+  toast(`${name} added to ${cat}`);
+});
+
+function amountFor(name){
+  const m = myItems().find(i => cartKey(i.name) === cartKey(name));
+  return m ? (m.amount || '') : '';
+}
+
+function addNamedToCart(name){
+  const key = cartKey(name);
+  if (inCart(key)) return toast(`${name} is already in the cart`);
+  noteBought(name);
+  addToCart(key, name, amountFor(name), true);
+  if (view === 'lib') drawLibrary();
+  toast(`${name} added to the cart`);
+}
+
+let supT;
+$('#libSearch').addEventListener('input', () => { clearTimeout(supT); supT = setTimeout(drawLibrary, 130); });
+
 const cartKey = name => String(name).trim().toLowerCase();
 const inCart = key => state.cart.some(c => c.key === key);
 
@@ -1961,13 +2967,16 @@ function removeFromCart(key){
 
 function itemRow(o){
   const el = document.createElement('div');
-  el.className = 'gitem' + (o.own ? ' own' : '') + (o.bought ? ' got' : '');
+  el.className = 'gitem' + (o.own ? ' own' : '') + (o.bought ? ' got' : '') + (o.rep ? ' rep' : '');
   el.draggable = true;
   el.dataset.key = o.key;
   el.innerHTML =
     (o.inCart ? `<input type="checkbox" ${o.bought ? 'checked' : ''} aria-label="Got it">` : '') +
     `<span class="gname">${esc(o.name)}</span>` +
     `<span class="gamt">${esc(o.amount || '')}</span>` +
+    `<button class="rbtn${repeatFor(o.name) ? ' on' : ''}" type="button" aria-label="${
+      repeatFor(o.name) ? 'Change how often ' + esc(o.name) + ' repeats' : 'Repeat ' + esc(o.name)
+    }" title="${repeatFor(o.name) ? esc(freqLabel(repeatFor(o.name))) : 'Buy this again and again'}">&#8635;</button>` +
     `<button class="gbtn${o.inCart ? ' rm' : ''}" type="button" aria-label="${
       o.inCart ? 'Take out of the cart' : 'Put in the cart'}">${o.inCart ? '×' : '+'}</button>`;
 
@@ -1977,6 +2986,12 @@ function itemRow(o){
     }));
     e.dataTransfer.effectAllowed = 'move';
   });
+
+  el.querySelector('.rbtn').onclick = e => {
+    e.stopPropagation();
+    openRepeats({ name:o.name, amount:o.amount });
+    $('#repeatPanel').scrollIntoView({ behavior:'smooth', block:'center' });
+  };
 
   el.querySelector('.gbtn').onclick = e => {
     e.stopPropagation();
@@ -1997,12 +3012,13 @@ function itemRow(o){
 }
 
 function wireZone(zone, accepts, onDrop){
+  const kinds = [].concat(accepts);
   zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
   zone.addEventListener('dragleave', () => zone.classList.remove('over'));
   zone.addEventListener('drop', e => {
     e.preventDefault(); zone.classList.remove('over');
     let d; try { d = JSON.parse(e.dataTransfer.getData('text/plain')); } catch { return; }
-    if (!d || d.t !== accepts) return;
+    if (!d || !kinds.includes(d.t)) return;
     onDrop(d);
   });
 }
@@ -2044,6 +3060,8 @@ function drawShop(){
     ? `${got} of ${state.cart.length} picked up` : '';
 
   drawCartBadge();
+  if (view === 'lib') drawLibrary();
+  if (!$('#repeatPanel').hidden) drawRepeats();
 }
 
 function drawCartBadge(){
@@ -2053,7 +3071,10 @@ function drawCartBadge(){
   b.hidden = left === 0;
 }
 
-wireZone($('#cartList'), 'buy', d => addToCart(d.key, d.name, d.amount, d.own));
+wireZone($('#cartList'), ['buy','supply'], d => {
+  if (d.t === 'supply'){ addNamedToCart(d.name); return; }
+  addToCart(d.key, d.name, d.amount, d.own);
+});
 wireZone($('#buyList'), 'cart', d => removeFromCart(d.key));
 
 $('#cartAll').onclick = () => {
@@ -2245,6 +3266,9 @@ function dueList(){
 
 function sweep(now = Date.now()){
   let fresh = 0;
+
+  // a board left open overnight should still get Monday's cilantro
+  if (runRepeats().length) drawShop();
 
   for (const it of dueList()){
     if (!Number.isFinite(it.at) || it.at < now - 36e5) continue;
@@ -2457,6 +3481,9 @@ function enterBoard(){
   setSync(state.updatedAt ? 'ok' : '', state.updatedAt ? (lockKey ? 'Saved, locked' : 'Saved') : 'Nothing saved yet');
   $('#tDate').value = today();
   fillFilters();
+  fillSupCats();
+  fillRepeatForm();
+  runRepeats();
   resetFoodForm();
   go('week');
   drawBell();
